@@ -280,13 +280,55 @@
    "first_published": "1603 (Q1); 1623 (First Folio)",
    "gutenberg": 1524,
    "units": "5 acts",
-   "status": "soon",
+   "status": "ready",
    "free": false,
    "ap_q3": false,
    "pd_strict": true,
    "subtitle": null,
-   "release": "2026-10-28",
-   "checks_planned": "5 acts"
+   "release": null,
+   "checks": [
+    "Act 1",
+    "Act 2",
+    "Act 3",
+    "Act 4",
+    "Act 5"
+   ],
+   "questions": 40,
+   "samples": {
+    "check": "Act 1",
+    "questions": [
+     {
+      "skill": "recall",
+      "stem": "In Scene 1, the Ghost returns and Horatio begs it to speak. What happens just as it seems about to answer?",
+      "quote": null,
+      "options": [
+       "Barnardo cries out and frightens it away",
+       "The bell strikes one and it falls silent",
+       "A cock crows and it starts away",
+       "Hamlet arrives and it turns toward him"
+      ],
+      "answer": "C",
+      "why": "Barnardo says the Ghost \"was about to speak, when the cock crew,\" and Horatio describes it starting \"like a guilty thing\"; Hamlet is not on the platform in Scene 1."
+     },
+     {
+      "skill": "close",
+      "stem": "When Claudius turns to \"my cousin Hamlet, and my son,\" Hamlet says aside, \"A little more than kin, and less than kind.\" What does the aside suggest?",
+      "quote": null,
+      "options": [
+       "He is grateful that Claudius has named him the next heir",
+       "He thinks Claudius has no royal blood at all",
+       "He would rather be called a son than a cousin",
+       "He is doubly related to Claudius yet feels no warmth"
+      ],
+      "answer": "D",
+      "why": "As uncle and now stepfather, Claudius is \"more than kin,\" yet Hamlet feels nothing \"kind\" (natural or loving) toward him; the bitter aside rules out gratitude."
+     }
+    ]
+   },
+   "products": {
+    "p5": "cc-hamlet-5-usd",
+    "p7": "cc-hamlet-7-usd"
+   }
   },
   {
    "slug": "scarlet-letter",
@@ -296,13 +338,63 @@
    "first_published": "1850",
    "gutenberg": 25344,
    "units": "The Custom-House and 24 chapters",
-   "status": "soon",
+   "status": "ready",
    "free": false,
    "ap_q3": true,
    "pd_strict": true,
    "subtitle": null,
-   "release": "2026-11-04",
-   "checks_planned": "The Custom-House and 24 chapters"
+   "release": null,
+   "checks": [
+    "The Custom-House",
+    "Chapters 1–2",
+    "Chapters 3–4",
+    "Chapters 5–6",
+    "Chapters 7–8",
+    "Chapters 9–10",
+    "Chapters 11–12",
+    "Chapters 13–14",
+    "Chapters 15–16",
+    "Chapters 17–18",
+    "Chapters 19–20",
+    "Chapters 21–22",
+    "Chapters 23–24"
+   ],
+   "questions": 78,
+   "samples": {
+    "check": "The Custom-House",
+    "questions": [
+     {
+      "skill": "recall",
+      "stem": "According to the narrator, what was the \"chief tragic event\" in the life of the old Inspector?",
+      "quote": null,
+      "options": [
+       "The loss of his savings in a failed trading voyage",
+       "A goose so tough it took an axe and handsaw to divide",
+       "Losing his place when the Whigs came into power",
+       "A shipwreck he barely survived as a young sailor"
+      ],
+      "answer": "B",
+      "why": "The narrator jokes that a goose so tough it needed an axe and handsaw was the old man's great tragedy; the deaths of his three wives and most of his children cost him only \"one brief sigh,\" which is the point of the satire."
+     },
+     {
+      "skill": "close",
+      "stem": "Placing the faded cloth on his chest, the narrator feels \"as if the letter were not of red cloth, but red-hot iron.\" What does this sensation suggest?",
+      "quote": null,
+      "options": [
+       "The old cloth had been treated with a dye that stung the skin",
+       "He suspects the letter is a fake made by some later clerk",
+       "The old symbol still holds a painful, almost bodily power",
+       "He is excited by how much money the relic might bring him"
+      ],
+      "answer": "C",
+      "why": "The letter seems to burn like a brand, so its meaning reaches his feelings before his mind can explain it; he shudders and drops it, which fits none of the practical readings."
+     }
+    ]
+   },
+   "products": {
+    "p5": "cc-scarlet-letter-5-usd",
+    "p7": "cc-scarlet-letter-7-usd"
+   }
   },
   {
    "slug": "wuthering-heights",
@@ -312,13 +404,67 @@
    "first_published": "1847",
    "gutenberg": 768,
    "units": "34 chapters",
-   "status": "soon",
+   "status": "ready",
    "free": false,
    "ap_q3": true,
    "pd_strict": true,
    "subtitle": null,
-   "release": "2026-11-11",
-   "checks_planned": "34 chapters"
+   "release": null,
+   "checks": [
+    "Chapters 1–2",
+    "Chapters 3–4",
+    "Chapters 5–6",
+    "Chapters 7–8",
+    "Chapters 9–10",
+    "Chapters 11–12",
+    "Chapters 13–14",
+    "Chapters 15–16",
+    "Chapters 17–18",
+    "Chapters 19–20",
+    "Chapters 21–22",
+    "Chapters 23–24",
+    "Chapters 25–26",
+    "Chapters 27–28",
+    "Chapters 29–30",
+    "Chapters 31–32",
+    "Chapters 33–34"
+   ],
+   "questions": 102,
+   "samples": {
+    "check": "Chapters 1–2",
+    "questions": [
+     {
+      "skill": "recall",
+      "stem": "In Chapter 1, Lockwood confesses what happened at the seaside last summer when a young woman he admired finally returned his look. What did he do?",
+      "quote": null,
+      "options": [
+       "He proposed to her, but her mother refused to allow the match",
+       "He grew cold until she thought she had been mistaken",
+       "He wrote her a poem and left the coast before she could reply",
+       "He followed her home and was turned away at the door"
+      ],
+      "answer": "B",
+      "why": "Lockwood admits he \"shrunk icily\" into himself until the young woman doubted her own senses and left with her mother; he never declared himself, so there was no proposal or poem."
+     },
+     {
+      "skill": "close",
+      "stem": "Lockwood notices \"a range of gaunt thorns all stretching their limbs one way, as if craving alms of the sun.\" What does this image suggest about the setting?",
+      "quote": null,
+      "options": [
+       "Wind-bent, they look like beggars pleading for warmth",
+       "The trees are carefully trained by Heathcliff's servants",
+       "The house faces south and enjoys unusual sunshine",
+       "The thorns are dying because no one has watered them"
+      ],
+      "answer": "A",
+      "why": "The \"gaunt\" thorns are bent by the north wind and personified as beggars asking the sun for charity, an image of a harsh, starved, exposed place; nobody tends this garden."
+     }
+    ]
+   },
+   "products": {
+    "p5": "cc-wuthering-heights-5-usd",
+    "p7": "cc-wuthering-heights-7-usd"
+   }
   },
   {
    "slug": "jane-eyre",
@@ -328,13 +474,69 @@
    "first_published": "1847",
    "gutenberg": 1260,
    "units": "38 chapters",
-   "status": "soon",
+   "status": "ready",
    "free": false,
    "ap_q3": true,
    "pd_strict": true,
    "subtitle": null,
-   "release": "2026-11-18",
-   "checks_planned": "38 chapters"
+   "release": null,
+   "checks": [
+    "Chapters 1–2",
+    "Chapters 3–4",
+    "Chapters 5–6",
+    "Chapters 7–8",
+    "Chapters 9–10",
+    "Chapters 11–12",
+    "Chapters 13–14",
+    "Chapters 15–16",
+    "Chapters 17–18",
+    "Chapters 19–20",
+    "Chapters 21–22",
+    "Chapters 23–24",
+    "Chapters 25–26",
+    "Chapters 27–28",
+    "Chapters 29–30",
+    "Chapters 31–32",
+    "Chapters 33–34",
+    "Chapters 35–36",
+    "Chapters 37–38"
+   ],
+   "questions": 114,
+   "samples": {
+    "check": "Chapters 1–2",
+    "questions": [
+     {
+      "skill": "recall",
+      "stem": "After John Reed makes Jane fetch the book she was reading behind the curtain, what does he do with it?",
+      "quote": null,
+      "options": [
+       "Tears out the pictures and drops them in the fire",
+       "Hurls it at her, so that she falls and cuts her head",
+       "Hides it and tells his mother that Jane stole it",
+       "Hands it to Eliza and orders Jane out of the breakfast-room"
+      ],
+      "answer": "B",
+      "why": "John throws the volume at Jane; she falls against the door and cuts her head, which is why blood trickles down her neck during the fight. He claims the books are his but does not hide or destroy this one."
+     },
+     {
+      "skill": "close",
+      "stem": "Among Bewick's pictures, Jane lingers over \"the rock standing up alone in a sea of billow and spray\" and a wreck under a cold moon. Why are such images fitting for her that afternoon?",
+      "quote": null,
+      "options": [
+       "They show her plan to run away to sea when she is older",
+       "They echo her own isolation and the storm outside the window",
+       "They are the only pictures the Reeds allow her to look at",
+       "They remind her of a seaside holiday she spent with the Reeds"
+      ],
+      "answer": "B",
+      "why": "Shut out from the family group and gazing at a rain-lashed lawn, Jane is drawn to images of lone rocks and wrecks that mirror her own state; nothing suggests a plan to go to sea or a rule about which pictures she may see."
+     }
+    ]
+   },
+   "products": {
+    "p5": "cc-jane-eyre-5-usd",
+    "p7": "cc-jane-eyre-7-usd"
+   }
   }
  ]
 }

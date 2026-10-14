@@ -93,6 +93,20 @@ test('catalog: at least 3 ready titles, the others dated; every ready paid title
   for (const t of CAT.titles) assert.ok(t.gutenberg > 0 && Number(String(t.first_published).slice(0, 4)) < 1931, `${t.slug}: published before 1931`);
 });
 
+test('released titles: no page still announces a title as coming once every title is ready', () => {
+  const soon = CAT.titles.filter((t) => t.status === 'soon');
+  for (const t of CAT.titles.filter((x) => x.status === 'ready')) {
+    const h = html[`/titles/${t.slug}/index.html`];
+    assert.doesNotMatch(text(h), /Release date:|coming (October|November|December)/, t.slug);
+    if (!t.free) assert.match(h, new RegExp(`order/\\?item=${t.slug}"`), `${t.slug}: buy link`);
+  }
+  const cfg = JSON.parse(html['/order/index.html'].match(/<script type="application\/json" id="order-config">([\s\S]*?)<\/script>/)[1]);
+  assert.deepEqual(cfg.items.filter((i) => i.kind === 'title').map((i) => i.id), CAT.titles.filter((t) => t.status === 'ready' && !t.free).map((t) => t.slug));
+  if (!soon.length) {
+    for (const [p, h] of Object.entries(html)) assert.doesNotMatch(text(h), /by e-mail as each one is released|\d more by|then [A-Z][a-z]+.* on (October|November)/, p);
+  }
+});
+
 test('no paid content in the public site: only the free title has files', () => {
   const sample = files.filter((f) => f.includes('/sample/'));
   const free = CAT.titles.filter((t) => t.free).map((t) => t.slug);

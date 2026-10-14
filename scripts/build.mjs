@@ -29,6 +29,8 @@ const TITLES = CAT.titles;
 const READY = TITLES.filter((t) => t.status === 'ready');
 const PAID = READY.filter((t) => !t.free);
 const SOON = TITLES.filter((t) => t.status === 'soon');
+const LAST = SOON.length ? longDate(SOON[SOON.length - 1].release) : null; // release date of the last title still to come
+const isPlay = (t) => t.slug === 'macbeth' || t.slug === 'hamlet';
 const FREE = READY.find((t) => t.free);
 const P = CAT.prices;
 const OG_ENDPOINT = process.env.OG_ENDPOINT || '';
@@ -154,7 +156,7 @@ pages.push({
 <h1>Reading checks that a summary won't pass</h1>
 <p class="lead">A short check for every chapter or act of ${TITLES.length} public-domain classics, with a key that quotes the line proving each answer. Print it or import it into Canvas or Google Forms. ${priceTitle} a title, and <i>Macbeth</i> is free.</p>
 <p class="cta"><a class="btn" href="${u('free-sample/')}" data-mesure="cta_click">Download Macbeth, free (no e-mail)</a> <a class="textlink" href="#titles">See the ${TITLES.length} titles</a></p>
-<p class="small">${READY.length} titles ready today (${totalChecks} checks, ${totalQ} questions). ${SOON.length} more by ${esc(longDate(SOON[SOON.length - 1].release))}.</p>
+<p class="small">${SOON.length ? `${READY.length} titles ready today (${totalChecks} checks, ${totalQ} questions). ${SOON.length} more by ${esc(LAST)}.` : `All ${READY.length} titles ready today: ${totalChecks} checks, ${totalQ} questions.`}</p>
 </div>
 ${sampleCard(frank, frank.samples.questions[1], 4)}
 </section>
@@ -187,7 +189,7 @@ ${packList}
 <h2>Prices</h2>
 <div class="price-grid">
 <div class="price"><h3>One title</h3><p class="amount">${priceTitle}</p><p>Every check of one title, for your own classes.</p><p><a class="btn" href="${u('order/')}" data-mesure="cta_click">Choose a title</a></p></div>
-<div class="price main"><h3>All ${TITLES.length} titles</h3><p class="amount">${usd(P.bundle)}</p><p>The ${READY.length} titles ready today now, and ${SOON.map((t) => `<i>${esc(t.title)}</i>`).join(', ').replace(/, ([^,]*)$/, ' and $1')} by e-mail as each one is released (last one ${esc(longDate(SOON[SOON.length - 1].release))}).</p><p><a class="btn" href="${u('order/?item=bundle')}" data-mesure="cta_click">Buy the ${TITLES.length} titles, ${usd(P.bundle)}</a></p></div>
+<div class="price main"><h3>All ${TITLES.length} titles</h3><p class="amount">${usd(P.bundle)}</p><p>${SOON.length ? `The ${READY.length} titles ready today now, and ${SOON.map((t) => `<i>${esc(t.title)}</i>`).join(', ').replace(/, ([^,]*)$/, ' and $1')} by e-mail as each one is released (last one ${esc(LAST)}).` : `Every check of all ${TITLES.length} titles (${totalChecks} checks), for your own classes, in one e-mail.`}</p><p><a class="btn" href="${u('order/?item=bundle')}" data-mesure="cta_click">Buy the ${TITLES.length} titles, ${usd(P.bundle)}</a></p></div>
 <div class="price"><h3>School licence</h3><p class="amount">${usd(P.school)}</p><p>All titles for every English teacher in one school, until June 30, 2027. Invoice in the school's name.</p><p><a class="btn" href="${u('order/?item=school')}" data-mesure="cta_click">License my school</a></p></div>
 </div>
 <p class="small">Card payment in US dollars, for buyers in the United States during this launch. The files arrive by e-mail a few minutes after payment. Full refund within 14 days if they do not suit you.</p>
@@ -260,11 +262,11 @@ for (const t of TITLES) {
     path: `titles/${t.slug}/`,
     title: `${fullTitle(t)} chapter quizzes with answer key: printable and LMS-ready checks`,
     description: ready
-      ? `${t.checks.length} ${t.slug === 'macbeth' ? 'act' : 'chapter'} checks on ${fullTitle(t)} by ${t.author}, ${t.questions} questions, answer key with text evidence, rubric, Canvas QTI and Google Forms.${t.free ? ' Free.' : ''}`
+      ? `${t.checks.length} ${isPlay(t) ? 'act' : 'chapter'} checks on ${fullTitle(t)} by ${t.author}, ${t.questions} questions, answer key with text evidence, rubric, Canvas QTI and Google Forms.${t.free ? ' Free.' : ''}`
       : `${fullTitle(t)} by ${t.author}: chapter checks with answer key and rubric, coming ${longDate(t.release)}. Included in the ${TITLES.length}-title set.`,
     ld,
     body: `<p class="eyebrow">${esc(t.author)} · ${ready ? (t.free ? 'free' : 'ready') : 'coming ' + esc(longDate(t.release))}</p>
-<h1><i>${esc(t.title)}</i>${t.subtitle ? ` (${esc(t.subtitle)})` : ''}: ${t.slug === 'macbeth' || t.slug === 'hamlet' ? 'act' : 'chapter'} checks</h1>
+<h1><i>${esc(t.title)}</i>${t.subtitle ? ` (${esc(t.subtitle)})` : ''}: ${isPlay(t) ? 'act' : 'chapter'} checks</h1>
 ${ready ? `<p class="lead">${t.checks.length} checks, ${t.questions} questions, answer key with the line of the text behind each answer, and a rubric for each written answer.</p>
 ${buy}
 <h2>Checks</h2>
@@ -275,7 +277,7 @@ ${buy}`}
 <h2>What you get</h2>
 ${packList}
 <h2>Edition and public-domain status</h2>
-<p>Text used: Project Gutenberg eBook #${t.gutenberg} (<a href="https://www.gutenberg.org/ebooks/${t.gutenberg}" rel="noopener">gutenberg.org/ebooks/${t.gutenberg}</a>). ${pd} Questions refer to ${t.slug === 'macbeth' || t.slug === 'hamlet' ? 'acts and scenes' : 'chapters'}, not pages.</p>
+<p>Text used: Project Gutenberg eBook #${t.gutenberg} (<a href="https://www.gutenberg.org/ebooks/${t.gutenberg}" rel="noopener">gutenberg.org/ebooks/${t.gutenberg}</a>). ${pd} Questions refer to ${isPlay(t) ? 'acts and scenes' : 'chapters'}, not pages.</p>
 ${t.slug === 'frankenstein-1831' ? '<p>This is the revised 1831 text, the one most school editions print. Some classes read the 1818 text, which differs in places (for example, Elizabeth is Victor\'s cousin in 1818 and an adopted orphan in 1831).</p>' : ''}
 <p><a href="${u('')}#titles">All titles</a></p>`,
   });
@@ -329,7 +331,7 @@ ${TITLES.map((t) => `<tr><td><i>${esc(fullTitle(t))}</i></td><td>${t.author_died
 // Order page --------------------------------------------------------------------------------------------------
 const items = [
   ...PAID.map((t) => ({ id: t.slug, label: `${fullTitle(t)}: ${t.checks.length} checks`, kind: 'title', products: t.products })),
-  { id: 'bundle', label: `All ${TITLES.length} titles (${READY.length} now, ${SOON.length} by ${longDate(SOON[SOON.length - 1].release)})`, kind: 'bundle', product: CAT.products.bundle, amount: P.bundle },
+  { id: 'bundle', label: SOON.length ? `All ${TITLES.length} titles (${READY.length} now, ${SOON.length} by ${LAST})` : `All ${TITLES.length} titles`, kind: 'bundle', product: CAT.products.bundle, amount: P.bundle },
   { id: 'school', label: `School licence: all titles, every teacher in one school, until June 30, 2027`, kind: 'school', product: CAT.products.school, amount: P.school },
 ];
 const orderCfg = { venture: VENTURE, prices: P, items: items.map((i) => ({ id: i.id, kind: i.kind, products: i.products, product: i.product, amount: i.amount })),
@@ -348,7 +350,7 @@ pages.push({
 ${PAID.map((t) => `<label><input type="radio" name="item" value="${t.slug}"> <i>${esc(fullTitle(t))}</i> <span class="muted">${t.checks.length} checks, ${t.questions} questions</span></label>`).join('\n')}
 </fieldset>
 <fieldset><legend>More than one title</legend>
-<label><input type="radio" name="item" value="bundle"> All ${TITLES.length} titles, <b>${usd(P.bundle)}</b> <span class="muted">${READY.length} now (${READY.map((t) => esc(t.title)).join(', ')}), then ${SOON.map((t) => `${esc(t.title)} on ${esc(longDate(t.release))}`).join(', ')}</span></label>
+<label><input type="radio" name="item" value="bundle"> All ${TITLES.length} titles, <b>${usd(P.bundle)}</b> <span class="muted">${SOON.length ? `${READY.length} now (${READY.map((t) => esc(t.title)).join(', ')}), then ${SOON.map((t) => `${esc(t.title)} on ${esc(longDate(t.release))}`).join(', ')}` : `${READY.map((t) => esc(t.title)).join(', ')}: ${totalChecks} checks, all delivered at once`}</span></label>
 <label><input type="radio" name="item" value="school"> School licence, <b>${usd(P.school)}</b> <span class="muted">all titles for every English teacher in one school until June 30, 2027; tick "I am buying for a company" and enter the school's name for the invoice</span></label>
 </fieldset>
 </form>

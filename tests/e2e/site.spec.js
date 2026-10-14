@@ -40,6 +40,18 @@ test('answer key reveal and the A/B price swap ($5 by default, $7 with ?prix=p7)
   await expect(d.locator('p')).toBeVisible();
 });
 
+test('the four titles released ahead of their dates are on sale: title page, then the checkout for that title', async ({ page }) => {
+  for (const slug of ['hamlet', 'scarlet-letter', 'wuthering-heights', 'jane-eyre']) {
+    await page.goto(nt(`titles/${slug}/?prix=p5`));
+    await expect(page.locator('.eyebrow').first()).toContainText('ready');
+    await expect(page.locator('ol.checks li').first()).toBeVisible();
+    await page.locator(`a.btn[href$="order/?item=${slug}"]`).click();
+    await expect(page.locator('#picked')).toHaveAttribute('data-product', `cc-${slug}-5-usd`);
+  }
+  await page.waitForSelector('#ogc-pay', { timeout: 30000 });
+  await expect(page.locator('#ogc-pay')).toContainText('$5.00');
+});
+
 test('order page: the checkout mounts for the chosen item with the US as the only country', async ({ page }) => {
   await page.goto(nt('order/?item=bundle'));
   await expect(page.locator('#picked')).toHaveAttribute('data-product', 'cc-bundle-29-usd');
