@@ -1,0 +1,17 @@
+{
+  "name": "chapter-checks",
+  "version": "0.1.0",
+  "description": "Chapter Checks by READ FRANCE: printable and LMS-importable chapter checks on public-domain classics for US AP Literature and grade 11-12 English teachers.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node --test tests/unit/*.test.mjs",
+    "serve": "node scripts/serve.mjs",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0"
+  }
+}
