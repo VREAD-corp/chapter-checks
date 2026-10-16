@@ -6,8 +6,10 @@
  *    Optional: type one check id (for example act-1) in cell Z1 of the sheet to make that check only.
  * 3. The links are written in a sheet tab named "Forms".
  *
- * Multiple-choice items get their answer key and 1 point; the written answer is a paragraph item worth 2 points
- * that you grade with the rubric of the answer key PDF. Nothing is sent anywhere: the forms are created in your
+ * Multiple-choice items get their answer key and 1 point; the reading checkpoint (one word from the text) is a
+ * short-answer item worth 1 point, with the expected word in the answer key PDF (Google Forms does not let a script
+ * set a short-answer key: mark it in the Responses tab); the written answer is a paragraph item worth 2 points that
+ * you grade with the rubric of the answer key PDF. Nothing is sent anywhere: the forms are created in your
  * own Google Drive, and this script reads only the active spreadsheet.
  * © 2026 READ FRANCE SAS. Licensed with the questions to the purchasing teacher or school.
  */
@@ -39,8 +41,15 @@ function createQuizzes() {
     form.setIsQuiz(true);
     form.setDescription('Answer from your reading of ' + c.label + '. Choose the best answer; write two or three sentences for the last question.');
     form.addTextItem().setTitle('Your name').setRequired(true);
-    c.rows.forEach(function (row, i) {
-      var title = (i + 1) + '. ' + row[col.question];
+    var n = 0;
+    c.rows.forEach(function (row) {
+      if (row[col.type] === 'one_word') {
+        form.addTextItem().setTitle('Reading checkpoint. ' + row[col.question] + ' (one word from the text)')
+          .setPoints(Number(row[col.points]) || 1).setRequired(true);
+        return;
+      }
+      n++;
+      var title = n + '. ' + row[col.question];
       if (row[col.type] === 'multiple_choice') {
         var item = form.addMultipleChoiceItem().setTitle(title).setPoints(Number(row[col.points]) || 1).setRequired(true);
         var key = String(row[col.correct_letter]).trim().toUpperCase();

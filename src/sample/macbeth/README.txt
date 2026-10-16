@@ -1,7 +1,8 @@
 Macbeth by William Shakespeare: chapter checks
-Chapter Checks by READ FRANCE · version 2026.10 · https://outils.vread.fr/chapter-checks/
+Chapter Checks by READ FRANCE · version 2026.10.2 · https://outils.vread.fr/chapter-checks/
 
-5 checks, 40 questions, answer key with rationale and text evidence, rubric for every written answer.
+5 checks, 40 questions, and one one-word reading checkpoint per check, answer key with rationale
+and text evidence, rubric for every written answer.
 
 FILES
   macbeth-student-checks.pdf
@@ -17,8 +18,8 @@ PRINT
 
 CANVAS (QTI 1.2)
   Course > Settings > Import Course Content > Content Type "QTI .zip file" > choose macbeth-qti-1.2.zip.
-  Each check becomes one quiz. Multiple-choice items grade themselves; the written answer is an essay question
-  (2 points) that you grade with the rubric in the answer key.
+  Each check becomes one quiz. Multiple-choice items and the reading checkpoint (a one-word short answer) grade
+  themselves; the written answer is an essay question (2 points) that you grade with the rubric in the answer key.
 
 SCHOOLOGY
   Schoology imports QTI 1.2 files into a question bank or a test. Use the same ZIP. We have not tested the import
@@ -33,7 +34,8 @@ GOOGLE FORMS (one quiz per check, answer key set)
 
 OTHER TOOLS
   macbeth-questions.csv has one row per question: question, options A to D, correct letter and text, points,
-  model answer and rubric. Most quiz tools that import a spreadsheet can map these columns.
+  model answer and rubric. Rows of type one_word are the reading checkpoints (number CP, the expected word in
+  correct_answer). Most quiz tools that import a spreadsheet can map these columns.
 
 THE TEXT
   Text used: Macbeth by William Shakespeare, Project Gutenberg eBook #1533 (gutenberg.org/ebooks/1533). First published 1623 (First Folio). Questions refer to 5 acts, never to page numbers, so they work with any complete edition.

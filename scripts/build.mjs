@@ -114,6 +114,17 @@ function sampleCard(t, q, n, open = false) {
 </figure>`;
 }
 
+function checkpointCard(t) {
+  const cp = t.samples && t.samples.checkpoint;
+  if (!cp) return '';
+  return `<figure class="qcard cp">
+<figcaption>${esc(t.title)} · ${esc(t.samples.check)} · reading checkpoint</figcaption>
+<p class="stem">${esc(cp.question)}</p>
+<p class="muted">Answer: one word from the text.</p>
+<details><summary>Answer key</summary><p><b>${esc(cp.answer)}</b>. “${esc(cp.evidence)}”</p></details>
+</figure>`;
+}
+
 function titleRow(t) {
   const name = `<a href="${u(`titles/${t.slug}/`)}">${esc(fullTitle(t))}</a>`;
   const scope = t.status === 'ready' ? `${t.checks.length} checks, ${t.questions} questions` : esc(t.checks_planned);
@@ -127,6 +138,7 @@ const titleTable = `<div class="table-wrap"><table class="titles">
 
 const packList = `<ul class="pack">
 <li><b>Student checks (PDF, US Letter).</b> Name, date and score lines; each check starts on a new page.</li>
+<li><b>A reading checkpoint per check.</b> One open question on a concrete detail from the middle of the act or chapters, answered with one word of the text. A study-guide summary does not give it.</li>
 <li><b>Answer key (PDF, kept apart).</b> The right letter, one line on why, and the line of the text that proves it. A 2-1-0 rubric for every written answer.</li>
 <li><b>Canvas and Schoology.</b> A QTI 1.2 ZIP: one quiz per check, multiple choice graded automatically.</li>
 <li><b>Google Forms.</b> A CSV and a short script that turns it into one self-grading quiz per check, in your own Drive.</li>
@@ -231,7 +243,8 @@ pages.push({
 </ul>
 </div>
 <h2>What is inside</h2>
-<p>One check per act, eight questions each: three on details, two on inference, two on a quoted line, and one written answer. ${FREE.samples ? 'Two questions from Act 1:' : ''}</p>
+<p>One check per act, eight questions each: three on details, two on inference, two on a quoted line, and one written answer${FREE.samples.checkpoint ? ', opened by a one-word reading checkpoint' : ''}. ${FREE.samples ? 'From Act 1:' : ''}</p>
+${checkpointCard(FREE)}
 ${FREE.samples.questions.map((q, i) => sampleCard(FREE, q, i === 0 ? 1 : 6)).join('')}
 <h2>Import it</h2>
 <ol>
@@ -271,7 +284,8 @@ ${ready ? `<p class="lead">${t.checks.length} checks, ${t.questions} questions, 
 ${buy}
 <h2>Checks</h2>
 <ol class="checks">${t.checks.map((c) => `<li>${esc(c)}</li>`).join('')}</ol>
-<h2>Two questions from ${esc(t.samples.check)}</h2>
+<h2>${t.samples.checkpoint ? 'The reading checkpoint and two questions' : 'Two questions'} from ${esc(t.samples.check)}</h2>
+${checkpointCard(t)}
 ${t.samples.questions.map((q, i) => sampleCard(t, q, i + 1)).join('')}` : `<p class="lead">Checks for ${esc(t.checks_planned)}, with answer key and rubric, in the same format as the titles that are ready.</p>
 ${buy}`}
 <h2>What you get</h2>

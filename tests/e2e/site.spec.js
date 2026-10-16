@@ -61,3 +61,15 @@ test('order page: the checkout mounts for the chosen item with the US as the onl
   await expect(page.locator('#picked')).toHaveAttribute('data-product', 'cc-school-249-usd');
   await expect(page.locator('#ogc-pay')).toContainText('$249.00');
 });
+
+test('reading checkpoints: one-word checkpoint card on the free sample and the title pages, in the free CSV', async ({ page, request }) => {
+  await page.goto(nt('free-sample/'));
+  await expect(page.locator('.qcard.cp')).toHaveCount(1);
+  await expect(page.locator('.qcard.cp figcaption')).toContainText('reading checkpoint');
+  await page.goto(nt('titles/jane-eyre/'));
+  await expect(page.locator('.qcard.cp')).toHaveCount(1);
+  await page.goto(nt('free-sample/'));
+  const csv = await page.$eval('.downloads a[href$=".csv"]', (a) => a.href);
+  const body = (await (await request.get(csv)).body()).toString('utf8');
+  expect(body.split('\n').filter((l) => l.includes(',one_word,')).length).toBe(5);
+});
