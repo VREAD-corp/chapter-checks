@@ -128,3 +128,45 @@ test('anti-AI grid: lint-ia >= 85 on every page (when the linter is given)', { s
   const res = JSON.parse(out);
   for (const r of Array.isArray(res) ? res : res.files) assert.ok(r.score >= 85, `${r.file}: ${r.score}`);
 });
+
+test('study pages: one per ready title, with overview rows, passages, 3 pack questions, AP section and one buy button', () => {
+  const AP = JSON.parse(readFileSync(join(ROOT, 'data/ap-q3.json'), 'utf8'));
+  const sm = readFileSync(join(DIST, 'sitemap.xml'), 'utf8');
+  for (const t of CAT.titles.filter((x) => x.status === 'ready')) {
+    const st = JSON.parse(readFileSync(join(ROOT, 'data/study', `${t.slug}.json`), 'utf8'));
+    const h = html[`/study/${t.slug}/index.html`];
+    assert.ok(h, `${t.slug}: study page`);
+    assert.equal(st.checks.length, t.checks.length, `${t.slug}: one overview per check`);
+    assert.equal((h.match(/<table class="titles units">[\s\S]*?<\/table>/)[0].match(/<tr>/g) || []).length - 1, t.checks.length, `${t.slug}: rows`);
+    assert.ok(st.passages.length >= 5 && st.passages.length <= 6, `${t.slug}: passages`);
+    assert.equal((h.match(/<figure class="passage">/g) || []).length, st.passages.length);
+    for (const p of st.passages) assert.ok(p.quote.split(/\s+/).length <= 45 && /^(Act \d, Scene \d|Chapter \d+|Letter|The Custom-House)/.test(p.ref), `${t.slug}: ${p.ref}`);
+    assert.equal(st.samples.length, 3, `${t.slug}: 3 questions from the pack, no more`);
+    assert.equal(new Set(st.samples.map((q) => q.check)).size, 3, `${t.slug}: from 3 different checks`);
+    assert.equal((h.match(/<figure class="qcard">/g) || []).length, 3);
+    for (const q of st.samples) assert.ok(!t.samples.questions.some((x) => x.stem === q.stem), `${t.slug}: not the title-page samples`);
+    assert.equal(st.qa.failing, 0);
+    assert.equal(st.qa.leak, 0);
+    const n = AP.lists.filter((l) => l.titles.includes(t.slug)).length;
+    assert.match(text(h), n ? new RegExp(`printed in ${n} of the ${AP.lists.length} question-3 lists`) : /is not printed in any of the/, `${t.slug}: AP claim matches the lists`);
+    const btns = [...h.matchAll(/<a class="btn" href="([^"]+)"/g)].map((m) => m[1]);
+    assert.deepEqual(btns, [t.free ? '/chapter-checks/free-sample/' : `/chapter-checks/order/?item=${t.slug}`], `${t.slug}: one CTA`);
+    for (const l of ['/chapter-checks/', `/chapter-checks/titles/${t.slug}/`, '/chapter-checks/ap-literature/']) assert.ok(h.includes(`href="${l}"`), `${t.slug}: link ${l}`);
+    const ld = [...h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]))[0]['@graph'];
+    assert.ok(ld.some((x) => x['@type'] === 'Article' && x.datePublished === st.updated) && ld.some((x) => x['@type'] === 'BreadcrumbList'), `${t.slug}: JSON-LD`);
+    assert.match(sm, new RegExp(`study/${t.slug}/</loc><lastmod>${st.updated}</lastmod>`));
+    assert.ok(html[`/titles/${t.slug}/index.html`].includes(`href="/chapter-checks/study/${t.slug}/"`), `${t.slug}: title page links to the guide`);
+    assert.match(h, /AI assistant/, `${t.slug}: AI authorship disclosed`);
+  }
+});
+
+test('AP question 3 data: 7 lists checked on 2026-10-17, Hamlet in none, home and AP page use the same counts', () => {
+  const AP = JSON.parse(readFileSync(join(ROOT, 'data/ap-q3.json'), 'utf8'));
+  assert.equal(AP.lists.length, 7);
+  assert.equal(AP.checked, '2026-10-17');
+  const n = (s) => AP.lists.filter((l) => l.titles.includes(s)).length;
+  assert.deepEqual(['jane-eyre', 'frankenstein-1831', 'wuthering-heights', 'the-awakening', 'scarlet-letter', 'macbeth', 'great-gatsby', 'hamlet'].map(n), [6, 5, 5, 5, 4, 3, 1, 0]);
+  for (const l of AP.lists) assert.match(l.url, /^https:\/\/apcentral\.collegeboard\.org\/media\/pdf\/ap2[3-6]-frq-english-lit/);
+  assert.match(text(html['/index.html']), /Macbeth in three and The Great Gatsby in one\. Hamlet is in none/);
+  assert.doesNotMatch(text(html['/index.html']), /other three are the classroom staples/);
+});

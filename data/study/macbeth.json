@@ -1,0 +1,161 @@
+{
+ "slug": "macbeth",
+ "updated": "2026-10-17",
+ "about": [
+  "The play is short: 18,024 words in the Project Gutenberg text we use, against 31,707 for Hamlet. Acts 1, 3 and 4 are about the same length (close to 4,000 words each); Act 2, the murder and its discovery, is the shortest at 2,869.",
+  "Where students lose the thread: the three titles in Act 1 (Glamis, Cawdor, king), the deaths the play keeps offstage (Duncan in Act 2, Lady Macduff in Act 4, Lady Macbeth in Act 5), and young Siward and his father in Act 5. A check after each act catches the confusion before it carries into the next one."
+ ],
+ "checks": [
+  {
+   "id": "act-1",
+   "label": "Act 1",
+   "units": [
+    "act-1"
+   ],
+   "words": 4020,
+   "overview": "The witches hail Macbeth as Thane of Glamis, Thane of Cawdor and future king; the second title comes true at once. Duncan names Malcolm his heir and visits Inverness, where Lady Macbeth talks her hesitating husband into murder."
+  },
+  {
+   "id": "act-2",
+   "label": "Act 2",
+   "units": [
+    "act-2"
+   ],
+   "words": 2869,
+   "overview": "Macbeth sees a dagger before him and kills Duncan; Lady Macbeth returns the daggers and smears the guards. The porter lets in Macduff, who finds the body. Malcolm and Donalbain flee, and Macbeth goes to Scone to be crowned."
+  },
+  {
+   "id": "act-3",
+   "label": "Act 3",
+   "units": [
+    "act-3"
+   ],
+   "words": 3959,
+   "overview": "Now king, Macbeth fears Banquo and hires murderers; Banquo dies but Fleance escapes. At the banquet, Banquo's ghost sits in Macbeth's seat. Macduff has gone to England to ask for an army."
+  },
+  {
+   "id": "act-4",
+   "label": "Act 4",
+   "units": [
+    "act-4"
+   ],
+   "words": 3976,
+   "overview": "The witches' apparitions warn Macbeth about Macduff, promise that no man born of woman can harm him, and name Birnam Wood. He has Macduff's family murdered. In England, Malcolm tests Macduff before they march."
+  },
+  {
+   "id": "act-5",
+   "label": "Act 5",
+   "units": [
+    "act-5"
+   ],
+   "words": 3200,
+   "overview": "Lady Macbeth walks in her sleep and later dies. The soldiers carry branches from Birnam Wood to Dunsinane. Macduff reveals how he was born and kills Macbeth, and Malcolm is hailed as king."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "act-1",
+   "ref": "Act 1, Scene 3",
+   "speaker": "Banquo to Macbeth",
+   "quote": "And oftentimes to win us to our harm, / The instruments of darkness tell us truths; / Win us with honest trifles, to betray’s / In deepest consequence.",
+   "note": "Spoken just after Ross and Angus confirm the first prophecy. Banquo hears the same witches and draws the opposite lesson; Macbeth's aside follows at once. A useful pair for a first written answer on the two men."
+  },
+  {
+   "unit": "act-1",
+   "ref": "Act 1, Scene 5",
+   "speaker": "Lady Macbeth, alone",
+   "quote": "Come, you spirits / That tend on mortal thoughts, unsex me here, / And fill me, from the crown to the toe, top-full / Of direst cruelty!",
+   "note": "She has just read her husband's letter and learned that Duncan is coming that night. The speech asks for what she thinks a woman lacks; set it beside Act 5, Scene 1, where the cruelty she asked for has not held."
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2, Scene 1",
+   "speaker": "Macbeth, alone",
+   "quote": "Is this a dagger which I see before me, / The handle toward my hand? Come, let me clutch thee:— / I have thee not, and yet I see thee still.",
+   "note": "Spoken just before the murder. Students can track how often the play asks whether something seen is real: the dagger here, Banquo's ghost in Act 3, the apparitions in Act 4."
+  },
+  {
+   "unit": "act-3",
+   "ref": "Act 3, Scene 4",
+   "speaker": "Macbeth to Lady Macbeth",
+   "quote": "I am in blood / Stepp’d in so far that, should I wade no more, / Returning were as tedious as go o’er.",
+   "note": "After the banquet and the ghost. He decides to go to the witches again. Ask students what has changed since his hesitation in Act 1, Scene 7."
+  },
+  {
+   "unit": "act-4",
+   "ref": "Act 4, Scene 3",
+   "speaker": "Macduff",
+   "quote": "All my pretty ones? / Did you say all?—O hell-kite!—All? / What, all my pretty chickens and their dam / At one fell swoop?",
+   "note": "Ross has just told him what happened at Fife. Malcolm answers \"Dispute it like a man\", and Macduff's reply questions what being a man means, the word Lady Macbeth used against her husband in Act 1."
+  },
+  {
+   "unit": "act-5",
+   "ref": "Act 5, Scene 5",
+   "speaker": "Macbeth",
+   "quote": "Tomorrow, and tomorrow, and tomorrow, / Creeps in this petty pace from day to day, / To the last syllable of recorded time;",
+   "note": "His answer to the news of his wife's death, a few lines before the messenger reports that the wood is moving. The speech is often taught alone; reading it in its scene shows how little time he gives the news."
+  }
+ ],
+ "samples": [
+  {
+   "check": "Act 1",
+   "skill": "inference",
+   "stem": "When Macbeth stands lost in thought after Ross's news, what does Banquo suggest to the others is the cause?",
+   "quote": null,
+   "options": [
+    "He is worn out by the day's fighting",
+    "He pities the condemned Thane of Cawdor",
+    "He is still shaken by the witches",
+    "He is not yet used to his new honors"
+   ],
+   "answer": "D",
+   "why": "Banquo covers for Macbeth by comparing new honors to new clothes that fit only with wear, implying he is simply adjusting to his title; he says nothing of fatigue, pity or the witches to Ross and Angus.",
+   "evidence": [
+    "Look, how our partner's rapt.",
+    "New honours come upon him, Like our strange garments, cleave not to their mould But with the aid of use."
+   ]
+  },
+  {
+   "check": "Act 3",
+   "skill": "recall",
+   "stem": "After Banquo leaves, until what hour does Macbeth tell his lords to be masters of their own time?",
+   "quote": null,
+   "options": [
+    "Seven at night",
+    "Midnight",
+    "Noon tomorrow",
+    "Sunset"
+   ],
+   "answer": "A",
+   "why": "Macbeth frees his court \"Till seven at night\" so he can keep himself alone until supper, the hour Banquo must be back for the feast.",
+   "evidence": [
+    "Let every man be master of his time Till seven at night;"
+   ]
+  },
+  {
+   "check": "Act 5",
+   "skill": "close",
+   "stem": "Arming for battle, Macbeth tells the Doctor, \"If thou couldst, doctor, cast The water of my land, find her disease, And purge it to a sound and pristine health.\" What disease of his land does he mean?",
+   "quote": null,
+   "options": [
+    "His wife's troubled mind",
+    "Famine spreading through the countryside",
+    "The witches' curse upon his crown",
+    "The English forces he wants scoured out"
+   ],
+   "answer": "D",
+   "why": "Having spoken of his wife, Macbeth turns the medical talk to his kingdom and at once asks what purgative \"Would scour these English hence\": the disease is the invading army. Famine is something he wishes on the besiegers in Scene 5, not a disease of his land.",
+   "evidence": [
+    "What rhubarb, senna, or what purgative drug, Would scour these English hence?",
+    "If thou couldst, doctor, cast The water of my land, find her disease, And purge it to a sound and pristine health,"
+   ]
+  }
+ ],
+ "qa": {
+  "items": 40,
+  "pass": 39,
+  "partial": 1,
+  "leak": 0,
+  "failing": 0
+ }
+}

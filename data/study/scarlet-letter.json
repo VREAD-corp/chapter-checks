@@ -1,0 +1,245 @@
+{
+ "slug": "scarlet-letter",
+ "updated": "2026-10-17",
+ "about": [
+  "Project Gutenberg eBook #25344 has 83,084 words, and the introductory essay, The Custom-House, takes 14,828 of them: about 18 % of the book, longer than any two chapters together. The pack gives it a check of its own, so a class that skips the essay can drop that check without touching the other twelve.",
+  "Where students lose the thread: who knows what, and when. Hester learns who Chillingworth is in Chapter 4, and so does the reader; Dimmesdale learns it only in Chapter 17. Time also jumps: Pearl is a baby in Chapter 2, about three in Chapter 7 and seven in Chapter 13, and her age is the easiest way to keep track."
+ ],
+ "checks": [
+  {
+   "id": "custom-house",
+   "label": "The Custom-House",
+   "units": [
+    "custom-house"
+   ],
+   "words": 14828,
+   "overview": "The narrator describes his years as Surveyor of the Salem Custom-House, his Puritan ancestors and the sleepy officials. In an upstairs room he finds a faded scarlet letter A and papers about Hester Prynne."
+  },
+  {
+   "id": "ch-01-02",
+   "label": "Chapters 1–2",
+   "units": [
+    "ch-01",
+    "ch-02"
+   ],
+   "words": 3966,
+   "overview": "A grim crowd waits before the Boston prison, beside which grows a wild rose bush. Hester Prynne comes out with her baby and the embroidered letter A, and stands on the scaffold."
+  },
+  {
+   "id": "ch-03-04",
+   "label": "Chapters 3–4",
+   "units": [
+    "ch-03",
+    "ch-04"
+   ],
+   "words": 5550,
+   "overview": "From the scaffold Hester recognizes a stranger with one shoulder higher than the other. She refuses to name the father. In prison the stranger, now calling himself Roger Chillingworth, makes her swear to keep his identity secret."
+  },
+  {
+   "id": "ch-05-06",
+   "label": "Chapters 5–6",
+   "units": [
+    "ch-05",
+    "ch-06"
+   ],
+   "words": 6876,
+   "overview": "Hester settles in a cottage at the edge of town and lives by her needlework. She names her daughter Pearl, a wild child fascinated by the letter."
+  },
+  {
+   "id": "ch-07-08",
+   "label": "Chapters 7–8",
+   "units": [
+    "ch-07",
+    "ch-08"
+   ],
+   "words": 5591,
+   "overview": "At Governor Bellingham's mansion, the leaders consider taking Pearl from Hester. Dimmesdale speaks for her, and she keeps her daughter."
+  },
+  {
+   "id": "ch-09-10",
+   "label": "Chapters 9–10",
+   "units": [
+    "ch-09",
+    "ch-10"
+   ],
+   "words": 6812,
+   "overview": "Chillingworth becomes Dimmesdale's physician and moves into the same house. He probes the minister's secret and, finding him asleep, looks at his chest."
+  },
+  {
+   "id": "ch-11-12",
+   "label": "Chapters 11–12",
+   "units": [
+    "ch-11",
+    "ch-12"
+   ],
+   "words": 6209,
+   "overview": "Chillingworth torments the minister in secret. Dimmesdale climbs the scaffold at night, where Hester and Pearl join him, and a meteor lights the sky."
+  },
+  {
+   "id": "ch-13-14",
+   "label": "Chapters 13–14",
+   "units": [
+    "ch-13",
+    "ch-14"
+   ],
+   "words": 5182,
+   "overview": "Seven years on, Hester has won respect through her work for the poor and sick. She confronts Chillingworth by the shore and tells him she will reveal who he is."
+  },
+  {
+   "id": "ch-15-16",
+   "label": "Chapters 15–16",
+   "units": [
+    "ch-15",
+    "ch-16"
+   ],
+   "words": 4493,
+   "overview": "Pearl asks what the letter means, and Hester gives her a false answer. Hester then goes with Pearl into the forest to meet Dimmesdale alone."
+  },
+  {
+   "id": "ch-17-18",
+   "label": "Chapters 17–18",
+   "units": [
+    "ch-17",
+    "ch-18"
+   ],
+   "words": 5393,
+   "overview": "In the forest Hester tells Dimmesdale that Chillingworth is her husband. They decide to leave together; she throws away the letter and lets down her hair."
+  },
+  {
+   "id": "ch-19-20",
+   "label": "Chapters 19–20",
+   "units": [
+    "ch-19",
+    "ch-20"
+   ],
+   "words": 6234,
+   "overview": "Pearl will not cross the brook until her mother puts the letter back on. Returning to town, Dimmesdale is tempted to do wicked things and writes a new Election Sermon."
+  },
+  {
+   "id": "ch-21-22",
+   "label": "Chapters 21–22",
+   "units": [
+    "ch-21",
+    "ch-22"
+   ],
+   "words": 6820,
+   "overview": "On Election Day the ship's captain tells Hester that Chillingworth has booked passage too. Hester listens to the sermon from beside the scaffold."
+  },
+  {
+   "id": "ch-23-24",
+   "label": "Chapters 23–24",
+   "units": [
+    "ch-23",
+    "ch-24"
+   ],
+   "words": 5130,
+   "overview": "After the sermon Dimmesdale climbs the scaffold with Hester and Pearl, confesses and dies. The conclusion follows Chillingworth, Pearl and Hester to the end of their lives."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "custom-house",
+   "ref": "The Custom-House",
+   "speaker": "Narrator",
+   "quote": "it seemed to me, then, that I experienced a sensation not altogether physical, yet almost so, of burning heat; and as if the letter were not of red cloth, but red-hot iron.",
+   "note": "The narrator places the faded letter on his own chest. If your class skips The Custom-House, this one paragraph is worth reading aloud before Chapter 1: it sets up the letter as an object with a history."
+  },
+  {
+   "unit": "ch-01",
+   "ref": "Chapter 1",
+   "speaker": "Narrator",
+   "quote": "But on one side of the portal, and rooted almost at the threshold, was a wild rose-bush, covered, in this month of June, with its delicate gems,",
+   "note": "The rose bush beside the prison door. The narrator offers one of its roses to the reader at the end of the chapter; Pearl claims a connection to it in Chapter 8."
+  },
+  {
+   "unit": "ch-02",
+   "ref": "Chapter 2",
+   "speaker": "Narrator",
+   "quote": "On the breast of her gown, in fine red cloth, surrounded with an elaborate embroidery and fantastic flourishes of gold-thread, appeared the letter A.",
+   "note": "The first description of the letter, which Hester has embroidered herself. Ask students what the gold thread does to the punishment, and how the townspeople watching her take it."
+  },
+  {
+   "unit": "ch-13",
+   "ref": "Chapter 13",
+   "speaker": "Narrator",
+   "quote": "They said that it meant Able; so strong was Hester Prynne, with a woman’s strength.",
+   "note": "Seven years after the scaffold. The letter has not changed; what people read in it has. A good start for a written answer that follows one symbol across the novel."
+  },
+  {
+   "unit": "ch-18",
+   "ref": "Chapter 18",
+   "speaker": "Narrator",
+   "quote": "So speaking, she undid the clasp that fastened the scarlet letter, and, taking it from her bosom, threw it to a distance among the withered leaves.",
+   "note": "In the forest, after Hester and Dimmesdale decide to leave. The next chapter tests the gesture through Pearl's reaction; read the two chapters together."
+  },
+  {
+   "unit": "ch-24",
+   "ref": "Chapter 24",
+   "speaker": "Narrator",
+   "quote": "“Be true! Be true! Be true! Show freely to the world, if not your worst, yet some trait whereby the worst may be inferred!”",
+   "note": "The one moral the narrator says he will draw from the minister's story. Ask students whether the novel as a whole agrees with it."
+  }
+ ],
+ "samples": [
+  {
+   "check": "The Custom-House",
+   "skill": "inference",
+   "stem": "The narrator notes that most Custom-House records from before the Revolution were \"carried off to Halifax.\" What best explains why Mr. Surveyor Pue's package was still in the building?",
+   "quote": null,
+   "options": [
+    "Pue's heirs had sent it back to the office after his burial",
+    "A clerk had hidden it under the floor to keep it from the British",
+    "A later Collector had bought it back from a dealer in Halifax",
+    "It looked private and of no public concern, so it was left behind"
+   ],
+   "answer": "D",
+   "why": "Pue died suddenly and his private papers stayed in his desk; when the official archives went to Halifax, the package was judged of no public concern and left, unopened, in the rubbish. His heirs never knew of it, which rules out A.",
+   "evidence": [
+    "Prior to the Revolution there is a dearth of records; the earlier documents and archives of the Custom-House having, probably, been carried off to Halifax",
+    "On the transfer of the archives to Halifax, this package, proving to be of no public concern, was left behind, and had remained ever since unopened."
+   ]
+  },
+  {
+   "check": "Chapters 11–12",
+   "skill": "recall",
+   "stem": "During his night vigils, visions flit before Dimmesdale, some of them within his looking-glass. How does the vision of his dead mother behave?",
+   "quote": null,
+   "options": [
+    "She turns her face away from him as she passes by",
+    "She weeps and stretches out her arms toward him",
+    "She points first at Hester's letter, then at his breast",
+    "She kneels at his side and prays aloud for his soul"
+   ],
+   "answer": "A",
+   "why": "His father frowns and his mother turns her face away; the narrator adds that even a ghost of a mother \"might yet have thrown a pitying glance towards her son.\" The pointing gesture belongs to the vision of Hester and Pearl.",
+   "evidence": [
+    "Now came the dead friends of his youth, and his white-bearded father, with a saint-like frown, and his mother, turning her face away as she passed by."
+   ]
+  },
+  {
+   "check": "Chapters 23–24",
+   "skill": "close",
+   "stem": "On the scaffold, Dimmesdale turns to Hester and murmurs, \"Is not this better than what we dreamed of in the forest?\" What does the moment show in context?",
+   "quote": null,
+   "options": [
+    "He regrets that he did not sail away with her before the sermon",
+    "He is mocking Chillingworth, who had hoped to sail on their ship",
+    "He sets confession against their plan to flee, but she cannot say yes",
+    "He is delirious and believes they are back in the forest dell"
+   ],
+   "answer": "C",
+   "why": "He weighs open confession against the forest plan of escape and asks her, with doubt in his eyes, to agree; Hester can only answer \"I know not!\" and accepts it as a shared death. He is clear-minded, not delirious.",
+   "evidence": [
+    "Yet he trembled, and turned to Hester with an expression of doubt and anxiety in his eyes, not the less evidently betrayed, that there was a feeble smile upon his lips.",
+    "“I know not! I know not!” she hurriedly replied. “Better? Yea; so we may both die, and little Pearl die with us!”"
+   ]
+  }
+ ],
+ "qa": {
+  "items": 78,
+  "pass": 73,
+  "partial": 5,
+  "leak": 0,
+  "failing": 0
+ }
+}

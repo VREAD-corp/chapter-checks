@@ -89,3 +89,17 @@ footer.site ul.links { list-style: none; padding: 0; display: flex; flex-wrap: w
 footer.site a { color: var(--muted); }
 section { scroll-margin-top: 80px; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+/* Study pages */
+.crumbs { font-size: .85rem; color: var(--muted); margin: 0 0 .6rem; }
+.crumbs a { color: var(--muted); }
+table.units td:nth-child(2) { white-space: nowrap; font-variant-numeric: tabular-nums; color: var(--muted); }
+table.units td:first-child { white-space: nowrap; font-weight: 600; }
+@media (max-width: 640px) { table.units td:first-child { white-space: normal; } }
+.passage { margin: 1.4rem 0; padding: 0 0 0 16px; border-left: 3px solid var(--line); max-width: 40rem; }
+.passage blockquote { margin: 0 0 6px; font-family: var(--serif); font-size: 1.05rem; }
+.passage figcaption { font-size: .9rem; color: var(--muted); margin-bottom: 4px; }
+.passage p { margin: 0; }
+.qcard .ev { font-family: var(--serif); font-style: italic; }
+.buy-box { margin: 2.5rem 0; background: var(--paper-2); border-radius: 12px; padding: 18px 22px; max-width: 40rem; }
+.buy-box h2 { margin-top: 0; }
+.related { columns: 2 14rem; padding-left: 1.2rem; }

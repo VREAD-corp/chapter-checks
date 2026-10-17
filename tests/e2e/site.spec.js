@@ -73,3 +73,26 @@ test('reading checkpoints: one-word checkpoint card on the free sample and the t
   const body = (await (await request.get(csv)).body()).toString('utf8');
   expect(body.split('\n').filter((l) => l.includes(',one_word,')).length).toBe(5);
 });
+
+for (const vp of [{ width: 390, height: 844 }, { width: 1440, height: 900 }]) {
+  test(`study pages render without horizontal scroll at ${vp.width}px, with the key reveal and one buy button`, async ({ page }) => {
+    await page.setViewportSize(vp);
+    for (const slug of ['macbeth', 'great-gatsby', 'frankenstein-1831', 'the-awakening', 'hamlet', 'scarlet-letter', 'wuthering-heights', 'jane-eyre']) {
+      const r = await page.goto(nt(`study/${slug}/`));
+      expect(r.status(), slug).toBe(200);
+      await expect(page.locator('h1')).toHaveCount(1);
+      await expect(page.locator('.qcard')).toHaveCount(3);
+      await expect(page.locator('a.btn')).toHaveCount(1);
+      expect(await page.evaluate(() => document.documentElement.scrollWidth), slug).toBeLessThanOrEqual(vp.width);
+    }
+    const d = page.locator('.qcard details').first();
+    await d.locator('summary').click();
+    await expect(d.locator('p.ev').first()).toBeVisible();
+  });
+}
+
+test('study page buy button opens the checkout for that title', async ({ page }) => {
+  await page.goto(nt('study/the-awakening/?prix=p5'));
+  await page.locator('a.btn[href$="order/?item=the-awakening"]').click();
+  await expect(page.locator('#picked')).toHaveAttribute('data-product', 'cc-awakening-5-usd');
+});

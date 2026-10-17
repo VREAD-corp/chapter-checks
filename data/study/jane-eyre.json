@@ -1,0 +1,306 @@
+{
+ "slug": "jane-eyre",
+ "updated": "2026-10-17",
+ "about": [
+  "The longest title in the set: 184,452 words in Project Gutenberg eBook #1260, 38 chapters, checked two at a time in 19 checks. The heaviest pair is Chapters 27 and 28 (17,920 words), where Jane leaves Thornfield and nearly dies on the moors; plan two nights for it.",
+  "The novel moves through five houses, and they make a natural unit plan: Gateshead (Chapters 1 to 4), Lowood (5 to 10), Thornfield (11 to 27, with a return to Gateshead in 21 and 22), Moor House and Morton (28 to 35), then the ruin of Thornfield and Ferndean (36 to 38). Where students lose the thread is Thornfield's long middle, Chapters 17 to 20, where the house party, the gipsy and Mr. Mason all arrive within a few chapters."
+ ],
+ "checks": [
+  {
+   "id": "ch-01-02",
+   "label": "Chapters 1–2",
+   "units": [
+    "ch-01",
+    "ch-02"
+   ],
+   "words": 4665,
+   "overview": "At Gateshead Hall, ten-year-old Jane is struck by her cousin John Reed, fights back, and is locked in the red-room, where her uncle died. She panics and faints."
+  },
+  {
+   "id": "ch-03-04",
+   "label": "Chapters 3–4",
+   "units": [
+    "ch-03",
+    "ch-04"
+   ],
+   "words": 8991,
+   "overview": "The apothecary Mr. Lloyd recommends school. Mrs. Reed introduces Jane to Mr. Brocklehurst of Lowood, and Jane, left alone with her aunt, tells her what she thinks of her."
+  },
+  {
+   "id": "ch-05-06",
+   "label": "Chapters 5–6",
+   "units": [
+    "ch-05",
+    "ch-06"
+   ],
+   "words": 7892,
+   "overview": "At Lowood Jane meets the kind superintendent, Miss Temple, and an older girl, Helen Burns, who bears Miss Scatcherd's punishments calmly and preaches forgiveness."
+  },
+  {
+   "id": "ch-07-08",
+   "label": "Chapters 7–8",
+   "units": [
+    "ch-07",
+    "ch-08"
+   ],
+   "words": 6566,
+   "overview": "Mr. Brocklehurst puts Jane on a stool before the school and calls her a liar. Miss Temple hears her side, writes to Mr. Lloyd and clears her name."
+  },
+  {
+   "id": "ch-09-10",
+   "label": "Chapters 9–10",
+   "units": [
+    "ch-09",
+    "ch-10"
+   ],
+   "words": 7596,
+   "overview": "Typhus spreads through Lowood, and Helen dies of consumption in Jane's arms. Eight years pass. When Miss Temple marries, Jane advertises and takes a post at Thornfield."
+  },
+  {
+   "id": "ch-11-12",
+   "label": "Chapters 11–12",
+   "units": [
+    "ch-11",
+    "ch-12"
+   ],
+   "words": 10629,
+   "overview": "Mrs. Fairfax welcomes Jane to Thornfield, where she teaches Adèle Varens and hears a strange laugh on the third storey. On an icy lane she helps a fallen rider: Mr. Rochester."
+  },
+  {
+   "id": "ch-13-14",
+   "label": "Chapters 13–14",
+   "units": [
+    "ch-13",
+    "ch-14"
+   ],
+   "words": 8916,
+   "overview": "Rochester questions Jane about her past and her paintings, and talks with her by the fire about his own mistakes. Mrs. Fairfax hints at painful family troubles."
+  },
+  {
+   "id": "ch-15-16",
+   "label": "Chapters 15–16",
+   "units": [
+    "ch-15",
+    "ch-16"
+   ],
+   "words": 8730,
+   "overview": "Rochester tells the story of Céline Varens. That night Jane saves him from a fire in his bed. He leaves for a house party, and Jane hears of Blanche Ingram."
+  },
+  {
+   "id": "ch-17-18",
+   "label": "Chapters 17–18",
+   "units": [
+    "ch-17",
+    "ch-18"
+   ],
+   "words": 13894,
+   "overview": "Rochester returns with guests, among them Blanche Ingram. Jane admits to herself that she loves him. Mr. Mason arrives from the West Indies, and a gipsy reads the ladies' fortunes."
+  },
+  {
+   "id": "ch-19-20",
+   "label": "Chapters 19–20",
+   "units": [
+    "ch-19",
+    "ch-20"
+   ],
+   "words": 9524,
+   "overview": "The gipsy turns out to be Rochester. That night Mason is wounded on the third storey; Rochester has Jane tend him in secret and sends him away before dawn."
+  },
+  {
+   "id": "ch-21-22",
+   "label": "Chapters 21–22",
+   "units": [
+    "ch-21",
+    "ch-22"
+   ],
+   "words": 11627,
+   "overview": "Jane returns to Gateshead to the dying Mrs. Reed, who confesses that she hid a letter from Jane's uncle, John Eyre. Back at Thornfield, Jane finds Rochester waiting."
+  },
+  {
+   "id": "ch-23-24",
+   "label": "Chapters 23–24",
+   "units": [
+    "ch-23",
+    "ch-24"
+   ],
+   "words": 11006,
+   "overview": "In the orchard Rochester proposes, and Jane accepts; that night lightning splits the chestnut tree. Jane resists his gifts and writes to her uncle in Madeira."
+  },
+  {
+   "id": "ch-25-26",
+   "label": "Chapters 25–26",
+   "units": [
+    "ch-25",
+    "ch-26"
+   ],
+   "words": 9223,
+   "overview": "On the eve of the wedding a strange woman tears Jane's veil. At the altar a lawyer reveals that Rochester has a living wife, Bertha Mason, kept on the third storey."
+  },
+  {
+   "id": "ch-27-28",
+   "label": "Chapters 27–28",
+   "units": [
+    "ch-27",
+    "ch-28"
+   ],
+   "words": 17920,
+   "overview": "Jane refuses to stay as Rochester's mistress and leaves before dawn. Penniless on the moors, she follows a light to a house where two sisters, Diana and Mary, live; their brother St. John takes her in."
+  },
+  {
+   "id": "ch-29-30",
+   "label": "Chapters 29–30",
+   "units": [
+    "ch-29",
+    "ch-30"
+   ],
+   "words": 8226,
+   "overview": "Jane recovers with Diana, Mary and St. John Rivers and gives a false name. St. John offers her the village school in Morton."
+  },
+  {
+   "id": "ch-31-32",
+   "label": "Chapters 31–32",
+   "units": [
+    "ch-31",
+    "ch-32"
+   ],
+   "words": 7647,
+   "overview": "Jane teaches at Morton. St. John loves Rosamond Oliver but will not give up his missionary plans. He tears a strip from the paper covering Jane's portrait of Rosamond."
+  },
+  {
+   "id": "ch-33-34",
+   "label": "Chapters 33–34",
+   "units": [
+    "ch-33",
+    "ch-34"
+   ],
+   "words": 13984,
+   "overview": "St. John reveals that Jane has inherited a fortune and that the Rivers are her cousins; she shares the money with them. He asks her to marry him and go to India."
+  },
+  {
+   "id": "ch-35-36",
+   "label": "Chapters 35–36",
+   "units": [
+    "ch-35",
+    "ch-36"
+   ],
+   "words": 8197,
+   "overview": "As Jane nearly yields to St. John, she seems to hear Rochester call her name. At Thornfield she finds a burned ruin and learns what happened, then hurries to Ferndean."
+  },
+  {
+   "id": "ch-37-38",
+   "label": "Chapters 37–38",
+   "units": [
+    "ch-37",
+    "ch-38"
+   ],
+   "words": 9219,
+   "overview": "Jane finds Rochester blind and maimed at Ferndean, and they marry. Ten years later she describes their life, Adèle's schooling and St. John's last letter from India."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "ch-01",
+   "ref": "Chapter 1",
+   "speaker": "Jane, narrating",
+   "quote": "There was no possibility of taking a walk that day.",
+   "note": "The first sentence: the adult Jane telling her childhood. Ask students to look out for moments where the older narrator comments on the child; there are several before Chapter 10."
+  },
+  {
+   "unit": "ch-23",
+   "ref": "Chapter 23",
+   "speaker": "Jane to Rochester",
+   "quote": "Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless? You think wrong!—I have as much soul as you,—and full as much heart!",
+   "note": "In the orchard, when Jane still believes he will marry Blanche Ingram. She speaks before the proposal, not in answer to it."
+  },
+  {
+   "unit": "ch-27",
+   "ref": "Chapter 27",
+   "speaker": "Jane, to herself",
+   "quote": "_I_ care for myself. The more solitary, the more friendless, the more unsustained I am, the more I will respect myself.",
+   "note": "The inner argument in which Jane decides to leave. Pair it with the Chapter 23 speech: the claim to equal worth is the same, the price is now paid."
+  },
+  {
+   "unit": "ch-34",
+   "ref": "Chapter 34",
+   "speaker": "St. John to Jane",
+   "quote": "God and nature intended you for a missionary’s wife. It is not personal, but mental endowments they have given you:",
+   "note": "The proposal in the glen. Set it beside Rochester's proposal in Chapter 23: one man speaks of love, the other of duty, and Jane's answers to each show what she will not give up."
+  },
+  {
+   "unit": "ch-35",
+   "ref": "Chapter 35",
+   "speaker": "A voice Jane hears",
+   "quote": "I saw nothing, but I heard a voice somewhere cry— “Jane! Jane! Jane!”—nothing more.",
+   "note": "The night St. John nearly persuades her. Chapter 37 gives Rochester's side of the same moment; how students explain the call is a good open question."
+  },
+  {
+   "unit": "ch-38",
+   "ref": "Chapter 38",
+   "speaker": "Jane, narrating",
+   "quote": "Reader, I married him.",
+   "note": "The first sentence of the last chapter. Jane has addressed the reader several times before; here she gives the outcome first and only then describes the wedding."
+  }
+ ],
+ "samples": [
+  {
+   "check": "Chapters 1–2",
+   "skill": "inference",
+   "stem": "Looking back as an adult, how does the narrator explain why the Reeds and their servants never liked her?",
+   "quote": null,
+   "options": [
+    "She was unlike them in temperament, not guilty of real wrongdoing",
+    "She truly was the sly, underhand little girl that Miss Abbot describes",
+    "Her father had cheated Mr. Reed out of a large sum of money",
+    "She was cleverer than the Reed children and liked to show it"
+   ],
+   "answer": "A",
+   "why": "The adult Jane calls herself \"a discord,\" opposed to the Reeds in temperament, and says a handsome, lively child in the same position would have been tolerated. Abbot's charge (B) is the household's view, which the narrator rejects.",
+   "evidence": [
+    "I was a discord in Gateshead Hall: I was like nobody there",
+    "had I been a sanguine, brilliant, careless, exacting, handsome, romping child—though equally dependent and friendless—Mrs. Reed would have endured my presence more complacently"
+   ]
+  },
+  {
+   "check": "Chapters 19–20",
+   "skill": "recall",
+   "stem": "When the fortune-teller asks if some secret hope keeps her going, what does Jane say she hopes for?",
+   "quote": null,
+   "options": [
+    "To find her late mother's family",
+    "To return to Lowood as head teacher",
+    "To travel abroad one day as a lady's companion",
+    "To save enough to open her own little school"
+   ],
+   "answer": "D",
+   "why": "Jane claims her greatest hope is a school of her own in a small rented house; the \"gipsy\" calls this \"a mean nutriment for the spirit.\"",
+   "evidence": [
+    "The utmost I hope is, to save money enough out of my earnings to set up a school some day in a little house rented by myself."
+   ]
+  },
+  {
+   "check": "Chapters 37–38",
+   "skill": "close",
+   "stem": "Jane says Mary and John belong to \"that decent phlegmatic order of people, to whom one may at any time safely communicate a remarkable piece of news.\" What, in the kitchen scene, bears this out?",
+   "quote": null,
+   "options": [
+    "Mary pretends she has not heard and goes on giving John his orders for dinner",
+    "Mary's ladle and John's knives stop for some three minutes, then Mary only says \"Well, for sure!\"",
+    "John drops the knives and runs to tell the other servants of the village",
+    "Mary bursts into tears of joy and has to sit down by the fire"
+   ],
+   "answer": "B",
+   "why": "The news of the wedding produces no outcry: Mary's ladle hangs still and John's knives stop polishing for about three minutes, then Mary bends back over the roast and says only \"Have you, Miss? Well, for sure!\" John grins and wishes her joy. None of the noisy reactions in the other options happens.",
+   "evidence": [
+    "the ladle with which she was basting a pair of chickens roasting at the fire, did for some three minutes hang suspended in air; and for the same space of time John’s knives also had rest from the polishing process",
+    "“Have you, Miss? Well, for sure!”"
+   ]
+  }
+ ],
+ "qa": {
+  "items": 114,
+  "pass": 99,
+  "partial": 15,
+  "leak": 0,
+  "failing": 0
+ }
+}

@@ -3,7 +3,7 @@
 // title, product ids), src/ (assets, vendored mesure.js / cro.js / og-checkout.js, the free Macbeth files).
 // Env: SITE_BASE (default /chapter-checks/), SITE_ORIGIN (default https://outils.vread.fr), OUT (default dist),
 //      OG_ENDPOINT + OG_PK (test builds only: checkout against a local backend and the Stripe sandbox).
-import { cpSync, mkdirSync, readFileSync, rmSync, writeFileSync, readdirSync, statSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -33,6 +33,11 @@ const LAST = SOON.length ? longDate(SOON[SOON.length - 1].release) : null; // re
 const isPlay = (t) => t.slug === 'macbeth' || t.slug === 'hamlet';
 const FREE = READY.find((t) => t.free);
 const P = CAT.prices;
+const AP = JSON.parse(readFileSync(join(ROOT, 'data/ap-q3.json'), 'utf8'));
+const STUDY = Object.fromEntries(READY.map((t) => [t.slug, join(ROOT, 'data/study', `${t.slug}.json`)]).filter(([, f]) => existsSync(f)).map(([s, f]) => [s, JSON.parse(readFileSync(f, 'utf8'))]));
+const apLists = (slug) => AP.lists.filter((l) => l.titles.includes(slug));
+const apName = (l) => `${l.year}${l.set ? ` ${l.set}` : ''}`;
+const DEFAULT_LASTMOD = '2026-10-14';
 const OG_ENDPOINT = process.env.OG_ENDPOINT || '';
 const OG_PK = process.env.OG_PK || '';
 
@@ -129,7 +134,7 @@ function titleRow(t) {
   const name = `<a href="${u(`titles/${t.slug}/`)}">${esc(fullTitle(t))}</a>`;
   const scope = t.status === 'ready' ? `${t.checks.length} checks, ${t.questions} questions` : esc(t.checks_planned);
   const status = t.free ? '<span class="tag free">Free</span>' : t.status === 'ready' ? `<span class="tag ok">Ready</span>` : `<span class="tag soon">${esc(longDate(t.release))}</span>`;
-  return `<tr><td>${name}<br><span class="muted">${esc(t.author)}</span></td><td>${scope}</td><td>${status}${t.ap_q3 ? ' <span class="tag ap" title="Printed in recent AP Literature question-3 lists">AP Q3</span>' : ''}</td></tr>`;
+  return `<tr><td>${name}<br><span class="muted">${esc(t.author)}</span></td><td>${scope}</td><td>${status}${apLists(t.slug).length ? ` <span class="tag ap" title="Printed in ${apLists(t.slug).length} of the ${AP.lists.length} AP Literature question-3 lists, 2023–2026">AP Q3</span>` : ''}</td></tr>`;
 }
 
 const titleTable = `<div class="table-wrap"><table class="titles">
@@ -160,6 +165,7 @@ const totalChecks = READY.reduce((a, t) => a + t.checks.length, 0);
 pages.push({
   path: '',
   title: 'Chapter Checks by READ FRANCE: printable reading checks for AP Literature classics',
+  lastmod: '2026-10-17',
   description: `Chapter and act checks for ${TITLES.length} public-domain classics taught in AP Literature and grades 11–12: PDF, answer key with text evidence, rubric, Canvas QTI and Google Forms. ${usd(P.p5)} a title; Macbeth is free.`,
   ld: [{ '@type': 'WebSite', name: 'Chapter Checks by READ FRANCE', url: abs(''), publisher: { '@id': ORG['@id'] }, inLanguage: 'en-US' }],
   body: `<section class="hero">
@@ -188,8 +194,9 @@ ${sampleCard(gatsby, gatsby.samples.questions[0], 1)}
 
 <section id="titles">
 <h2>The titles</h2>
-<p>Five of the eight are among the public-domain novels printed most often in the AP Literature free-response question 3 lists from 2023 to 2026 (<a href="${u('ap-literature/')}">our count</a>). The other three are the classroom staples <i>Macbeth</i>, <i>Hamlet</i> and <i>The Great Gatsby</i>.</p>
+<p>Seven of the eight are printed in at least one of the ${AP.lists.length} AP Literature free-response question 3 lists from 2023 to 2026: <i>Jane Eyre</i> in six, <i>Frankenstein</i>, <i>Wuthering Heights</i> and <i>The Awakening</i> in five, <i>The Scarlet Letter</i> in four, <i>Macbeth</i> in three and <i>The Great Gatsby</i> in one. <i>Hamlet</i> is in none (<a href="${u('ap-literature/')}">our count</a>).</p>
 ${titleTable}
+<p>Each title also has a free reading guide for teachers: what each check covers, key passages with their references, and three questions from the pack. ${READY.filter((t) => STUDY[t.slug]).map((t) => `<a href="${u(`study/${t.slug}/`)}"><i>${esc(t.title)}</i></a>`).join(', ')}.</p>
 </section>
 
 <section>
@@ -293,31 +300,111 @@ ${packList}
 <h2>Edition and public-domain status</h2>
 <p>Text used: Project Gutenberg eBook #${t.gutenberg} (<a href="https://www.gutenberg.org/ebooks/${t.gutenberg}" rel="noopener">gutenberg.org/ebooks/${t.gutenberg}</a>). ${pd} Questions refer to ${isPlay(t) ? 'acts and scenes' : 'chapters'}, not pages.</p>
 ${t.slug === 'frankenstein-1831' ? '<p>This is the revised 1831 text, the one most school editions print. Some classes read the 1818 text, which differs in places (for example, Elizabeth is Victor\'s cousin in 1818 and an adopted orphan in 1831).</p>' : ''}
-<p><a href="${u('')}#titles">All titles</a></p>`,
+${STUDY[t.slug] ? `<p>Planning the unit? The free <a href="${u(`study/${t.slug}/`)}">${esc(t.title)} reading guide</a> lists what each check covers, with key passages and their references.</p>\n` : ''}<p><a href="${u('')}#titles">All titles</a></p>`,
+    lastmod: STUDY[t.slug] ? '2026-10-17' : undefined,
   });
 }
 
+const apCount = (slug) => apLists(slug).length;
+const apOrder = READY.slice().sort((a, b) => apCount(b.slug) - apCount(a.slug));
 pages.push({
   path: 'ap-literature/',
+  lastmod: '2026-10-17',
   title: 'AP Literature question 3 titles that are in the public domain',
-  description: 'Which public-domain novels the College Board printed most often in AP English Literature free-response question 3 lists, 2023 to 2026, and checks for each.',
-  ld: [{ '@type': 'Article', headline: 'AP Literature question 3 titles that are in the public domain', author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, datePublished: '2026-10-14', inLanguage: 'en-US' }],
+  description: `Which public-domain titles the College Board printed in the ${AP.lists.length} AP English Literature free-response question 3 lists, 2023 to 2026, how often, and checks for each.`,
+  ld: [{ '@type': 'Article', headline: 'AP Literature question 3 titles that are in the public domain', author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, datePublished: '2026-10-14', dateModified: '2026-10-17', inLanguage: 'en-US' }],
   body: `<p class="eyebrow">AP® English Literature</p>
 <h1>The public-domain titles that keep coming back in question 3</h1>
-<p class="lead">The College Board publishes no AP Literature reading list: the course description says teachers choose their texts locally. But each year the free-response question 3 prints a list of about 40 works students may write about (36 titles in 2025, 43 in 2026).</p>
-<p>We counted the seven lists published for 2023 to 2026. These public-domain novels appear most often:</p>
-<div class="table-wrap"><table class="titles"><thead><tr><th scope="col">Title</th><th scope="col">Lists (of 7)</th></tr></thead><tbody>
-<tr><td><a href="${u('titles/jane-eyre/')}"><i>Jane Eyre</i></a>, Charlotte Brontë</td><td>6</td></tr>
-<tr><td><a href="${u('titles/frankenstein-1831/')}"><i>Frankenstein</i></a>, Mary Shelley</td><td>5</td></tr>
-<tr><td><a href="${u('titles/wuthering-heights/')}"><i>Wuthering Heights</i></a>, Emily Brontë</td><td>5</td></tr>
-<tr><td><a href="${u('titles/the-awakening/')}"><i>The Awakening</i></a>, Kate Chopin</td><td>5</td></tr>
-<tr><td><a href="${u('titles/scarlet-letter/')}"><i>The Scarlet Letter</i></a>, Nathaniel Hawthorne</td><td>4</td></tr>
+<p class="lead">The College Board publishes no AP Literature reading list: the course description says teachers choose their texts locally. But each year the free-response question 3 prints a list of works students may write about, between ${Math.min(...AP.lists.map((l) => l.count))} and ${Math.max(...AP.lists.map((l) => l.count))} titles a list from 2023 to 2026.</p>
+<p>We counted the ${AP.lists.length} lists published for 2023 to 2026 (two sets a year from 2023 to 2025, one set so far for 2026). Our eight titles appear this often:</p>
+<div class="table-wrap"><table class="titles"><thead><tr><th scope="col">Title</th><th scope="col">Lists (of ${AP.lists.length})</th><th scope="col">Which</th></tr></thead><tbody>
+${apOrder.map((t) => `<tr><td><a href="${u(`study/${t.slug}/`)}"><i>${esc(t.title)}</i></a>, ${esc(t.author)}</td><td>${apCount(t.slug)}</td><td>${apLists(t.slug).map(apName).join(', ') || 'none'}</td></tr>`).join('\n')}
 </tbody></table></div>
-<p>Three other works appear five times (<i>Kindred</i>, <i>Ceremony</i>, <i>Fences</i>), but they are in copyright, so we make no checks for them. Count by READ FRANCE in October 2026 from the College Board's published free-response PDFs, for example <a href="https://apcentral.collegeboard.org/media/pdf/ap25-frq-english-literature-set-1.pdf" rel="noopener">2025 set 1</a> and <a href="https://apcentral.collegeboard.org/media/pdf/ap26-frq-english-literature.pdf" rel="noopener">2026</a>.</p>
+<p><i>Jane Eyre</i>, <i>Frankenstein</i>, <i>Wuthering Heights</i> and <i>The Awakening</i> are the public-domain novels printed most often. Three other works appear five times (<i>Kindred</i>, <i>Ceremony</i>, <i>Fences</i>), but they are in copyright, so we make no checks for them. Every prompt also lets students choose a work "from your own reading", so a title missing from the lists, like <i>Hamlet</i>, can still be used.</p>
+<h2>The ${AP.lists.length} lists</h2>
+<div class="table-wrap"><table class="titles"><thead><tr><th scope="col">Exam</th><th scope="col">Prompt, in our words</th><th scope="col">Works listed</th></tr></thead><tbody>
+${AP.lists.map((l) => `<tr><td><a href="${l.url}" rel="noopener">${apName(l)}</a></td><td>${esc(l.topic)}</td><td>${l.count}</td></tr>`).join('\n')}
+</tbody></table></div>
+<p class="small">Count by READ FRANCE from the College Board's free-response PDFs, linked from its <a href="${AP.page}" rel="noopener">past exam questions page</a>; each list read again on October 17, 2026. The prompt summaries are ours, not the College Board's wording.</p>
 <h2>Checks for these titles</h2>
 ${titleTable}
 <p>Checks test the reading, chapter by chapter. They are not essay prompts and do not reuse any College Board material.</p>`,
 });
+
+// Study pages (reading guides for teachers) -------------------------------------------------------------------
+const itl = (s) => esc(s).replace(/_([^_]+)_/g, '<i>$1</i>');
+const verse = (q) => itl(q).split(' / ').join('<br>');
+const num = (n) => n.toLocaleString('en-US');
+function studyCard(t, q, n) {
+  const opts = q.options.map((o, i) => `<li${'ABCD'[i] === q.answer ? ' class="key"' : ''}><span class="L">${'ABCD'[i]}</span> ${esc(o)}</li>`).join('');
+  return `<figure class="qcard">
+<figcaption>${esc(t.title)} · ${esc(q.check)} · ${q.skill === 'close' ? 'close reading' : q.skill}</figcaption>
+<p class="stem"><span class="n">${n}.</span> ${esc(q.stem)}</p>${q.quote ? `<blockquote>“${esc(q.quote)}”</blockquote>` : ''}
+<ol class="opts">${opts}</ol>
+<details><summary>Answer key and evidence</summary><p><span class="n">${q.answer}.</span> ${esc(q.why)}</p>${q.evidence.map((e) => `<p class="ev">“${esc(e)}” <span class="muted">(${esc(q.check)})</span></p>`).join('')}</details>
+</figure>`;
+}
+const studyed = READY.filter((t) => STUDY[t.slug]);
+for (const t of studyed) {
+  const st = STUDY[t.slug];
+  const play = isPlay(t);
+  const unit = play ? 'act' : 'chapter';
+  const words = st.checks.reduce((a, c) => a + c.words, 0);
+  const lists = apLists(t.slug);
+  const cta = t.free
+    ? `<p><a class="btn" href="${u('free-sample/')}" data-mesure="cta_click">Download the ${esc(t.title)} checks, free</a></p>`
+    : `<p><a class="btn" href="${u(`order/?item=${t.slug}`)}" data-mesure="cta_click">Buy the ${esc(t.title)} checks, ${priceTitle}</a></p>`;
+  const ap = lists.length
+    ? `<p><i>${esc(t.title)}</i> is printed in ${lists.length} of the ${AP.lists.length} question-3 lists the College Board published for 2023 to 2026:</p>
+<ul>${lists.map((l) => `<li><a href="${l.url}" rel="noopener">${apName(l)}</a>: ${esc(l.topic)} (${l.count} works listed).</li>`).join('')}</ul>
+<p>The lists are suggestions: each prompt asks students to choose a work "from your own reading or from the list". A title on the list is one the College Board considers a fit for that year's prompt, nothing more.</p>`
+    : `<p><i>${esc(t.title)}</i> is not printed in any of the ${AP.lists.length} question-3 lists the College Board published for 2023 to 2026 (we read each list on October 17, 2026). Students may still write about it: every prompt asks for a work "from your own reading or from the list".</p>`;
+  const related = studyed.filter((x) => x.slug !== t.slug);
+  pages.push({
+    path: `study/${t.slug}/`,
+    lastmod: st.updated,
+    title: `${fullTitle(t)} reading guide: comprehension questions by ${unit}, key passages, AP Lit`,
+    description: `${t.title} ${play ? 'act by act' : 'chapter by chapter'} for teachers: what each of the ${st.checks.length} reading checks covers, ${st.passages.length} key passages with references, 3 sample questions with key, and the AP Lit question 3 lists.`,
+    ld: [{ '@type': 'Article', headline: `${fullTitle(t)} reading guide for teachers`, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, datePublished: st.updated, dateModified: st.updated, inLanguage: 'en-US',
+      mainEntityOfPage: abs(`study/${t.slug}/`), about: { '@type': 'Book', name: t.title, author: { '@type': 'Person', name: t.author } }, educationalLevel: 'Grades 11-12', isAccessibleForFree: true },
+      { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Chapter Checks', item: abs('') }, { '@type': 'ListItem', position: 2, name: `${t.title} checks`, item: abs(`titles/${t.slug}/`) }, { '@type': 'ListItem', position: 3, name: 'Reading guide', item: abs(`study/${t.slug}/`) }] }],
+    body: `<nav class="crumbs" aria-label="Breadcrumb"><a href="${u('')}">Chapter Checks</a> › <a href="${u(`titles/${t.slug}/`)}">${esc(t.title)} checks</a> › Reading guide</nav>
+<p class="eyebrow">${esc(t.author)} · reading guide for teachers</p>
+<h1><i>${esc(t.title)}</i>${t.subtitle ? ` (${esc(t.subtitle)})` : ''}: comprehension ${play ? 'act by act' : 'chapter by chapter'}</h1>
+<p class="lead">${play ? `Five acts, ${num(words)} words` : `${num(words)} words`} in the Project Gutenberg text, cut into ${st.checks.length} reading checks. This page lists what each check covers, ${st.passages.length} key passages with their ${play ? 'act and scene' : 'chapter'}, three questions from the pack with the answer key, and where <i>${esc(t.title)}</i> stands in the AP Literature question 3 lists.</p>
+<p class="small">Written by Octave, READ FRANCE's AI assistant, from Project Gutenberg eBook #${t.gutenberg}; published ${esc(longDate(st.updated))}. Names and events were checked against the text; no teacher has reviewed this page yet. Corrections: <a href="mailto:${CONTACT}">${CONTACT}</a>.</p>
+${st.about.map((p) => `<p>${itl(p)}</p>`).join('\n')}
+
+<h2>What each check covers</h2>
+<div class="table-wrap"><table class="titles units"><thead><tr><th scope="col">Check</th><th scope="col">Words</th><th scope="col">What happens</th></tr></thead><tbody>
+${st.checks.map((c) => `<tr><td>${esc(c.label)}</td><td>${num(c.words)}</td><td>${esc(c.overview)}</td></tr>`).join('\n')}
+</tbody></table></div>
+<p class="small">Word counts: our count of the Project Gutenberg text, without its header and licence. A check takes 10 to 15 minutes in class and opens with a one-word reading checkpoint on a detail from the middle of the ${play ? 'act' : 'chapters'}.</p>
+
+<h2>Key passages, with references</h2>
+${st.passages.map((p) => `<figure class="passage"><blockquote>${verse(p.quote)}</blockquote><figcaption><b>${esc(p.ref)}</b> · ${esc(p.speaker)}</figcaption><p>${esc(p.note)}</p></figure>`).join('\n')}
+<p class="small">Quotations are copied from the Project Gutenberg text${play ? '; line breaks follow its verse lines' : ''}. Our script checks that each one appears word for word in the ${unit} it is credited to.</p>
+
+<h2>Three questions from the ${esc(t.title)} pack</h2>
+<p>One from the start of the ${play ? 'play' : 'book'}, one from the middle, one from the end, exactly as they appear in the pack, with the key and the line of the text behind it.</p>
+${st.samples.map((q, i) => studyCard(t, q, i + 1)).join('\n')}
+<p>Why a summary does not pass them: before release, every question in the pack was put to a separate AI reader that held only a study-guide summary of the ${play ? 'act (about 300 words)' : 'chapters (about 150 words a chapter)'}, longer than the overview above. A question that reader could answer was rewritten. Final count for <i>${esc(t.title)}</i>: ${st.qa.pass} of ${st.qa.items} questions passed${st.qa.partial ? `, and ${st.qa.partial} written ${st.qa.partial > 1 ? 'answers' : 'answer'} still earned half marks from the summary alone` : ''}.</p>
+
+<h2>${esc(t.title)} and AP Literature question 3</h2>
+${ap}
+<p><a href="${u('ap-literature/')}">All ${AP.lists.length} lists and our count</a>.</p>
+
+<section class="buy-box">
+<h2>${t.free ? 'The whole pack is free' : 'The whole pack'}</h2>
+<p>${st.checks.length} checks, ${t.questions} questions, a one-word reading checkpoint per check, an answer key with the line of the text behind each answer, a 2-1-0 rubric for the written answers, and Canvas QTI, CSV and Google Forms files.${t.free ? ' No e-mail asked.' : ' Card payment in US dollars, files by e-mail within minutes, refund within 14 days.'}</p>
+${cta}
+</section>
+
+<h2>Other reading guides</h2>
+<ul class="related">${related.map((x) => `<li><a href="${u(`study/${x.slug}/`)}"><i>${esc(x.title)}</i></a>, ${esc(x.author)}</li>`).join('')}</ul>
+<p><a href="${u(`titles/${t.slug}/`)}">${esc(t.title)} checks: the list of checks and two more sample questions</a> · <a href="${u('')}#titles">All titles</a></p>`,
+  });
+}
 
 const traps = [
   ['<i>As I Lay Dying</i> (Faulkner, d. 1962), <i>The Sun Also Rises</i> (Hemingway, d. 1961), <i>Passing</i> (Larsen, d. 1964), <i>The Waste Land</i> (Eliot, d. 1965)', 'Public domain in the US (published before 1931), not in the UK or the EU.'],
@@ -450,8 +537,8 @@ for (const pg of pages) write(pg.path, layout(pg));
 cpSync(join(ROOT, 'src/assets'), join(OUT, 'assets'), { recursive: true });
 cpSync(join(ROOT, 'src/sample'), join(OUT, 'sample'), { recursive: true });
 for (const f of ['mesure.js', 'cro.js', 'og-checkout.js']) cpSync(join(ROOT, 'src/vendor', f), join(OUT, f));
-const indexable = pages.filter((p) => !p.noindex).map((p) => p.path);
-writeFileSync(join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexable.map((p) => `<url><loc>${abs(p)}</loc><lastmod>2026-10-14</lastmod></url>`).join('\n')}\n</urlset>\n`);
+const indexable = pages.filter((p) => !p.noindex);
+writeFileSync(join(OUT, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${indexable.map((p) => `<url><loc>${abs(p.path)}</loc><lastmod>${p.lastmod || DEFAULT_LASTMOD}</lastmod></url>`).join('\n')}\n</urlset>\n`);
 writeFileSync(join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${abs('sitemap.xml')}\n`);
 for (const f of readdirSync(join(ROOT, 'src')).filter((f) => /^[a-f0-9]{32}\.txt$/.test(f))) cpSync(join(ROOT, 'src', f), join(OUT, f));
 const count = (d) => readdirSync(d).reduce((n, f) => n + (statSync(join(d, f)).isDirectory() ? count(join(d, f)) : 1), 0);

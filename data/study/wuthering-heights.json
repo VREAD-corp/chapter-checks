@@ -1,0 +1,289 @@
+{
+ "slug": "wuthering-heights",
+ "updated": "2026-10-17",
+ "about": [
+  "The longest novel in the set after Jane Eyre: 115,940 words in Project Gutenberg eBook #768, 34 chapters, checked two at a time in 17 checks. Chapter pairs vary a lot, from 2,895 words (Chapters 25 and 26) to 12,373 (Chapters 9 and 10, Catherine's choice and Heathcliff's return).",
+  "Where students lose the thread: two narrators and two generations with the same names. Lockwood writes the diary, and from Chapter 4 Nelly Dean tells him most of the story. Mother and daughter are both named Catherine; Linton is both a family name and the first name of Heathcliff's son; and Hareton Earnshaw is the son of Hindley. A family tree drawn after Chapter 4 and updated at each check saves a great deal of confusion."
+ ],
+ "checks": [
+  {
+   "id": "ch-01-02",
+   "label": "Chapters 1–2",
+   "units": [
+    "ch-01",
+    "ch-02"
+   ],
+   "words": 5249,
+   "overview": "In 1801 Lockwood, the new tenant of Thrushcross Grange, visits his landlord Heathcliff at Wuthering Heights, is attacked by the dogs and, on a second visit, is trapped by a snowstorm."
+  },
+  {
+   "id": "ch-03-04",
+   "label": "Chapters 3–4",
+   "units": [
+    "ch-03",
+    "ch-04"
+   ],
+   "words": 7499,
+   "overview": "In a forbidden bedroom Lockwood finds Catherine's names and diary and dreams of a ghost at the window. Back at the Grange, Nelly Dean begins her story: Mr. Earnshaw brings home an orphan named Heathcliff."
+  },
+  {
+   "id": "ch-05-06",
+   "label": "Chapters 5–6",
+   "units": [
+    "ch-05",
+    "ch-06"
+   ],
+   "words": 3972,
+   "overview": "Mr. Earnshaw dies, and Hindley returns with a wife and degrades Heathcliff. Catherine and Heathcliff spy on the Lintons; a bulldog seizes Catherine, who stays at Thrushcross Grange."
+  },
+  {
+   "id": "ch-07-08",
+   "label": "Chapters 7–8",
+   "units": [
+    "ch-07",
+    "ch-08"
+   ],
+   "words": 7399,
+   "overview": "Catherine comes back a young lady. At Christmas, Heathcliff throws hot apple sauce at Edgar. Frances dies after giving birth to Hareton, and Hindley turns to drink. Edgar falls in love with Catherine."
+  },
+  {
+   "id": "ch-09-10",
+   "label": "Chapters 9–10",
+   "units": [
+    "ch-09",
+    "ch-10"
+   ],
+   "words": 12373,
+   "overview": "Catherine tells Nelly she will marry Edgar; Heathcliff overhears part of it and leaves. Three years after the marriage he returns, rich, and Isabella falls in love with him."
+  },
+  {
+   "id": "ch-11-12",
+   "label": "Chapters 11–12",
+   "units": [
+    "ch-11",
+    "ch-12"
+   ],
+   "words": 8999,
+   "overview": "Edgar orders Heathcliff out of the Grange, and Catherine shuts herself in her room and grows delirious. Isabella elopes with Heathcliff."
+  },
+  {
+   "id": "ch-13-14",
+   "label": "Chapters 13–14",
+   "units": [
+    "ch-13",
+    "ch-14"
+   ],
+   "words": 7606,
+   "overview": "Isabella writes to Nelly about her miserable arrival at Wuthering Heights. Nelly visits, and Heathcliff makes her agree to carry a letter to Catherine."
+  },
+  {
+   "id": "ch-15-16",
+   "label": "Chapters 15–16",
+   "units": [
+    "ch-15",
+    "ch-16"
+   ],
+   "words": 4897,
+   "overview": "Heathcliff and Catherine meet one last time. She gives birth to a daughter, also named Catherine, and dies the same night. Heathcliff begs her ghost to haunt him."
+  },
+  {
+   "id": "ch-17-18",
+   "label": "Chapters 17–18",
+   "units": [
+    "ch-17",
+    "ch-18"
+   ],
+   "words": 10388,
+   "overview": "Isabella flees south, where her son Linton is born. Hindley dies, and Heathcliff becomes master of the Heights. Twelve years later, young Cathy finds her way to the Heights and meets Hareton."
+  },
+  {
+   "id": "ch-19-20",
+   "label": "Chapters 19–20",
+   "units": [
+    "ch-19",
+    "ch-20"
+   ],
+   "words": 3757,
+   "overview": "Isabella dies, and Edgar brings Linton to the Grange, but Heathcliff claims his son the next day. Nelly takes the boy to Wuthering Heights."
+  },
+  {
+   "id": "ch-21-22",
+   "label": "Chapters 21–22",
+   "units": [
+    "ch-21",
+    "ch-22"
+   ],
+   "words": 8682,
+   "overview": "On her sixteenth birthday Cathy meets Heathcliff on the moors and sees Linton again. Heathcliff plans for the cousins to marry. Edgar falls ill, and Heathcliff lures Cathy back."
+  },
+  {
+   "id": "ch-23-24",
+   "label": "Chapters 23–24",
+   "units": [
+    "ch-23",
+    "ch-24"
+   ],
+   "words": 6774,
+   "overview": "Cathy visits Linton, quarrels with him and keeps returning in secret while Nelly is ill. Nelly finds out and tells Edgar, who forbids the visits."
+  },
+  {
+   "id": "ch-25-26",
+   "label": "Chapters 25–26",
+   "units": [
+    "ch-25",
+    "ch-26"
+   ],
+   "words": 2895,
+   "overview": "Edgar, failing, allows Cathy to meet Linton on the moors. Linton is weak and frightened of his father."
+  },
+  {
+   "id": "ch-27-28",
+   "label": "Chapters 27–28",
+   "units": [
+    "ch-27",
+    "ch-28"
+   ],
+   "words": 7125,
+   "overview": "Heathcliff locks Cathy and Nelly in the Heights and forces the marriage. Cathy escapes in time to be with Edgar when he dies; Heathcliff's lawyer takes control of the Grange."
+  },
+  {
+   "id": "ch-29-30",
+   "label": "Chapters 29–30",
+   "units": [
+    "ch-29",
+    "ch-30"
+   ],
+   "words": 4660,
+   "overview": "Heathcliff takes Cathy to the Heights and tells Nelly what he did at Catherine's grave. Linton dies and leaves everything to his father. Lockwood decides to leave the Grange."
+  },
+  {
+   "id": "ch-31-32",
+   "label": "Chapters 31–32",
+   "units": [
+    "ch-31",
+    "ch-32"
+   ],
+   "words": 6155,
+   "overview": "Lockwood gives notice in January. Returning in September 1802, he finds Cathy teaching Hareton to read; Nelly tells him Heathcliff died three months before."
+  },
+  {
+   "id": "ch-33-34",
+   "label": "Chapters 33–34",
+   "units": [
+    "ch-33",
+    "ch-34"
+   ],
+   "words": 7510,
+   "overview": "Heathcliff loses the wish for revenge, stops eating and dies in Catherine's old room. Cathy and Hareton will marry. Lockwood visits the three graves by the moor."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "ch-01",
+   "ref": "Chapter 1",
+   "speaker": "Lockwood",
+   "quote": "“Wuthering” being a significant provincial adjective, descriptive of the atmospheric tumult to which its station is exposed in stormy weather.",
+   "note": "The title explained by an outsider who does not belong in the place. Lockwood's polished words are a first lesson in how far this narrator is from the people he describes."
+  },
+  {
+   "unit": "ch-03",
+   "ref": "Chapter 3",
+   "speaker": "The voice at the window",
+   "quote": "“Let me in—let me in!” “Who are you?” I asked, struggling, meanwhile, to disengage myself. “Catherine Linton,” it replied,",
+   "note": "Lockwood's dream, before he knows anything of the story. Ask students why the voice gives the name Linton and not Earnshaw; Lockwood himself wonders about it a line later."
+  },
+  {
+   "unit": "ch-09",
+   "ref": "Chapter 9",
+   "speaker": "Catherine to Nelly",
+   "quote": "Whatever our souls are made of, his and mine are the same; and Linton’s is as different as a moonbeam from lightning, or frost from fire.",
+   "note": "Said to Nelly in the kitchen after Catherine has accepted Edgar. Heathcliff is listening and has already left. Students should know exactly which part of the speech he heard."
+  },
+  {
+   "unit": "ch-16",
+   "ref": "Chapter 16",
+   "speaker": "Heathcliff",
+   "quote": "I _cannot_ live without my life! I _cannot_ live without my soul!",
+   "note": "In the park at dawn, after Nelly tells him that Catherine is dead. Compare his words with what Catherine says of him in Chapter 9."
+  },
+  {
+   "unit": "ch-33",
+   "ref": "Chapter 33",
+   "speaker": "Heathcliff to Nelly",
+   "quote": "“It is a poor conclusion, is it not?” he observed, having brooded a while on the scene he had just witnessed",
+   "note": "He has just watched Cathy and Hareton together. The revenge he has built since Chapter 7 is within reach, and he no longer wants it."
+  },
+  {
+   "unit": "ch-34",
+   "ref": "Chapter 34",
+   "speaker": "Lockwood",
+   "quote": "listened to the soft wind breathing through the grass, and wondered how any one could ever imagine unquiet slumbers for the sleepers in that quiet earth.",
+   "note": "The last words of the novel, at the three graves. They follow Nelly's report that local people claim to see a ghost on the moors; Lockwood, the outsider, has the last word."
+  }
+ ],
+ "samples": [
+  {
+   "check": "Chapters 1–2",
+   "skill": "inference",
+   "stem": "After describing Heathcliff's reserve as just like his own, Lockwood checks himself: \"I bestow my own attributes over-liberally on him.\" What does this admission suggest about Lockwood as a narrator?",
+   "quote": null,
+   "options": [
+    "He reads his own nature into others",
+    "He has known Heathcliff for years and trusts his judgment",
+    "He is deliberately hiding facts about Heathcliff from us",
+    "He thinks Heathcliff is far more sociable than he is"
+   ],
+   "answer": "A",
+   "why": "Lockwood admits he is projecting his own feelings onto a man he has just met, and by Chapter 2 he has already dropped his first verdict that Heathcliff is \"a capital fellow\"; his judgments cannot be taken at face value.",
+   "evidence": [
+    "I bestow my own attributes over-liberally on him.",
+    "Mr. Heathcliff may have entirely dissimilar reasons for keeping his hand out of the way",
+    "I no longer felt inclined to call Heathcliff a capital fellow."
+   ]
+  },
+  {
+   "check": "Chapters 17–18",
+   "skill": "recall",
+   "stem": "After fleeing the Heights, what does Isabella do with her wedding ring at the Grange?",
+   "quote": null,
+   "options": [
+    "She gives it to Nelly to sell to pay for the journey",
+    "She lays it on Catherine's coffin as a peace offering",
+    "She strikes it with the poker and drops it in the fire",
+    "She throws it from the carriage into the snow"
+   ],
+   "answer": "C",
+   "why": "Calling it \"the last thing of his,\" Isabella throws the ring down, strikes it with the poker, and drops it among the coals.",
+   "evidence": [
+    "she slipped the gold ring from her third finger, and threw it on the floor.",
+    "she took and dropped the misused article among the coals."
+   ]
+  },
+  {
+   "check": "Chapters 33–34",
+   "skill": "close",
+   "stem": "Joseph tells Heathcliff that he would not leave for Nelly's sake, then adds: \"Thank God! shoo cannot stale t' sowl o' nob'dy!\" In context, what does he mean?",
+   "quote": null,
+   "options": [
+    "Nelly, unlike Cathy, has no power to bewitch anyone's heart",
+    "Nelly is too pious ever to tempt anyone into sin",
+    "Nelly cannot take the garden, because the land is Heathcliff's",
+    "Nelly has never managed to turn Hareton against him"
+   ],
+   "answer": "A",
+   "why": "Joseph means Nelly cannot \"steal the soul\" of anyone: she was never handsome enough to bewitch a man. The one who has done so is the \"graceless quean\" Cathy, who has \"witched our lad\" Hareton with her bold eyes, so that he tore up Joseph's currant-trees.",
+   "evidence": [
+    "I sudn’t shift for Nelly—nasty ill nowt as shoo is.",
+    "Shoo wer niver soa handsome, but what a body mud look at her ’bout winking.",
+    "It’s yon flaysome, graceless quean, that’s witched our lad, wi’ her bold een and her forrard ways"
+   ]
+  }
+ ],
+ "qa": {
+  "items": 102,
+  "pass": 96,
+  "partial": 6,
+  "leak": 0,
+  "failing": 0
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "slug": "the-awakening",
+ "updated": "2026-10-17",
+ "about": [
+  "Thirty-nine short chapters, 49,700 words in Project Gutenberg eBook #160. Some are tiny: Chapter 6 has 249 words and Chapter 28 has 170, while Chapter 7 has 2,572. The pack groups the chapters in threes, so its 13 checks cover 2,500 to 5,600 words each.",
+  "The setting does the structuring: Chapters 1 to 16 take place at Grand Isle and the islands near it, in summer, Chapters 17 to 38 in New Orleans, and Chapter 39 back on the island, out of season. Where students lose the thread is in the middle, when Robert is in Mexico and Arobin enters; a check every three chapters keeps the New Orleans section from blurring."
+ ],
+ "checks": [
+  {
+   "id": "ch-01-03",
+   "label": "Chapters 1–3",
+   "units": [
+    "ch-01",
+    "ch-02",
+    "ch-03"
+   ],
+   "words": 2789,
+   "overview": "At Grand Isle, Léonce Pontellier watches his wife Edna come back from a swim with Robert Lebrun. That night he scolds her about their sons, and she cries alone on the porch without knowing why."
+  },
+  {
+   "id": "ch-04-06",
+   "label": "Chapters 4–6",
+   "units": [
+    "ch-04",
+    "ch-05",
+    "ch-06"
+   ],
+   "words": 2511,
+   "overview": "Edna is not one of the mother-women, of whom Adèle Ratignolle is the model. Robert has been her constant companion all summer. Something is beginning to awaken in her."
+  },
+  {
+   "id": "ch-07-09",
+   "label": "Chapters 7–9",
+   "units": [
+    "ch-07",
+    "ch-08",
+    "ch-09"
+   ],
+   "words": 5628,
+   "overview": "On the beach Edna tells Adèle about a Kentucky meadow from her childhood; we learn why she married Léonce. Adèle warns Robert. At a Saturday party, Mademoiselle Reisz's playing makes Edna weep."
+  },
+  {
+   "id": "ch-10-12",
+   "label": "Chapters 10–12",
+   "units": [
+    "ch-10",
+    "ch-11",
+    "ch-12"
+   ],
+   "words": 3716,
+   "overview": "Edna learns to swim at last and swims out alone. Back at the cottage she refuses Léonce's order to come in. The next morning she sends for Robert to cross with her to the Chênière Caminada."
+  },
+  {
+   "id": "ch-13-15",
+   "label": "Chapters 13–15",
+   "units": [
+    "ch-13",
+    "ch-14",
+    "ch-15"
+   ],
+   "words": 4494,
+   "overview": "Edna feels faint at mass and sleeps at Madame Antoine's cottage while Robert waits. Soon after, at dinner, she learns that Robert is leaving for Mexico that same night."
+  },
+  {
+   "id": "ch-16-18",
+   "label": "Chapters 16–18",
+   "units": [
+    "ch-16",
+    "ch-17",
+    "ch-18"
+   ],
+   "words": 4855,
+   "overview": "Robert gone, Edna swims and seeks news of him; Mademoiselle Reisz gives her an address in the city. Back in New Orleans she skips her Tuesday receptions and decides to take up painting."
+  },
+  {
+   "id": "ch-19-21",
+   "label": "Chapters 19–21",
+   "units": [
+    "ch-19",
+    "ch-20",
+    "ch-21"
+   ],
+   "words": 3432,
+   "overview": "Edna stops doing what is expected and paints. She visits Madame Lebrun and then Mademoiselle Reisz, who shows her a letter from Robert and plays while she reads it."
+  },
+  {
+   "id": "ch-22-24",
+   "label": "Chapters 22–24",
+   "units": [
+    "ch-22",
+    "ch-23",
+    "ch-24"
+   ],
+   "words": 3844,
+   "overview": "Léonce consults Doctor Mandelet, who tells him to leave Edna alone. Her father visits; after he and Léonce leave and the children go to their grandmother, Edna is alone in the house."
+  },
+  {
+   "id": "ch-25-27",
+   "label": "Chapters 25–27",
+   "units": [
+    "ch-25",
+    "ch-26",
+    "ch-27"
+   ],
+   "words": 4583,
+   "overview": "Edna goes to the races and meets Alcée Arobin. She decides to move into a small house of her own, admits to Mademoiselle Reisz that she loves Robert, and returns Arobin's kiss."
+  },
+  {
+   "id": "ch-28-30",
+   "label": "Chapters 28–30",
+   "units": [
+    "ch-28",
+    "ch-29",
+    "ch-30"
+   ],
+   "words": 3129,
+   "overview": "Edna feels neither shame nor remorse after Arobin's visit. She prepares the move to the pigeon house and gives a farewell dinner on her twenty-ninth birthday."
+  },
+  {
+   "id": "ch-31-33",
+   "label": "Chapters 31–33",
+   "units": [
+    "ch-31",
+    "ch-32",
+    "ch-33"
+   ],
+   "words": 3927,
+   "overview": "Arobin walks Edna to her new house. Léonce saves appearances with a newspaper notice. Edna visits her children, then meets Robert again by chance at Mademoiselle Reisz's."
+  },
+  {
+   "id": "ch-34-36",
+   "label": "Chapters 34–36",
+   "units": [
+    "ch-34",
+    "ch-35",
+    "ch-36"
+   ],
+   "words": 3675,
+   "overview": "Robert keeps his distance at dinner and then stays away. At a garden café they meet again; he confesses his love, and Edna is called away to Adèle, who is in labor."
+  },
+  {
+   "id": "ch-37-39",
+   "label": "Chapters 37–39",
+   "units": [
+    "ch-37",
+    "ch-38",
+    "ch-39"
+   ],
+   "words": 3117,
+   "overview": "Edna witnesses Adèle's labor. Robert leaves her a note and goes. At Grand Isle, out of season, Edna goes down to the beach to swim."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "ch-01",
+   "ref": "Chapter 1",
+   "speaker": "Narrator",
+   "quote": "A green and yellow parrot, which hung in a cage outside the door, kept repeating over and over: “_Allez vous-en! Allez vous-en! Sapristi!_ That’s all right!”",
+   "note": "The novel's first sentence. The parrot's French tells someone to go away, with a mild oath. Ask students to keep a list of caged and free birds as they read; the list will be long."
+  },
+  {
+   "unit": "ch-04",
+   "ref": "Chapter 4",
+   "speaker": "Narrator",
+   "quote": "In short, Mrs. Pontellier was not a mother-woman. The mother-women seemed to prevail that summer at Grand Isle.",
+   "note": "The narrator names a type and measures Edna against it. The term is Chopin's own; students can test the definition that follows against Adèle in every later scene."
+  },
+  {
+   "unit": "ch-06",
+   "ref": "Chapter 6",
+   "speaker": "Narrator",
+   "quote": "The voice of the sea is seductive; never ceasing, whispering, clamoring, murmuring, inviting the soul to wander for a spell in abysses of solitude;",
+   "note": "Chapter 6 is 249 words long. Read it aloud in class: it is the clearest statement of the title, and the narrator's tone here is different from the chapters around it."
+  },
+  {
+   "unit": "ch-10",
+   "ref": "Chapter 10",
+   "speaker": "Narrator",
+   "quote": "A feeling of exultation overtook her, as if some power of significant import had been given her to control the working of her body and her soul.",
+   "note": "The night Edna finally swims. The next sentences turn the exultation into risk; it is the first of the novel's two long swims."
+  },
+  {
+   "unit": "ch-27",
+   "ref": "Chapter 27",
+   "speaker": "Edna to Arobin, repeating Mademoiselle Reisz",
+   "quote": "The bird that would soar above the level plain of tradition and prejudice must have strong wings. It is a sad spectacle to see the weaklings bruised, exhausted, fluttering back to earth.",
+   "note": "Edna quotes the pianist to a man who dismisses her. The bird image connects to the parrot of Chapter 1 and to a bird in the last chapter."
+  }
+ ],
+ "samples": [
+  {
+   "check": "Chapters 1–3",
+   "skill": "inference",
+   "stem": "Checking on the sleeping boys, Mr. Pontellier announces that Raoul has a high fever. What does the narrator suggest this claim rests on?",
+   "quote": null,
+   "options": [
+    "A restless boy who kicks and talks in his sleep about a basket of crabs",
+    "A flushed face and hot hands he feels when he turns the boy over",
+    "The nurse's report that Raoul refused his supper that evening",
+    "Raoul's complaint, when awakened, of a headache and sore throat"
+   ],
+   "answer": "A",
+   "why": "The only symptom reported is a child who, shifted about in bed, kicks and mumbles about crabs. The boy had been well all day, so the \"fever\" says more about Mr. Pontellier's mood than about Raoul.",
+   "evidence": [
+    "He turned and shifted the youngsters about in bed. One of them began to kick and talk about a basket full of crabs.",
+    "He had gone to bed perfectly well, she said, and nothing had ailed him all day."
+   ]
+  },
+  {
+   "check": "Chapters 19–21",
+   "skill": "recall",
+   "stem": "Why does Edna choose the house-maid as a model for her painting?",
+   "quote": null,
+   "options": [
+    "Her back and shoulders have classic lines.",
+    "She is the only servant free.",
+    "The boys have refused to pose for their mother any longer.",
+    "Léonce has asked Edna to paint a portrait of the maid."
+   ],
+   "answer": "A",
+   "why": "Edna is struck by the maid's classic back and shoulders and her loosened hair; the boys merely lost interest in posing.",
+   "evidence": [
+    "the house-maid, too, served her term as model when Edna perceived that the young woman’s back and shoulders were molded on classic lines"
+   ]
+  },
+  {
+   "check": "Chapters 37–39",
+   "skill": "close",
+   "stem": "While Victor talks about the dinner, Mariequita declares that \"since it was the fashion to be in love with married people, why, she could run away any time she liked to New Orleans with Célina's husband.\" What prompts this threat?",
+   "quote": null,
+   "options": [
+    "Victor's refusal to take her with him to the city",
+    "Her belief, which Victor slyly encourages, that he loves Mrs. Pontellier",
+    "A quarrel with Philomel's mother over the cooking",
+    "Victor's boast that he will marry a rich city girl"
+   ],
+   "answer": "B",
+   "why": "Jealous of the married Mrs. Pontellier, whom she thinks Victor loves (and he lets her think so), Mariequita answers with a married man of her own; Victor promises to hammer Célina's husband's head into a jelly, which consoles her.",
+   "evidence": [
+    "She got it into her head that Victor was in love with Mrs. Pontellier, and he gave her evasive answers, framed so as to confirm her belief. She grew sullen and cried a little, threatening to go off and leave him to his fine ladies."
+   ]
+  }
+ ],
+ "qa": {
+  "items": 78,
+  "pass": 73,
+  "partial": 5,
+  "leak": 0,
+  "failing": 0
+ }
+}

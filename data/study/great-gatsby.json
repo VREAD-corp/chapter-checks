@@ -1,0 +1,199 @@
+{
+ "slug": "great-gatsby",
+ "updated": "2026-10-17",
+ "about": [
+  "Nine chapters and 48,152 words in the Project Gutenberg text (eBook #64317). They are not equal: Chapter 7, the hot day and the Plaza Hotel, runs to 8,766 words, about twice Chapter 6 (4,036). Give Chapter 7 its own night of reading.",
+  "Where students lose the thread: Nick tells Gatsby's past out of order. Jordan gives the Louisville story in Chapter 4, Nick reveals James Gatz and Dan Cody in Chapter 6, and Gatsby tells his own version of the courtship in Chapter 8. A check after each chapter shows whether a class has put these pieces in the right place."
+ ],
+ "checks": [
+  {
+   "id": "ch-01",
+   "label": "Chapter 1",
+   "units": [
+    "ch-01"
+   ],
+   "words": 5892,
+   "overview": "Nick Carraway rents a house in West Egg next to Gatsby's mansion and dines in East Egg with Daisy and Tom Buchanan, where he meets Jordan Baker. That night he sees Gatsby reaching toward a green light across the bay."
+  },
+  {
+   "id": "ch-02",
+   "label": "Chapter 2",
+   "units": [
+    "ch-02"
+   ],
+   "words": 4280,
+   "overview": "In the valley of ashes, under the eyes of Doctor T. J. Eckleburg, Tom introduces Nick to Myrtle Wilson. The party at their New York apartment ends when Tom breaks Myrtle's nose."
+  },
+  {
+   "id": "ch-03",
+   "label": "Chapter 3",
+   "units": [
+    "ch-03"
+   ],
+   "words": 5734,
+   "overview": "Nick attends one of Gatsby's parties, where guests trade rumors about their host. He meets Gatsby without knowing it at first. Jordan learns a secret from Gatsby and keeps it."
+  },
+  {
+   "id": "ch-04",
+   "label": "Chapter 4",
+   "units": [
+    "ch-04"
+   ],
+   "words": 5456,
+   "overview": "Gatsby drives Nick to New York, tells his life story and introduces Meyer Wolfshiem. Jordan explains the secret: Gatsby loved Daisy in Louisville in 1917 and bought his house to be across the bay from her."
+  },
+  {
+   "id": "ch-05",
+   "label": "Chapter 5",
+   "units": [
+    "ch-05"
+   ],
+   "words": 4233,
+   "overview": "Nick invites Daisy to tea, and Gatsby meets her again. The reunion starts awkwardly. Gatsby then shows Daisy his mansion, his shirts and the green light at the end of her dock."
+  },
+  {
+   "id": "ch-06",
+   "label": "Chapter 6",
+   "units": [
+    "ch-06"
+   ],
+   "words": 4036,
+   "overview": "Nick tells Gatsby's real past: born James Gatz, he learned the ways of the rich with Dan Cody. Tom and Daisy come to a party, which Daisy does not enjoy. Gatsby insists he can repeat the past."
+  },
+  {
+   "id": "ch-07",
+   "label": "Chapter 7",
+   "units": [
+    "ch-07"
+   ],
+   "words": 8766,
+   "overview": "On the hottest day, the group drives to New York, and at the Plaza Hotel Tom exposes Gatsby's business. Driving back, Gatsby's car kills Myrtle; Gatsby says Daisy was driving."
+  },
+  {
+   "id": "ch-08",
+   "label": "Chapter 8",
+   "units": [
+    "ch-08"
+   ],
+   "words": 4530,
+   "overview": "At dawn Gatsby tells Nick the true story of his courtship of Daisy. Wilson, crazed with grief, traces the yellow car to Gatsby, shoots him in his pool and kills himself."
+  },
+  {
+   "id": "ch-09",
+   "label": "Chapter 9",
+   "units": [
+    "ch-09"
+   ],
+   "words": 5225,
+   "overview": "Almost no one comes to Gatsby's funeral; his father, Henry Gatz, arrives from Minnesota. Nick learns what Tom told Wilson, ends things with Jordan and decides to go home."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "ch-01",
+   "ref": "Chapter 1",
+   "speaker": "Nick",
+   "quote": "Involuntarily I glanced seaward—and distinguished nothing except a single green light, minute and far away, that might have been the end of a dock.",
+   "note": "Nick's first sight of Gatsby, on the lawn at night. Nick does not yet know whose dock it is; students should note in which chapter they find out."
+  },
+  {
+   "unit": "ch-02",
+   "ref": "Chapter 2",
+   "speaker": "Nick",
+   "quote": "This is a valley of ashes—a fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens;",
+   "note": "The opening of Chapter 2, halfway between West Egg and New York. The farm image turns a dump into a harvest; Wilson's garage stands at its edge."
+  },
+  {
+   "unit": "ch-03",
+   "ref": "Chapter 3",
+   "speaker": "Nick",
+   "quote": "He smiled understandingly—much more than understandingly. It was one of those rare smiles with a quality of eternal reassurance in it, that you may come across four or five times in life.",
+   "note": "The moment Nick learns he has been talking to his host. Nick's narration works hard on one smile; ask students what the paragraph that follows takes back."
+  },
+  {
+   "unit": "ch-06",
+   "ref": "Chapter 6",
+   "speaker": "Gatsby to Nick",
+   "quote": "“Can’t repeat the past?” he cried incredulously. “Why of course you can!”",
+   "note": "After the party that Tom and Daisy attended. Nick has just advised him not to ask too much of Daisy; the reply states the novel's question in a few words, and the book's last sentence answers it."
+  },
+  {
+   "unit": "ch-07",
+   "ref": "Chapter 7",
+   "speaker": "Gatsby and Nick",
+   "quote": "“Her voice is full of money,” he said suddenly. That was it. I’d never understood before.",
+   "note": "Before the drive to New York, after Daisy has shown her feelings in front of Tom. Gatsby, not Nick, finds the phrase; ask what it tells us that he sees it clearly and loves her anyway."
+  },
+  {
+   "unit": "ch-09",
+   "ref": "Chapter 9",
+   "speaker": "Nick",
+   "quote": "They were careless people, Tom and Daisy—they smashed up things and creatures and then retreated back into their money or their vast carelessness, or whatever it was that kept them together,",
+   "note": "Nick's judgment after his last meeting with Tom. It is useful to ask whether the narrator who opened the book by reserving judgment has kept that promise."
+  }
+ ],
+ "samples": [
+  {
+   "check": "Chapter 1",
+   "skill": "inference",
+   "stem": "When Nick first enters the Buchanans' living room, Jordan lies motionless on the couch with her chin raised and gives no sign of noticing him. What does Nick's response to her reveal about him?",
+   "quote": null,
+   "options": [
+    "He is offended by her rudeness and decides she is a snob",
+    "He assumes she is ill and asks Daisy whether she needs a doctor",
+    "He is drawn to anyone who seems completely self-sufficient",
+    "He feels he has intruded and leaves the room at once"
+   ],
+   "answer": "C",
+   "why": "Far from taking offense, Nick nearly apologizes to Jordan twice and explains that 'any exhibition of complete self-sufficiency draws a stunned tribute' from him; he stays in the room and never mentions illness.",
+   "evidence": [
+    "If she saw me out of the corner of her eyes she gave no hint of it—indeed, I was almost surprised into murmuring an apology for having disturbed her by coming in.",
+    "Again a sort of apology arose to my lips. Almost any exhibition of complete self-sufficiency draws a stunned tribute from me."
+   ]
+  },
+  {
+   "check": "Chapter 5",
+   "skill": "recall",
+   "stem": "As four o'clock approaches and Daisy has not yet arrived, what does Gatsby suddenly tell Nick?",
+   "quote": null,
+   "options": [
+    "That he must take a call from Chicago and will come right back",
+    "That nobody is coming to tea and he is going home",
+    "That he wants the tea moved over to his own house",
+    "That the lemon cakes will not do and he must send for others"
+   ],
+   "answer": "B",
+   "why": "At two minutes to four, Gatsby loses his nerve, declares that nobody is coming and that he is going home; he sits back down just as Daisy's car turns into the lane. He had approved the lemon cakes ('They're fine!').",
+   "evidence": [
+    "Finally he got up and informed me, in an uncertain voice, that he was going home.",
+    "Nobody's coming to tea. It's too late!",
+    "Don't be silly; it's just two minutes to four."
+   ]
+  },
+  {
+   "check": "Chapter 9",
+   "skill": "close",
+   "stem": "Defending himself to Nick, Tom says: \"when I went to give up that flat and saw that damn box of dog biscuits sitting there on the sideboard, I sat down and cried like a baby.\" What does the line show in context?",
+   "quote": null,
+   "options": [
+    "Tom confesses that he regrets telling Wilson whose car it was",
+    "Tom is grieving for a pet of Daisy's that died while they were away",
+    "Tom offers his grief over Myrtle as his share of suffering, to justify himself",
+    "Tom explains why he and Daisy left town without an address"
+   ],
+   "answer": "C",
+   "why": "The flat is the one he kept for Myrtle, and the dog biscuits were bought for her puppy; Tom cites his tears as his 'share of suffering' right after defending what he told Wilson ('That fellow had it coming to him'), and Nick sees that Tom feels entirely justified.",
+   "evidence": [
+    "And if you think I didn't have my share of suffering—look here, when I went to give up that flat and saw that damn box of dog biscuits sitting there on the sideboard, I sat down and cried like a baby.",
+    "I saw that what he had done was, to him, entirely justified."
+   ]
+  }
+ ],
+ "qa": {
+  "items": 63,
+  "pass": 59,
+  "partial": 4,
+  "leak": 0,
+  "failing": 0
+ }
+}

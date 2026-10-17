@@ -1,0 +1,161 @@
+{
+ "slug": "hamlet",
+ "updated": "2026-10-17",
+ "about": [
+  "Hamlet is the longest text in the set after the novels: 31,707 words in the Project Gutenberg file, against 18,024 for Macbeth. Act 3 is the longest act (7,548 words) and holds the play-within-the-play, the prayer scene and the killing of Polonius, so it is the act where a check helps most.",
+  "Where students lose the thread: the Norway plot (Fortinbras) that opens in Act 1 and closes the play, the letters that travel between Denmark and England in Acts 4 and 5, and which scenes Hamlet only reports, such as the pirates and the switched order."
+ ],
+ "checks": [
+  {
+   "id": "act-1",
+   "label": "Act 1",
+   "units": [
+    "act-1"
+   ],
+   "words": 6982,
+   "overview": "The ghost of King Hamlet appears on the battlements. Claudius, now king and married to Gertrude, keeps Hamlet from Wittenberg. Polonius orders Ophelia to stop seeing Hamlet. The ghost tells Hamlet that Claudius poisoned him and demands revenge."
+  },
+  {
+   "id": "act-2",
+   "label": "Act 2",
+   "units": [
+    "act-2"
+   ],
+   "words": 5896,
+   "overview": "Ophelia reports Hamlet's strange visit, and Polonius decides he is mad for love. Rosencrantz and Guildenstern admit they were sent for. The players arrive, and Hamlet plans The Murder of Gonzago to test the king."
+  },
+  {
+   "id": "act-3",
+   "label": "Act 3",
+   "units": [
+    "act-3"
+   ],
+   "words": 7548,
+   "overview": "Hamlet tells Ophelia to go to a nunnery. The play makes Claudius rise and stop it. Hamlet finds the king at prayer and spares him, then kills Polonius behind the curtain in his mother's room."
+  },
+  {
+   "id": "act-4",
+   "label": "Act 4",
+   "units": [
+    "act-4"
+   ],
+   "words": 5416,
+   "overview": "Claudius sends Hamlet to England with sealed orders for his death. Ophelia goes mad. Laertes returns for revenge, and he and Claudius plan a poisoned fencing match. Gertrude reports that Ophelia has drowned."
+  },
+  {
+   "id": "act-5",
+   "label": "Act 5",
+   "units": [
+    "act-5"
+   ],
+   "words": 5865,
+   "overview": "In the churchyard Hamlet holds Yorick's skull and fights Laertes in Ophelia's grave. He tells Horatio how he sent Rosencrantz and Guildenstern to their deaths. The match kills Gertrude, Laertes, Claudius and Hamlet; Fortinbras takes the throne."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "act-1",
+   "ref": "Act 1, Scene 2",
+   "speaker": "Hamlet, alone",
+   "quote": "O that this too too solid flesh would melt, / Thaw, and resolve itself into a dew!",
+   "note": "His first soliloquy, before he has heard of the ghost. Everything he says here comes from grief and his mother's remarriage alone, which is worth remembering when students later ask what the ghost changed."
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2, Scene 2",
+   "speaker": "Hamlet, alone",
+   "quote": "I’ll have grounds / More relative than this. The play’s the thing / Wherein I’ll catch the conscience of the King.",
+   "note": "The end of Act 2. He has just called himself a coward and wondered whether the ghost could be a devil. The lines explain why he waits: he wants proof that does not rest on the ghost's word alone."
+  },
+  {
+   "unit": "act-3",
+   "ref": "Act 3, Scene 1",
+   "speaker": "Hamlet, alone",
+   "quote": "To be, or not to be, that is the question: / Whether ’tis nobler in the mind to suffer / The slings and arrows of outrageous fortune,",
+   "note": "Claudius and Polonius are hidden nearby, waiting to watch him meet Ophelia. Whether Hamlet knows he is watched is a classic discussion point; the text does not settle it."
+  },
+  {
+   "unit": "act-4",
+   "ref": "Act 4, Scene 4",
+   "speaker": "Hamlet, alone",
+   "quote": "How all occasions do inform against me, / And spur my dull revenge.",
+   "note": "He has just seen Fortinbras's army marching to fight for a small piece of Poland. The speech ends with his resolve that his thoughts be bloody; set it beside the end of Act 2, where a player's tears shame him in the same way."
+  },
+  {
+   "unit": "act-5",
+   "ref": "Act 5, Scene 1",
+   "speaker": "Hamlet to Horatio",
+   "quote": "Alas, poor Yorick. I knew him, Horatio, a fellow of infinite jest, of most excellent fancy.",
+   "note": "Prose, in a scene that begins with two gravediggers joking. Ask students what Hamlet's thoughts on death sound like here compared with the soliloquy in Act 3, Scene 1."
+  },
+  {
+   "unit": "act-5",
+   "ref": "Act 5, Scene 2",
+   "speaker": "Hamlet to Horatio",
+   "quote": "If it be now, ’tis not to come; if it be not to come, it will be now; if it be not now, yet it will come. The readiness is all.",
+   "note": "Horatio has offered to call off the fencing match. This is Hamlet's last long reflection before the duel, and his calm here is a fair test of whether students have followed how he changed after the voyage."
+  }
+ ],
+ "samples": [
+  {
+   "check": "Act 1",
+   "skill": "inference",
+   "stem": "After Laertes lectures her about guarding herself against Hamlet, Ophelia answers by comparing him to certain preachers. What does her reply suggest?",
+   "quote": null,
+   "options": [
+    "She resents being kept at home while he sails to France",
+    "She suspects her brother may not follow his own advice",
+    "She has already decided to break with Hamlet",
+    "She wants Laertes to plead her case with the King"
+   ],
+   "answer": "B",
+   "why": "Ophelia warns Laertes not to be like a preacher who shows others \"the steep and thorny way\" while he himself walks \"the primrose path\"; she gently turns his warning back on him.",
+   "evidence": [
+    "Do not as some ungracious pastors do, Show me the steep and thorny way to heaven;",
+    "Whilst like a puff'd and reckless libertine Himself the primrose path of dalliance treads, And recks not his own rede."
+   ]
+  },
+  {
+   "check": "Act 3",
+   "skill": "recall",
+   "stem": "In the dumb show that comes before the spoken play, what does the poisoner do just before he pours poison in the sleeping king's ears?",
+   "quote": null,
+   "options": [
+    "He kneels and seems to pray over the sleeper",
+    "He draws a curtain around the bank of flowers",
+    "He takes off the king's crown and kisses it",
+    "He signals to a few mutes to stand guard"
+   ],
+   "answer": "C",
+   "why": "The stage direction has the poisoner take off the sleeping king's crown and kiss it before pouring the poison, a gesture that points to his motive; the mutes come in only after the death, and there is no prayer or curtain.",
+   "evidence": [
+    "Anon comes in a fellow, takes off his crown, kisses it, pours poison in the King's ears, and exits."
+   ]
+  },
+  {
+   "check": "Act 5",
+   "skill": "close",
+   "stem": "When Laertes grapples with him in the grave, crying \"The devil take thy soul!\", Hamlet answers, \"Thou pray'st not well.\" What does Hamlet go on to tell him?",
+   "quote": null,
+   "options": [
+    "That Ophelia would be ashamed to see them fight",
+    "That the King has set Laertes on to murder him",
+    "That though not rash, he has something dangerous in him",
+    "That he will never fight a man over a grave"
+   ],
+   "answer": "C",
+   "why": "Hamlet meets the curse with cool irony, asks Laertes to take his fingers from his throat, and warns that although he is not hot-tempered he has \"something dangerous\" in him that Laertes would be wise to fear. He soon vows to fight \"upon this theme,\" so D is false.",
+   "evidence": [
+    "I prithee take thy fingers from my throat;",
+    "For though I am not splenative and rash, Yet have I in me something dangerous, Which let thy wiseness fear."
+   ]
+  }
+ ],
+ "qa": {
+  "items": 40,
+  "pass": 37,
+  "partial": 3,
+  "leak": 0,
+  "failing": 0
+ }
+}

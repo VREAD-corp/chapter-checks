@@ -1,0 +1,106 @@
+{
+ "_doc": "Question 3 (prose fiction / literary argument) title lists printed in the AP English Literature and Composition free-response PDFs, 2023 to 2026, as listed on https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions. Each PDF was downloaded and its question-3 list read by READ FRANCE on 2026-10-17 (pdftotext); `titles` = which Chapter Checks titles are printed in that list, `count` = number of works in the list. Topic: our paraphrase of the prompt. 2026: one set published at the date checked.",
+ "checked": "2026-10-17",
+ "page": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions",
+ "lists": [
+  {
+   "id": "ap23-frq-english-lit-set-1",
+   "year": 2023,
+   "set": "set 1",
+   "url": "https://apcentral.collegeboard.org/media/pdf/ap23-frq-english-lit-set-1.pdf",
+   "topic": "a character who intentionally creates a new identity",
+   "count": 41,
+   "titles": [
+    "jane-eyre",
+    "the-awakening",
+    "wuthering-heights"
+   ]
+  },
+  {
+   "id": "ap23-frq-english-lit-set-2",
+   "year": 2023,
+   "set": "set 2",
+   "url": "https://apcentral.collegeboard.org/media/pdf/ap23-frq-english-lit-set-2.pdf",
+   "topic": "a rebel character who disrupts the existing state of societal, familial or political affairs",
+   "count": 42,
+   "titles": [
+    "frankenstein-1831",
+    "jane-eyre",
+    "scarlet-letter",
+    "the-awakening",
+    "wuthering-heights"
+   ]
+  },
+  {
+   "id": "ap24-frq-english-lit-set-1",
+   "year": 2024,
+   "set": "set 1",
+   "url": "https://apcentral.collegeboard.org/media/pdf/ap24-frq-english-lit-set-1.pdf",
+   "topic": "a character who is reluctant, unable or resistant to make a decision",
+   "count": 38,
+   "titles": [
+    "frankenstein-1831",
+    "jane-eyre",
+    "wuthering-heights"
+   ]
+  },
+  {
+   "id": "ap24-frq-english-lit-set-2",
+   "year": 2024,
+   "set": "set 2",
+   "url": "https://apcentral.collegeboard.org/media/pdf/ap24-frq-english-lit-set-2.pdf",
+   "topic": "a character who senses that something important is lacking in life",
+   "count": 40,
+   "titles": [
+    "frankenstein-1831",
+    "jane-eyre",
+    "macbeth",
+    "scarlet-letter",
+    "the-awakening",
+    "wuthering-heights"
+   ]
+  },
+  {
+   "id": "ap25-frq-english-literature-set-1",
+   "year": 2025,
+   "set": "set 1",
+   "url": "https://apcentral.collegeboard.org/media/pdf/ap25-frq-english-literature-set-1.pdf",
+   "topic": "characters significantly affected by memories of the past",
+   "count": 36,
+   "titles": [
+    "jane-eyre",
+    "macbeth",
+    "scarlet-letter",
+    "wuthering-heights"
+   ]
+  },
+  {
+   "id": "ap25-frq-english-literature-set-2",
+   "year": 2025,
+   "set": "set 2",
+   "url": "https://apcentral.collegeboard.org/media/pdf/ap25-frq-english-literature-set-2.pdf",
+   "topic": "a character who holds a secret",
+   "count": 37,
+   "titles": [
+    "frankenstein-1831",
+    "great-gatsby",
+    "jane-eyre",
+    "macbeth",
+    "scarlet-letter",
+    "the-awakening"
+   ]
+  },
+  {
+   "id": "ap26-frq-english-literature",
+   "year": 2026,
+   "set": null,
+   "url": "https://apcentral.collegeboard.org/media/pdf/ap26-frq-english-literature.pdf",
+   "topic": "a conflict between the old and the new",
+   "count": 43,
+   "titles": [
+    "frankenstein-1831",
+    "the-awakening"
+   ]
+  }
+ ]
+}

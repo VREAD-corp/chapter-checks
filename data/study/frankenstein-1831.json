@@ -1,0 +1,333 @@
+{
+ "slug": "frankenstein-1831",
+ "updated": "2026-10-17",
+ "about": [
+  "The 1831 text runs to 75,037 words in Project Gutenberg eBook #42324: four opening letters (5,544 words) and 24 chapters, most between 1,800 and 3,600 words. Chapter 24 is the exception at 8,239 words, because Walton's closing letters are printed inside it. The pack has 25 checks, one per letter group and chapter, so a check rarely covers more than one evening of reading.",
+  "Where students lose the thread: the story is told inside a story inside a story. Walton writes to his sister; inside his letters Victor tells his life; inside Victor's account the creature tells his own story, from Chapter 11 to Chapter 16. Students who miss these shifts attribute the creature's words to Victor. Some editions and classes use the 1818 text instead, which differs in places."
+ ],
+ "checks": [
+  {
+   "id": "letters",
+   "label": "Letters 1–4",
+   "units": [
+    "letters"
+   ],
+   "words": 5544,
+   "overview": "Robert Walton writes to his sister Margaret Saville from Russia and then from the Arctic, where his ship is trapped in ice. The crew rescues a half-frozen stranger, who decides to tell Walton his story as a warning."
+  },
+  {
+   "id": "ch-01",
+   "label": "Chapter 1",
+   "units": [
+    "ch-01"
+   ],
+   "words": 1768,
+   "overview": "Victor Frankenstein begins: his father's marriage to Caroline Beaufort, his birth in Naples, and his mother's adoption of Elizabeth Lavenza, who is presented to him as a gift."
+  },
+  {
+   "id": "ch-02",
+   "label": "Chapter 2",
+   "units": [
+    "ch-02"
+   ],
+   "words": 2204,
+   "overview": "Victor grows up with Elizabeth and befriends Henry Clerval. He reads Cornelius Agrippa and the old alchemists, until lightning destroys an oak tree and electricity overthrows his faith in them."
+  },
+  {
+   "id": "ch-03",
+   "label": "Chapter 3",
+   "units": [
+    "ch-03"
+   ],
+   "words": 2683,
+   "overview": "Victor's mother dies of scarlet fever caught while nursing Elizabeth. At Ingolstadt, Professor Krempe scorns his reading, but Professor Waldman inspires him to study modern science."
+  },
+  {
+   "id": "ch-04",
+   "label": "Chapter 4",
+   "units": [
+    "ch-04"
+   ],
+   "words": 2534,
+   "overview": "Victor discovers how to give life to lifeless matter and begins building a creature of gigantic size, working alone and neglecting his family until he grows ill."
+  },
+  {
+   "id": "ch-05",
+   "label": "Chapter 5",
+   "units": [
+    "ch-05"
+   ],
+   "words": 2392,
+   "overview": "On a dreary November night the creature comes to life, and Victor flees in horror. Clerval arrives at Ingolstadt and nurses Victor through a long fever."
+  },
+  {
+   "id": "ch-06",
+   "label": "Chapter 6",
+   "units": [
+    "ch-06"
+   ],
+   "words": 2721,
+   "overview": "A letter from Elizabeth tells the story of Justine Moritz. Victor now hates natural philosophy, studies languages with Clerval and recovers his happiness on a walking tour."
+  },
+  {
+   "id": "ch-07",
+   "label": "Chapter 7",
+   "units": [
+    "ch-07"
+   ],
+   "words": 3576,
+   "overview": "Victor's brother William has been murdered. Near Geneva, in a thunderstorm, Victor sees the creature and is sure it is the killer. Justine has been accused."
+  },
+  {
+   "id": "ch-08",
+   "label": "Chapter 8",
+   "units": [
+    "ch-08"
+   ],
+   "words": 3087,
+   "overview": "Justine is tried, condemned and executed for William's murder. Victor, who considers himself the true murderer, keeps silent."
+  },
+  {
+   "id": "ch-09",
+   "label": "Chapter 9",
+   "units": [
+    "ch-09"
+   ],
+   "words": 2211,
+   "overview": "Overwhelmed by guilt, Victor is tempted to drown himself. Elizabeth begs him to find peace, and he travels alone into the Alps, to the valley of Chamounix."
+  },
+  {
+   "id": "ch-10",
+   "label": "Chapter 10",
+   "units": [
+    "ch-10"
+   ],
+   "words": 2356,
+   "overview": "On the glacier the creature confronts Victor, says misery has made him a fiend, and demands to be heard. Victor agrees to listen in a mountain hut."
+  },
+  {
+   "id": "ch-11",
+   "label": "Chapter 11",
+   "units": [
+    "ch-11"
+   ],
+   "words": 2908,
+   "overview": "The creature tells of its first days: learning to tell senses apart, finding fire, being driven from a village, and hiding in a hovel beside a cottage, where it watches a family."
+  },
+  {
+   "id": "ch-12",
+   "label": "Chapter 12",
+   "units": [
+    "ch-12"
+   ],
+   "words": 2070,
+   "overview": "Watching the cottagers, the creature stops stealing their food, secretly gathers firewood for them and learns words, including the names Felix and Agatha."
+  },
+  {
+   "id": "ch-13",
+   "label": "Chapter 13",
+   "units": [
+    "ch-13"
+   ],
+   "words": 2033,
+   "overview": "Safie arrives at the cottage. Listening to her lessons, the creature learns to speak and read, and begins to ask itself what it is."
+  },
+  {
+   "id": "ch-14",
+   "label": "Chapter 14",
+   "units": [
+    "ch-14"
+   ],
+   "words": 1856,
+   "overview": "The creature learns the cottagers' history: De Lacey's family lost its fortune in Paris after Felix helped Safie's father escape, and Safie found her way to Felix alone."
+  },
+  {
+   "id": "ch-15",
+   "label": "Chapter 15",
+   "units": [
+    "ch-15"
+   ],
+   "words": 3008,
+   "overview": "The creature reads Paradise Lost and Victor's journal, then approaches the blind De Lacey. When the family returns, Felix beats him and he escapes."
+  },
+  {
+   "id": "ch-16",
+   "label": "Chapter 16",
+   "units": [
+    "ch-16"
+   ],
+   "words": 3198,
+   "overview": "The creature burns the cottage and travels to Geneva. He kills William, plants the portrait on Justine and demands that Victor make him a female companion."
+  },
+  {
+   "id": "ch-17",
+   "label": "Chapter 17",
+   "units": [
+    "ch-17"
+   ],
+   "words": 1917,
+   "overview": "The creature promises that he and his mate will leave Europe forever. Victor agrees to make the female and returns to Geneva in despair."
+  },
+  {
+   "id": "ch-18",
+   "label": "Chapter 18",
+   "units": [
+    "ch-18"
+   ],
+   "words": 2845,
+   "overview": "Victor delays, agrees to marry Elizabeth on his return, and travels with Clerval down the Rhine to England."
+  },
+  {
+   "id": "ch-19",
+   "label": "Chapter 19",
+   "units": [
+    "ch-19"
+   ],
+   "words": 2611,
+   "overview": "In London Victor gathers materials. After a journey north with Clerval, he goes alone to a remote island in the Orkneys to make the female creature."
+  },
+  {
+   "id": "ch-20",
+   "label": "Chapter 20",
+   "units": [
+    "ch-20"
+   ],
+   "words": 3520,
+   "overview": "Seeing the creature at his window, Victor tears the unfinished female to pieces. The creature vows to be with him on his wedding night. Blown off course, Victor lands in Ireland, accused of murder."
+  },
+  {
+   "id": "ch-21",
+   "label": "Chapter 21",
+   "units": [
+    "ch-21"
+   ],
+   "words": 3740,
+   "overview": "The dead man is Clerval. Victor falls into a fever in prison; Mr. Kirwin is kind, his father comes, and he is cleared at his trial."
+  },
+  {
+   "id": "ch-22",
+   "label": "Chapter 22",
+   "units": [
+    "ch-22"
+   ],
+   "words": 3424,
+   "overview": "Victor confesses to his father, who thinks him delirious. He marries Elizabeth in Geneva, armed and expecting a fight on the wedding night."
+  },
+  {
+   "id": "ch-23",
+   "label": "Chapter 23",
+   "units": [
+    "ch-23"
+   ],
+   "words": 2592,
+   "overview": "At the inn the creature kills Elizabeth. Victor's father dies of grief. Victor tells a magistrate everything and resolves to destroy the creature himself."
+  },
+  {
+   "id": "ch-24",
+   "label": "Chapter 24",
+   "units": [
+    "ch-24"
+   ],
+   "words": 8239,
+   "overview": "Victor pursues the creature into the frozen north and is rescued by Walton. In Walton's last letters Victor dies, and the creature, weeping over the body, says he will burn himself to death."
+  }
+ ],
+ "passages": [
+  {
+   "unit": "ch-04",
+   "ref": "Chapter 4",
+   "speaker": "Victor to Walton",
+   "quote": "Learn from me, if not by my precepts, at least by my example, how dangerous is the acquirement of knowledge,",
+   "note": "Victor breaks off his account to address Walton directly, just after his discovery. A good place to remind students who is listening, and why Victor chose to tell this story to this man."
+  },
+  {
+   "unit": "ch-05",
+   "ref": "Chapter 5",
+   "speaker": "Victor",
+   "quote": "It was on a dreary night of November, that I beheld the accomplishment of my toils.",
+   "note": "The first sentence of Chapter 5. In her introduction to the 1831 edition, Mary Shelley says she began the tale with these words; the creature's awakening takes a paragraph, Victor's disgust takes the rest of the chapter."
+  },
+  {
+   "unit": "ch-10",
+   "ref": "Chapter 10",
+   "speaker": "The creature to Victor",
+   "quote": "Remember, that I am thy creature; I ought to be thy Adam; but I am rather the fallen angel, whom thou drivest from joy for no misdeed.",
+   "note": "On the glacier, before the creature's story begins. The Adam and Satan comparison returns in Chapter 15, once the creature has read Paradise Lost; here he uses it before the reader knows where he learned it."
+  },
+  {
+   "unit": "ch-20",
+   "ref": "Chapter 20",
+   "speaker": "The creature to Victor",
+   "quote": "\"It is well. I go; but remember, I shall be with you on your wedding-night.\"",
+   "note": "After Victor destroys the female. Victor reads the threat as aimed at himself; students who track that misreading through Chapters 22 and 23 understand the ending."
+  },
+  {
+   "unit": "ch-24",
+   "ref": "Chapter 24",
+   "speaker": "The creature to Walton",
+   "quote": "I shall collect my funeral pile, and consume to ashes this miserable frame, that its remains may afford no light to any curious and unhallowed wretch, who would create such another as I have been.",
+   "note": "Near the end of Walton's last letter. The novel never shows the death; the last image is the creature carried away on the ice raft."
+  }
+ ],
+ "samples": [
+  {
+   "check": "Letters 1–4",
+   "skill": "inference",
+   "stem": "In Letter IV, what did the sight of the giant's dog sledge lead Walton and his men to suppose about their own position?",
+   "quote": null,
+   "options": [
+    "That land was nearer than the many hundred miles they had believed",
+    "That another expedition's ship must be trapped in the ice nearby",
+    "That the ship had drifted back south toward Archangel",
+    "That the ice would soon break up and set them free"
+   ],
+   "answer": "A",
+   "why": "A: a traveler on a sledge implies a shore within reach, so the sighting suggests land is not 'so distant as we had supposed'; the ice does break later, but Walton never draws that conclusion from the sledge.",
+   "evidence": [
+    "We were, as we believed, many hundred miles from any land; but this apparition seemed to denote that it was not, in reality, so distant as we had supposed."
+   ]
+  },
+  {
+   "check": "Chapter 12",
+   "skill": "recall",
+   "stem": "On the morning the cottagers first found a great pile of wood outside their door, how did the youth spend that day?",
+   "quote": null,
+   "options": [
+    "Searching the woods all day for whoever had left it there",
+    "Repairing the cottage and working in the garden",
+    "Carrying part of the wood to sell to a neighboring farmer",
+    "Sitting by the fire, reading aloud to the old man and his sister"
+   ],
+   "answer": "B",
+   "why": "B: freed from gathering fuel, the youth 'did not go to the forest that day, but spent it in repairing the cottage, and cultivating the garden'; he does not search for the giver or sell the wood.",
+   "evidence": [
+    "I observed, with pleasure, that he did not go to the forest that day, but spent it in repairing the cottage, and cultivating the garden."
+   ]
+  },
+  {
+   "check": "Chapter 24",
+   "skill": "close",
+   "stem": "Answering Walton, the creature asks: \"Why do you not execrate the rustic who sought to destroy the saviour of his child?\" Who is \"the saviour,\" and what point is he making?",
+   "quote": null,
+   "options": [
+    "Victor; men tried to kill him during the long chase.",
+    "Felix; the Turk repaid his rescue with betrayal.",
+    "Walton; his own sailors turned against him.",
+    "The creature himself; humans who wronged him go unblamed."
+   ],
+   "answer": "D",
+   "why": "The \"saviour\" is the creature himself, shot after rescuing a child; he asks why he alone is called a criminal while Felix and the rustic, who wronged him, are thought \"virtuous and immaculate.\"",
+   "evidence": [
+    "Am I to be thought the only criminal, when all human kind sinned against me?",
+    "Why do you not execrate the rustic who sought to destroy the saviour of his child? Nay, these are virtuous and immaculate beings!"
+   ]
+  }
+ ],
+ "qa": {
+  "items": 150,
+  "pass": 139,
+  "partial": 11,
+  "leak": 0,
+  "failing": 0
+ }
+}
