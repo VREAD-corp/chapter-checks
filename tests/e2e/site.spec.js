@@ -7,8 +7,8 @@ const nt = (p) => p + (p.includes('?') ? '&' : '?') + 'octave_notrack=1';
 for (const vp of [{ width: 390, height: 844 }, { width: 1440, height: 900 }]) {
   test(`home, title, sources and legal pages render without horizontal scroll at ${vp.width}px`, async ({ page }) => {
     await page.setViewportSize(vp);
-    for (const p of ['', 'free-sample/', 'titles/frankenstein-1831/', 'titles/jane-eyre/', 'ap-literature/', 'sources/', 'terms/', 'privacy/']) {
-      const r = await page.goto(nt(p));
+    for (const p of ['', '?hero=b', 'free-sample/', 'titles/frankenstein-1831/', 'titles/jane-eyre/', 'ap-literature/', 'sources/', 'terms/', 'privacy/', 'order/', 'quote/']) {
+      const r = await page.goto(nt(p), { waitUntil: 'domcontentloaded' });
       expect(r.status(), p).toBe(200);
       await expect(page.locator('h1')).toHaveCount(1);
       expect(await page.evaluate(() => document.documentElement.scrollWidth), p).toBeLessThanOrEqual(vp.width);
@@ -95,4 +95,55 @@ test('study page buy button opens the checkout for that title', async ({ page })
   await page.goto(nt('study/the-awakening/?prix=p5'));
   await page.locator('a.btn[href$="order/?item=the-awakening"]').click();
   await expect(page.locator('#picked')).toHaveAttribute('data-product', 'cc-awakening-5-usd');
+});
+
+test('POOLED-READING-01 rd-hero: ?hero=a keeps the HTML question card, ?hero=b shows the real PDF excerpt; the CTA stays in the first screen on mobile', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 667 });
+  await page.goto(nt('?hero=a'));
+  await expect(page.locator('html')).toHaveAttribute('data-xp-rd-hero', 'a');
+  await expect(page.locator('[data-hero-excerpt]')).toBeHidden();
+  await expect(page.locator('.hero > .qcard')).toBeVisible();
+  await page.goto(nt('?hero=b'));
+  await expect(page.locator('html')).toHaveAttribute('data-xp-rd-hero', 'b');
+  await expect(page.locator('[data-hero-excerpt]')).toBeVisible();
+  await expect(page.locator('.hero > .qcard')).toBeHidden();
+  await expect(page.locator('[data-hero-excerpt] img')).toHaveJSProperty('complete', true, { timeout: 10000 });
+  const box = await page.locator('.hero .cta a.btn').boundingBox();
+  expect(box.y + box.height).toBeLessThanOrEqual(667);
+  await page.goto(nt('titles/macbeth/?hero=b'));
+  await expect(page.locator('html')).toHaveAttribute('data-xp-rd-hero', 'b');
+});
+
+test('quote page: builds a printable quote with the seller details and a mailto link, nothing sent', async ({ page }) => {
+  const posts = [];
+  page.on('request', (r) => { if (r.method() === 'POST') posts.push(r.url()); });
+  await page.goto(nt('quote/'));
+  await expect(page.locator('#quote-doc')).toBeHidden();
+  await page.fill('input[name="school"]', 'Test High School');
+  await page.fill('input[name="name"]', 'Pat Test');
+  await page.fill('input[name="email"]', 'pat@example.org');
+  await page.fill('input[name="po"]', 'PO-123');
+  await page.click('#quote-form button[type="submit"]');
+  const doc = page.locator('#quote-doc');
+  await expect(doc).toBeVisible();
+  await expect(doc).toContainText('READ FRANCE SAS');
+  await expect(doc).toContainText('988 741 773');
+  await expect(doc).toContainText('$249');
+  await expect(doc).toContainText('Purchase order: PO-123');
+  await expect(doc).toContainText(/CC-Q-\d{8}-[A-Z0-9]{4}/);
+  const mail = await doc.locator('a[href^="mailto:"]').getAttribute('href');
+  expect(mail).toMatch(/^mailto:octave@vread\.fr\?subject=/);
+  await page.check('input[value="bundle"]');
+  await page.fill('input[name="qty"]', '3');
+  await page.click('#quote-form button[type="submit"]');
+  await expect(doc).toContainText('$87');
+  expect(posts).toEqual([]);
+});
+
+test('breadcrumbs start at outils.vread.fr on inner pages; the footer links the who-and-how page', async ({ page }) => {
+  for (const p of ['titles/hamlet/', 'study/hamlet/', 'free-sample/', 'order/', 'quote/']) {
+    await page.goto(nt(p));
+    await expect(page.locator('nav.crumbs a').first()).toHaveAttribute('href', 'https://outils.vread.fr/');
+    await expect(page.locator('footer a[href="https://outils.vread.fr/a-propos/"]')).toHaveCount(1);
+  }
 });

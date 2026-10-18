@@ -42,10 +42,15 @@ const OG_ENDPOINT = process.env.OG_ENDPOINT || '';
 const OG_PK = process.env.OG_PK || '';
 
 const LOGO = `<svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect x="5" y="3" width="22" height="26" rx="3" fill="#FBF8F4" stroke="#2F2721" stroke-width="2"/><path d="M10 10h12M10 15h12M10 20h6" stroke="#2F2721" stroke-width="1.8" stroke-linecap="round"/><path d="M17 21.5l3 3 6-7" fill="none" stroke="#B4232C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
-const ORG = { '@type': 'Organization', '@id': 'https://outils.vread.fr/#readfrance', name: 'READ FRANCE SAS', url: 'https://outils.vread.fr/', email: CONTACT,
+const ABOUT = 'https://outils.vread.fr/a-propos/'; // READ FRANCE's page on who writes, who publishes and the reading engine (hub, in French)
+const ORG = { '@type': 'Organization', '@id': 'https://outils.vread.fr/#org', name: 'READ FRANCE SAS', url: 'https://outils.vread.fr/', email: CONTACT, publishingPrinciples: ABOUT,
   address: { '@type': 'PostalAddress', streetAddress: '11 rue Rouvet', postalCode: '75019', addressLocality: 'Paris', addressCountry: 'FR' } };
+// Article author: the company, with its "who and how" page (the texts are written by Octave, an AI agent; no Person author).
+const AUTHOR = { '@type': 'Organization', name: 'READ FRANCE SAS', url: ABOUT };
+const HUB = ['outils.vread.fr', 'https://outils.vread.fr/'];
 
 const NAV = [['', 'Home'], ['free-sample/', 'Free Macbeth'], ['ap-literature/', 'AP Lit titles'], ['order/', 'Prices']];
+const WHO = `<a href="${ABOUT}">Who makes this, and how</a>`;
 
 function csp(checkout) {
   const ep = OG_ENDPOINT ? ' ' + new URL(OG_ENDPOINT).origin : '';
@@ -57,7 +62,12 @@ function csp(checkout) {
 function layout(pg) {
   const canonical = abs(pg.path);
   const nav = NAV.map(([p, t]) => `<li><a href="${u(p)}"${p === pg.path ? ' aria-current="page"' : ''}>${t}</a></li>`).join('');
-  const ld = pg.ld ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': [ORG, ...pg.ld] })}</script>\n` : '';
+  // Breadcrumbs: outils.vread.fr › Chapter Checks › … ; pg.crumbs = [[label, path], …, [label]] (last one is this page).
+  const trail = pg.crumbs ? [HUB, ['Chapter Checks', abs('')], ...pg.crumbs.map(([n, p]) => [n, p === undefined ? canonical : abs(p)])] : null;
+  const crumbLd = trail ? [{ '@type': 'BreadcrumbList', itemListElement: trail.map(([n, item], i) => ({ '@type': 'ListItem', position: i + 1, name: n, item })) }] : [];
+  const crumbs = trail ? `<nav class="crumbs" aria-label="Breadcrumb"><a href="${HUB[1]}">${HUB[0]}</a> › <a href="${u('')}">Chapter Checks</a> › ${pg.crumbs.map(([n, p]) => (p === undefined ? `<span aria-current="page">${esc(n)}</span>` : `<a href="${u(p)}">${esc(n)}</a>`)).join(' › ')}</nav>\n` : '';
+  const graph = [...(pg.ld || []), ...crumbLd];
+  const ld = graph.length ? `<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@graph': [ORG, ...graph] })}</script>\n` : '';
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -77,6 +87,7 @@ ${pg.noindex ? '<meta name="robots" content="noindex">\n' : `<link rel="canonica
 <script src="${u('assets/xp.js')}"></script>
 <script src="${u('cro.js')}" data-site="chapter-checks" data-api="${TRACK_API}" data-hosts="outils.vread.fr" data-cta="a.btn, [data-cta], #buy button"></script>
 <script src="${u('mesure.js')}" defer></script>
+<script src="${u('assets/goals.js')}" defer></script>
 ${ld}</head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -85,12 +96,12 @@ ${ld}</head>
 <nav aria-label="Main"><ul>${nav}</ul></nav>
 </div></header>
 <main id="main"><div class="wrap">
-${pg.body}
+${crumbs}${pg.body}
 </div></main>
 <footer class="site"><div class="wrap">
 <p><strong>Chapter Checks</strong> is an activity of READ FRANCE, the publisher of Vread. READ FRANCE SAS, 11 rue Rouvet, 75019 Paris, France. Contact: <a href="mailto:${CONTACT}">${CONTACT}</a>.</p>
 <p>AP® is a trademark registered by the College Board, which is not affiliated with, and does not endorse, this product. The literary texts are in the public domain in the United States; the questions are © 2026 READ FRANCE SAS.</p>
-<ul class="links"><li><a href="${u('sources/')}">Sources and public-domain status</a></li><li><a href="${u('terms/')}">Terms and legal notice</a></li><li><a href="${u('privacy/')}">Privacy</a></li></ul>
+<ul class="links"><li>${WHO}</li><li><a href="${u('sources/')}">Sources and public-domain status</a></li><li><a href="${u('quote/')}">Quote or purchase order</a></li><li><a href="${u('terms/')}">Terms and legal notice</a></li><li><a href="${u('privacy/')}">Privacy</a></li></ul>
 </div></footer>
 ${pg.scripts || ''}</body>
 </html>
@@ -162,24 +173,41 @@ const frank = TITLES.find((t) => t.slug === 'frankenstein-1831');
 const totalQ = READY.reduce((a, t) => a + t.questions, 0);
 const totalChecks = READY.reduce((a, t) => a + t.checks.length, 0);
 
+const apListed = READY.filter((t) => apLists(t.slug).length).length;
+const FAQ = [
+  ['Can I edit the questions?', 'Yes. The CSV and the imported Canvas or Google Forms quizzes are yours to edit for your classes. The PDF is fixed.'],
+  ['Can colleagues use my copy?', `No. A title pack or the ${TITLES.length}-title set is licensed to one teacher, for as many classes as that teacher teaches. For a department, the school licence (${usd(P.school)}) covers every teacher in one school until June 30, 2027.`],
+  ['Do I get corrections and updates?', 'Yes. If a question or a key turns out to be wrong, we fix it and send the corrected files to every buyer of the title, at no cost.'],
+  ['Can my school pay with a purchase order?', `Not on net-30 terms yet: payment is by card (a school purchasing card works), and the invoice is made out to the school. If your business office needs a quote before it can buy, build a printable quote on the <a href="${u('quote/')}">quote page</a> and send it to us with your purchase order: we will tell you whether we can accept it.`],
+  ['Do you collect student data?', 'No. There are no student accounts. The checks run on paper or inside your own LMS or Google account; nothing comes back to us.'],
+  ['Is this endorsed by the College Board?', 'No. Chapter Checks is independent. We use "AP" only to say which course the titles are taught in.'],
+];
+const plain = (h) => h.replace(/<[^>]+>/g, '');
 pages.push({
   path: '',
   title: 'Chapter Checks by READ FRANCE: printable reading checks for AP Literature classics',
-  lastmod: '2026-10-17',
+  lastmod: '2026-10-18',
   description: `Chapter and act checks for ${TITLES.length} public-domain classics taught in AP Literature and grades 11–12: PDF, answer key with text evidence, rubric, Canvas QTI and Google Forms. ${usd(P.p5)} a title; Macbeth is free.`,
-  ld: [{ '@type': 'WebSite', name: 'Chapter Checks by READ FRANCE', url: abs(''), publisher: { '@id': ORG['@id'] }, inLanguage: 'en-US' }],
-  body: `<section class="hero">
+  ld: [{ '@type': 'WebSite', name: 'Chapter Checks by READ FRANCE', url: abs(''), publisher: { '@id': ORG['@id'] }, inLanguage: 'en-US' },
+    { '@type': 'ItemList', name: 'Chapter Checks titles', itemListElement: TITLES.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: `${fullTitle(t)} chapter checks`, url: abs(`titles/${t.slug}/`) })) },
+    { '@type': 'FAQPage', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) },
+    { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: HUB[0], item: HUB[1] }, { '@type': 'ListItem', position: 2, name: 'Chapter Checks', item: abs('') }] }],
+  body: `<section class="hero" id="hero">
 <div>
 <p class="eyebrow">AP® English Literature · grades 11–12</p>
 <h1>Reading checks that a summary won't pass</h1>
 <p class="lead">A short check for every chapter or act of ${TITLES.length} public-domain classics, with a key that quotes the line proving each answer. Print it or import it into Canvas or Google Forms. ${priceTitle} a title, and <i>Macbeth</i> is free.</p>
 <p class="cta"><a class="btn" href="${u('free-sample/')}" data-mesure="cta_click">Download Macbeth, free (no e-mail)</a> <a class="textlink" href="#titles">See the ${TITLES.length} titles</a></p>
-<p class="small">${SOON.length ? `${READY.length} titles ready today (${totalChecks} checks, ${totalQ} questions). ${SOON.length} more by ${esc(LAST)}.` : `All ${READY.length} titles ready today: ${totalChecks} checks, ${totalQ} questions.`}</p>
+<p class="small">${SOON.length ? `${READY.length} titles ready today (${totalChecks} checks, ${totalQ} questions). ${SOON.length} more by ${esc(LAST)}.` : `All ${READY.length} titles ready today: ${totalChecks} checks, ${totalQ} questions, PDF + Canvas QTI + CSV, by e-mail within minutes of payment.`} ${apListed} of the ${READY.length} are printed in the College Board's AP Lit question 3 lists, 2023–2026 (<a href="${u('ap-literature/')}">our count, with the PDFs</a>).</p>
 </div>
 ${sampleCard(frank, frank.samples.questions[1], 4)}
+<figure class="hero-excerpt" data-hero-excerpt>
+<a href="${u('free-sample/')}" data-cta><img src="${u('assets/img/macbeth-act1-excerpt.webp')}" width="760" height="495" loading="lazy" decoding="async" alt="Top of page 1 of the Macbeth student checks PDF: the Act 1 check header with name, date, class and score lines, the reading checkpoint and questions 1 and 2 with options A to D."></a>
+<figcaption>Real excerpt from the free <i>Macbeth</i> pack: Act 1 check, student PDF, page 1. <a href="${u('free-sample/')}" data-cta>Open the whole pack, free</a></figcaption>
+</figure>
 </section>
 
-<section>
+<section id="format">
 <h2>What a check looks like</h2>
 <p>Each check has 5 to 8 questions and takes 10 to 15 minutes. The mix is the same in every check:</p>
 <ul>
@@ -190,52 +218,61 @@ ${sampleCard(frank, frank.samples.questions[1], 4)}
 </ul>
 <p>Questions refer to chapters and acts, never to page numbers, so they work with any complete edition.</p>
 ${sampleCard(gatsby, gatsby.samples.questions[0], 1)}
+<h3>The pages, as you print them</h3>
+<div class="previews">
+<a href="${u('sample/macbeth/macbeth-student-checks.pdf')}" data-mesure="free_download"><img src="${u('assets/img/macbeth-student-p1.webp')}" width="480" height="621" loading="lazy" decoding="async" alt="Page 1 of the Macbeth student checks: Act 1 check, reading checkpoint and questions 1 to 5."><span>Student check, page 1 (PDF)</span></a>
+<a href="${u('sample/macbeth/macbeth-answer-key.pdf')}" data-mesure="free_download"><img src="${u('assets/img/macbeth-key-p2.webp')}" width="480" height="621" loading="lazy" decoding="async" alt="Page 2 of the Macbeth answer key: Act 1 answers with the skill tested, why each answer is right and the line of the play that proves it."><span>Answer key, page 2 (PDF)</span></a>
+</div>
+<p class="small">Both pages come from the free <i>Macbeth</i> pack. Every paid title uses the same layout.</p>
 </section>
 
 <section id="titles">
 <h2>The titles</h2>
 <p>Seven of the eight are printed in at least one of the ${AP.lists.length} AP Literature free-response question 3 lists from 2023 to 2026: <i>Jane Eyre</i> in six, <i>Frankenstein</i>, <i>Wuthering Heights</i> and <i>The Awakening</i> in five, <i>The Scarlet Letter</i> in four, <i>Macbeth</i> in three and <i>The Great Gatsby</i> in one. <i>Hamlet</i> is in none (<a href="${u('ap-literature/')}">our count</a>).</p>
 ${titleTable}
-<p>Each title also has a free reading guide for teachers: what each check covers, key passages with their references, and three questions from the pack. ${READY.filter((t) => STUDY[t.slug]).map((t) => `<a href="${u(`study/${t.slug}/`)}"><i>${esc(t.title)}</i></a>`).join(', ')}.</p>
+<p>Each title also has a free reading guide for teachers: what each check covers, key passages with their references, and three questions from the pack. ${READY.filter((t) => STUDY[t.slug]).map((t) => `<a href="${u(`study/${t.slug}/`)}"><i>${esc(t.title)}</i> reading guide</a>`).join(', ')}.</p>
 </section>
 
-<section>
+<section id="pack">
 <h2>What is in a title pack</h2>
 ${packList}
 </section>
 
 <section class="prices" id="prices">
-<h2>Prices</h2>
+<h2>Prices and licences</h2>
 <div class="price-grid">
-<div class="price"><h3>One title</h3><p class="amount">${priceTitle}</p><p>Every check of one title, for your own classes.</p><p><a class="btn" href="${u('order/')}" data-mesure="cta_click">Choose a title</a></p></div>
-<div class="price main"><h3>All ${TITLES.length} titles</h3><p class="amount">${usd(P.bundle)}</p><p>${SOON.length ? `The ${READY.length} titles ready today now, and ${SOON.map((t) => `<i>${esc(t.title)}</i>`).join(', ').replace(/, ([^,]*)$/, ' and $1')} by e-mail as each one is released (last one ${esc(LAST)}).` : `Every check of all ${TITLES.length} titles (${totalChecks} checks), for your own classes, in one e-mail.`}</p><p><a class="btn" href="${u('order/?item=bundle')}" data-mesure="cta_click">Buy the ${TITLES.length} titles, ${usd(P.bundle)}</a></p></div>
-<div class="price"><h3>School licence</h3><p class="amount">${usd(P.school)}</p><p>All titles for every English teacher in one school, until June 30, 2027. Invoice in the school's name.</p><p><a class="btn" href="${u('order/?item=school')}" data-mesure="cta_click">License my school</a></p></div>
+<div class="price"><h3>One title</h3><p class="amount">${priceTitle}</p><p>Every check of one title.</p><p class="lic">Licence: one teacher, all of your classes.</p><p><a class="btn" href="${u('order/')}" data-mesure="cta_click">Choose a title</a></p></div>
+<div class="price main"><h3>All ${TITLES.length} titles</h3><p class="amount">${usd(P.bundle)}</p><p>${SOON.length ? `The ${READY.length} titles ready today now, and ${SOON.map((t) => `<i>${esc(t.title)}</i>`).join(', ').replace(/, ([^,]*)$/, ' and $1')} by e-mail as each one is released (last one ${esc(LAST)}).` : `Every check of all ${TITLES.length} titles (${totalChecks} checks), in one e-mail.`}</p><p class="lic">Licence: one teacher, all of your classes.</p><p><a class="btn" href="${u('order/?item=bundle')}" data-mesure="cta_click">Buy the ${TITLES.length} titles, ${usd(P.bundle)}</a></p></div>
+<div class="price"><h3>School licence</h3><p class="amount">${usd(P.school)}</p><p>All titles. Invoice in the school's name.</p><p class="lic">Licence: every teacher in one school, until June 30, 2027.</p><p><a class="btn" href="${u('order/?item=school')}" data-mesure="cta_click">License my school</a></p><p class="small"><a href="${u('quote/')}">Need a quote or a purchase order first?</a></p></div>
 </div>
-<p class="small">Card payment in US dollars, for buyers in the United States during this launch. The files arrive by e-mail a few minutes after payment. Full refund within 14 days if they do not suit you.</p>
+<p class="small">Card payment in US dollars, for buyers in the United States during this launch. No sales tax is added to the price shown. The files arrive by e-mail a few minutes after payment. Full refund within 14 days if they do not suit you (<a href="${u('terms/')}">terms</a>, section 6).</p>
 </section>
 
-<section>
+<section id="method">
 <h2>How the checks are made</h2>
 <p>The questions are written from the Project Gutenberg text of each book (edition cited on every title page) by Octave, the AI assistant of READ FRANCE. A second, independent pass answers every question from the text before looking at the key, and fixes any item with a wrong key or two defensible answers. A script then checks that every quoted line and every line of evidence appears word for word in the chapter it belongs to. No teacher has reviewed these packs yet. If you find a mistake, write to <a href="mailto:${CONTACT}">${CONTACT}</a>: we fix it and send the corrected files to every buyer of the title.</p>
+<p>The checks go through READ FRANCE's reading engine, taken from the question workflow first built for the Vread reading app: a one-word checkpoint per part, and a gate that rewrites any question a study-guide summary is enough to answer. Who does what at READ FRANCE (the founders publish, Octave writes) is on <a href="${ABOUT}">our "who and how" page</a> (in French).</p>
 </section>
 
-${vread}
-
-<section class="faq">
+<section class="faq" id="faq">
 <h2>Questions teachers ask</h2>
-<details><summary>Can I edit the questions?</summary><p>Yes. The CSV and the imported Canvas or Google Forms quizzes are yours to edit for your classes. The PDF is fixed.</p></details>
-<details><summary>Can colleagues use my copy?</summary><p>A title pack or the ${TITLES.length}-title set is for one teacher, in as many classes as you teach. For a department, the school licence covers every English teacher in your school.</p></details>
-<details><summary>Do you collect student data?</summary><p>No. There are no student accounts. The checks run on paper or inside your own LMS or Google account; nothing comes back to us.</p></details>
-<details><summary>Can my school pay with a purchase order?</summary><p>Not yet: card only, with an invoice in the school's name (tick "I am buying for a company" and enter the school). Write to us if your school needs a quote first.</p></details>
-<details><summary>Is this endorsed by the College Board?</summary><p>No. Chapter Checks is independent. We use "AP" only to say which course the titles are taught in.</p></details>
-</section>`,
+${FAQ.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${a}</p></details>`).join('\n')}
+</section>
+
+<section id="end">
+<p class="cta"><a class="btn" href="${u('free-sample/')}" data-mesure="cta_click">Download Macbeth, free</a> <a class="textlink" href="${u('order/')}">See prices and order</a></p>
+</section>
+
+${vread}`,
 });
 
 pages.push({
   path: 'free-sample/',
   title: 'Macbeth act checks: free printable quiz pack with answer key (PDF, Canvas, Google Forms)',
   description: `Five Macbeth act checks, ${FREE.questions} questions, answer key with the line of the play that proves each answer, rubric, Canvas QTI and Google Forms files. Free, no e-mail asked.`,
-  ld: [{ '@type': 'CreativeWork', name: 'Macbeth act checks', author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, isAccessibleForFree: true, inLanguage: 'en-US', educationalLevel: 'Grades 11-12', learningResourceType: 'Quiz', about: { '@type': 'Book', name: 'Macbeth', author: { '@type': 'Person', name: 'William Shakespeare' } } }],
+  lastmod: '2026-10-18',
+  crumbs: [['Free Macbeth checks']],
+  ld: [{ '@type': 'LearningResource', name: 'Macbeth act checks', url: abs('free-sample/'), author: AUTHOR, publisher: { '@id': ORG['@id'] }, isAccessibleForFree: true, inLanguage: 'en-US', educationalLevel: 'Grades 11-12', learningResourceType: 'Quiz', audience: { '@type': 'EducationalAudience', educationalRole: 'teacher' }, about: { '@type': 'Book', name: 'Macbeth', author: { '@type': 'Person', name: 'William Shakespeare' } } }],
   body: `<p class="eyebrow">Free sample, complete title</p>
 <h1><i>Macbeth</i> act checks, free</h1>
 <p class="lead">All five acts, ${FREE.questions} questions, with the answer key and rubric. No e-mail asked. Use them in class; please do not repost the files.</p>
@@ -249,6 +286,10 @@ pages.push({
 <li><a href="${u('sample/macbeth/make-google-form.gs')}" data-mesure="free_download">Google Forms script</a></li>
 </ul>
 </div>
+<div class="previews">
+<a href="${u('sample/macbeth/macbeth-student-checks.pdf')}" data-mesure="free_download"><img src="${u('assets/img/macbeth-student-p1.webp')}" width="480" height="621" loading="lazy" decoding="async" alt="Page 1 of the Macbeth student checks: Act 1 check, reading checkpoint and questions 1 to 5."><span>Student check, page 1</span></a>
+<a href="${u('sample/macbeth/macbeth-answer-key.pdf')}" data-mesure="free_download"><img src="${u('assets/img/macbeth-key-p2.webp')}" width="480" height="621" loading="lazy" decoding="async" alt="Page 2 of the Macbeth answer key: Act 1 answers with the skill tested, why each answer is right and the line of the play that proves it."><span>Answer key, page 2</span></a>
+</div>
 <h2>What is inside</h2>
 <p>One check per act, eight questions each: three on details, two on inference, two on a quoted line, and one written answer${FREE.samples.checkpoint ? ', opened by a one-word reading checkpoint' : ''}. ${FREE.samples ? 'From Act 1:' : ''}</p>
 ${checkpointCard(FREE)}
@@ -260,6 +301,10 @@ ${FREE.samples.questions.map((q, i) => sampleCard(FREE, q, i === 0 ? 1 : 6)).joi
 <li><b>Schoology:</b> it accepts QTI 1.2 files in a question bank. We have not tried it in a live Schoology course yet; tell us if it fails.</li>
 </ol>
 <p>Text used: Project Gutenberg eBook #1533 (<a href="https://www.gutenberg.org/ebooks/1533" rel="noopener">gutenberg.org/ebooks/1533</a>). Act and scene numbering follows that text.</p>
+<p>Planning the unit? The free <a href="${u('study/macbeth/')}"><i>Macbeth</i> reading guide</a> lists what each act check covers, with key passages and their act and scene.</p>
+<h2>The same checks for the other titles</h2>
+<p>Every paid title has the same layout, files and rubric. Each title page shows its list of checks, its reading checkpoint and two questions; each reading guide shows three more.</p>
+<ul class="related">${PAID.map((t) => `<li><a href="${u(`titles/${t.slug}/`)}"><i>${esc(t.title)}</i> chapter checks</a>${STUDY[t.slug] ? ` · <a href="${u(`study/${t.slug}/`)}">reading guide</a>` : ''}</li>`).join('')}</ul>
 <p><a class="btn" href="${u('order/')}" data-mesure="cta_click">Get another title, ${priceTitle}</a></p>
 ${vread}`,
 });
@@ -277,7 +322,7 @@ for (const t of TITLES) {
   const ld = ready && !t.free
     ? [{ '@type': 'Product', name: `${fullTitle(t)} chapter checks`, description: `${t.checks.length} printable checks, ${t.questions} questions, answer key and rubric, Canvas QTI and Google Forms files.`, brand: { '@type': 'Brand', name: 'Chapter Checks by READ FRANCE' },
         offers: { '@type': 'AggregateOffer', priceCurrency: 'USD', lowPrice: (P.p5 / 100).toFixed(2), highPrice: (P.p7 / 100).toFixed(2), offerCount: 2, availability: 'https://schema.org/InStock', eligibleRegion: { '@type': 'Country', name: 'US' }, url: abs(`order/?item=${t.slug}`) } }]
-    : [{ '@type': 'WebPage', name: `${fullTitle(t)} chapter checks`, about: { '@type': 'Book', name: t.title, author: { '@type': 'Person', name: t.author } } }];
+    : [{ '@type': 'LearningResource', name: `${fullTitle(t)} ${isPlay(t) ? 'act' : 'chapter'} checks`, url: abs(`titles/${t.slug}/`), author: AUTHOR, publisher: { '@id': ORG['@id'] }, isAccessibleForFree: !!t.free, inLanguage: 'en-US', educationalLevel: 'Grades 11-12', learningResourceType: 'Quiz', about: { '@type': 'Book', name: t.title, author: { '@type': 'Person', name: t.author } } }];
   pages.push({
     path: `titles/${t.slug}/`,
     title: `${fullTitle(t)} chapter quizzes with answer key: printable and LMS-ready checks`,
@@ -285,6 +330,7 @@ for (const t of TITLES) {
       ? `${t.checks.length} ${isPlay(t) ? 'act' : 'chapter'} checks on ${fullTitle(t)} by ${t.author}, ${t.questions} questions, answer key with text evidence, rubric, Canvas QTI and Google Forms.${t.free ? ' Free.' : ''}`
       : `${fullTitle(t)} by ${t.author}: chapter checks with answer key and rubric, coming ${longDate(t.release)}. Included in the ${TITLES.length}-title set.`,
     ld,
+    crumbs: [[`${t.title} checks`]],
     body: `<p class="eyebrow">${esc(t.author)} · ${ready ? (t.free ? 'free' : 'ready') : 'coming ' + esc(longDate(t.release))}</p>
 <h1><i>${esc(t.title)}</i>${t.subtitle ? ` (${esc(t.subtitle)})` : ''}: ${isPlay(t) ? 'act' : 'chapter'} checks</h1>
 ${ready ? `<p class="lead">${t.checks.length} checks, ${t.questions} questions, answer key with the line of the text behind each answer, and a rubric for each written answer.</p>
@@ -300,8 +346,8 @@ ${packList}
 <h2>Edition and public-domain status</h2>
 <p>Text used: Project Gutenberg eBook #${t.gutenberg} (<a href="https://www.gutenberg.org/ebooks/${t.gutenberg}" rel="noopener">gutenberg.org/ebooks/${t.gutenberg}</a>). ${pd} Questions refer to ${isPlay(t) ? 'acts and scenes' : 'chapters'}, not pages.</p>
 ${t.slug === 'frankenstein-1831' ? '<p>This is the revised 1831 text, the one most school editions print. Some classes read the 1818 text, which differs in places (for example, Elizabeth is Victor\'s cousin in 1818 and an adopted orphan in 1831).</p>' : ''}
-${STUDY[t.slug] ? `<p>Planning the unit? The free <a href="${u(`study/${t.slug}/`)}">${esc(t.title)} reading guide</a> lists what each check covers, with key passages and their references.</p>\n` : ''}<p><a href="${u('')}#titles">All titles</a></p>`,
-    lastmod: STUDY[t.slug] ? '2026-10-17' : undefined,
+${STUDY[t.slug] ? `<p>Planning the unit? The free <a href="${u(`study/${t.slug}/`)}">${esc(t.title)} reading guide</a> lists what each check covers, with key passages and their references.</p>\n` : ''}${t.free ? '' : `<p>Want to see a whole pack first? The <a href="${u('free-sample/')}"><i>Macbeth</i> act checks are free</a>, in the same format: student PDF, answer key, rubric, Canvas and Google Forms files.</p>\n`}<p><a href="${u('')}#titles">All ${TITLES.length} Chapter Checks titles</a></p>`,
+    lastmod: '2026-10-18',
   });
 }
 
@@ -310,9 +356,10 @@ const apOrder = READY.slice().sort((a, b) => apCount(b.slug) - apCount(a.slug));
 pages.push({
   path: 'ap-literature/',
   lastmod: '2026-10-17',
+  crumbs: [['AP Literature question 3 titles']],
   title: 'AP Literature question 3 titles that are in the public domain',
   description: `Which public-domain titles the College Board printed in the ${AP.lists.length} AP English Literature free-response question 3 lists, 2023 to 2026, how often, and checks for each.`,
-  ld: [{ '@type': 'Article', headline: 'AP Literature question 3 titles that are in the public domain', author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, datePublished: '2026-10-14', dateModified: '2026-10-17', inLanguage: 'en-US' }],
+  ld: [{ '@type': 'Article', headline: 'AP Literature question 3 titles that are in the public domain', author: AUTHOR, publisher: { '@id': ORG['@id'] }, datePublished: '2026-10-14', dateModified: '2026-10-17', inLanguage: 'en-US' }],
   body: `<p class="eyebrow">AP® English Literature</p>
 <h1>The public-domain titles that keep coming back in question 3</h1>
 <p class="lead">The College Board publishes no AP Literature reading list: the course description says teachers choose their texts locally. But each year the free-response question 3 prints a list of works students may write about, between ${Math.min(...AP.lists.map((l) => l.count))} and ${Math.max(...AP.lists.map((l) => l.count))} titles a list from 2023 to 2026.</p>
@@ -365,14 +412,14 @@ for (const t of studyed) {
     lastmod: st.updated,
     title: `${fullTitle(t)} reading guide: comprehension questions by ${unit}, key passages, AP Lit`,
     description: `${t.title} ${play ? 'act by act' : 'chapter by chapter'} for teachers: what each of the ${st.checks.length} reading checks covers, ${st.passages.length} key passages with references, 3 sample questions with key, and the AP Lit question 3 lists.`,
-    ld: [{ '@type': 'Article', headline: `${fullTitle(t)} reading guide for teachers`, author: { '@id': ORG['@id'] }, publisher: { '@id': ORG['@id'] }, datePublished: st.updated, dateModified: st.updated, inLanguage: 'en-US',
+    crumbs: [[`${t.title} checks`, `titles/${t.slug}/`], ['Reading guide']],
+    ld: [{ '@type': 'Article', headline: `${fullTitle(t)} reading guide for teachers`, author: AUTHOR, publisher: { '@id': ORG['@id'] }, datePublished: st.updated, dateModified: st.updated, inLanguage: 'en-US',
       mainEntityOfPage: abs(`study/${t.slug}/`), about: { '@type': 'Book', name: t.title, author: { '@type': 'Person', name: t.author } }, educationalLevel: 'Grades 11-12', isAccessibleForFree: true },
-      { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Chapter Checks', item: abs('') }, { '@type': 'ListItem', position: 2, name: `${t.title} checks`, item: abs(`titles/${t.slug}/`) }, { '@type': 'ListItem', position: 3, name: 'Reading guide', item: abs(`study/${t.slug}/`) }] }],
-    body: `<nav class="crumbs" aria-label="Breadcrumb"><a href="${u('')}">Chapter Checks</a> › <a href="${u(`titles/${t.slug}/`)}">${esc(t.title)} checks</a> › Reading guide</nav>
-<p class="eyebrow">${esc(t.author)} · reading guide for teachers</p>
+      ],
+    body: `<p class="eyebrow">${esc(t.author)} · reading guide for teachers</p>
 <h1><i>${esc(t.title)}</i>${t.subtitle ? ` (${esc(t.subtitle)})` : ''}: comprehension ${play ? 'act by act' : 'chapter by chapter'}</h1>
 <p class="lead">${play ? `Five acts, ${num(words)} words` : `${num(words)} words`} in the Project Gutenberg text, cut into ${st.checks.length} reading checks. This page lists what each check covers, ${st.passages.length} key passages with their ${play ? 'act and scene' : 'chapter'}, three questions from the pack with the answer key, and where <i>${esc(t.title)}</i> stands in the AP Literature question 3 lists.</p>
-<p class="small">Written by Octave, READ FRANCE's AI assistant, from Project Gutenberg eBook #${t.gutenberg}; published ${esc(longDate(st.updated))}. Names and events were checked against the text; no teacher has reviewed this page yet. Corrections: <a href="mailto:${CONTACT}">${CONTACT}</a>.</p>
+<p class="small">Written by Octave, READ FRANCE's AI assistant, from Project Gutenberg eBook #${t.gutenberg}; published ${esc(longDate(st.updated))}. Names and events were checked against the text; no teacher has reviewed this page yet. Corrections: <a href="mailto:${CONTACT}">${CONTACT}</a>. ${WHO}.</p>
 ${st.about.map((p) => `<p>${itl(p)}</p>`).join('\n')}
 
 <h2>What each check covers</h2>
@@ -402,7 +449,7 @@ ${cta}
 
 <h2>Other reading guides</h2>
 <ul class="related">${related.map((x) => `<li><a href="${u(`study/${x.slug}/`)}"><i>${esc(x.title)}</i></a>, ${esc(x.author)}</li>`).join('')}</ul>
-<p><a href="${u(`titles/${t.slug}/`)}">${esc(t.title)} checks: the list of checks and two more sample questions</a> · <a href="${u('')}#titles">All titles</a></p>`,
+<p><a href="${u(`titles/${t.slug}/`)}">${esc(t.title)} checks: the list of checks and two more sample questions</a>${t.free ? '' : ` · <a href="${u('free-sample/')}">the free <i>Macbeth</i> pack, to see a whole pack first</a>`} · <a href="${u('')}">Chapter Checks: reading checks for ${TITLES.length} AP Literature classics</a></p>`,
   });
 }
 
@@ -414,6 +461,7 @@ const traps = [
 ];
 pages.push({
   path: 'sources/',
+  crumbs: [['Sources']],
   title: 'Sources and public-domain status of the Chapter Checks titles',
   description: 'The edition used for each title, the author and publication dates, and why each work is in the public domain in the United States.',
   body: `<h1>Sources and public-domain status</h1>
@@ -440,17 +488,20 @@ const orderCfg = { venture: VENTURE, prices: P, items: items.map((i) => ({ id: i
 pages.push({
   path: 'order/',
   title: 'Order Chapter Checks: one title, all titles or a school licence',
+  lastmod: '2026-10-18',
+  crumbs: [['Order']],
   description: `One title ${usd(P.p5)}, all ${TITLES.length} titles ${usd(P.bundle)}, school licence ${usd(P.school)}. Card payment in USD; files by e-mail within minutes.`,
   checkout: true,
   ld: [{ '@type': 'Product', name: `Chapter Checks, all ${TITLES.length} titles`, brand: { '@type': 'Brand', name: 'Chapter Checks by READ FRANCE' }, offers: { '@type': 'Offer', price: (P.bundle / 100).toFixed(2), priceCurrency: 'USD', availability: 'https://schema.org/InStock', eligibleRegion: { '@type': 'Country', name: 'US' }, url: abs('order/?item=bundle') } },
     { '@type': 'Product', name: 'Chapter Checks school licence', brand: { '@type': 'Brand', name: 'Chapter Checks by READ FRANCE' }, offers: { '@type': 'Offer', price: (P.school / 100).toFixed(2), priceCurrency: 'USD', availability: 'https://schema.org/InStock', eligibleRegion: { '@type': 'Country', name: 'US' }, url: abs('order/?item=school') } }],
-  body: `<h1>Order</h1>
-<p class="lead">Pick what you need. You pay by card, in US dollars, and the files arrive by e-mail a few minutes later with your receipt.</p>
+  body: `<h1>Order chapter checks: one title, all ${TITLES.length}, or your whole school</h1>
+<p class="lead">Pick what you need. You pay by card, in US dollars, and the files arrive by e-mail a few minutes later with your receipt: student PDF, answer key and rubric, Canvas QTI ZIP, CSV and the Google Forms script for each title.</p>
 <form id="choose" class="choose" aria-label="What you are buying">
-<fieldset><legend>One title, ${priceTitle}</legend>
+<fieldset><legend>One title, ${priceTitle} <span class="muted">· licence: one teacher, all of your classes</span></legend>
 ${PAID.map((t) => `<label><input type="radio" name="item" value="${t.slug}"> <i>${esc(fullTitle(t))}</i> <span class="muted">${t.checks.length} checks, ${t.questions} questions</span></label>`).join('\n')}
 </fieldset>
 <fieldset><legend>More than one title</legend>
+<p class="muted lic">The set is for one teacher. The school licence covers every teacher in one school.</p>
 <label><input type="radio" name="item" value="bundle"> All ${TITLES.length} titles, <b>${usd(P.bundle)}</b> <span class="muted">${SOON.length ? `${READY.length} now (${READY.map((t) => esc(t.title)).join(', ')}), then ${SOON.map((t) => `${esc(t.title)} on ${esc(longDate(t.release))}`).join(', ')}` : `${READY.map((t) => esc(t.title)).join(', ')}: ${totalChecks} checks, all delivered at once`}</span></label>
 <label><input type="radio" name="item" value="school"> School licence, <b>${usd(P.school)}</b> <span class="muted">all titles for every English teacher in one school until June 30, 2027; tick "I am buying for a company" and enter the school's name for the invoice</span></label>
 </fieldset>
@@ -458,15 +509,72 @@ ${PAID.map((t) => `<label><input type="radio" name="item" value="${t.slug}"> <i>
 <p id="picked" class="picked" aria-live="polite"></p>
 <div id="buy"></div>
 <div class="small">
-<p>For teachers and schools in the United States. By paying you accept the <a href="${u('terms/')}">terms</a> (version ${TERMS_VERSION}). Full refund within 14 days: reply to the delivery e-mail. Purchase orders are not accepted yet.</p>
-<p>The <i>Macbeth</i> checks are free: <a href="${u('free-sample/')}">download them</a> before you buy.</p>
+<p>For teachers and schools in the United States. By paying you accept the <a href="${u('terms/')}">terms</a> (version ${TERMS_VERSION}). Full refund within 14 days: reply to the delivery e-mail. No sales tax is added to the price shown.</p>
+<p>Buying for a school that needs a quote or a purchase order first? <a href="${u('quote/')}">Build a printable quote</a>.</p>
 </div>
+<section class="order-notes" id="before-you-pay">
+<h2>Before you pay</h2>
+<div class="previews small-previews">
+<a href="${u('sample/macbeth/macbeth-student-checks.pdf')}" data-mesure="free_download"><img src="${u('assets/img/macbeth-student-p1.webp')}" width="480" height="621" loading="lazy" decoding="async" alt="Page 1 of the Macbeth student checks."><span>Student check, page 1</span></a>
+<a href="${u('sample/macbeth/macbeth-answer-key.pdf')}" data-mesure="free_download"><img src="${u('assets/img/macbeth-key-p2.webp')}" width="480" height="621" loading="lazy" decoding="async" alt="Page 2 of the Macbeth answer key."><span>Answer key, page 2</span></a>
+</div>
+<p>Every title uses this layout. The whole <i>Macbeth</i> pack is <a href="${u('free-sample/')}">free to download</a>, and ${apListed} of the ${READY.length} titles are printed in the College Board's AP Lit question 3 lists, 2023–2026 (<a href="${u('ap-literature/')}">our count</a>).</p>
+<details><summary>Who may use the files?</summary><p>A title or the ${TITLES.length}-title set: one teacher, in all of their classes, on paper and in their own LMS courses. The school licence: every teacher of the school named on the invoice, until June 30, 2027. Posting the files publicly is not allowed (<a href="${u('terms/')}">terms</a>, section 3).</p></details>
+<details><summary>What if a question is wrong?</summary><p>Tell us at <a href="mailto:${CONTACT}">${CONTACT}</a>. We fix it and send the corrected files to every buyer of the title.</p></details>
+<details><summary>Can I get an invoice in the school's name?</summary><p>Yes: tick "I am buying for a company" and enter the school's name. The invoice comes with the files. Payment on a purchase order with net-30 terms is not available yet; the <a href="${u('quote/')}">quote page</a> explains what we can do.</p></details>
+<p class="small">The questions are written by Octave, READ FRANCE's AI assistant, from the Project Gutenberg text, then answered again from the text by a second pass and checked word for word by a script. ${WHO}.</p>
+</section>
 <script type="application/json" id="order-config">${JSON.stringify(orderCfg).replace(/</g, '\\u003c')}</script>`,
   scripts: `<script src="${u(`og-checkout.js?v=${OG_VERSION}`)}"></script>\n<script src="${u('assets/order.js')}"></script>\n`,
 });
 
+// Quote page: a printable quote built in the browser (assets/quote.js); nothing typed is sent anywhere.
+const quoteCfg = { contact: CONTACT, orderUrl: abs('order/'), titles: TITLES.length, items: {
+  school: { label: `Chapter Checks school licence: all ${TITLES.length} titles (${totalChecks} checks), every teacher of the school named on the invoice, until June 30, 2027`, amount: P.school, max: 1 },
+  bundle: { label: `Chapter Checks, all ${TITLES.length} titles (${totalChecks} checks): licence for one teacher, all of their classes`, amount: P.bundle, max: 8 } } };
+pages.push({
+  path: 'quote/',
+  lastmod: '2026-10-18',
+  crumbs: [['Quote or purchase order']],
+  title: 'Chapter Checks quote for schools: printable quote and purchase order information',
+  description: `Build a printable quote for the Chapter Checks school licence (${usd(P.school)}) or the ${TITLES.length}-title set (${usd(P.bundle)} per teacher), with READ FRANCE's details, for your business office.`,
+  ld: [{ '@type': 'WebPage', name: 'Chapter Checks quote for schools', url: abs('quote/'), publisher: { '@id': ORG['@id'] }, inLanguage: 'en-US' }],
+  body: `<p class="eyebrow">For schools and districts</p>
+<h1>Get a printable quote for your school</h1>
+<p class="lead">Your business office needs a quote before it can buy? Fill in the form: this page builds a quote with our company details that you can print or save as a PDF, and prepares an e-mail to us. Nothing you type here is sent to us unless you send that e-mail yourself.</p>
+<form id="quote-form" class="choose quote-form" aria-label="Quote details">
+<fieldset><legend>What the school buys</legend>
+<label><input type="radio" name="item" value="school" checked> School licence, <b>${usd(P.school)}</b> <span class="muted">all titles, every teacher in one school, until June 30, 2027</span></label>
+<label><input type="radio" name="item" value="bundle"> All ${TITLES.length} titles for named teachers, <b>${usd(P.bundle)} per teacher</b> <span class="muted">one licence per teacher; for 9 teachers or more the school licence costs less</span></label>
+<label class="qty">Number of teachers <input type="number" name="qty" min="1" max="8" value="1" inputmode="numeric"></label>
+</fieldset>
+<fieldset><legend>Who the quote is for</legend>
+<label>School or district name <input type="text" name="school" required maxlength="120" autocomplete="organization"></label>
+<label>Your name <input type="text" name="name" required maxlength="80" autocomplete="name"></label>
+<label>Your school e-mail <input type="email" name="email" required maxlength="120" autocomplete="email"></label>
+<label>Billing address <span class="muted">(optional)</span> <textarea name="address" rows="3" maxlength="300" autocomplete="street-address"></textarea></label>
+<label>Purchase order number <span class="muted">(optional, if you already have one)</span> <input type="text" name="po" maxlength="40"></label>
+</fieldset>
+<p><button class="btn" type="submit">Build the quote</button></p>
+</form>
+<section id="quote-doc" class="quote-doc" hidden aria-live="polite"></section>
+<section id="how-to-pay">
+<h2>How the school pays</h2>
+<ul>
+<li><b>Card, on the <a href="${u('order/')}">order page</a>.</b> A school purchasing card works. Tick "I am buying for a company" and enter the school's name: the invoice is made out to the school and arrives with the files, usually within minutes.</li>
+<li><b>Purchase order on net-30 terms, check or bank transfer: not available yet.</b> If your school can only pay against a purchase order, e-mail it to <a href="mailto:${CONTACT}">${CONTACT}</a> with this quote, and we will tell you whether we can accept it before you commit to anything.</li>
+<li><b>Tax.</b> No French VAT: the files are electronically supplied services to a buyer established outside the European Union (French tax code, art. 259-1°). We do not collect US sales tax.</li>
+<li><b>Refund.</b> Full refund within 14 days of delivery, no reason needed (<a href="${u('terms/')}">terms</a>, section 6).</li>
+</ul>
+<p>Want to look at the material with colleagues first? The <a href="${u('free-sample/')}"><i>Macbeth</i> pack is free</a> and complete, and each <a href="${u('')}#titles">title page</a> shows two of its questions.</p>
+</section>
+<script type="application/json" id="quote-config">${JSON.stringify(quoteCfg).replace(/</g, '\\u003c')}</script>`,
+  scripts: `<script src="${u('assets/quote.js')}"></script>\n`,
+});
+
 pages.push({
   path: 'terms/',
+  crumbs: [['Terms']],
   title: 'Terms of sale and legal notice: Chapter Checks by READ FRANCE',
   description: 'Terms of sale for Chapter Checks (teachers and schools in the United States): licence, delivery, refunds, taxes, liability, and the legal notice.',
   body: `<h1>Terms of sale and legal notice</h1>
@@ -503,6 +611,7 @@ pages.push({
 
 pages.push({
   path: 'privacy/',
+  crumbs: [['Privacy']],
   title: 'Privacy: Chapter Checks by READ FRANCE',
   description: 'What Chapter Checks collects: buyer details for orders, aggregate visit counts without cookies, and no student data.',
   body: `<h1>Privacy</h1>

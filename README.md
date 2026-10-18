@@ -16,6 +16,11 @@ products `cc-*`, venture `v4-64`).
 - `src/vendor/mesure.js` and `cro.js`: byte-identical copies of `octave-checkout/gas/web/` (aggregate, cookieless
   counting; site `chapter-checks`). `src/vendor/og-checkout.js`: `octave-global-checkout/dist/` (module 1.4.0).
 - A/B test `cc-prix` (title pack $5 `p5` / $7 `p7`, per tab) in `src/assets/xp.js`; `?prix=p7` forces a variant.
+- Pooled test `rd-hero` (POOLED-READING-01, from 2026-10-19, home only, per tab): `b` shows the top of page 1 of the free
+  Macbeth student PDF (`src/assets/img/macbeth-act1-excerpt.webp`) in place of the HTML question card; `?hero=b` forces it.
+  Goal `sample` (`src/assets/goals.js`): a click on any link to the free pack or its files.
+- `/quote/`: printable quote built in the browser (`src/assets/quote.js`), with a mailto to octave@vread.fr; no backend,
+  nothing sent. Payment stays card-only; purchase orders on net-30, checks and transfers are not accepted.
 
 ```sh
 npm test       # build + static checks (pages, links, JSON-LD without ratings, tracking, order config, no paid files)

@@ -103,3 +103,39 @@ table.units td:first-child { white-space: nowrap; font-weight: 600; }
 .buy-box { margin: 2.5rem 0; background: var(--paper-2); border-radius: 12px; padding: 18px 22px; max-width: 40rem; }
 .buy-box h2 { margin-top: 0; }
 .related { columns: 2 14rem; padding-left: 1.2rem; }
+/* Previews of real pages, licences, quote page */
+.previews { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 40rem; margin: 1rem 0; }
+.previews a { display: block; text-decoration: none; color: var(--ink); font-size: .9rem; }
+.previews img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; background: #fff; box-shadow: 0 1px 3px rgba(47,39,33,.12); margin-bottom: 6px; }
+.small-previews { max-width: 26rem; }
+.price .lic, .lic { font-size: .92rem; font-weight: 600; color: var(--ink); }
+.choose legend .muted { font-weight: 400; }
+.order-notes { margin-top: 2.5rem; max-width: 44rem; }
+.order-notes details { border-bottom: 1px solid var(--line); padding: 8px 0; }
+.order-notes summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; }
+.quote-form input[type="text"], .quote-form input[type="email"], .quote-form input[type="number"], .quote-form textarea { display: block; width: 100%; max-width: 30rem; font: inherit; padding: 10px; margin-top: 4px; border: 1px solid var(--line); border-radius: 6px; background: #fff; min-height: 44px; }
+.quote-form input[type="number"] { max-width: 7rem; }
+.quote-doc { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin: 1.5rem 0; max-width: 48rem; }
+.quote-doc h2 { margin-top: 0; }
+.quote-parties { display: grid; gap: 12px 32px; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.quote-parties p { margin: .1em 0; } .quote-doc .pre { white-space: pre-line; }
+.quote-doc tr.total td { font-weight: 700; }
+.quote-terms { font-size: .9rem; }
+/* POOLED-READING-01 (rd-hero): variant b shows the real PDF excerpt in the hero instead of the HTML question card. */
+.hero-excerpt { display: none; margin: 0; }
+html[data-xp-rd-hero="b"] .hero-excerpt { display: block; }
+html[data-xp-rd-hero="b"] .hero > .qcard { display: none; }
+.hero-excerpt img { display: block; width: 100%; height: auto; max-width: 40rem; border: 1px solid var(--line); border-radius: 8px; background: #fff; box-shadow: 0 1px 3px rgba(47,39,33,.12); }
+.hero-excerpt figcaption { font-size: .9rem; color: var(--muted); margin-top: 8px; max-width: 40rem; }
+@media (min-width: 960px) { .hero-excerpt { margin-top: 2.2rem; } }
+@media print {
+  body:has(#quote-doc:not([hidden])) :is(header.site, footer.site, .crumbs, main > .wrap > .eyebrow, main > .wrap > h1, main > .wrap > .lead, #quote-form, #how-to-pay, .no-print, .skip) { display: none !important; }
+  body:has(#quote-doc) { background: #fff; font-size: 12pt; } .quote-doc { border: 0; padding: 0; margin: 0; box-shadow: none; }
+}
+/* rd-hero b on phones: the excerpt comes right after the button row, before the small print, so part of it is in the first screen. */
+@media (max-width: 959px) {
+  html[data-xp-rd-hero="b"] .hero { gap: 0; }
+  html[data-xp-rd-hero="b"] .hero > div { display: contents; }
+  html[data-xp-rd-hero="b"] .hero > div > .small { order: 3; }
+  html[data-xp-rd-hero="b"] .hero-excerpt { order: 2; margin: 4px 0 8px; }
+}

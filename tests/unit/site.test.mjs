@@ -170,3 +170,38 @@ test('AP question 3 data: 7 lists checked on 2026-10-17, Hamlet in none, home an
   assert.match(text(html['/index.html']), /Macbeth in three and The Great Gatsby in one\. Hamlet is in none/);
   assert.doesNotMatch(text(html['/index.html']), /other three are the classroom staples/);
 });
+
+test('CRO 2026-10-18: rd-hero pooled test on the home only, preview pages, licences, quote route, breadcrumbs, cluster links', () => {
+  const xp = readFileSync(join(DIST, 'assets/xp.js'), 'utf8');
+  assert.match(xp, /id: 'rd-hero',\s+variants: \['a', 'b'\],\s+mode: 'tab',\s+param: 'hero',\s+pages: '\^\/chapter-checks\/\$'/);
+  const home = html['/index.html'];
+  assert.match(home, /<figure class="hero-excerpt" data-hero-excerpt>[\s\S]*?data-cta[\s\S]*?Real excerpt from the free <i>Macbeth<\/i> pack/);
+  assert.match(readFileSync(join(DIST, 'assets/style.css'), 'utf8'), /html\[data-xp-rd-hero="b"\] \.hero-excerpt \{ display: block; \}/);
+  for (const p of ['/index.html', '/free-sample/index.html', '/order/index.html']) assert.match(html[p], /macbeth-student-p1\.webp/, p);
+  assert.match(text(home), /Licence: one teacher, all of your classes\. .*Licence: every teacher in one school/);
+  for (const p of ['/index.html', '/order/index.html']) assert.ok(html[p].includes('href="/chapter-checks/quote/"'), p);
+  const ld = JSON.parse(home.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+  const faq = ld.find((x) => x['@type'] === 'FAQPage');
+  const visible = [...home.match(/<section class="faq" id="faq">[\s\S]*?<\/section>/)[0].matchAll(/<details><summary>([^<]+)<\/summary>/g)].map((m) => m[1]);
+  assert.deepEqual(faq.mainEntity.map((q) => q.name), visible, 'FAQPage = the visible FAQ');
+  for (const [p, h] of Object.entries(html)) {
+    if (p === '/index.html' || p === '/404.html') continue;
+    assert.match(h, /<nav class="crumbs" aria-label="Breadcrumb"><a href="https:\/\/outils\.vread\.fr\/">outils\.vread\.fr<\/a> › <a href="\/chapter-checks\/">Chapter Checks<\/a>/, p);
+    const g = JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+    const bc = g.find((x) => x['@type'] === 'BreadcrumbList');
+    assert.equal(bc.itemListElement[0].item, 'https://outils.vread.fr/', p);
+    assert.match(h, /<a href="https:\/\/outils\.vread\.fr\/a-propos\/">Who makes this, and how<\/a>/, p);
+  }
+  for (const t of CAT.titles.filter((x) => x.status === 'ready' && !x.free)) {
+    assert.ok(html[`/titles/${t.slug}/index.html`].includes('href="/chapter-checks/free-sample/"'), `${t.slug}: title -> sample`);
+    assert.ok(html[`/study/${t.slug}/index.html`].includes('href="/chapter-checks/free-sample/"'), `${t.slug}: study -> sample`);
+    assert.ok(html['/free-sample/index.html'].includes(`href="/chapter-checks/titles/${t.slug}/"`) && html['/free-sample/index.html'].includes(`href="/chapter-checks/study/${t.slug}/"`), `${t.slug}: sample -> title and study`);
+  }
+  assert.ok(html['/free-sample/index.html'].includes('href="/chapter-checks/study/macbeth/"'));
+  const sm = readFileSync(join(DIST, 'sitemap.xml'), 'utf8');
+  assert.match(sm, /chapter-checks\/quote\/<\/loc><lastmod>2026-10-18</);
+  assert.match(sm, /chapter-checks\/<\/loc><lastmod>2026-10-18</);
+  const q = html['/quote/index.html'];
+  assert.match(text(q), /not available yet/);
+  assert.doesNotMatch(q, /<form[^>]+action=/, 'quote form posts nowhere');
+});
