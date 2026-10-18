@@ -346,8 +346,10 @@ ${packList}
 <h2>Edition and public-domain status</h2>
 <p>Text used: Project Gutenberg eBook #${t.gutenberg} (<a href="https://www.gutenberg.org/ebooks/${t.gutenberg}" rel="noopener">gutenberg.org/ebooks/${t.gutenberg}</a>). ${pd} Questions refer to ${isPlay(t) ? 'acts and scenes' : 'chapters'}, not pages.</p>
 ${t.slug === 'frankenstein-1831' ? '<p>This is the revised 1831 text, the one most school editions print. Some classes read the 1818 text, which differs in places (for example, Elizabeth is Victor\'s cousin in 1818 and an adopted orphan in 1831).</p>' : ''}
-${STUDY[t.slug] ? `<p>Planning the unit? The free <a href="${u(`study/${t.slug}/`)}">${esc(t.title)} reading guide</a> lists what each check covers, with key passages and their references.</p>\n` : ''}${t.free ? '' : `<p>Want to see a whole pack first? The <a href="${u('free-sample/')}" data-mesure="sample_click"><i>Macbeth</i> act checks are free</a>, in the same format: student PDF, answer key, rubric, Canvas and Google Forms files.</p>\n`}<p><a href="${u('')}#titles">All ${TITLES.length} Chapter Checks titles</a></p>`,
-    lastmod: '2026-10-18',
+${STUDY[t.slug] ? `<p>Planning the unit? The free <a href="${u(`study/${t.slug}/`)}">${esc(t.title)} reading guide</a> lists what each check covers, with key passages and their references.</p>\n` : ''}${t.free ? '' : `<p>Want to see a whole pack first? The <a href="${u('free-sample/')}" data-mesure="sample_click"><i>Macbeth</i> act checks are free</a>, in the same format: student PDF, answer key, rubric, Canvas and Google Forms files.</p>\n`}<h2>Other titles</h2>
+<ul class="related">${TITLES.filter((x) => x.slug !== t.slug).map((x) => `<li><a href="${u(`titles/${x.slug}/`)}"><i>${esc(x.title)}</i> ${isPlay(x) ? 'act' : 'chapter'} checks</a>, ${esc(x.author)}</li>`).join('')}</ul>
+<p><a href="${u('')}#titles">All ${TITLES.length} Chapter Checks titles</a></p>`,
+    lastmod: '2026-10-19',
   });
 }
 
