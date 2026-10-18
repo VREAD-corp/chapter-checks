@@ -116,7 +116,8 @@ test('POOLED-READING-01 rd-hero: ?hero=a keeps the HTML question card, ?hero=b s
 
 test('quote page: builds a printable quote with the seller details and a mailto link, nothing sent', async ({ page }) => {
   const posts = [];
-  page.on('request', (r) => { if (r.method() === 'POST') posts.push(r.url()); });
+  // mesure.js still reports an excluded (test) page view: what matters is that nothing typed leaves the page.
+  page.on('request', (r) => { if (r.method() === 'POST') posts.push(r.postData() || ''); });
   await page.goto(nt('quote/'));
   await expect(page.locator('#quote-doc')).toBeHidden();
   await page.fill('input[name="school"]', 'Test High School');
@@ -137,7 +138,7 @@ test('quote page: builds a printable quote with the seller details and a mailto 
   await page.fill('input[name="qty"]', '3');
   await page.click('#quote-form button[type="submit"]');
   await expect(doc).toContainText('$87');
-  expect(posts).toEqual([]);
+  for (const body of posts) expect(body).not.toMatch(/Test High School|Pat Test|pat@example\.org|PO-123/);
 });
 
 test('breadcrumbs start at outils.vread.fr on inner pages; the footer links the who-and-how page', async ({ page }) => {
