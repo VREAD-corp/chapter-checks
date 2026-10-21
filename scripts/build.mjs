@@ -35,6 +35,12 @@ const FREE = READY.find((t) => t.free);
 const P = CAT.prices;
 const AP = JSON.parse(readFileSync(join(ROOT, 'data/ap-q3.json'), 'utf8'));
 const STUDY = Object.fromEntries(READY.map((t) => [t.slug, join(ROOT, 'data/study', `${t.slug}.json`)]).filter(([, f]) => existsSync(f)).map(([s, f]) => [s, JSON.parse(readFileSync(f, 'utf8'))]));
+// Free quiz titles (no paid pack, not in the set): data/free/<slug>.json, exported by the content repo only once every
+// question passed the reading engine's gates, its summary cold-answer gate included. Pages at quizzes/<slug>/.
+const QUIZ = (CAT.free_quizzes || []).filter((t) => existsSync(join(ROOT, 'data/free', `${t.slug}.json`)))
+  .map((t) => ({ ...t, data: JSON.parse(readFileSync(join(ROOT, 'data/free', `${t.slug}.json`), 'utf8')) }));
+const quizUnit = (t) => (t.play ? 'act' : t.slug === 'heart-of-darkness' ? 'part' : 'chapter');
+const quizLinks = () => QUIZ.map((t) => `<a href="${u(`quizzes/${t.slug}/`)}"><i>${esc(t.short)}</i> ${quizUnit(t)} quizzes</a>`).join(', ');
 const apLists = (slug) => AP.lists.filter((l) => l.titles.includes(slug));
 const apName = (l) => `${l.year}${l.set ? ` ${l.set}` : ''}`;
 const DEFAULT_LASTMOD = '2026-10-14';
@@ -186,7 +192,7 @@ const plain = (h) => h.replace(/<[^>]+>/g, '');
 pages.push({
   path: '',
   title: 'Chapter quizzes with answer keys for AP Lit classics | Chapter Checks',
-  lastmod: '2026-10-18',
+  lastmod: '2026-10-21',
   description: `Printable chapter quizzes with answer keys for ${TITLES.length} public-domain classics taught in AP Literature and grades 11–12: PDF, key with text evidence, rubric, Canvas QTI and Google Forms. ${usd(P.p5)} a title; Macbeth is free.`,
   ld: [{ '@type': 'WebSite', name: 'Chapter Checks by READ FRANCE', url: abs(''), publisher: { '@id': ORG['@id'] }, inLanguage: 'en-US' },
     { '@type': 'ItemList', name: 'Chapter Checks titles', itemListElement: TITLES.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: `${fullTitle(t)} chapter checks`, url: abs(`titles/${t.slug}/`) })) },
@@ -231,6 +237,8 @@ ${sampleCard(gatsby, gatsby.samples.questions[0], 1)}
 <p>Seven of the eight are printed in at least one of the ${AP.lists.length} AP Literature free-response question 3 lists from 2023 to 2026: <i>Jane Eyre</i> in six, <i>Frankenstein</i>, <i>Wuthering Heights</i> and <i>The Awakening</i> in five, <i>The Scarlet Letter</i> in four, <i>Macbeth</i> in three and <i>The Great Gatsby</i> in one. <i>Hamlet</i> is in none (<a href="${u('ap-literature/')}">our count</a>).</p>
 ${titleTable}
 <p>Each title also has a free reading guide for teachers: what each check covers, key passages with their references, and three questions from the pack. ${READY.filter((t) => STUDY[t.slug]).map((t) => `<a href="${u(`study/${t.slug}/`)}"><i>${esc(t.title)}</i> reading guide</a>`).join(', ')}.</p>
+${QUIZ.length ? `<h3 id="free-quizzes">Free quizzes on ${QUIZ.length} more classics</h3>
+<p>These titles have no pack yet, so their quizzes are on the web page itself, free, with the key: one quiz per ${QUIZ.some((t) => !t.play) ? 'chapter, part or act' : 'act'}, each a one-word reading checkpoint and three to five multiple-choice questions. ${quizLinks()}.</p>` : ''}
 </section>
 
 <section id="pack">
@@ -306,7 +314,7 @@ ${FREE.samples.questions.map((q, i) => sampleCard(FREE, q, i === 0 ? 1 : 6)).joi
 <p>Every paid title has the same layout, files and rubric. Each title page shows its list of checks, its reading checkpoint and two questions; each reading guide shows three more.</p>
 <ul class="related">${PAID.map((t) => `<li><a href="${u(`titles/${t.slug}/`)}"><i>${esc(t.title)}</i> chapter checks</a>${STUDY[t.slug] ? ` · <a href="${u(`study/${t.slug}/`)}">reading guide</a>` : ''}</li>`).join('')}</ul>
 <p><a class="btn" href="${u('order/')}" data-mesure="cta_click">Get another title, ${priceTitle}</a></p>
-${vread}`,
+${QUIZ.length ? `<p>Teaching another classic? Free quizzes with answers, on the page: ${quizLinks()}.</p>\n` : ''}${vread}`,
 });
 
 for (const t of TITLES) {
@@ -348,6 +356,7 @@ ${packList}
 ${t.slug === 'frankenstein-1831' ? '<p>This is the revised 1831 text, the one most school editions print. Some classes read the 1818 text, which differs in places (for example, Elizabeth is Victor\'s cousin in 1818 and an adopted orphan in 1831).</p>' : ''}
 ${STUDY[t.slug] ? `<p>Planning the unit? The free <a href="${u(`study/${t.slug}/`)}">${esc(t.title)} reading guide</a> lists what each check covers, with key passages and their references.</p>\n` : ''}${t.free ? '' : `<p>Want to see a whole pack first? The <a href="${u('free-sample/')}" data-mesure="sample_click"><i>Macbeth</i> act checks are free</a>, in the same format: student PDF, answer key, rubric, Canvas and Google Forms files.</p>\n`}<h2>Other titles</h2>
 <ul class="related">${TITLES.filter((x) => x.slug !== t.slug).map((x) => `<li><a href="${u(`titles/${x.slug}/`)}"><i>${esc(x.title)}</i> ${isPlay(x) ? 'act' : 'chapter'} checks</a>, ${esc(x.author)}</li>`).join('')}</ul>
+${QUIZ.length ? `<p>Free quizzes, on the page, for titles without a pack: ${quizLinks()}.</p>\n` : ''}
 <p><a href="${u('')}#titles">All ${TITLES.length} Chapter Checks titles</a></p>`,
     lastmod: '2026-10-19',
   });
@@ -451,7 +460,76 @@ ${cta}
 
 <h2>Other reading guides</h2>
 <ul class="related">${related.map((x) => `<li><a href="${u(`study/${x.slug}/`)}"><i>${esc(x.title)}</i></a>, ${esc(x.author)}</li>`).join('')}</ul>
+${QUIZ.length ? `<p>Free ${QUIZ.length > 1 ? 'quizzes' : 'quiz'} with answers, on the page: ${quizLinks()}.</p>` : ''}
 <p><a href="${u(`titles/${t.slug}/`)}">${esc(t.title)} checks: the list of checks and two more sample questions</a>${t.free ? '' : ` · <a href="${u('free-sample/')}" data-mesure="sample_click">the free <i>Macbeth</i> pack, to see a whole pack first</a>`} · <a href="${u('')}">Chapter Checks: reading checks for ${TITLES.length} AP Literature classics</a></p>`,
+  });
+}
+
+// Free quiz pages ----------------------------------------------------------------------------------------------
+function quizCard(t, c, q, n) {
+  const opts = q.options.map((o, i) => `<li${'ABCD'[i] === q.answer ? ' class="key"' : ''}><span class="L">${'ABCD'[i]}</span> ${esc(o)}</li>`).join('');
+  return `<figure class="qcard">
+<figcaption>${esc(t.short)} · ${esc(c.label)} · ${q.skill === 'close' ? 'close reading' : q.skill}</figcaption>
+<p class="stem"><span class="n">${n}.</span> ${esc(q.stem)}</p>${q.quote ? `<blockquote>${verse(q.quote)}</blockquote>` : ''}
+<ol class="opts">${opts}</ol>
+<details><summary>Answer key and evidence</summary><p><span class="n">${q.answer}.</span> ${esc(q.why)}</p>${q.evidence.map((e) => `<p class="ev">“${esc(e)}”</p>`).join('')}</details>
+</figure>`;
+}
+for (const t of QUIZ) {
+  const d = t.data;
+  const unit = quizUnit(t);
+  const words = d.checks.reduce((a, c) => a + c.words, 0);
+  const nq = d.checks.reduce((a, c) => a + c.questions.length, 0);
+  const per = [...new Set(d.checks.map((c) => c.questions.length))].sort().join(' or ');
+  const lists = apLists(t.slug);
+  const others = QUIZ.filter((x) => x.slug !== t.slug);
+  pages.push({
+    path: `quizzes/${t.slug}/`,
+    lastmod: d.updated,
+    title: `${t.short} ${unit} quizzes with answers: free, ${d.checks.length} ${unit}s, key with text evidence`,
+    description: `Free ${t.title} quizzes, one per ${unit}: a one-word reading checkpoint and ${per} multiple-choice questions each, answer key with the line of the text, and ${d.passages.length} key passages.`,
+    crumbs: [[`${t.short} quizzes`]],
+    ld: [{ '@type': 'Quiz', name: `${t.title} ${unit} quizzes`, url: abs(`quizzes/${t.slug}/`), author: AUTHOR, publisher: { '@id': ORG['@id'] }, datePublished: d.updated, dateModified: d.updated,
+      isAccessibleForFree: true, inLanguage: 'en-US', educationalLevel: 'Grades 9-12', learningResourceType: 'Quiz', about: { '@type': 'Book', name: t.title, author: { '@type': 'Person', name: t.author } } }],
+    body: `<p class="eyebrow">${esc(t.author)} · free quizzes with answer key</p>
+<h1><i>${esc(t.title)}</i>: ${unit} quizzes with answers</h1>
+<p class="lead">${d.checks.length} quizzes, one per ${unit}, ${nq + d.checks.length} questions in all, on the Project Gutenberg text (${num(words)} words). Each quiz opens with a reading checkpoint answered with one word of the text, then ${per} multiple-choice questions. The key under each question gives the answer and the line that proves it.</p>
+<p class="small">Written by Octave, READ FRANCE's AI assistant, from Project Gutenberg eBook #${t.gutenberg}; published ${esc(longDate(d.updated))}. Every quotation was checked word for word against the text by a script; no teacher has reviewed this page yet. Corrections: <a href="mailto:${CONTACT}">${CONTACT}</a>. ${WHO}.</p>
+${d.about.map((p) => `<p>${itl(p)}</p>`).join('\n')}
+
+<h2>What each quiz covers</h2>
+<div class="table-wrap"><table class="titles units"><thead><tr><th scope="col">Quiz</th><th scope="col">Words</th><th scope="col">What happens</th></tr></thead><tbody>
+${d.checks.map((c) => `<tr><td><a href="#${c.id}">${esc(c.label)}</a></td><td>${num(c.words)}</td><td>${esc(c.overview)}</td></tr>`).join('\n')}
+</tbody></table></div>
+<p class="small">The answers are on this page, under each question. For a graded quiz, copy the questions into your own form or onto paper rather than sending students here.</p>
+
+${d.checks.map((c) => `<section class="quiz" id="${c.id}">
+<h2>${esc(c.label)} quiz</h2>
+<figure class="qcard cp">
+<figcaption>${esc(t.short)} · ${esc(c.label)} · reading checkpoint</figcaption>
+<p class="stem">${esc(c.checkpoint.question)}</p>
+<p class="muted">Answer: one word from the text.</p>
+<details><summary>Answer key</summary><p><b>${esc(c.checkpoint.answer)}</b>. “${esc(c.checkpoint.evidence)}”</p></details>
+</figure>
+${c.questions.map((q, i) => quizCard(t, c, q, i + 1)).join('\n')}
+</section>`).join('\n')}
+
+<h2>Key passages, with references</h2>
+${d.passages.map((p) => `<figure class="passage"><blockquote>${verse(p.quote)}</blockquote><figcaption><b>${esc(p.ref)}</b> · ${esc(p.speaker)}</figcaption><p>${esc(p.note)}</p></figure>`).join('\n')}
+
+<h2>How these questions were tested</h2>
+<p>Each question was put to a separate AI reader that had not seen the text and held only a study-guide summary of the ${unit} (${t.play ? 'about 350 words an act' : unit === 'part' ? 'about 450 words a part' : 'about 150 to 200 words a chapter'}), longer than the overviews above. A question that reader could answer was rewritten. Final count for <i>${esc(t.title)}</i>: ${d.qa.pass} of ${d.qa.items} questions passed. The gate comes from READ FRANCE's reading engine, which also checked that every quoted line is in the ${unit} it is credited to.</p>
+${lists.length ? `<p><i>${esc(t.title)}</i> is printed in ${lists.length} of the ${AP.lists.length} AP Literature question-3 lists the College Board published for 2023 to 2026: ${lists.map((l) => `<a href="${l.url}" rel="noopener">${apName(l)}</a> (${esc(l.topic)})`).join('; ')}. <a href="${u('ap-literature/')}">Our count of the lists</a>.</p>` : ''}
+
+<section class="buy-box">
+<h2>Want quizzes you can print or import?</h2>
+<p>These quizzes live on this page only: no PDF, no Canvas or Google Forms file. The ${TITLES.length} Chapter Checks titles come as a printable student PDF, an answer key and a 2-1-0 rubric, with Canvas QTI, CSV and Google Forms files. The whole <i>Macbeth</i> pack is free, without an e-mail address.</p>
+<p><a class="btn" href="${u('free-sample/')}" data-mesure="sample_click">Download the free Macbeth pack</a></p>
+</section>
+
+<h2>Other free quizzes</h2>
+<ul class="related">${others.map((x) => `<li><a href="${u(`quizzes/${x.slug}/`)}"><i>${esc(x.title)}</i> ${quizUnit(x)} quizzes</a>, ${esc(x.author)}</li>`).join('')}</ul>
+<p>Reading guides for the ${TITLES.length} titles with a pack: ${READY.filter((x) => STUDY[x.slug]).map((x) => `<a href="${u(`study/${x.slug}/`)}"><i>${esc(x.title)}</i></a>`).join(', ')}. <a href="${u('')}">Chapter Checks home</a>.</p>`,
   });
 }
 
@@ -469,7 +547,7 @@ pages.push({
   body: `<h1>Sources and public-domain status</h1>
 <p class="lead">Our rule: a work is in the public domain in the United States when it was first published before 1931 (as of January 1, 2026). For any sale outside the US we add a stricter test: the author died before 1925 and no translator is involved. During this launch, we sell to US buyers only.</p>
 <div class="table-wrap"><table class="titles"><thead><tr><th scope="col">Title</th><th scope="col">Author died</th><th scope="col">First published</th><th scope="col">US</th><th scope="col">Stricter rule</th><th scope="col">Text used</th></tr></thead><tbody>
-${TITLES.map((t) => `<tr><td><i>${esc(fullTitle(t))}</i></td><td>${t.author_died}</td><td>${esc(t.first_published)}</td><td>Yes</td><td>${t.pd_strict ? 'Yes' : 'No (US only)'}</td><td><a href="https://www.gutenberg.org/ebooks/${t.gutenberg}" rel="noopener">Project Gutenberg #${t.gutenberg}</a></td></tr>`).join('\n')}
+${[...TITLES, ...QUIZ].map((t) => `<tr><td><i>${esc(fullTitle(t))}</i>${QUIZ.includes(t) ? ' (free quizzes)' : ''}</td><td>${t.author_died}</td><td>${esc(t.first_published)}</td><td>Yes</td><td>${t.pd_strict ? 'Yes' : 'No (US only)'}</td><td><a href="https://www.gutenberg.org/ebooks/${t.gutenberg}" rel="noopener">Project Gutenberg #${t.gutenberg}</a></td></tr>`).join('\n')}
 </tbody></table></div>
 <p>We work from the plain-text Project Gutenberg file of each book, with the Project Gutenberg header, licence and footer removed. We do not redistribute the texts: the checks quote short lines only. Project Gutenberg is not involved in, and does not endorse, this product.</p>
 <p>Legal sources: the US term for works published before 1931 (<a href="https://cspd.law.duke.edu/publicdomainday/2026" rel="noopener">Duke Center for the Study of the Public Domain</a>, <a href="https://guides.library.cornell.edu/copyright/publicdomain" rel="noopener">Cornell University Library</a>); life plus 70 years in the UK (CDPA s.12) and the EU.</p>

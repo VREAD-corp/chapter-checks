@@ -586,5 +586,55 @@
     "p7": "cc-jane-eyre-7-usd"
    }
   }
+ ],
+ "free_quizzes": [
+  {
+   "slug": "jekyll-hyde",
+   "title": "Strange Case of Dr Jekyll and Mr Hyde",
+   "short": "Jekyll and Hyde",
+   "author": "Robert Louis Stevenson",
+   "author_died": 1894,
+   "first_published": "1886",
+   "gutenberg": 43,
+   "units": "10 chapters",
+   "pd_strict": true,
+   "play": false
+  },
+  {
+   "slug": "heart-of-darkness",
+   "title": "Heart of Darkness",
+   "short": "Heart of Darkness",
+   "author": "Joseph Conrad",
+   "author_died": 1924,
+   "first_published": "1899 (Blackwood's Magazine); book 1902",
+   "gutenberg": 219,
+   "units": "3 parts",
+   "pd_strict": true,
+   "play": false
+  },
+  {
+   "slug": "othello",
+   "title": "Othello",
+   "short": "Othello",
+   "author": "William Shakespeare",
+   "author_died": 1616,
+   "first_published": "1622 (Quarto); 1623 (First Folio)",
+   "gutenberg": 1531,
+   "units": "5 acts",
+   "pd_strict": true,
+   "play": true
+  },
+  {
+   "slug": "importance-of-being-earnest",
+   "title": "The Importance of Being Earnest",
+   "short": "The Importance of Being Earnest",
+   "author": "Oscar Wilde",
+   "author_died": 1900,
+   "first_published": "1899 (first performed 1895)",
+   "gutenberg": 844,
+   "units": "3 acts",
+   "pd_strict": true,
+   "play": true
+  }
  ]
 }

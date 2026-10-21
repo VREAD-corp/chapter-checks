@@ -1,0 +1,474 @@
+{
+ "slug": "othello",
+ "updated": "2026-10-21",
+ "about": [
+  "Othello was first recorded in performance at court in November 1604, then printed in a Quarto in 1622 and in the First Folio in 1623, six and seven years after Shakespeare died. The Project Gutenberg text (eBook #1531) runs 27,714 words, against 31,707 for Hamlet. Act 3 is the longest act (6,313 words) and Act 5 the shortest (4,360). Most of Act 3 is one long scene between Othello and Iago, so give it the most class time.",
+  "The play leaves Venice after Act 1 and never comes back; everything on Cyprus happens in roughly a day and a half, which is why the speed of Othello's collapse surprises students. Where they usually lose the thread: Roderigo's money and jewels, which Iago keeps for himself, and the handkerchief, which passes from Desdemona to Emilia, Iago, Cassio and Bianca between Act 3, Scene 3 and Act 4, Scene 1. Each act below has one one-word checkpoint and four multiple-choice questions on details from inside the act, not the plot outline."
+ ],
+ "checks": [
+  {
+   "id": "act-1",
+   "label": "Act 1",
+   "units": [
+    "act-1"
+   ],
+   "overview": "At night in Venice, Iago and Roderigo wake Brabantio to tell him his daughter has gone off with Othello. Brabantio accuses Othello of witchcraft before the Duke, who is meeting about a Turkish fleet. Othello tells how he won Desdemona, she backs him, and the senate sends him to Cyprus. Alone, Iago plans to use Cassio against him.",
+   "checkpoint": {
+    "question": "When the Duke asks whether Marcus Luccicos is in town, where does the First Senator say he is?",
+    "answer": "Florence",
+    "evidence": "He’s now in Florence."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "In the council scene, before any messenger arrives, the Duke and two senators compare their letters about the Turkish fleet. What numbers of galleys do the letters give?",
+     "quote": null,
+     "options": [
+      "Sixty, eighty, and a hundred and twenty",
+      "A hundred and seven, a hundred and forty, and two hundred",
+      "Thirty, a hundred, and a hundred and sixty",
+      "A hundred and seventeen, a hundred and fifty, and three hundred"
+     ],
+     "answer": "B",
+     "why": "The First Senator's letters say a hundred and seven, the Duke's a hundred and forty, the Second Senator's two hundred. The counts disagree, but all of them confirm a Turkish fleet heading for Cyprus.",
+     "evidence": [
+      "My letters say a hundred and seven galleys.",
+      "And mine a hundred and forty.",
+      "And mine two hundred"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "After handing Desdemona over to Othello, Brabantio tells her he is glad at soul that he has no other child. What reason does he give?",
+     "quote": null,
+     "options": [
+      "He fears another child would also run off with a soldier",
+      "He wants his fortune to pass whole to his brother's family",
+      "He expects Desdemona to come home to him before long",
+      "Her escape would teach him to be a tyrant to any other"
+     ],
+     "answer": "D",
+     "why": "Brabantio says her escape would teach him tyranny, so that he would \"hang clogs\" on any other child to keep it from running away. The loss has made him bitter toward fatherhood itself.",
+     "evidence": [
+      "I am glad at soul I have no other child, For thy escape would teach me tyranny, To hang clogs on them."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Asking the senate to let Desdemona go with him, Othello swears that love will not distract him from the war, or else \"Let housewives make a skillet of my helm,\". What does the line mean in context?",
+     "quote": "Let housewives make a skillet of my helm,",
+     "options": [
+      "If love ever spoils his work, let his helmet become a cooking pot",
+      "He wants Desdemona to keep house for the army on Cyprus",
+      "He mocks the senators as cooks who have never stood in a battle line",
+      "He plans to give up war and settle down at home in Venice"
+     ],
+     "answer": "A",
+     "why": "A skillet is a cooking pan and a helm is a helmet. Othello stakes his soldier's honor on the promise that Desdemona's company will not make him neglect the senate's business.",
+     "evidence": [
+      "That my disports corrupt and taint my business, Let housewives make a skillet of my helm,",
+      "I will your serious and great business scant For she is with me."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Talking Roderigo out of drowning himself, Iago says how long he has looked upon the world. What figure does he give?",
+     "quote": null,
+     "options": [
+      "Twice ten years",
+      "Three score years and ten",
+      "Four times seven years",
+      "Five and thirty years"
+     ],
+     "answer": "C",
+     "why": "Iago says he has looked on the world for four times seven years, which makes him twenty-eight, and in all that time he has never found a man who knew how to love himself.",
+     "evidence": [
+      "I have looked upon the world for four times seven years,"
+     ]
+    }
+   ],
+   "words": 5792
+  },
+  {
+   "id": "act-2",
+   "label": "Act 2",
+   "units": [
+    "act-2"
+   ],
+   "overview": "A storm wrecks the Turkish fleet off Cyprus. Cassio, then Desdemona with Iago, and finally Othello land safely. Iago persuades Roderigo that Desdemona loves Cassio and sets him to provoke Cassio on the night watch. Iago gets Cassio drunk; Cassio wounds Montano, and Othello dismisses him. Iago advises Cassio to ask Desdemona to plead for him.",
+   "checkpoint": {
+    "question": "Iago sings a drinking song for Cassio and the Cyprus gallants. In what country does he say he learned it?",
+    "answer": "England",
+    "evidence": "I learned it in England, where indeed they are most potent in potting:"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "According to the herald's proclamation in Scene 2, between what hours is there full liberty of feasting?",
+     "quote": null,
+     "options": [
+      "From noon until the bell has told nine",
+      "From sunset until the watch is set at midnight",
+      "From five until the bell has told eleven",
+      "From dawn until the general returns to the castle"
+     ],
+     "answer": "C",
+     "why": "The herald announces feasting from \"this present hour of five\" until the bell tells eleven, to mark both the loss of the Turkish fleet and Othello's wedding.",
+     "evidence": [
+      "there is full liberty of feasting from this present hour of five till the bell have told eleven.",
+      "it is the celebration of his nuptial."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "While Iago trades rhymes about women on the quay, Desdemona says she is not merry and asks whether someone has gone to the harbour. What does this suggest about her?",
+     "quote": null,
+     "options": [
+      "She is hiding her fear for Othello's ship behind the banter",
+      "She is offended by Iago and wants Emilia to leave with her",
+      "She suspects Cassio of lying about how the storm parted them",
+      "She is bored by Cyprus and wishes she had stayed in Venice"
+     ],
+     "answer": "A",
+     "why": "Othello's ship is still at sea, and she has just told Cassio \"I fear.\" She joins Iago's game to pass the time, \"seeming otherwise\" than she feels, while she keeps asking for news from the harbour.",
+     "evidence": [
+      "There’s one gone to the harbour?",
+      "I am not merry, but I do beguile The thing I am, by seeming otherwise."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Ending his soliloquy after the scene with Roderigo, Iago says, \"’Tis here, but yet confus’d. Knavery’s plain face is never seen till us’d.\" What does he mean?",
+     "quote": "’Tis here, but yet confus’d. Knavery’s plain face is never seen till us’d.",
+     "options": [
+      "He fears his own face will betray the whole plot to Othello",
+      "He mocks Roderigo's plain looks as the face of a fool",
+      "He warns himself that Cassio already sees through him",
+      "His plan is still unformed and will show itself in action"
+     ],
+     "answer": "D",
+     "why": "He has just listed what he wants (to get even with Othello, abuse Cassio and be thanked for it) but admits the plan is \"here,\" in his head, and still confused. Its full shape will appear only once he puts it to use.",
+     "evidence": [
+      "’Tis here, but yet confus’d. Knavery’s plain face is never seen till us’d."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Drunk at the party, Cassio tries to prove to the gentlemen that he is sober. What does he point out?",
+     "quote": null,
+     "options": [
+      "That he can still recite the watchword without a slip",
+      "Which one is his ancient, his right hand and his left",
+      "That he has drunk only water since the herald's call",
+      "That he can walk along the platform wall without falling"
+     ],
+     "answer": "B",
+     "why": "Cassio names his ancient (Iago), his right hand and his left as proof that he is \"not drunk now,\" just before he leaves to set the watch.",
+     "evidence": [
+      "This is my ancient, this is my right hand, and this is my left. I am not drunk now."
+     ]
+    }
+   ],
+   "words": 5889
+  },
+  {
+   "id": "act-3",
+   "label": "Act 3",
+   "units": [
+    "act-3"
+   ],
+   "overview": "Cassio asks Emilia, then Desdemona, to help him regain his place, and Desdemona presses Othello to see him. Iago works on Othello with hints and warnings until Othello demands proof. Desdemona drops the handkerchief Othello gave her; Emilia hands it to Iago, who means to plant it on Cassio. Othello vows revenge, and Cassio gives the handkerchief to Bianca.",
+   "checkpoint": {
+    "question": "Iago claims he lay beside Cassio one night and heard him talk in his sleep. What was troubling Iago so that he could not sleep?",
+    "answer": "tooth",
+    "evidence": "I lay with Cassio lately, And being troubled with a raging tooth, I could not sleep."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Pressing Cassio's suit in the garden, Desdemona offers Othello one time after another for seeing him. What limit does she set?",
+     "quote": null,
+     "options": [
+      "That it be before the next ship sails for Venice",
+      "That it be settled before tonight's supper ends",
+      "That it be within the week, before the next watch",
+      "That the meeting be no more than three days away"
+     ],
+     "answer": "D",
+     "why": "After offering supper, dinner, Tuesday and Wednesday, she asks him to name the time but not to let it go beyond three days.",
+     "evidence": [
+      "I prithee name the time, but let it not Exceed three days."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "After Othello storms off demanding the handkerchief, Desdemona tries to account for his mood to Emilia. How does she explain it?",
+     "quote": null,
+     "options": [
+      "She decides Emilia has spoken against her to him in private",
+      "She blames business of state and scolds herself for judging him",
+      "She suspects Cassio has quarrelled with him again in the town",
+      "She thinks a fever caught on the night watch is making him rash"
+     ],
+     "answer": "B",
+     "why": "She guesses that news from Venice or some plot uncovered in Cyprus has \"puddled his clear spirit,\" then says she was wrong to accuse him in her heart: \"he’s indicted falsely.\"",
+     "evidence": [
+      "Something sure of state, Either from Venice, or some unhatch’d practice Made demonstrable here in Cyprus to him, Hath puddled his clear spirit,",
+      "But now I find I had suborn’d the witness, And he’s indicted falsely."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Alone after Iago leaves, Othello says, \"If I do prove her haggard, Though that her jesses were my dear heartstrings, I’d whistle her off, and let her down the wind To prey at fortune.\" What does the image mean?",
+     "quote": "If I do prove her haggard, Though that her jesses were my dear heartstrings, I’d whistle her off, and let her down the wind To prey at fortune.",
+     "options": [
+      "He compares her to a songbird he will keep caged at home",
+      "He vows to hunt Cassio down as a hawk hunts its prey",
+      "If she proves wild, he will cast her off like an untamed hawk",
+      "He will ship her home to her father in Venice on the next wind"
+     ],
+     "answer": "C",
+     "why": "A haggard is a wild hawk and jesses are the straps that tie it to the falconer. Othello says that if she proves untamed he will release her, even if the straps were his own heartstrings; a few lines later he concludes his relief \"Must be to loathe her.\"",
+     "evidence": [
+      "If I do prove her haggard, Though that her jesses were my dear heartstrings, I’d whistle her off, and let her down the wind To prey at fortune.",
+      "She’s gone, I am abus’d, and my relief Must be to loathe her."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "When Bianca meets Cassio before the castle at the end of the act, how long does she complain he has stayed away from her?",
+     "quote": null,
+     "options": [
+      "A week: seven days and nights",
+      "Two days and a sleepless night",
+      "A fortnight, since the storm",
+      "A month, since he came ashore"
+     ],
+     "answer": "A",
+     "why": "Bianca reproaches him for keeping \"a week away,\" which she counts as seven days and nights, or eight score eight hours.",
+     "evidence": [
+      "What, keep a week away? Seven days and nights?",
+      "Eight score eight hours,"
+     ]
+    }
+   ],
+   "words": 6313
+  },
+  {
+   "id": "act-4",
+   "label": "Act 4",
+   "units": [
+    "act-4"
+   ],
+   "overview": "Iago's talk of what Cassio has said throws Othello into a fit. Hidden, Othello watches Cassio laugh about Bianca and takes it as boasting about Desdemona; Bianca throws back the handkerchief. Lodovico arrives with orders recalling Othello and sees him strike Desdemona. Othello calls her a whore to her face. Iago sets Roderigo to kill Cassio, and Desdemona sings the willow song.",
+   "checkpoint": {
+    "question": "When Emilia comes back in after Othello has questioned Desdemona, he says her office is the opposite of a certain saint's. Which saint?",
+    "answer": "Peter",
+    "evidence": "That have the office opposite to Saint Peter, And keeps the gate of hell."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "When Emilia insists she saw no harm between Desdemona and Cassio, Othello asks whether Desdemona ever sent her out of the way. What errands does he name?",
+     "quote": null,
+     "options": [
+      "To fetch her fan, her gloves, her mask",
+      "To carry letters to the harbour and the citadel",
+      "To bring wine and lights up to the chamber",
+      "To buy silk, thread and needles in the town"
+     ],
+     "answer": "A",
+     "why": "Othello asks whether Desdemona sent Emilia to fetch her fan, gloves or mask, and Emilia answers \"Never, my lord\" each time.",
+     "evidence": [
+      "To fetch her fan, her gloves, her mask, nor nothing?",
+      "Never, my lord."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Cassio comes upon Othello lying in his fit and suggests rubbing his temples. What do Iago's answers to Cassio do?",
+     "quote": null,
+     "options": [
+      "They ask Cassio to stay and witness the fit for Lodovico",
+      "They send Cassio to fetch the surgeon from the citadel",
+      "They present the fit as a known illness and keep Cassio off",
+      "They show Iago is truly alarmed and unsure what to do about it"
+     ],
+     "answer": "C",
+     "why": "Iago calls it Othello's \"second fit\" after one \"yesterday,\" tells Cassio to forbear, and asks him to withdraw a little while. Cassio is kept from helping and from hearing anything when Othello wakes.",
+     "evidence": [
+      "This is his second fit. He had one yesterday.",
+      "No, forbear; The lethargy must have his quiet course.",
+      "Do you withdraw yourself a little while,"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "After he strikes her in front of Lodovico, Othello says of Desdemona, \"If that the earth could teem with woman’s tears, Each drop she falls would prove a crocodile.\" What does he mean?",
+     "quote": "If that the earth could teem with woman’s tears, Each drop she falls would prove a crocodile.",
+     "options": [
+      "He regrets the blow and feels her grief as his own",
+      "Her weeping is false, a show put on to win pity",
+      "He fears she will turn on him as a beast turns on its keeper",
+      "Her tears will flood the island as the storm flooded the sea"
+     ],
+     "answer": "B",
+     "why": "Crocodiles were said to weep false tears, and Othello claims each of her tears would breed one. A moment later he calls her weeping \"well-painted passion,\" a performance.",
+     "evidence": [
+      "If that the earth could teem with woman’s tears, Each drop she falls would prove a crocodile.",
+      "O well-painted passion!"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Lodovico asks Iago whether striking his wife is Othello's custom or a new fault brought on by the letters. What does Iago's reply do?",
+     "quote": null,
+     "options": [
+      "It denies that Othello has ever been violent before",
+      "It blames the senate's letter for Othello's anger",
+      "It urges Lodovico to report the blow to Venice at once",
+      "It hints at a habit while claiming to keep a secret"
+     ],
+     "answer": "D",
+     "why": "Iago says it would not be honest to tell what he has \"seen and known\" and wishes the blow were the worst of it. He never makes a charge, but he leaves Lodovico to assume there is worse.",
+     "evidence": [
+      "It is not honesty in me to speak What I have seen and known.",
+      "Faith, that was not so well; yet would I knew That stroke would prove the worst!"
+     ]
+    }
+   ],
+   "words": 5360
+  },
+  {
+   "id": "act-5",
+   "label": "Act 5",
+   "units": [
+    "act-5"
+   ],
+   "overview": "In a dark street Roderigo attacks Cassio; Iago wounds Cassio from behind and then stabs Roderigo. Othello smothers Desdemona in her bed. Emilia raises the alarm and tells how she found the handkerchief and gave it to Iago, who stabs her and runs. Letters found on Roderigo expose the plot. Othello wounds Iago, asks to be remembered truly, and kills himself.",
+   "checkpoint": {
+    "question": "Othello tells Emilia he would not have sold Desdemona even for another world made of one perfect stone. What stone does he name?",
+    "answer": "chrysolite",
+    "evidence": "If heaven would make me such another world Of one entire and perfect chrysolite, I’d not have sold her for it."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Disarmed after Montano leaves, Othello finds another weapon in the bedchamber. How does he describe it?",
+     "quote": null,
+     "options": [
+      "An Egyptian blade that his mother left to him",
+      "A sword of Spain, tempered in an ice-brook",
+      "A blade taken from a turbaned Turk in Aleppo long ago",
+      "Montano's own sword, dropped on the chamber floor"
+     ],
+     "answer": "B",
+     "why": "Othello says he has another weapon in the chamber, \"a sword of Spain, the ice-brook’s temper,\" and uses it to face Gratiano at the door.",
+     "evidence": [
+      "I have another weapon in this chamber, It is a sword of Spain, the ice-brook’s temper."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When Iago is brought in as a prisoner, Othello first looks down at Iago's feet, then calls what he expected to see there a fable. What was he looking for?",
+     "quote": null,
+     "options": [
+      "Signs that Iago was wounded in the fight in the street",
+      "The chains Lodovico's officers have put on him",
+      "Emilia's blood, to prove Iago killed his wife",
+      "The cloven hooves that would mark him as a devil"
+     ],
+     "answer": "D",
+     "why": "Devils were said to have cloven feet. Othello admits the idea is a fable, then says that if Iago is a devil he cannot kill him, and wounds him; Iago answers that he bleeds but is not killed.",
+     "evidence": [
+      "I look down towards his feet; but that’s a fable. If that thou be’st a devil, I cannot kill thee."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Just after the murder, Emilia reports that Roderigo is dead and Cassio is not. Othello answers, \"Not Cassio kill’d! Then murder’s out of tune, And sweet revenge grows harsh.\" What does he mean?",
+     "quote": "Not Cassio kill’d! Then murder’s out of tune, And sweet revenge grows harsh.",
+     "options": [
+      "With Cassio alive, his plan of revenge has gone wrong",
+      "He now regrets the murder and hears it as a crime",
+      "He fears the noise outside will wake the whole castle",
+      "He blames Emilia's crying for spoiling the quiet night"
+     ],
+     "answer": "A",
+     "why": "Othello expected both deaths that night; Iago had promised to deal with Cassio. Hearing that Cassio lives, he finds his revenge spoiled, like music played out of tune. He does not yet regret Desdemona's death.",
+     "evidence": [
+      "Not Cassio kill’d! Then murder’s out of tune, And sweet revenge grows harsh.",
+      "Roderigo kill’d? And Cassio kill’d?"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Emilia keeps calling at the bedchamber door after the smothering. What does Othello do just before he unlocks it?",
+     "quote": null,
+     "options": [
+      "He blows out the light burning by the bed",
+      "He hides his sword beneath the pillows",
+      "He draws the curtains round the bed",
+      "He kneels to pray beside Desdemona"
+     ],
+     "answer": "C",
+     "why": "Othello hesitates, then tells Emilia to wait and draws the bed curtains so that she will not see Desdemona before he lets her in.",
+     "evidence": [
+      "Soft, by and by; let me the curtains draw."
+     ]
+    }
+   ],
+   "words": 4360
+  }
+ ],
+ "passages": [
+  {
+   "unit": "act-1",
+   "ref": "Act 1, Scene 1",
+   "speaker": "Iago to Roderigo",
+   "quote": "But I will wear my heart upon my sleeve / For daws to peck at: I am not what I am.",
+   "note": "Iago is explaining why he still serves Othello after Cassio got the promotion. Students often quote the last half-line on its own; read it with the lines just before, where he says his show of duty is only \"for my peculiar end.\""
+  },
+  {
+   "unit": "act-1",
+   "ref": "Act 1, Scene 3",
+   "speaker": "Othello to the Duke and senators",
+   "quote": "She lov’d me for the dangers I had pass’d, / And I lov’d her that she did pity them. / This only is the witchcraft I have us’d.",
+   "note": "His answer to Brabantio's charge of drugs and charms, and the Duke admits the tale would win his own daughter. Set it beside Iago's version in Act 2, Scene 1, where she loved him only \"for bragging, and telling her fantastical lies.\""
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2, Scene 3",
+   "speaker": "Cassio to Iago",
+   "quote": "Reputation, reputation, reputation! O, I have lost my reputation! I have lost the immortal part of myself, and what remains is bestial.",
+   "note": "Prose, just after Othello dismisses him. Iago replies that reputation is \"an idle and most false imposition.\" In Act 3, Scene 3 he tells Othello the opposite, that a good name is \"the immediate jewel\" of the soul; ask students why he changes his line."
+  },
+  {
+   "unit": "act-3",
+   "ref": "Act 3, Scene 3",
+   "speaker": "Iago to Othello",
+   "quote": "O, beware, my lord, of jealousy; / It is the green-ey’d monster which doth mock / The meat it feeds on.",
+   "note": "Iago names jealousy before Othello has shown any. Ask who first brings the word into the scene. Emilia uses the same monster image in Scene 4, when she tells Desdemona that jealousy is \"Begot upon itself.\""
+  },
+  {
+   "unit": "act-4",
+   "ref": "Act 4, Scene 3",
+   "speaker": "Emilia to Desdemona",
+   "quote": "Let husbands know / Their wives have sense like them: they see, and smell / And have their palates both for sweet and sour, / As husbands have.",
+   "note": "The end of the willow scene, the last time the two women talk alone. Desdemona has just said she would not wrong her husband \"for the whole world\"; Emilia answers that wives learn their faults from husbands."
+  },
+  {
+   "unit": "act-5",
+   "ref": "Act 5, Scene 2",
+   "speaker": "Othello to Lodovico and the others",
+   "quote": "Speak of me as I am. Nothing extenuate, / Nor set down aught in malice. Then must you speak / Of one that loved not wisely, but too well;",
+   "note": "His last long speech, which ends when he stabs himself. He goes on to call himself \"not easily jealous\"; ask students whether Act 3, Scene 3 bears that out."
+  }
+ ],
+ "qa": {
+  "items": 25,
+  "pass": 25,
+  "leak": 0,
+  "failing": 0
+ }
+}

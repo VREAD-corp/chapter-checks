@@ -1,5 +1,5 @@
 {
- "_doc": "Question 3 (prose fiction / literary argument) title lists printed in the AP English Literature and Composition free-response PDFs, 2023 to 2026, as listed on https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions. Each PDF was downloaded and its question-3 list read by READ FRANCE on 2026-10-17 (pdftotext); `titles` = which Chapter Checks titles are printed in that list, `count` = number of works in the list. Topic: our paraphrase of the prompt. 2026: one set published at the date checked.",
+ "_doc": "Question 3 (prose fiction / literary argument) title lists printed in the AP English Literature and Composition free-response PDFs, 2023 to 2026, as listed on https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions. Each PDF was downloaded and its question-3 list read by READ FRANCE on 2026-10-17 (pdftotext); `titles` = which Chapter Checks titles are printed in that list, `count` = number of works in the list. Topic: our paraphrase of the prompt. 2026: one set published at the date checked. The 4 free quiz titles (jekyll-hyde, heart-of-darkness, othello, importance-of-being-earnest) were searched in the same 7 PDFs on 2026-10-21 (pdftotext): Strange Case of Dr. Jekyll and Mr. Hyde is in 2023 set 1, The Importance of Being Earnest in 2025 set 1, the other two in none.",
  "checked": "2026-10-17",
  "page": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions",
  "lists": [
@@ -12,6 +12,7 @@
    "count": 41,
    "titles": [
     "jane-eyre",
+    "jekyll-hyde",
     "the-awakening",
     "wuthering-heights"
    ]
@@ -68,6 +69,7 @@
    "topic": "characters significantly affected by memories of the past",
    "count": 36,
    "titles": [
+    "importance-of-being-earnest",
     "jane-eyre",
     "macbeth",
     "scarlet-letter",

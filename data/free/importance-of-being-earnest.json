@@ -1,0 +1,364 @@
+{
+ "slug": "importance-of-being-earnest",
+ "updated": "2026-10-21",
+ "about": [
+  "The Importance of Being Earnest opened at the St James's Theatre on 14 February 1895, and Leonard Smithers published it in 1899, a year before Wilde died. Project Gutenberg eBook #844 is the three-act version, the one the first production used; Wilde had drafted the play in four acts. The whole text runs 20,574 words. Act 2 is the longest (8,645 words), Act 1 runs 7,323 and Act 3 only 4,606, so the last check fits in one sitting.",
+  "Act 1 is set in Algernon's flat in Half-Moon Street. Acts 2 and 3 take place at Jack's Manor House in Hertfordshire the next day, and Act 3 follows straight on from the tea in the garden. Students mostly lose the thread over names: Jack is Ernest in London and Jack in the country, Algernon calls himself Ernest from Act 2 on, Lady Bracknell is Aunt Augusta to Algernon, and the butler is Lane in town but Merriman in the country. The quiz items ask about small things said and done on stage, not the famous lines, and no teacher has reviewed them yet."
+ ],
+ "checks": [
+  {
+   "id": "act-1",
+   "label": "Act 1",
+   "units": [
+    "act-1"
+   ],
+   "overview": "In Algernon Moncrieff's London flat, a cigarette case inscribed by little Cecily forces Jack Worthing to admit that he is Ernest in town and Jack in the country, and Algernon confesses his invented invalid, Bunbury. Jack proposes to Gwendolen Fairfax, who loves him for the name Ernest. Lady Bracknell questions him, learns he was found in a hand-bag at a railway station, and refuses the match.",
+   "checkpoint": {
+    "question": "Algernon apologizes that there are no cucumber sandwiches. What does Lady Bracknell say she already had at Lady Harbury's?",
+    "answer": "crumpets",
+    "evidence": "I had some crumpets with Lady Harbury, who seems to me to be living entirely for pleasure now."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "During her interview with Jack, Lady Bracknell asks about his politics. How does she respond to his answer?",
+     "quote": null,
+     "options": [
+      "She says she cannot receive a Radical in her house",
+      "She says Liberal Unionists count as Tories and dine with her",
+      "She says politics are no concern of a young suitor",
+      "She says Lord Bracknell must first approve of his party"
+     ],
+     "answer": "B",
+     "why": "Jack calls himself a Liberal Unionist, and Lady Bracknell accepts it at once (\"Oh, they count as Tories. They dine with us.\") before moving on to his parents.",
+     "evidence": [
+      "Well, I am afraid I really have none. I am a Liberal Unionist.",
+      "Oh, they count as Tories. They dine with us."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Near the end of the act, Jack plans how to get rid of his brother Ernest. What cause of death does he suggest first, before Algernon objects?",
+     "quote": null,
+     "options": [
+      "A severe chill caught in Paris",
+      "A fall while hunting in Shropshire",
+      "A fever caught at Tunbridge Wells",
+      "Apoplexy, quite suddenly, in Paris"
+     ],
+     "answer": "D",
+     "why": "Jack's first plan is apoplexy. Algernon objects that it is hereditary and proposes a severe chill, which Jack then adopts.",
+     "evidence": [
+      "I’ll say he died in Paris of apoplexy.",
+      "Yes, but it’s hereditary, my dear fellow."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When Jack says he would like to take advantage of Lady Bracknell's temporary absence, Gwendolen says her mother has a way of coming back suddenly into a room. What does her reply suggest?",
+     "quote": null,
+     "options": [
+      "She urges him to hurry, as if her mother were the one at fault",
+      "She is afraid of her mother and wants Jack to leave at once",
+      "She hopes her mother will come back in time to hear him",
+      "She warns him that her mother listens at doors in the flat"
+     ],
+     "answer": "A",
+     "why": "She tells him to seize the moment (\"I would certainly advise you to do so\") and speaks of her mother's habit as something she has \"often had to speak to her about,\" the way a parent speaks of a child.",
+     "evidence": [
+      "I would certainly advise you to do so.",
+      "Mamma has a way of coming back suddenly into a room that I have often had to speak to her about."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Soon after she arrives, Lady Bracknell tells Algernon she has a treat for him at dinner that night. Why is her news funny to anyone who heard Algernon talk to Jack earlier?",
+     "quote": null,
+     "options": [
+      "Algernon has already told her he is dining with Bunbury",
+      "Algernon once proposed to the woman she now names",
+      "Algernon predicted that very partner and mocked her",
+      "Algernon has said his aunt never asks him to dinner"
+     ],
+     "answer": "C",
+     "why": "Algernon told Jack his aunt would \"place me next Mary Farquhar, who always flirts with her own husband\"; Lady Bracknell announces exactly that and praises the woman as \"so attentive to her husband.\"",
+     "evidence": [
+      "She will place me next Mary Farquhar, who always flirts with her own husband across the dinner-table.",
+      "I am going to send you down with Mary Farquhar."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "When the electric bell sounds, Algernon says, \"Only relatives, or creditors, ever ring in that Wagnerian manner.\" What does the line show in context?",
+     "quote": "Only relatives, or creditors, ever ring in that Wagnerian manner.",
+     "options": [
+      "He fears the ring means Bunbury's doctor with bad news",
+      "He takes the loud ring for his aunt and puts family with creditors",
+      "He scolds Lane for playing Wagner on the piano next door",
+      "He expects a bill collector rather than his aunt and cousin"
+     ],
+     "answer": "B",
+     "why": "He says at once \"that must be Aunt Augusta,\" so the joke is in ranking his relatives with the creditors that a man \"more than usually hard up\" would dread.",
+     "evidence": [
+      "Ah! that must be Aunt Augusta.",
+      "I happen to be more than usually hard up."
+     ]
+    }
+   ],
+   "words": 7323
+  },
+  {
+   "id": "act-2",
+   "label": "Act 2",
+   "units": [
+    "act-2"
+   ],
+   "overview": "At Jack's country house, Cecily Cardew neglects her German while Miss Prism walks with the rector, Dr. Chasuble. Algernon arrives posing as Jack's wicked brother Ernest just before Jack returns in mourning to announce that Ernest has died. Cecily reveals she has been engaged to Ernest for months. Gwendolen arrives, the two women find they are engaged to the same Ernest, and both men's real names come out.",
+   "checkpoint": {
+    "question": "Cecily shows Algernon the diary entry in which she broke off their engagement. In which month does she say she broke it off?",
+    "answer": "March",
+    "evidence": "On the 22nd of last March."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Jack first offers to come for his christening at about five o'clock. Why does he ask for half-past five instead?",
+     "quote": null,
+     "options": [
+      "Miss Prism has planned her walk with Chasuble for five",
+      "Chasuble must be at Evensong in the cathedral by five",
+      "Chasuble is christening a carter's new twins at five",
+      "Algernon has already booked the rector for five o'clock"
+     ],
+     "answer": "C",
+     "why": "Chasuble has \"two similar ceremonies\" at five, the twins of Jenkins the carter, and Jack does not want to be christened \"along with other babies.\"",
+     "evidence": [
+      "In fact I have two similar ceremonies to perform at that time.",
+      "A case of twins that occurred recently in one of the outlying cottages on your own estate.",
+      "Oh! I don’t see much fun in being christened along with other babies."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "While the servants lay the tea, Gwendolen asks whether there are interesting walks nearby. What does Cecily say one can see from a hill close by?",
+     "quote": null,
+     "options": [
+      "Five counties",
+      "The sea at Brighton",
+      "The smoke of London",
+      "Three cathedral spires"
+     ],
+     "answer": "A",
+     "why": "Cecily boasts of the view of \"five counties,\" and Gwendolen turns it into a snub: \"I hate crowds.\"",
+     "evidence": [
+      "From the top of one of the hills quite close one can see five counties.",
+      "Five counties! I don’t think I should like that; I hate crowds."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Early in the act, Cecily tells Dr. Chasuble that Miss Prism has a slight headache and would benefit from a stroll with him. What does the exchange suggest?",
+     "quote": null,
+     "options": [
+      "Cecily is truly anxious about her governess's health",
+      "Miss Prism has privately asked Cecily to hint at a walk",
+      "Chasuble has called to examine Miss Prism as a doctor",
+      "Cecily invents the headache to send the two off together"
+     ],
+     "answer": "D",
+     "why": "Miss Prism says she has \"not mentioned anything about a headache,\" and Cecily only \"felt instinctively\" that she had one; Prism then finds she has a headache after all and goes walking with the rector.",
+     "evidence": [
+      "Cecily, I have not mentioned anything about a headache.",
+      "No, dear Miss Prism, I know that, but I felt instinctively that you had a headache.",
+      "I find I have a headache after all, and a walk might do it good."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "The second time the dog-cart is announced, Algernon tells Merriman to bring it round next week. What does the stage direction that follows suggest?",
+     "quote": null,
+     "options": [
+      "Merriman refuses to take orders from a mere guest",
+      "Merriman looks to Cecily, and her silence lets Algernon stay",
+      "Cecily signals Merriman to drive Algernon off at once",
+      "Merriman has been told by Jack to ignore the guest"
+     ],
+     "answer": "B",
+     "why": "Merriman checks with Cecily before obeying; since she \"makes no sign,\" he answers \"Yes, sir,\" and Algernon stays on.",
+     "evidence": [
+      "Tell it to come round next week, at the same hour.",
+      "Looks at Cecily, who makes no sign."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Chasuble says that if he were Miss Prism's pupil he would hang upon her lips. When she glares, he adds, \"I spoke metaphorically.—My metaphor was drawn from bees.\" What does this show in context?",
+     "quote": "I spoke metaphorically.—My metaphor was drawn from bees.",
+     "options": [
+      "He is backing away from words that sounded like courtship",
+      "He is showing off to Cecily what he knows about bees",
+      "He is apologizing for calling Miss Prism a dull teacher",
+      "He is trying out an image for next Sunday's sermon"
+     ],
+     "answer": "A",
+     "why": "\"Hang upon her lips\" can be heard as a lover's phrase; Miss Prism glares, and Chasuble hurries to make it about bees. She makes the same retreat later in the act (\"My metaphor was drawn from fruits\").",
+     "evidence": [
+      "Were I fortunate enough to be Miss Prism’s pupil, I would hang upon her lips.",
+      "Miss Prism glares.",
+      "My metaphor was drawn from fruits."
+     ]
+    }
+   ],
+   "words": 8645
+  },
+  {
+   "id": "act-3",
+   "label": "Act 3",
+   "units": [
+    "act-3"
+   ],
+   "overview": "In the morning-room, Gwendolen and Cecily forgive the two men everything except their names, and both men offer to be christened. Lady Bracknell arrives, consents to Algernon and Cecily once she hears of Cecily's fortune, and Jack withholds his consent unless he may marry Gwendolen. Chasuble's mention of Miss Prism leads to the truth about the hand-bag, Jack's parents and his real name.",
+   "checkpoint": {
+    "question": "Lady Bracknell gives an example of a woman who has been thirty-five ever since she reached forty. What is that lady's surname?",
+    "answer": "Dumbleton",
+    "evidence": "Lady Dumbleton is an instance in point."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Lady Bracknell asks whether Cecily is connected with any London railway station. Which of these is one of the addresses Jack gives, in a clear, cold voice, for Cecily's late grandfather?",
+     "quote": null,
+     "options": [
+      "104, Upper Grosvenor Street",
+      "B. 4, The Albany",
+      "Half-Moon Street, Mayfair",
+      "Gervase Park, Dorking, Surrey"
+     ],
+     "answer": "D",
+     "why": "Jack lists Belgrave Square, Gervase Park in Surrey and the Sporran in Fifeshire. Upper Grosvenor Street is Lord Bracknell's house, the Albany is the address on Ernest's card, and Half-Moon Street is Algernon's flat.",
+     "evidence": [
+      "Miss Cardew is the grand-daughter of the late Mr. Thomas Cardew of 149 Belgrave Square, S.W.; Gervase Park, Dorking, Surrey; and the Sporran, Fifeshire, N.B."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Miss Prism identifies the hand-bag by three marks. What caused the stain on its lining?",
+     "quote": null,
+     "options": [
+      "Ink spilt from the manuscript of her novel",
+      "Rain that soaked it in the station cloak-room",
+      "A temperance beverage that exploded at Leamington",
+      "Sherry upset in the Gower Street omnibus accident"
+     ],
+     "answer": "C",
+     "why": "Prism names the damage from the Gower Street omnibus, the stain from an exploding \"temperance beverage\" at Leamington, and her initials on the lock. The omnibus explains the injury, not the stain.",
+     "evidence": [
+      "Here is the stain on the lining caused by the explosion of a temperance beverage, an incident that occurred at Leamington."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Lady Bracknell says her husband thinks Gwendolen is at a long lecture, and adds that she does not propose to undeceive him. What does this suggest about the Bracknell household?",
+     "quote": null,
+     "options": [
+      "Lady Bracknell manages her husband by keeping him uninformed",
+      "Lord Bracknell sent his wife to fetch Gwendolen home",
+      "Lord Bracknell secretly approves of Gwendolen's engagement",
+      "Lady Bracknell fears her husband's temper if he learns the truth"
+     ],
+     "answer": "A",
+     "why": "She has \"never undeceived him on any question\" and would consider it wrong to: keeping him in the dark is her policy, not fear of his reaction. He does not even know Gwendolen has left town.",
+     "evidence": [
+      "I do not propose to undeceive him.",
+      "Indeed I have never undeceived him on any question. I would consider it wrong."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Jack, very irritably, tells Lady Bracknell that he holds certificates of Cecily's birth, baptism, whooping cough, vaccination and measles. What is he doing?",
+     "quote": null,
+     "options": [
+      "Proving that Cecily was christened, unlike himself",
+      "Mocking the inquiry by burying her in paperwork",
+      "Warning her that Cecily is too sickly to marry",
+      "Stalling until Gwendolen can slip out of the room"
+     ],
+     "answer": "B",
+     "why": "The speech opens with sarcasm (\"How extremely kind of you\") just after she declares herself satisfied, and the list runs down to both kinds of measles: he is parodying her cross-examination.",
+     "evidence": [
+      "How extremely kind of you, Lady Bracknell!",
+      "certificates of Miss Cardew’s birth, baptism, whooping cough, registration, vaccination, confirmation, and the measles; both the German and the English variety."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "While trunks seem to crash about overhead, Gwendolen says, \"This suspense is terrible. I hope it will last.\" What does the line show?",
+     "quote": "This suspense is terrible. I hope it will last.",
+     "options": [
+      "She fears that Jack has hurt himself upstairs",
+      "She wants her mother to leave before Jack returns",
+      "She is mocking Cecily for fussing over her guardian",
+      "She relishes the excitement she calls terrible"
+     ],
+     "answer": "D",
+     "why": "The second sentence reverses the first: she calls the waiting terrible and wants it to go on, so the scene is a pleasure to her. Nothing she says shows worry for Jack's safety.",
+     "evidence": [
+      "Noises heard overhead as if some one was throwing trunks about.",
+      "This suspense is terrible. I hope it will last."
+     ]
+    }
+   ],
+   "words": 4606
+  }
+ ],
+ "passages": [
+  {
+   "unit": "act-1",
+   "ref": "Act 1",
+   "speaker": "Algernon to Jack",
+   "quote": "The truth is rarely pure and never simple. Modern life would be very tedious if it were either, and modern literature a complete impossibility!",
+   "note": "Jack has just called his double life \"the whole truth pure and simple.\" Algernon takes the stock phrase apart, which is how many of the play's epigrams work: a cliché is quoted, then turned over. A good line for a first lesson on how Wilde builds a joke."
+  },
+  {
+   "unit": "act-1",
+   "ref": "Act 1",
+   "speaker": "Lady Bracknell to Jack",
+   "quote": "To lose one parent, Mr. Worthing, may be regarded as a misfortune; to lose both looks like carelessness.",
+   "note": "She has her notebook out and has been scoring his income, his house and his politics like a form. Students know the line before they read it; ask them what Jack says next, because his answer is what turns the interview."
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2",
+   "speaker": "Cecily to Algernon",
+   "quote": "You see, it is simply a very young girl’s record of her own thoughts and impressions, and consequently meant for publication.",
+   "note": "Cecily will not let Algernon read the diary in which she has recorded their engagement. Set it beside Gwendolen's diary later in the act, which she carries so as to have \"something sensational to read in the train.\""
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2",
+   "speaker": "Gwendolen to Cecily",
+   "quote": "I am glad to say that I have never seen a spade. It is obvious that our social spheres have been widely different.",
+   "note": "Cecily has just said she calls a spade a spade. The quarrel at the tea-table is fought in polite forms while the servants are present, and Gwendolen answers a proverb with a remark about class."
+  },
+  {
+   "unit": "act-3",
+   "ref": "Act 3",
+   "speaker": "Gwendolen to Cecily",
+   "quote": "In matters of grave importance, style, not sincerity is the vital thing.",
+   "note": "Cecily has just said she does not believe Algernon but admires \"the wonderful beauty of his answer.\" Gwendolen turns that into a rule. Students can test it against the last minutes of the play."
+  },
+  {
+   "unit": "act-3",
+   "ref": "Act 3",
+   "speaker": "Jack to Gwendolen",
+   "quote": "Gwendolen, it is a terrible thing for a man to find out suddenly that all his life he has been speaking nothing but the truth. Can you forgive me?",
+   "note": "The Army Lists have just settled his name. He apologizes for honesty as other men apologize for lying, and Gwendolen's answer (\"I can. For I feel that you are sure to change.\") is worth a discussion of what she has wanted from him since Act 1."
+  }
+ ],
+ "qa": {
+  "items": 18,
+  "pass": 18,
+  "leak": 0,
+  "failing": 0
+ }
+}

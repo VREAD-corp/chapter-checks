@@ -200,8 +200,43 @@ test('CRO 2026-10-18: rd-hero pooled test on the home only, preview pages, licen
   assert.ok(html['/free-sample/index.html'].includes('href="/chapter-checks/study/macbeth/"'));
   const sm = readFileSync(join(DIST, 'sitemap.xml'), 'utf8');
   assert.match(sm, /chapter-checks\/quote\/<\/loc><lastmod>2026-10-18</);
-  assert.match(sm, /chapter-checks\/<\/loc><lastmod>2026-10-18</);
+  assert.match(sm, /chapter-checks\/<\/loc><lastmod>2026-10-21</);
   const q = html['/quote/index.html'];
   assert.match(text(q), /not available yet/);
   assert.doesNotMatch(q, /<form[^>]+action=/, 'quote form posts nowhere');
+});
+
+test('free quiz titles (2026-10-21): one page each, a checkpoint and MC questions per check, keys with evidence, gated QA, one sample CTA, linked from the cluster', () => {
+  const quizzes = CAT.free_quizzes || [];
+  const sm = readFileSync(join(DIST, 'sitemap.xml'), 'utf8');
+  const AP = JSON.parse(readFileSync(join(ROOT, 'data/ap-q3.json'), 'utf8'));
+  for (const t of quizzes) {
+    const d = JSON.parse(readFileSync(join(ROOT, 'data/free', `${t.slug}.json`), 'utf8'));
+    const h = html[`/quizzes/${t.slug}/index.html`];
+    assert.ok(h, `${t.slug}: page`);
+    assert.ok(d.checks.length >= 3, t.slug);
+    assert.equal((h.match(/<section class="quiz" id="/g) || []).length, d.checks.length, `${t.slug}: one quiz per check`);
+    assert.equal((h.match(/<figure class="qcard cp">/g) || []).length, d.checks.length, `${t.slug}: one checkpoint per check`);
+    assert.equal((h.match(/<figure class="qcard">/g) || []).length, d.checks.reduce((a, c) => a + c.questions.length, 0));
+    for (const c of d.checks) {
+      assert.ok(!/\s/.test(c.checkpoint.answer.trim()) && c.checkpoint.evidence.includes(c.checkpoint.answer), `${t.slug} ${c.id}: one-word checkpoint in its evidence`);
+      for (const q of c.questions) assert.ok(q.options.length === 4 && new Set(q.options).size === 4 && 'ABCD'.includes(q.answer) && q.evidence.length >= 1, `${t.slug} ${c.id}`);
+    }
+    assert.ok(d.passages.length >= 5 && d.passages.length <= 6, `${t.slug}: passages`);
+    assert.deepEqual([d.qa.failing, d.qa.leak, d.qa.pass], [0, 0, d.qa.items], `${t.slug}: every item passed the summary gate`);
+    assert.equal(d.qa.items, d.checks.reduce((a, c) => a + 1 + c.questions.length, 0), `${t.slug}: QA covers every question`);
+    assert.deepEqual([...h.matchAll(/<a class="btn" href="([^"]+)"/g)].map((m) => m[1]), ['/chapter-checks/free-sample/'], `${t.slug}: one CTA, the free sample`);
+    assert.match(h, /href="\/chapter-checks\/free-sample\/" data-mesure="sample_click"/);
+    const g = JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'];
+    const qz = g.find((x) => x['@type'] === 'Quiz');
+    assert.ok(qz && qz.isAccessibleForFree && qz.about.author.name === t.author && qz.datePublished === d.updated, `${t.slug}: Quiz JSON-LD`);
+    assert.match(sm, new RegExp(`quizzes/${t.slug}/</loc><lastmod>${d.updated}</lastmod>`));
+    assert.match(h, /AI assistant/);
+    const n = AP.lists.filter((l) => l.titles.includes(t.slug)).length;
+    if (n) assert.match(text(h), new RegExp(`is printed in ${n} of the ${AP.lists.length} AP Literature question-3 lists`), t.slug);
+    for (const p of ['/index.html', '/free-sample/index.html', '/sources/index.html', '/titles/hamlet/index.html', '/study/hamlet/index.html']) assert.ok(html[p].includes(`href="/chapter-checks/quizzes/${t.slug}/"`) || p === '/sources/index.html', `${p} -> ${t.slug}`);
+    assert.match(text(html['/sources/index.html']), new RegExp(`Project Gutenberg #${t.gutenberg}`));
+    for (const x of quizzes.filter((x) => x.slug !== t.slug)) assert.ok(h.includes(`href="/chapter-checks/quizzes/${x.slug}/"`), `${t.slug} -> ${x.slug}`);
+  }
+  assert.ok(!files.some((f) => f.includes('/sample/') && quizzes.some((t) => f.includes(t.slug))), 'no files for free quiz titles');
 });

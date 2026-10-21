@@ -1,0 +1,358 @@
+{
+ "slug": "heart-of-darkness",
+ "updated": "2026-10-21",
+ "about": [
+  "Joseph Conrad (died 1924) first published Heart of Darkness as a serial in Blackwood's Magazine, in the February, March and April 1899 issues, and in book form in 1902 in Youth: A Narrative, and Two Other Stories. We use Project Gutenberg eBook #219, 37,907 words, and keep Conrad's three parts as the three checks: Part 1 runs 14,259 words, Part 2 12,054 and Part 3 11,594. A part has no chapter breaks inside it, so most students need two sittings for each one.",
+  "Nearly the whole book is Marlow talking, inside quotation marks, to four listeners on a yawl anchored in the Thames; one of them narrates the frame and breaks in only a few times. Students usually lose the thread in two places. The first is the long wait at the Central Station in Part 1, where months pass and little seems to happen. The second comes after the helmsman dies in Part 2, when Marlow jumps ahead to Kurtz's report and his Intended before going back to the river. The Gutenberg text keeps Conrad's racial slurs. Our quotes avoid them, but decide before class how you will handle them when students read aloud."
+ ],
+ "checks": [
+  {
+   "id": "part-1",
+   "label": "Part 1: the Company stations",
+   "units": [
+    "part-1"
+   ],
+   "overview": "On a yawl anchored in the Thames, Marlow begins his story. An aunt's connections get him command of a Company river steamer after its captain is killed. He sails along the coast, sees the chain gang and the dying workers at the Outer Station, walks two hundred miles to the Central Station, finds his steamer sunk, and spends months repairing it while the manager and the brickmaker talk about Kurtz.",
+   "checkpoint": {
+    "question": "What does the Company's chief accountant at the Outer Station carry behind his ear?",
+    "answer": "penholder",
+    "evidence": "He was amazing, and had a penholder behind his ear."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "On the Nellie, Marlow imagines a Roman commander sent up the Thames nineteen hundred years ago. What does he say the man had to drink?",
+     "quote": null,
+     "options": [
+      "A ration of Falernian wine shipped from Rome",
+      "Beer brewed by the legionaries in their camps",
+      "Nothing but water from the Thames itself",
+      "Rainwater caught in the ship's sails"
+     ],
+     "answer": "C",
+     "why": "Marlow lists \"precious little to eat\" and \"nothing but Thames water to drink,\" then adds \"No Falernian wine here,\" which rules out the wine.",
+     "evidence": [
+      "precious little to eat fit for a civilized man, nothing but Thames water to drink. No Falernian wine here, no going ashore."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Over vermouth before the medical visit, the shabby clerk praises the Company's business. When Marlow says he is surprised the clerk is not going out there himself, what does the clerk's reply suggest?",
+     "quote": null,
+     "options": [
+      "He knows better than to go out there himself",
+      "He hopes to be promoted inside the head office",
+      "He has already been out there and come home ill",
+      "He thinks the doctor would never pass him as fit"
+     ],
+     "answer": "A",
+     "why": "The clerk turns \"very cool and collected\" and answers that he is \"not such a fool\" as he looks: he will praise the business but not risk going. Nothing in the scene says he has been out, wants promotion or doubts his health.",
+     "evidence": [
+      "He became very cool and collected all at once.",
+      "‘I am not such a fool as I look, quoth Plato to his disciples,’ he said sententiously"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "On the little sea-going steamer that takes Marlow thirty miles upriver, what does the Swedish captain tell him about a man he carried a few days before?",
+     "quote": null,
+     "options": [
+      "He was a missionary who walked into the forest alone",
+      "He was an agent who sold Company ivory to traders",
+      "He was a soldier who deserted to a native village",
+      "He was a fellow Swede who hanged himself on the road"
+     ],
+     "answer": "D",
+     "why": "The captain says he took up a man \"who hanged himself on the road\" and adds \"He was a Swede, too,\" blaming the sun \"or the country perhaps.\"",
+     "evidence": [
+      "The other day I took up a man who hanged himself on the road. He was a Swede, too."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "When tropical diseases had laid low almost every agent at the Central Station, the manager was heard to say, \"Men who come out here should have no entrails.\" What does the remark show in context?",
+     "quote": "Men who come out here should have no entrails.",
+     "options": [
+      "He is warning the agents that the station's food is spoiled",
+      "He sees falling ill as the men's own failing, not his problem",
+      "He is admitting that the station needs a doctor of its own",
+      "He wants the agents to show more nerve in their work"
+     ],
+     "answer": "B",
+     "why": "Marlow says the manager owes his post to never being ill, since \"triumphant health\" is \"a kind of power in itself.\" Faced with a station of sick men, he talks as if having a body that can fail were their fault, and seals it with his unreadable smile, not a shared joke.",
+     "evidence": [
+      "Once when various tropical diseases had laid low almost every ‘agent’ in the station, he was heard to say, ‘Men who come out here should have no entrails.’",
+      "Because triumphant health in the general rout of constitutions is a kind of power in itself."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Late in Part 1, when Marlow keeps asking for rivets, the brickmaker turns cold and talks about the old hippo that the pilgrims shoot at every night without killing. What is he hinting?",
+     "quote": null,
+     "options": [
+      "That Marlow, unlike the hippo, is not safe at the station",
+      "That the hippo has been damaging the steamer's hull",
+      "That the pilgrims waste ammunition that could buy rivets",
+      "That only Kurtz has the luck to survive in this country"
+     ],
+     "answer": "A",
+     "why": "The brickmaker's manner changes when Marlow presses him, and his point about the hippo ends on a personal note, \"no man here bears a charmed life,\" with \"you apprehend me?\" aimed at Marlow. It is a veiled threat.",
+     "evidence": [
+      "He changed his manner; became very cold, and suddenly began to talk about a hippopotamus",
+      "‘That animal has a charmed life,’ he said; ‘but you can say this only of brutes in this country. No man—you apprehend me?—no man here bears a charmed life.’"
+     ]
+    }
+   ],
+   "words": 14259
+  },
+  {
+   "id": "part-2",
+   "label": "Part 2: the river to the Inner Station",
+   "units": [
+    "part-2"
+   ],
+   "overview": "Lying on his steamer's deck, Marlow overhears the manager and his uncle talking about Kurtz. The steamer then spends two months going upriver with a crew of cannibals. Below the Inner Station it finds a stack of wood and a warning note; after a night in fog it is attacked from the bank and the helmsman is killed. At the station a young Russian in a patched suit greets them.",
+   "checkpoint": {
+    "question": "When the cry rises from the fog, what is the little fat pilgrim with sandy hair and red whiskers wearing tucked into his socks?",
+    "answer": "pyjamas",
+    "evidence": "a little fat man, with sandy hair and red whiskers, who wore sidespring boots, and pink pyjamas tucked into his socks."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "While the manager and his uncle talk on the bank just below him, Marlow suddenly leaps to his feet on the steamer's deck. What do the two men do?",
+     "quote": null,
+     "options": [
+      "They order him to report to the manager's hut at once",
+      "They ask him how long he has been lying there listening",
+      "They laugh and claim their talk was only a joke",
+      "They swear aloud, then walk off as if he were not there"
+     ],
+     "answer": "D",
+     "why": "Marlow says they \"swore aloud together\" out of fright, then turned back to the station \"pretending not to know anything of my existence.\" Neither man speaks to him.",
+     "evidence": [
+      "They swore aloud together—out of sheer fright, I believe—then pretending not to know anything of my existence, turned back to the station."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "How were the wood-cutters of Marlow's crew supposed to get food on the trip upriver?",
+     "quote": null,
+     "options": [
+      "By sharing the tinned food the white men ate",
+      "By buying it in riverside villages with brass wire",
+      "By fishing from the deck whenever the steamer stopped",
+      "By hunting in the forest while wood was being cut"
+     ],
+     "answer": "B",
+     "why": "Each man got three pieces of brass wire a week, \"and the theory was\" that he would buy provisions with it in villages. Marlow adds that it did not work: there were no villages, or hostile ones, and the steamer did not stop.",
+     "evidence": [
+      "they had given them every week three pieces of brass wire, each about nine inches long; and the theory was they were to buy their provisions with that currency in riverside villages."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Stuck in the fog, the manager tells Marlow, \"I authorize you to take all the risks,\" and Marlow refuses. What does Marlow's account suggest about the offer?",
+     "quote": null,
+     "options": [
+      "The manager truly wanted to push on and resented Marlow",
+      "The manager was testing whether Marlow could steer in fog",
+      "The manager expected the refusal and was keeping up appearances",
+      "The manager feared an attack if the steamer stayed put"
+     ],
+     "answer": "C",
+     "why": "Marlow calls the manager \"the kind of man who would wish to preserve appearances\" and says his refusal \"was just the answer he expected.\" The offer puts the manager's concern on record without any risk to him.",
+     "evidence": [
+      "He was just the kind of man who would wish to preserve appearances.",
+      "‘I refuse to take any,’ I said shortly; which was just the answer he expected"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "In the abandoned hut below the Inner Station, Marlow reads an old book on seamanship: \"The simple old sailor, with his talk of chains and purchases, made me forget the jungle and the pilgrims in a delicious sensation of having come upon something unmistakably real.\" What does this show in context?",
+     "quote": "The simple old sailor, with his talk of chains and purchases, made me forget the jungle and the pilgrims in a delicious sensation of having come upon something unmistakably real.",
+     "options": [
+      "Its honest concern with doing work right feels real after the station's sham",
+      "He suspects the book's owner is a deserter from the British navy",
+      "He is mocking the book as too dull to belong in the jungle",
+      "He takes the book as a sign that Kurtz has kept his old habits"
+     ],
+     "answer": "A",
+     "why": "Marlow admits the book is dreary, yet sees in it \"an honest concern for the right way of going to work.\" After the pilgrims and a Central Station he called unreal, that plain concern with work is what feels real to him; he is sorry to stop reading.",
+     "evidence": [
+      "at the first glance you could see there a singleness of intention, an honest concern for the right way of going to work",
+      "The simple old sailor, with his talk of chains and purchases, made me forget the jungle and the pilgrims in a delicious sensation of having come upon something unmistakably real."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When the man in patches calls out \"You English?\" and Marlow shouts back \"Are you?\", the man's smile vanishes and he shakes his head. Why does he look sorry?",
+     "quote": null,
+     "options": [
+      "He fears an English captain will report him to the Company",
+      "He has forgotten most of the English he once spoke",
+      "He is ashamed that his patched clothes look so poor",
+      "He sees that Marlow had hoped to find a fellow Englishman"
+     ],
+     "answer": "D",
+     "why": "After finding the seamanship book at the wood-pile, Marlow guessed its owner \"must be English.\" The man shakes his head \"as if sorry for my disappointment\" and soon introduces himself as Russian.",
+     "evidence": [
+      "‘He must be English,’ I said.",
+      "The smiles vanished, and he shook his head as if sorry for my disappointment."
+     ]
+    }
+   ],
+   "words": 12054
+  },
+  {
+   "id": "part-3",
+   "label": "Part 3: Kurtz, and the return to Europe",
+   "units": [
+    "part-3"
+   ],
+   "overview": "The Russian describes his devotion to Kurtz, and Marlow sees heads on stakes around the station house. Kurtz is carried aboard, slips off toward the fires one night, and is brought back. He dies on the way downriver. In Europe, Marlow deals with visitors who want Kurtz's papers, then calls on his Intended, who asks for Kurtz's last words.",
+   "checkpoint": {
+    "question": "When Marlow catches up with Kurtz in the grass at night, a figure strides across the glow of the nearest fire. What does it have on its head?",
+    "answer": "horns",
+    "evidence": "It had horns—antelope horns, I think—on its head."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "The Russian tells Marlow that Kurtz once threatened to shoot him over a small lot of ivory. How had the Russian come by that ivory?",
+     "quote": null,
+     "options": [
+      "He had bought it from Van Shuyten's agents on the coast",
+      "A village chief gave it to him because he shot game for them",
+      "He had found it buried near his old hut by the wood-pile",
+      "Kurtz had paid him with it for nursing him through fever"
+     ],
+     "answer": "B",
+     "why": "The Russian says the ivory came from \"the chief of that village near my house,\" and explains, \"I used to shoot game for them.\"",
+     "evidence": [
+      "I had a small lot of ivory the chief of that village near my house gave me. You see I used to shoot game for them."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When Marlow says with emphasis that he thinks Kurtz is \"a remarkable man,\" the manager drops a heavy glance on him and answers very quietly in two words. What does the answer imply?",
+     "quote": null,
+     "options": [
+      "He grudgingly agrees that Kurtz is a gifted agent",
+      "He hints that Kurtz will soon take over as manager",
+      "He already speaks of Kurtz as finished, as if he were dead",
+      "He warns Marlow that Kurtz may overhear them talking"
+     ],
+     "answer": "C",
+     "why": "The manager answers \"he was,\" in the past tense, and turns his back. Marlow himself says next that Kurtz is \"as good as buried\"; for the manager, Kurtz is already over.",
+     "evidence": [
+      "He started, dropped on me a heavy glance, said very quietly, ‘he _was_,’ and turned his back on me.",
+      "not to Mr. Kurtz, who, I was ready to admit, was as good as buried."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Coming in one evening, Marlow hears Kurtz speak: \"‘I am lying here in the dark waiting for death.’ The light was within a foot of his eyes.\" What does the second sentence show?",
+     "quote": "‘I am lying here in the dark waiting for death.’ The light was within a foot of his eyes.",
+     "options": [
+      "The candle is right before him, so the dark he speaks of is in him",
+      "Marlow has brought the light close so Kurtz can read his letters",
+      "Kurtz is pretending to be weaker than he really is",
+      "Marlow is holding the light up to see if Kurtz is breathing"
+     ],
+     "answer": "A",
+     "why": "Marlow has just come in \"with a candle,\" so Kurtz is not in a dark room. Later Marlow speaks of Kurtz's \"stare, that could not see the flame of the candle\": the darkness Kurtz describes belongs to him.",
+     "evidence": [
+      "One evening coming in with a candle I was startled to hear him say a little tremulously",
+      "‘I am lying here in the dark waiting for death.’ The light was within a foot of his eyes.",
+      "his stare, that could not see the flame of the candle"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Back in Europe, a Company man in gold-rimmed spectacles presses Marlow for Kurtz's papers. Offered the report, he sniffs at it: \"This is not what we had a right to expect.\" What had he hoped to get?",
+     "quote": null,
+     "options": [
+      "The private letters Kurtz had written to his Intended",
+      "The full report, with its scrawled last note",
+      "A shorter, plainer text the Company could publish",
+      "Knowledge of the regions that the Company could use"
+     ],
+     "answer": "D",
+     "why": "He argues that the Company has a right to \"every bit of information about its ‘territories’\" and that Kurtz's \"knowledge of unexplored regions\" must be extensive. A report on savage customs gives him nothing of the kind.",
+     "evidence": [
+      "argued that the Company had the right to every bit of information about its ‘territories.’",
+      "‘Mr. Kurtz’s knowledge of unexplored regions must have been necessarily extensive and peculiar"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "While the Intended talks, Marlow recalls what he had heard about her engagement to Kurtz. Why had her family disapproved of it?",
+     "quote": null,
+     "options": [
+      "He was half French, and they wanted an Englishman",
+      "He was not of their faith and would not convert",
+      "He was not rich enough, or something of the kind",
+      "He had once been engaged to another woman"
+     ],
+     "answer": "C",
+     "why": "Marlow had heard the engagement \"had been disapproved by her people\" because Kurtz \"wasn't rich enough or something\"; he adds that impatience with poverty may have driven Kurtz out there.",
+     "evidence": [
+      "I had heard that her engagement with Kurtz had been disapproved by her people. He wasn’t rich enough or something."
+     ]
+    }
+   ],
+   "words": 11594
+  }
+ ],
+ "passages": [
+  {
+   "unit": "part-1",
+   "ref": "Part 1",
+   "speaker": "Marlow to his listeners",
+   "quote": "“And this also,” said Marlow suddenly, “has been one of the dark places of the earth.”",
+   "note": "Marlow's first words, spoken as the sun sets over London. He means the Thames in Roman times, which lets him compare the Romans in Britain with Europeans in Africa before the African story starts. The book's last sentence returns to this river."
+  },
+  {
+   "unit": "part-1",
+   "ref": "Part 1",
+   "speaker": "Marlow, on the Company office",
+   "quote": "Often far away there I thought of these two, guarding the door of Darkness, knitting black wool as for a warm pall, one introducing, introducing continuously to the unknown",
+   "note": "The two women knitting in the Company's waiting room. Marlow remembers the older one again in Part 3, when he goes after Kurtz in the dark, so ask students to keep her in mind."
+  },
+  {
+   "unit": "part-2",
+   "ref": "Part 2",
+   "speaker": "Marlow, on the journey upriver",
+   "quote": "We penetrated deeper and deeper into the heart of darkness.",
+   "note": "The first time the title phrase appears. Part 3 uses it again for the trip downstream, and the frame narrator's last sentence turns it on the Thames. Students can track what the phrase points at each time."
+  },
+  {
+   "unit": "part-2",
+   "ref": "Part 2",
+   "speaker": "Marlow, on Kurtz's report",
+   "quote": "it blazed at you, luminous and terrifying, like a flash of lightning in a serene sky: ‘Exterminate all the brutes!’",
+   "note": "The note scrawled at the end of the seventeen-page report Kurtz wrote for the International Society for the Suppression of Savage Customs. Marlow tells this out of order, before the steamer reaches Kurtz, so students meet the report before they meet the man."
+  },
+  {
+   "unit": "part-3",
+   "ref": "Part 3",
+   "speaker": "Kurtz, dying",
+   "quote": "‘The horror! The horror!’",
+   "note": "Kurtz's last words, on the steamer during repairs. A few pages later Marlow calls them a judgment and \"a moral victory\"; what Kurtz is judging is a good open question for discussion."
+  },
+  {
+   "unit": "part-3",
+   "ref": "Part 3",
+   "speaker": "Marlow to the Intended",
+   "quote": "‘The last word he pronounced was—your name.’",
+   "note": "Marlow's lie. In Part 1 he says he hates lies because they have \"a flavour of mortality\"; in Part 2 he says he \"laid the ghost of his gifts at last with a lie.\" Set the three passages side by side."
+  }
+ ],
+ "qa": {
+  "items": 18,
+  "pass": 18,
+  "leak": 0,
+  "failing": 0
+ }
+}

@@ -1,0 +1,715 @@
+{
+ "slug": "jekyll-hyde",
+ "updated": "2026-10-21",
+ "about": [
+  "Strange Case of Dr Jekyll and Mr Hyde came out from Longmans in January 1886; Stevenson died in 1894, and the text is in the public domain. Our copy is Project Gutenberg eBook #43, 25,574 words in ten chapters. The first eight follow the lawyer Utterson in the third person. Chapters 9 and 10 are documents he reads after the last night, Lanyon's narrative and Jekyll's statement, and together they run 9,730 words, close to two fifths of the book. Chapter 10 alone is 6,939 words; Chapter 7 is 555 and Chapter 3 is 799.",
+  "Where students lose the thread: the two documents go back in time. Lanyon's narrative covers one night in January that falls inside the period of Chapter 6, and Jekyll's statement retells the events of Chapters 1, 4 and 5 from the inside, so a student who reads Chapter 10 as what happens next will get the order wrong. The dates in the text do not all agree (the letter Lanyon receives on the ninth of January is headed 10th December), and we do not test that. Each check below has a one-word checkpoint and three multiple-choice questions on details from inside the chapter. They show whether a student read it; they do not measure interpretation."
+ ],
+ "checks": [
+  {
+   "id": "ch-01",
+   "label": "Chapter 1: Story of the door",
+   "units": [
+    "ch-01"
+   ],
+   "overview": "On a Sunday walk, Enfield points out a shabby door in a London by-street and tells Utterson what he saw there one winter night. A small man trampled a girl, then paid her family with a cheque signed by a respected name. Enfield gives the man's name as Hyde, and Utterson admits that he already knows who signed the cheque.",
+   "checkpoint": {
+    "question": "Enfield says the Edinburgh doctor who came for the girl was about as emotional as what?",
+    "answer": "bagpipe",
+    "evidence": "He was the usual cut and dry apothecary, of no particular age and colour, with a strong Edinburgh accent and about as emotional as a bagpipe."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Enfield explains why he never asked about the place with the door. What does he compare starting a question to?",
+     "quote": null,
+     "options": [
+      "Lighting a fuse under a quiet street",
+      "Starting a stone rolling down a hill",
+      "Pulling one loose thread from a coat",
+      "Opening a gate onto a crowded road"
+     ],
+     "answer": "B",
+     "why": "Enfield says a question is “like starting a stone”: it rolls from the hilltop, starts others, and ends by knocking some bland old bird on the head in his own back garden.",
+     "evidence": [
+      "You start a question, and it’s like starting a stone.",
+      "You sit quietly on the top of a hill; and away the stone goes, starting others;"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Enfield has studied the building with the door. What makes him think somebody must live there?",
+     "quote": null,
+     "options": [
+      "A lamp burns behind the upper windows at night",
+      "He has heard footsteps behind the door",
+      "Tradesmen leave parcels on its step each week",
+      "A chimney there is generally smoking"
+     ],
+     "answer": "D",
+     "why": "He notes three first-floor windows that are always shut but clean, then the chimney, “so somebody must live there.” He has seen no one go in except the man of his story.",
+     "evidence": [
+      "And then there is a chimney which is generally smoking; so somebody must live there."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Enfield describes the man who signed the cheque as “the very pink of the proprieties” and “one of your fellows who do what they call good.” What does the second phrase suggest about Enfield's attitude?",
+     "quote": null,
+     "options": [
+      "He is wry about men known for public good works",
+      "He sincerely admires the signer's charities",
+      "He takes the signer to be a clergyman",
+      "He thinks Utterson gives too little to charity"
+     ],
+     "answer": "A",
+     "why": "“What they call good” keeps its distance from the label, and the aside “(what makes it worse)” treats a name for good works as something that sharpens the scandal, not something Enfield admires.",
+     "evidence": [
+      "the person that drew the cheque is the very pink of the proprieties, celebrated too, and (what makes it worse) one of your fellows who do what they call good."
+     ]
+    }
+   ],
+   "words": 2398
+  },
+  {
+   "id": "ch-02",
+   "label": "Chapter 2: Search for Mr. Hyde",
+   "units": [
+    "ch-02"
+   ],
+   "overview": "Utterson rereads Jekyll's will, which leaves everything to Edward Hyde, and visits Dr. Lanyon, who has drifted away from Jekyll over a scientific quarrel. Haunted by Enfield's story, Utterson watches the door until Hyde appears, shows his face and gives an address in Soho. Utterson then calls at Jekyll's house and questions the butler, Poole.",
+   "checkpoint": {
+    "question": "On the frosty night when Utterson finally meets Hyde, the streets are said to be as clean as what kind of floor?",
+    "answer": "ballroom",
+    "evidence": "It was a fine dry night; frost in the air; the streets as clean as a ballroom floor;"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Why is Jekyll's will written entirely in Jekyll's own hand?",
+     "quote": null,
+     "options": [
+      "Jekyll did not want his clerk to see its terms",
+      "Jekyll's own lawyer had died that same year",
+      "Utterson refused to give any help in making it",
+      "Lanyon advised him to keep it from lawyers"
+     ],
+     "answer": "C",
+     "why": "The narrator explains that the will was holograph because Utterson, who now keeps it, “had refused to lend the least assistance in the making of it.”",
+     "evidence": [
+      "The will was holograph, for Mr. Utterson though he took charge of it now that it was made, had refused to lend the least assistance in the making of it;"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Utterson steps out, touches him on the shoulder and says, “Mr. Hyde, I think?” How does Hyde first react?",
+     "quote": null,
+     "options": [
+      "He raises his cane as if to strike",
+      "He shrinks back with a hissing breath",
+      "He laughs and asks who wants him",
+      "He turns and runs back up the street"
+     ],
+     "answer": "B",
+     "why": "Hyde “shrank back with a hissing intake of the breath,” though the fear passes quickly and he answers coolly without looking Utterson in the face.",
+     "evidence": [
+      "Mr. Hyde shrank back with a hissing intake of the breath.",
+      "But his fear was only momentary;"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Waiting in Jekyll's hall after meeting Hyde, Utterson is “ashamed of his relief” when Poole says the doctor has gone out. Why is he relieved?",
+     "quote": null,
+     "options": [
+      "He wanted time to look round the laboratory unseen",
+      "He was too tired after his long watch to talk",
+      "He had promised Enfield never to raise the story",
+      "He dreaded facing his friend with Hyde's face in mind"
+     ],
+     "answer": "D",
+     "why": "Hyde's face “sat heavy on his memory” and Utterson reads menace even in the firelight. He is in no state to confront Jekyll, and he knows the feeling does him little credit.",
+     "evidence": [
+      "the face of Hyde sat heavy on his memory; he felt (what was rare with him) a nausea and distaste of life;",
+      "He was ashamed of his relief, when Poole presently returned to announce that Dr. Jekyll was gone out."
+     ]
+    }
+   ],
+   "words": 2937
+  },
+  {
+   "id": "ch-03",
+   "label": "Chapter 3: Dr. Jekyll was quite at ease",
+   "units": [
+    "ch-03"
+   ],
+   "overview": "A fortnight later Utterson stays on after one of Jekyll's dinners to raise the will again. Jekyll laughs off his worry, complains about Lanyon, and changes color at the mention of Hyde. He says he can be rid of Hyde whenever he chooses, asks Utterson to let the matter sleep, and gets him to promise to see that Hyde receives his rights.",
+   "checkpoint": {
+    "question": "When Utterson mentions young Hyde, Jekyll's face grows pale to the lips. What comes about his eyes?",
+    "answer": "blackness",
+    "evidence": "The large handsome face of Dr. Jekyll grew pale to the very lips, and there came a blackness about his eyes."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "According to the narrator, why did hosts like to keep Utterson behind after the other guests had gone?",
+     "quote": null,
+     "options": [
+      "He settled their legal business over a last glass",
+      "His quiet company sobered them after the gaiety",
+      "He told his best stories once the room was empty",
+      "He judged their wine and helped finish the bottles"
+     ],
+     "answer": "B",
+     "why": "Hosts liked to sit in his “unobtrusive company,” sobering their minds in his “rich silence after the expense and strain of gaiety.”",
+     "evidence": [
+      "they liked to sit a while in his unobtrusive company, practising for solitude, sobering their minds in the man’s rich silence after the expense and strain of gaiety."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "What does Jekyll say he knows about Utterson's meeting with Hyde?",
+     "quote": null,
+     "options": [
+      "Poole told him of it the next morning",
+      "Nothing; he doubts that it took place",
+      "Hyde told him, and he fears Hyde was rude",
+      "Enfield wrote to warn him of Utterson's watch"
+     ],
+     "answer": "C",
+     "why": "Jekyll says plainly that Hyde told him of the meeting and that he fears Hyde behaved rudely.",
+     "evidence": [
+      "I know you have seen him; he told me so; and I fear he was rude."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "While running Lanyon down as a pedant, Jekyll breaks off: “you needn’t frown.” What does this tell us about Utterson at that moment?",
+     "quote": null,
+     "options": [
+      "He dislikes hearing their old friend disparaged",
+      "He is impatient for the other guests to leave",
+      "He takes Lanyon's side in the scientific quarrel",
+      "He is worried that the servants will overhear"
+     ],
+     "answer": "A",
+     "why": "Jekyll reacts to Utterson's frown by praising Lanyon as “a good fellow” before returning to the insult, so the frown is a silent objection to the attack on their friend. Utterson has no view on science, and the guests have already gone.",
+     "evidence": [
+      "O, I know he’s a good fellow—you needn’t frown—an excellent fellow, and I always mean to see more of him;",
+      "and Mr. Utterson so contrived that he remained behind after the others had departed."
+     ]
+    }
+   ],
+   "words": 799
+  },
+  {
+   "id": "ch-04",
+   "label": "Chapter 4: The Carew murder case",
+   "units": [
+    "ch-04"
+   ],
+   "overview": "Nearly a year later, a maid watches from her window as Hyde beats an elderly gentleman to death in a moonlit lane. The victim, Sir Danvers Carew, carries a letter addressed to Utterson. Utterson recognizes the broken stick as a gift he once gave Jekyll, and he takes a police inspector to Hyde's rooms in Soho, which they find ransacked.",
+   "checkpoint": {
+    "question": "When the fog lifts on Hyde's street, Utterson sees a gin palace and a low eating house. What kind of eating house is it?",
+    "answer": "French",
+    "evidence": "showed him a dingy street, a gin palace, a low French eating house, a shop for the retail of penny numbers and twopenny salads"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "What was the maid doing when the two men met beneath her window?",
+     "quote": null,
+     "options": [
+      "Sitting at the window, mending by candlelight",
+      "Sitting up by the window for her master",
+      "Sitting at the window, writing a letter home",
+      "Sitting on her box by the window, musing"
+     ],
+     "answer": "D",
+     "why": "She had sat down on the box under her window and fallen into a dream, feeling at peace with all men. The fog rolled in only later in the night.",
+     "evidence": [
+      "she sat down upon her box, which stood immediately under the window, and fell into a dream of musing."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "What does Hyde's housekeeper say about how often she had seen him before the night of the murder?",
+     "quote": null,
+     "options": [
+      "Not for nearly two months until yesterday",
+      "Every evening for the past fortnight",
+      "Only on Sundays, when he came for letters",
+      "Never once since she had taken the post"
+     ],
+     "answer": "A",
+     "why": "She calls his habits irregular and says it was nearly two months since she had seen him until the day before. He came in very late that night and left within the hour.",
+     "evidence": [
+      "his habits were very irregular, and he was often absent; for instance, it was nearly two months since she had seen him till yesterday."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When Utterson names the victim, the officer exclaims, and then “his eye lighted up.” What does his reaction suggest about him?",
+     "quote": null,
+     "options": [
+      "He fears the case will cause trouble in Parliament",
+      "He suspects Utterson knows more than he admits",
+      "He sees the case as a chance to make his name",
+      "He is grieved by the death of a man he admired"
+     ],
+     "answer": "C",
+     "why": "His eye lights up “with professional ambition” and he predicts the case will make a great deal of noise; later the evidence in Hyde's rooms leaves him “delighted.”",
+     "evidence": [
+      "And the next moment his eye lighted up with professional ambition.",
+      "“This will make a deal of noise,” he said."
+     ]
+    }
+   ],
+   "words": 1667
+  },
+  {
+   "id": "ch-05",
+   "label": "Chapter 5: Incident of the letter",
+   "units": [
+    "ch-05"
+   ],
+   "overview": "Utterson finds Jekyll looking ill in the cabinet above his laboratory. Jekyll swears he is done with Hyde and hands over a letter signed by Hyde, asking Utterson to decide whether the police should see it. That evening Utterson shows the letter to his head clerk, Mr. Guest, who sets it beside a note from Jekyll and compares the two.",
+   "checkpoint": {
+    "question": "Asked about the messenger who brought Hyde's letter, Poole says nothing came except by post. What, he adds, did the post bring?",
+    "answer": "circulars",
+    "evidence": "But Poole was positive nothing had come except by post; “and only circulars by that,” he added."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "How does Jekyll say he learned of the murder?",
+     "quote": null,
+     "options": [
+      "He heard it cried in the square from his dining-room",
+      "Poole read it to him from the morning paper",
+      "Inspector Newcomen called on him at breakfast",
+      "Utterson's note had reached him that morning"
+     ],
+     "answer": "A",
+     "why": "Asked whether he has heard the news, Jekyll shudders and says it was being cried in the square and he heard it in his dining-room.",
+     "evidence": [
+      "“They were crying it in the square,” he said. “I heard them in my dining-room.”"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "When Utterson enters the cabinet in the late afternoon, why is a lamp already lit on the chimney shelf?",
+     "quote": null,
+     "options": [
+      "Jekyll cannot bear the dark since the murder",
+      "The barred windows let in no daylight at all",
+      "Jekyll has been working there through the night",
+      "The fog has begun to lie thickly even indoors"
+     ],
+     "answer": "D",
+     "why": "The lamp is lit “for even in the houses the fog began to lie thickly”; the windows are dusty and barred, but light still comes through them.",
+     "evidence": [
+      "a lamp was set lighted on the chimney shelf, for even in the houses the fog began to lie thickly;"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Jekyll says he does not care what becomes of Hyde; he is thinking of his own character. Utterson is surprised at this selfishness “and yet relieved by it.” Why relieved?",
+     "quote": null,
+     "options": [
+      "It means his own fee is safe from the scandal",
+      "It suggests Jekyll is no longer shielding Hyde",
+      "It shows that Jekyll's health is recovering",
+      "It means the police need not question him"
+     ],
+     "answer": "B",
+     "why": "Utterson has just asked whether Jekyll has been mad enough to hide the murderer. A Jekyll who cares only for his own name is plainly not protecting Hyde, which is what Utterson feared.",
+     "evidence": [
+      "You have not been mad enough to hide this fellow?",
+      "“I cannot say that I care what becomes of Hyde; I am quite done with him.",
+      "he was surprised at his friend’s selfishness, and yet relieved by it."
+     ]
+    }
+   ],
+   "words": 1635
+  },
+  {
+   "id": "ch-06",
+   "label": "Chapter 6: Incident of Dr. Lanyon",
+   "units": [
+    "ch-06"
+   ],
+   "overview": "With Hyde vanished, Jekyll returns to his friends and to charity for two months. Then his door is shut to Utterson, and Lanyon, gravely ill after a shock, refuses to hear Jekyll's name. Jekyll writes that he will live in seclusion. Lanyon dies and leaves Utterson an envelope holding a second envelope that he may not open yet.",
+   "checkpoint": {
+    "question": "In his letter, Jekyll writes that if he is the chief of sinners, he is also the chief of what?",
+    "answer": "sufferers",
+    "evidence": "If I am the chief of sinners, I am the chief of sufferers also."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "When Lanyon will not speak of Jekyll, how does Utterson plead with him?",
+     "quote": null,
+     "options": [
+      "They are three old friends who will not live to make others",
+      "Jekyll has asked to see Lanyon and no one else",
+      "Lanyon owes Jekyll a debt from their student days",
+      "A physician should not turn away a sick colleague"
+     ],
+     "answer": "A",
+     "why": "Utterson reminds him that they are three very old friends who “shall not live to make others”; Lanyon answers that nothing can be done.",
+     "evidence": [
+      "We are three very old friends, Lanyon; we shall not live to make others."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Lanyon's outer envelope gives an instruction in case Utterson dies first. What is it?",
+     "quote": null,
+     "options": [
+      "It is to go unopened to Dr. Jekyll",
+      "It is to be destroyed unread",
+      "It is to be handed to the police",
+      "It is to be opened by Mr. Guest"
+     ],
+     "answer": "B",
+     "why": "The envelope is marked for Utterson alone, “and in case of his predecease to be destroyed unread.”",
+     "evidence": [
+      "“PRIVATE: for the hands of G. J. Utterson ALONE, and in case of his predecease _to be destroyed unread_,”"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "After he locks Lanyon's packet in his safe, Utterson is “perhaps relieved” when Jekyll's door stays shut to him. Why?",
+     "quote": null,
+     "options": [
+      "He is angry that Jekyll stayed away from the funeral",
+      "He is busy settling Lanyon's estate for the family",
+      "Poole has warned him that the doctor may be contagious",
+      "The packet has made him fear what Jekyll might reveal"
+     ],
+     "answer": "D",
+     "why": "Lanyon's envelope pairs Jekyll's name with “disappearance,” as the will did. From then on Utterson thinks of his friend kindly but with disquiet and fear, and he prefers to talk with Poole on the doorstep.",
+     "evidence": [
+      "He thought of him kindly; but his thoughts were disquieted and fearful.",
+      "he was perhaps relieved to be denied admittance;"
+     ]
+    }
+   ],
+   "words": 1496
+  },
+  {
+   "id": "ch-07",
+   "label": "Chapter 7: Incident at the window",
+   "units": [
+    "ch-07"
+   ],
+   "overview": "On another Sunday walk, Utterson and Enfield pass the door again, and Enfield admits he has learned it is a back way into Jekyll's house. In the court they find Jekyll sitting at a window, low in spirits. They talk with him briefly until a look of terror crosses his face and the window is shut. The two men walk away shaken.",
+   "checkpoint": {
+    "question": "The court is cool and full of premature twilight, but the sky high overhead is still bright with what?",
+    "answer": "sunset",
+    "evidence": "The court was very cool and a little damp, and full of premature twilight, although the sky, high up overhead, was still bright with sunset."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Why does Jekyll say he cannot ask Utterson and Enfield up?",
+     "quote": null,
+     "options": [
+      "His physician has forbidden him visitors",
+      "The place is really not fit for them",
+      "Poole has gone out with the only key",
+      "He is expecting another caller soon"
+     ],
+     "answer": "B",
+     "why": "Jekyll says he would ask them both up, “but the place is really not fit,” so Utterson proposes they talk from the court below.",
+     "evidence": [
+      "I would ask you and Mr. Enfield up, but the place is really not fit."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Enfield says Utterson must have thought him something for not knowing the door was a back way to Jekyll's. What?",
+     "quote": null,
+     "options": [
+      "A gossip",
+      "A dullard",
+      "An ass",
+      "A busybody"
+     ],
+     "answer": "C",
+     "why": "Enfield exclaims, “what an ass you must have thought me,” for not knowing the door led to Jekyll's.",
+     "evidence": [
+      "what an ass you must have thought me, not to know that this was a back way to Dr. Jekyll’s!"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Enfield tells Utterson, “It was partly your own fault that I found it out.” What is he most likely referring to?",
+     "quote": null,
+     "options": [
+      "Utterson's reaction to his story had set him wondering",
+      "Utterson had let the address slip over dinner",
+      "He had followed Utterson to the door one night",
+      "Utterson's clerk had mentioned it to him"
+     ],
+     "answer": "A",
+     "why": "Nothing in the chapter shows Utterson telling Enfield anything; the only thing he did was react to Enfield's story with plain personal concern (Chapter 1), which is what “partly your own fault” points to. The other options invent events.",
+     "evidence": [
+      "It was partly your own fault that I found it out, even when I did."
+     ]
+    }
+   ],
+   "words": 555
+  },
+  {
+   "id": "ch-08",
+   "label": "Chapter 8: The last night",
+   "units": [
+    "ch-08"
+   ],
+   "overview": "One March evening Poole comes to Utterson sure that something has happened to his master, who has been shut in the cabinet for a week sending out for a drug. At the house the frightened servants crowd the hall. Utterson and Poole break into the cabinet and find Hyde dead, with no trace of Jekyll except papers addressed to Utterson.",
+   "checkpoint": {
+    "question": "The footsteps in the cabinet are unlike Jekyll's heavy, creaking tread. They fall lightly and oddly, with a certain what?",
+    "answer": "swing",
+    "evidence": "The steps fell lightly and oddly, with a certain swing, for all they went so slowly;"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "How does Poole come to have the doctor's note to Messrs. Maw open in his pocket?",
+     "quote": null,
+     "options": [
+      "He opened it himself because he distrusted it",
+      "It was left unsealed on the cabinet stair",
+      "The footman found it dropped in the yard",
+      "The man at Maw's threw it back at him"
+     ],
+     "answer": "D",
+     "why": "Asked sharply how he has it open, Poole says the man at Maw's was angry and threw it back to him “like so much dirt.”",
+     "evidence": [
+      "“The man at Maw’s was main angry, sir, and he threw it back to me like so much dirt,” returned Poole."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Arriving to find all the servants huddled in the hall, Utterson scolds them “peevishly” for being irregular and unseemly. What does his scolding suggest?",
+     "quote": null,
+     "options": [
+      "He is angry that they sent Poole rather than a doctor",
+      "He suspects the servants of plotting against Jekyll",
+      "He hides his own fear behind a demand for propriety",
+      "He wants them back at work before the police arrive"
+     ],
+     "answer": "C",
+     "why": "Earlier the narrator says Utterson was “a good deal frightened and rather inclined to be irritated in consequence”; the scolding is that irritation, aimed at the servants.",
+     "evidence": [
+      "“What, what? Are you all here?” said the lawyer peevishly.",
+      "a good deal frightened and rather inclined to be irritated in consequence."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Listening to the steps go up and down, Poole whispers: “Ah, it’s an ill conscience that’s such an enemy to rest! Ah, sir, there’s blood foully shed in every step of it!” What does he mean?",
+     "quote": "Ah, it’s an ill conscience that’s such an enemy to rest! Ah, sir, there’s blood foully shed in every step of it!",
+     "options": [
+      "The creature is wounded and bleeding as it walks",
+      "The pacing is the restlessness of a guilty murderer",
+      "The floor is wearing through from the endless walking",
+      "His master is pacing in prayer for the murdered Carew"
+     ],
+     "answer": "B",
+     "why": "Poole believes his master was murdered and that the killer is in the cabinet; he hears in the endless pacing a guilty conscience that will not let its owner rest.",
+     "evidence": [
+      "“So it will walk all day, sir,” whispered Poole; “ay, and the better part of the night.",
+      "Ah, it’s an ill conscience that’s such an enemy to rest!"
+     ]
+    }
+   ],
+   "words": 4357
+  },
+  {
+   "id": "ch-09",
+   "label": "Chapter 9: Dr. Lanyon's narrative",
+   "units": [
+    "ch-09"
+   ],
+   "overview": "Lanyon's account tells how, on Jekyll's urgent written request, he had Jekyll's cabinet forced, took home a drawer of powders, a phial and a notebook, and waited at midnight for a messenger. A small man in clothes far too big for him arrives, mixes a drink, and offers Lanyon the choice to watch. Lanyon stays, and sees the man become Jekyll.",
+   "checkpoint": {
+    "question": "Lanyon says Jekyll's private cabinet is most conveniently entered from whose old surgical theatre?",
+    "answer": "Denman",
+    "evidence": "we moved in a body to old Dr. Denman’s surgical theatre, from which (as you are doubtless aware) Jekyll’s private cabinet is most conveniently entered."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "How does Lanyon carry Jekyll's drawer back to Cavendish Square?",
+     "quote": null,
+     "options": [
+      "Wrapped in brown paper and sealed with wax",
+      "Locked inside a leather travelling bag",
+      "Filled up with straw and tied in a sheet",
+      "Carried by Poole in a covered basket"
+     ],
+     "answer": "C",
+     "why": "Lanyon has the drawer filled with straw and tied in a sheet; at midnight the visitor plucks the sheet away.",
+     "evidence": [
+      "I took out the drawer, had it filled up with straw and tied in a sheet, and returned with it to Cavendish Square."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Lanyon at first put the visitor's effect on him, a chill and a sinking pulse, down to “personal distaste.” What does he now believe caused it?",
+     "quote": null,
+     "options": [
+      "A fever he caught from the visitor's touch",
+      "His own fatigue at that late hour of night",
+      "Fumes rising from Jekyll's powders in the drawer",
+      "Something in the visitor's nature, not his own dislike"
+     ],
+     "answer": "D",
+     "why": "He writes that he has since come to believe the cause lies “much deeper in the nature of man,” on a “nobler hinge than the principle of hatred”: the creature itself, not his private feeling.",
+     "evidence": [
+      "At the time, I set it down to some idiosyncratic, personal distaste, and merely wondered at the acuteness of the symptoms;",
+      "but I have since had reason to believe the cause to lie much deeper in the nature of man, and to turn on some nobler hinge than the principle of hatred."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "As the visitor steps into Lanyon's house, what makes him start and hurry in?",
+     "quote": null,
+     "options": [
+      "A cab pulling up at the next house",
+      "A policeman coming with his lantern open",
+      "A dog barking across the dark square",
+      "A light appearing in an upper window"
+     ],
+     "answer": "B",
+     "why": "He glances back into the square, where a policeman is advancing “with his bull’s eye open,” and Lanyon thinks he starts and makes greater haste.",
+     "evidence": [
+      "There was a policeman not far off, advancing with his bull’s eye open; and at the sight, I thought my visitor started and made greater haste."
+     ]
+    }
+   ],
+   "words": 2791
+  },
+  {
+   "id": "ch-10",
+   "label": "Chapter 10: Henry Jekyll's full statement of the case",
+   "units": [
+    "ch-10"
+   ],
+   "overview": "Jekyll's own statement explains the double life he hid from youth, the drug that first turned him into Hyde, and the house and will he arranged for Hyde. He describes the murder, his months of trying to give Hyde up, and the day the change came over him without the drug. With his supply of salt gone, he writes his last pages as Jekyll.",
+   "checkpoint": {
+    "question": "Jekyll writes that Hyde remembers him only as a mountain bandit remembers what?",
+    "answer": "cavern",
+    "evidence": "or but remembered him as the mountain bandit remembers the cavern in which he conceals himself from pursuit."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "The first morning Jekyll wakes as Hyde without the drug, what tells him so?",
+     "quote": null,
+     "options": [
+      "His clothes hanging loose on his limbs",
+      "His reflection in the bedroom window",
+      "The hand lying on the bedclothes",
+      "The voice that answers when he calls"
+     ],
+     "answer": "C",
+     "why": "Lying half awake, his eyes fall on his hand: not Jekyll's large, white, comely hand but a lean, corded, hairy one. Only then does he rush to the mirror.",
+     "evidence": [
+      "my eyes fell upon my hand.",
+      "It was the hand of Edward Hyde."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Jekyll's first change in daylight without the drug comes on a bench in Regent's Park. What does the text suggest set it off?",
+     "quote": null,
+     "options": [
+      "A moment of smug comparison with other men",
+      "A dose he had swallowed earlier that morning",
+      "A quarrel with a stranger on the park path",
+      "The sight of a handbill naming Carew's killer"
+     ],
+     "answer": "A",
+     "why": "He was smiling as he compared his “active good-will” with other men's “lazy cruelty,” and the nausea and shuddering came “at the very moment of that vainglorious thought.”",
+     "evidence": [
+      "After all, I reflected, I was like my neighbours; and then I smiled, comparing myself with other men,",
+      "And at the very moment of that vainglorious thought, a qualm came over me, a horrid nausea and the most deadly shuddering."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Describing the day he hid as Hyde in the hotel, Jekyll writes: “He, I say—I cannot say, I. That child of Hell had nothing human;” What does the change of pronoun show?",
+     "quote": "He, I say—I cannot say, I. That child of Hell had nothing human;",
+     "options": [
+      "He has lost track of who is writing the statement",
+      "He is quoting what Lanyon had written about Hyde",
+      "He wants Utterson to think Hyde was a hired man",
+      "He can no longer bear to own Hyde's acts as his own"
+     ],
+     "answer": "D",
+     "why": "Jekyll stops himself from writing “I” for Hyde's day of rage and calls Hyde a child of Hell in whom nothing lived “but fear and hatred.” Earlier in the statement he had owned Hyde as “myself.”",
+     "evidence": [
+      "He, I say—I cannot say, I.",
+      "That child of Hell had nothing human; nothing lived in him but fear and hatred.",
+      "This, too, was myself."
+     ]
+    }
+   ],
+   "words": 6939
+  }
+ ],
+ "passages": [
+  {
+   "unit": "ch-01",
+   "ref": "Chapter 1",
+   "speaker": "Enfield to Utterson",
+   "quote": "for the man trampled calmly over the child’s body and left her screaming on the ground. It sounds nothing to hear, but it was hellish to see. It wasn’t like a man; it was like some damned Juggernaut.",
+   "note": "The first act of Hyde's the book shows, told secondhand by a man who makes a rule of asking no questions. The violence takes one clause; the rest is its effect on the witness. Students meet the same night again in Chapter 10, where Jekyll gives it a few lines."
+  },
+  {
+   "unit": "ch-02",
+   "ref": "Chapter 2",
+   "speaker": "Utterson, alone",
+   "quote": "Something troglodytic, shall we say? or can it be the old story of Dr. Fell? or is it the mere radiance of a foul soul that thus transpires through, and transfigures, its clay continent?",
+   "note": "Utterson has just met Hyde and cannot name what is wrong with him. He tries a throwback to early man, then a dislike without a reason (the rhyme about Dr. Fell), then a foul soul showing through the body, and settles on the last. Ask students which explanation the last two chapters support."
+  },
+  {
+   "unit": "ch-05",
+   "ref": "Chapter 5",
+   "speaker": "Guest to Utterson",
+   "quote": "there’s a rather singular resemblance; the two hands are in many points identical: only differently sloped.",
+   "note": "The plainest evidence against Jekyll before Chapter 9, and Utterson's answer is to lock the note in his safe and say nothing. It is a good place to ask what Utterson's loyalty costs, since a man is dead."
+  },
+  {
+   "unit": "ch-08",
+   "ref": "Chapter 8",
+   "speaker": "Narrator",
+   "quote": "the quietest room, you would have said, and, but for the glazed presses full of chemicals, the most commonplace that night in London.",
+   "note": "The door has just fallen, and behind it are a singing kettle and tea laid out. Students expect a scene of horror and get a tidy room with a body in the middle of it; the calm is what unsettles."
+  },
+  {
+   "unit": "ch-09",
+   "ref": "Chapter 9",
+   "speaker": "Lanyon, writing to Utterson",
+   "quote": "there before my eyes—pale and shaken, and half fainting, and groping before him with his hands, like a man restored from death—there stood Henry Jekyll!",
+   "note": "The first transformation the reader sees, through a witness who called Jekyll's science balderdash in Chapter 2. Lanyon refuses to write down what Jekyll told him in the hour after, which is why Chapter 10 has to exist."
+  },
+  {
+   "unit": "ch-10",
+   "ref": "Chapter 10",
+   "speaker": "Jekyll, in his statement",
+   "quote": "I thus drew steadily nearer to that truth, by whose partial discovery I have been doomed to such a dreadful shipwreck: that man is not truly one, but truly two.",
+   "note": "The most quoted line in the book, and students tend to stop at it. Read the next sentences: Jekyll says two is only as far as his own knowledge reaches, and guesses that man will one day be known as a polity of many independent denizens."
+  }
+ ],
+ "qa": {
+  "items": 40,
+  "pass": 40,
+  "leak": 0,
+  "failing": 0
+ }
+}
