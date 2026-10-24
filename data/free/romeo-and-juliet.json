@@ -1,0 +1,479 @@
+{
+ "slug": "romeo-and-juliet",
+ "updated": "2026-10-24",
+ "about": [
+  "Romeo and Juliet was first printed in 1597, in a quarto printed by John Danter that is often called a \"bad quarto\" because its text is shorter and differs from later editions. The second quarto of 1599 is about 800 lines longer, and its title page claims the play is newly corrected and augmented. The First Folio printed it again in 1623, seven years after Shakespeare died. The Project Gutenberg text (eBook #1513) runs 25,634 words. Act 3 is the longest act (6,730 words) and Act 4 the shortest (3,451). Two sonnets spoken by the Chorus frame the opening: the Prologue before Act 1 and a second chorus at the start of Act 2.",
+  "Students lose the thread in the calendar. On Monday night Capulet fixes the wedding to Paris for Thursday, and the Friar times his potion so that Juliet drinks it on Wednesday night. In Act 4, Scene 2 her father moves the wedding up to the next morning, so she drinks on Tuesday night and everything the Friar planned runs a day early. Students also lose track of the rope ladder, which goes from Romeo's man to the Nurse to Juliet's chamber, and of the ring Juliet sends Romeo in Act 3. Each act below has a one-word checkpoint and four multiple-choice questions on details inside the act. They show whether a student read the scenes with care; they do not test essay writing or knowledge of the play's sources."
+ ],
+ "checks": [
+  {
+   "id": "act-1",
+   "label": "Act 1",
+   "units": [
+    "act-1"
+   ],
+   "overview": "After the Chorus sets out the story, a street fight between Capulet and Montague servants brings the Prince's warning. Capulet invites Paris to woo Juliet at a feast that night, and Romeo, still sighing over Rosaline, goes along masked with Benvolio and Mercutio. At the feast he meets Juliet, and each learns too late who the other is.",
+   "checkpoint": {
+    "question": "Juliet turns fourteen on Lammas Eve. When the Nurse asks how long it is now to Lammas-tide, what does Lady Capulet answer?",
+    "answer": "fortnight",
+    "evidence": "A fortnight and odd days."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "When Benvolio greets Romeo with \"Good morrow,\" Romeo asks whether the day is so young. What hour does Benvolio give?",
+     "quote": null,
+     "options": [
+      "Not yet six",
+      "New struck nine",
+      "Close on noon",
+      "An hour before sunrise"
+     ],
+     "answer": "B",
+     "why": "Benvolio says it has \"new struck nine,\" and Romeo answers that sad hours seem long. The hour before sunrise is when Benvolio says he saw Romeo in the sycamore grove, earlier that morning.",
+     "evidence": [
+      "Is the day so young?",
+      "But new struck nine."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "In her long story about the day Juliet was weaned, what does the Nurse say she had put on her breast, and where was she sitting?",
+     "quote": null,
+     "options": [
+      "Mustard, sitting by the fire in the kitchen",
+      "Aloes, sitting on the bench beside the well",
+      "Rue, sitting at the window of the nursery",
+      "Wormwood, sitting in the sun under the dovehouse wall"
+     ],
+     "answer": "D",
+     "why": "The Nurse had laid bitter wormwood on her breast and was sitting in the sun under the dovehouse wall when the earthquake shook it. The baby tasted the wormwood and turned \"tetchy\" with the breast.",
+     "evidence": [
+      "For I had then laid wormwood to my dug, Sitting in the sun under the dovehouse wall;",
+      "When it did taste the wormwood on the nipple"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "At the feast, Capulet and his old cousin argue over how long it is since they last danced in a mask. The cousin says thirty years; Capulet insists it is about twenty-five. What does the argument suggest about Capulet?",
+     "quote": null,
+     "options": [
+      "He wants his masking days to be more recent than they are",
+      "He is reminding his cousin of a debt from Lucentio's wedding",
+      "He is hinting that his cousin should get up and dance",
+      "He is testing whether his cousin's memory is failing"
+     ],
+     "answer": "A",
+     "why": "He has just said that he and his cousin are \"past our dancing days,\" yet he will not accept the larger number, even when told Lucentio's son is thirty. He keeps shortening the time because he does not like to feel so old.",
+     "evidence": [
+      "By’r Lady, thirty years.",
+      "Some five and twenty years; and then we mask’d.",
+      "His son was but a ward two years ago."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "In the Queen Mab speech Mercutio says, \"And sometime comes she with a tithe-pig’s tail, Tickling a parson’s nose as a lies asleep, Then dreams he of another benefice:\". What is the parson dreaming of?",
+     "quote": "And sometime comes she with a tithe-pig’s tail, Tickling a parson’s nose as a lies asleep, Then dreams he of another benefice:",
+     "options": [
+      "A larger tithe of pigs from his parishioners",
+      "Absolution for the sins of his whole flock",
+      "A second church post and the income it pays",
+      "A feast-day sermon that will make him famous"
+     ],
+     "answer": "C",
+     "why": "A benefice is a church living, a post that brings its holder an income. Like the lawyers who \"dream on fees,\" the parson dreams of getting more, here one more paid post on top of the one he has.",
+     "evidence": [
+      "And sometime comes she with a tithe-pig’s tail, Tickling a parson’s nose as a lies asleep, Then dreams he of another benefice:",
+      "O’er lawyers’ fingers, who straight dream on fees;"
+     ]
+    }
+   ],
+   "words": 6092
+  },
+  {
+   "id": "act-2",
+   "label": "Act 2",
+   "units": [
+    "act-2"
+   ],
+   "overview": "Romeo slips into the Capulet orchard, hears Juliet speak at her window, and the two agree to marry. Friar Lawrence consents, hoping the match will end the feud. The Nurse meets Romeo in the street, brings his answer back to Juliet, and Juliet goes to the Friar's cell to be married.",
+   "checkpoint": {
+    "question": "When the Nurse comes looking for Romeo in the street, what is the first thing she asks Peter to hand her?",
+    "answer": "fan",
+    "evidence": "My fan, Peter."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "The Nurse greets the young men with \"God ye good morrow,\" and Mercutio answers \"good-den\" (good evening). What reason does he give for the correction?",
+     "quote": null,
+     "options": [
+      "The church bell has just rung for evening prayer",
+      "The sun is already low behind the city walls",
+      "The hand of the dial is now upon the prick of noon",
+      "They have all eaten their dinner at Romeo's father's"
+     ],
+     "answer": "C",
+     "why": "Mercutio says it is no less than good-den because \"the bawdy hand of the dial is now upon the prick of noon.\" Noon has come, so morning greetings are over, and he makes a dirty joke of it.",
+     "evidence": [
+      "’Tis no less, I tell ye; for the bawdy hand of the dial is now upon the prick of noon."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Before she leaves Romeo in the street, the Nurse says Juliet has a pretty saying about him and a plant whose name starts with the same letter. Which plant?",
+     "quote": null,
+     "options": [
+      "Rosemary",
+      "Rue",
+      "Roses",
+      "Rushes"
+     ],
+     "answer": "A",
+     "why": "The Nurse asks whether rosemary and Romeo begin with the same letter and says Juliet has the prettiest saying \"of you and rosemary.\" Rosemary was the herb of remembrance, used at weddings and at funerals.",
+     "evidence": [
+      "Doth not rosemary and Romeo begin both with a letter?",
+      "of you and rosemary, that it would do you good to hear it."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When Romeo speaks up from the garden, he will not tell Juliet his name. How does she know who he is?",
+     "quote": null,
+     "options": [
+      "She can see his face by the light of the moon",
+      "He has already signed his name in a letter to her",
+      "The Nurse warned her that he had climbed the wall",
+      "She knows his voice, though she has heard few words of it"
+     ],
+     "answer": "D",
+     "why": "Romeo says only that his name is hateful to him. Juliet answers that she has not yet heard a hundred words from him but knows the sound, and asks, \"Art thou not Romeo, and a Montague?\"",
+     "evidence": [
+      "My ears have yet not drunk a hundred words Of thy tongue’s utterance, yet I know the sound.",
+      "Art thou not Romeo, and a Montague?"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Below Juliet's window Romeo says, \"Two of the fairest stars in all the heaven, Having some business, do entreat her eyes To twinkle in their spheres till they return.\" What does he imagine?",
+     "quote": "Two of the fairest stars in all the heaven, Having some business, do entreat her eyes To twinkle in their spheres till they return.",
+     "options": [
+      "Juliet's eyes shine with tears like two stars at night",
+      "Two stars, called away, ask her eyes to shine in their place",
+      "Two stars are so jealous of her eyes that they hide",
+      "Her eyes will guide him home as stars guide sailors"
+     ],
+     "answer": "B",
+     "why": "The stars have \"some business\" elsewhere and beg her eyes to take their place in the sky until they come back. Romeo then asks what would happen if the swap were real: her eyes would shine so bright that birds would sing.",
+     "evidence": [
+      "Two of the fairest stars in all the heaven, Having some business, do entreat her eyes To twinkle in their spheres till they return.",
+      "What if her eyes were there, they in her head?"
+     ]
+    }
+   ],
+   "words": 5674
+  },
+  {
+   "id": "act-3",
+   "label": "Act 3",
+   "units": [
+    "act-3"
+   ],
+   "overview": "Tybalt challenges Romeo, who refuses to fight; Mercutio fights instead and is killed, and Romeo kills Tybalt. The Prince banishes Romeo. After one night with Juliet he leaves for Mantua, and her father, who knows nothing of the marriage, orders her to marry Paris. When the Nurse advises her to accept, Juliet turns to the Friar.",
+   "checkpoint": {
+    "question": "Mercutio lists the quarrels Benvolio has picked. He says Benvolio fell out with a tailor for wearing his new doublet before which feast?",
+    "answer": "Easter",
+    "evidence": "Didst thou not fall out with a tailor for wearing his new doublet before Easter?"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "After Benvolio's account of the fight, Lady Capulet tells the Prince he is lying out of loyalty to the Montagues. How many of them does she claim fought against Tybalt?",
+     "quote": null,
+     "options": [
+      "Some twenty of them",
+      "Three or four of them",
+      "A dozen of them",
+      "Only Romeo and Benvolio"
+     ],
+     "answer": "A",
+     "why": "She says some twenty fought \"in this black strife\" and all twenty could kill only one man. Her point is that the Montagues ganged up on one man, and she demands Romeo's life for it.",
+     "evidence": [
+      "Some twenty of them fought in this black strife, And all those twenty could but kill one life.",
+      "Affection makes him false, he speaks not true."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "When Juliet refuses Paris, what does Capulet threaten to do if she will not go to Saint Peter's Church on Thursday?",
+     "quote": null,
+     "options": [
+      "Lock her in the vault where Tybalt lies",
+      "Send her to a convent outside Mantua",
+      "Drag her there on a hurdle",
+      "Have the servants carry her in a chair"
+     ],
+     "answer": "C",
+     "why": "Capulet says he will \"drag thee on a hurdle thither.\" A hurdle was the frame on which condemned traitors were dragged to execution. The bridal bed in Tybalt's monument is Juliet's own image, used a little later when she begs her mother for a delay.",
+     "evidence": [
+      "To go with Paris to Saint Peter’s Church, Or I will drag thee on a hurdle thither."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Setting the wedding for Thursday, Capulet tells Paris there will be no great ado, only \"a friend or two.\" Why does he want it small?",
+     "quote": null,
+     "options": [
+      "He cannot afford a second feast so soon after the last",
+      "He fears people will think the family cared little for Tybalt",
+      "He wants to keep the wedding hidden from the Montagues",
+      "Paris has asked for a quiet wedding because of the haste"
+     ],
+     "answer": "B",
+     "why": "Tybalt has just been killed, and Capulet worries that a large celebration would make people think the Capulets \"held him carelessly.\" So he settles on some half a dozen friends.",
+     "evidence": [
+      "For, hark you, Tybalt being slain so late, It may be thought we held him carelessly, Being our kinsman, if we revel much.",
+      "Therefore we’ll have some half a dozen friends,"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Finding Juliet in tears, Capulet says, \"In one little body Thou counterfeits a bark, a sea, a wind.\" In the comparison he goes on to explain, what is the bark?",
+     "quote": "In one little body Thou counterfeits a bark, a sea, a wind.",
+     "options": [
+      "Her eyes, which ebb and flow with tears",
+      "Her sighs, which rage like the winds",
+      "The tears she weeps for her cousin",
+      "Her body, sailing in the salt flood"
+     ],
+     "answer": "D",
+     "why": "Capulet maps each part: her eyes are the sea, her sighs the winds, and the bark (a small ship) is her body, sailing on her own tears. He warns the storm will overturn it unless it calms.",
+     "evidence": [
+      "For still thy eyes, which I may call the sea, Do ebb and flow with tears; the bark thy body is, Sailing in this salt flood, the winds, thy sighs,"
+     ]
+    }
+   ],
+   "words": 6730
+  },
+  {
+   "id": "act-4",
+   "label": "Act 4",
+   "units": [
+    "act-4"
+   ],
+   "overview": "Juliet finds Paris at Friar Lawrence's cell, and once he leaves, the Friar gives her a drug that will make her seem dead. She pretends to obey her father, who moves the wedding forward a day. Alone that night she drinks it, and the household finds her on what was to be the wedding morning.",
+   "checkpoint": {
+    "question": "Capulet sends a servant to hire twenty cunning cooks. The servant says he will test each cook by seeing whether he can lick what?",
+    "answer": "fingers",
+    "evidence": "Marry, sir, ’tis an ill cook that cannot lick his own fingers;"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "In the small hours before the wedding, Lady Capulet gives the Nurse the keys to fetch more spices. What does the Nurse say they are calling for in the pastry?",
+     "quote": null,
+     "options": [
+      "Sugar and saffron",
+      "Figs and almonds",
+      "Wine and wafers",
+      "Dates and quinces"
+     ],
+     "answer": "D",
+     "why": "The Nurse reports that the pastry, the room where the baking is done, needs dates and quinces. A moment later Capulet says it is three o'clock and orders the baked meats looked to.",
+     "evidence": [
+      "Hold, take these keys and fetch more spices, Nurse.",
+      "They call for dates and quinces in the pastry."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Peter asks the musicians why the song says \"music with her silver sound.\" When none of them satisfies him, what answer does Peter give himself?",
+     "quote": null,
+     "options": [
+      "Because silver hath a sweet sound",
+      "Because musicians have no gold for sounding",
+      "Because musicians sound for silver",
+      "Because wedding bells are cast in silver"
+     ],
+     "answer": "B",
+     "why": "The first musician says silver has a sweet sound and the second that musicians play for silver; Peter mocks both and answers that musicians have no gold, so silver is all they get.",
+     "evidence": [
+      "Marry, sir, because silver hath a sweet sound.",
+      "I say ‘silver sound’ because musicians sound for silver.",
+      "It is ‘music with her silver sound’ because musicians have no gold for sounding."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Back from the Friar's cell, Juliet asks the Nurse to help her choose ornaments to wear tomorrow. What does Lady Capulet's reply show?",
+     "quote": null,
+     "options": [
+      "She suspects Juliet is planning to run away",
+      "She wants Juliet to rest before a long ceremony",
+      "She still expects the wedding on Thursday, as first fixed",
+      "She does not trust the Nurse to choose Juliet's clothes"
+     ],
+     "answer": "C",
+     "why": "Lady Capulet answers \"No, not till Thursday,\" so she has not caught up with her husband, who has just moved the wedding to the next morning. Capulet overrules her: \"We’ll to church tomorrow.\"",
+     "evidence": [
+      "No, not till Thursday. There is time enough.",
+      "Go, Nurse, go with her. We’ll to church tomorrow."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "A servant boasts that his head will find out logs without troubling Peter. Capulet answers, \"Thou shalt be loggerhead.\" What is the joke?",
+     "quote": "Thou shalt be loggerhead.",
+     "options": [
+      "A pun on his boast about finding logs; a loggerhead is a blockhead",
+      "A title for the servant put in charge of the kitchen fires",
+      "A warning that he will be beaten if he is slow with the wood",
+      "A jibe that his head is as hard as Peter's is"
+     ],
+     "answer": "A",
+     "why": "The servant has just said he has \"a head\" that will find logs. Capulet turns it into \"loggerhead,\" a word for a blockhead, and enjoys the joke: \"a merry whoreson.\"",
+     "evidence": [
+      "I have a head, sir, that will find out logs And never trouble Peter for the matter.",
+      "Mass and well said; a merry whoreson, ha. Thou shalt be loggerhead."
+     ]
+    }
+   ],
+   "words": 3451
+  },
+  {
+   "id": "act-5",
+   "label": "Act 5",
+   "units": [
+    "act-5"
+   ],
+   "overview": "In Mantua, Romeo hears from Balthasar that Juliet is dead, buys poison, and rides for Verona; the Friar's letter has not reached him. At the tomb Romeo kills Paris and poisons himself. Juliet wakes, refuses to leave with the Friar, and stabs herself. The Friar tells the Prince everything, and the two fathers make peace.",
+   "checkpoint": {
+    "question": "Romeo remembers the apothecary's needy shop, with a stuffed alligator and the skins of ill-shaped fishes. What other creature hung there?",
+    "answer": "tortoise",
+    "evidence": "And in his needy shop a tortoise hung,"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "When Romeo reaches the apothecary's house, he notes that the shop is shut. What reason does he give?",
+     "quote": null,
+     "options": [
+      "The apothecary has fled for fear of the plague",
+      "It is a holiday, and the shop is closed for it",
+      "Mantua's law shuts such shops after nightfall",
+      "The watch has sealed it as a poison seller's"
+     ],
+     "answer": "B",
+     "why": "Romeo says, \"Being holiday, the beggar’s shop is shut,\" and calls the apothecary out by shouting at the door.",
+     "evidence": [
+      "Being holiday, the beggar’s shop is shut.",
+      "What, ho! Apothecary!"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Before he strews flowers at Juliet's tomb, what does Paris tell his Page to do?",
+     "quote": null,
+     "options": [
+      "Lie under the yew tree with his ear to the ground and whistle",
+      "Keep the torch burning at the churchyard gate and call out",
+      "Wait inside the Capulet vault and watch over Juliet's body",
+      "Ride to the Prince's palace and bring back the night watch"
+     ],
+     "answer": "A",
+     "why": "Paris has the torch put out and sends the boy to lie under the yew with his ear to the loose, dug-up ground, so he will hear any footstep and whistle a warning. The Page does whistle when Romeo comes.",
+     "evidence": [
+      "Under yond yew tree lay thee all along, Holding thy ear close to the hollow ground;",
+      "Whistle then to me, As signal that thou hear’st something approach."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Romeo threatens to tear Balthasar joint by joint if he comes back to pry. Balthasar promises to go, then says, \"For all this same, I’ll hide me hereabout.\" Why does he stay?",
+     "quote": "For all this same, I’ll hide me hereabout.",
+     "options": [
+      "He plans to rob the tomb once his master has left",
+      "He means to fetch Romeo's father before morning",
+      "The Friar has ordered him to keep watch on the vault",
+      "He is afraid of what Romeo looks ready to do"
+     ],
+     "answer": "D",
+     "why": "Balthasar says he fears Romeo's looks and doubts his intentions. In Mantua he had already noticed that Romeo's looks were \"pale and wild.\"",
+     "evidence": [
+      "For all this same, I’ll hide me hereabout. His looks I fear, and his intents I doubt.",
+      "Your looks are pale and wild, and do import Some misadventure."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Carrying Paris into the vault, Romeo says, \"A grave? O no, a lantern, slaught’red youth,\". What does he mean by a lantern?",
+     "quote": "A grave? O no, a lantern, slaught’red youth,",
+     "options": [
+      "A lamp to light Paris's soul on its way to heaven",
+      "The torch Balthasar left burning at the tomb door",
+      "A room full of light, made bright by Juliet's beauty",
+      "The watchman's light that will soon find the bodies"
+     ],
+     "answer": "C",
+     "why": "He explains at once: Juliet lies there, and her beauty makes the vault \"a feasting presence full of light.\" Paris is going into a bright chamber, not a dark grave.",
+     "evidence": [
+      "A grave? O no, a lantern, slaught’red youth, For here lies Juliet, and her beauty makes This vault a feasting presence full of light."
+     ]
+    }
+   ],
+   "words": 3687
+  }
+ ],
+ "passages": [
+  {
+   "unit": "act-1",
+   "ref": "Prologue",
+   "speaker": "Chorus",
+   "quote": "Two households, both alike in dignity, / In fair Verona, where we lay our scene, / From ancient grudge break to new mutiny, / Where civil blood makes civil hands unclean.",
+   "note": "The first four lines of a fourteen-line sonnet that gives away the ending: the lovers die, and their deaths end the feud. Ask students why the audience is told this before the first scene, and what \"the two hours’ traffic of our stage\" says about the play as a performance."
+  },
+  {
+   "unit": "act-1",
+   "ref": "Act 1, Scene 5",
+   "speaker": "Romeo to Juliet",
+   "quote": "If I profane with my unworthiest hand / This holy shrine, the gentle sin is this, / My lips, two blushing pilgrims, ready stand / To smooth that rough touch with a tender kiss.",
+   "note": "The opening quatrain of a sonnet the lovers share at their first meeting. Juliet answers with the next four lines, they split the rest, and the fourteenth line leads straight into a kiss. Have students mark who speaks which lines and follow the pilgrim and saint images."
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2, Scene 2",
+   "speaker": "Juliet, at her window",
+   "quote": "What’s in a name? That which we call a rose / By any other name would smell as sweet;",
+   "note": "Juliet thinks she is alone; Romeo is listening below. A few lines earlier, \"wherefore art thou Romeo?\" asks why he is Romeo, not where he is. Her argument is that \"Montague\" is no part of his body, so he could give up the name and keep himself."
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2, Scene 6",
+   "speaker": "Friar Lawrence to Romeo",
+   "quote": "These violent delights have violent ends, / And in their triumph die; like fire and powder, / Which as they kiss consume.",
+   "note": "Spoken minutes before the wedding, while they wait for Juliet. The gunpowder image comes back in Act 5, Scene 1, when Romeo asks the apothecary for a poison that works \"As violently as hasty powder fir’d.\""
+  },
+  {
+   "unit": "act-3",
+   "ref": "Act 3, Scene 1",
+   "speaker": "Mercutio, wounded",
+   "quote": "I am hurt. / A plague o’ both your houses. I am sped.",
+   "note": "Mercutio repeats the curse three times before he is carried off. He also blames Romeo directly: \"I was hurt under your arm.\" Ask students whose side Mercutio thinks he has died for."
+  },
+  {
+   "unit": "act-5",
+   "ref": "Act 5, Scene 3",
+   "speaker": "Romeo, in the tomb",
+   "quote": "Eyes, look your last. / Arms, take your last embrace! And, lips, O you / The doors of breath, seal with a righteous kiss / A dateless bargain to engrossing death.",
+   "note": "A few lines earlier Romeo notices that \"Beauty’s ensign yet Is crimson in thy lips\"; the audience knows Juliet is alive. The legal words (seal, bargain, engrossing) make his death a signed contract. Set this kiss beside the first one in Act 1, Scene 5."
+  }
+ ],
+ "qa": {
+  "items": 25,
+  "pass": 25,
+  "leak": 0,
+  "failing": 0,
+  "summary_words": 400
+ }
+}

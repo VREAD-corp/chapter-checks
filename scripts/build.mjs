@@ -39,7 +39,15 @@ const STUDY = Object.fromEntries(READY.map((t) => [t.slug, join(ROOT, 'data/stud
 // question passed the reading engine's gates, its summary cold-answer gate included. Pages at quizzes/<slug>/.
 const QUIZ = (CAT.free_quizzes || []).filter((t) => existsSync(join(ROOT, 'data/free', `${t.slug}.json`)))
   .map((t) => ({ ...t, data: JSON.parse(readFileSync(join(ROOT, 'data/free', `${t.slug}.json`), 'utf8')) }));
-const quizUnit = (t) => (t.play ? 'act' : t.slug === 'heart-of-darkness' ? 'part' : 'chapter');
+const quizUnit = (t) => (t.play ? 'act' : t.slug === 'heart-of-darkness' ? 'part' : t.slug === 'christmas-carol' ? 'stave' : 'chapter');
+// Checks that span several units (Pride and Prejudice: three chapters a quiz). The Preface of Dorian Gray rides with Chapter 1.
+const NUMW = ['zero', 'one', 'two', 'three', 'four', 'five', 'six'];
+const quizSpan = (d) => {
+  const sizes = d.checks.map((c) => c.units.filter((x) => x !== 'preface').length);
+  const n = sizes.reduce((a, b) => a + b, 0);
+  const common = sizes[0];
+  return { n, grouped: n > d.checks.length, common, last: sizes[sizes.length - 1], uniform: sizes.every((x) => x === common) };
+};
 const quizLinks = () => QUIZ.map((t) => `<a href="${u(`quizzes/${t.slug}/`)}"><i>${esc(t.short)}</i> ${quizUnit(t)} quizzes</a>`).join(', ');
 const apLists = (slug) => AP.lists.filter((l) => l.titles.includes(slug));
 const apName = (l) => `${l.year}${l.set ? ` ${l.set}` : ''}`;
@@ -238,7 +246,7 @@ ${sampleCard(gatsby, gatsby.samples.questions[0], 1)}
 ${titleTable}
 <p>Each title also has a free reading guide for teachers: what each check covers, key passages with their references, and three questions from the pack. ${READY.filter((t) => STUDY[t.slug]).map((t) => `<a href="${u(`study/${t.slug}/`)}"><i>${esc(t.title)}</i> reading guide</a>`).join(', ')}.</p>
 ${QUIZ.length ? `<h3 id="free-quizzes">Free quizzes on ${QUIZ.length} more classics</h3>
-<p>These titles have no pack yet, so their quizzes are on the web page itself, free, with the key: one quiz per ${QUIZ.some((t) => !t.play) ? 'chapter, part or act' : 'act'}, each a one-word reading checkpoint and three to five multiple-choice questions. ${quizLinks()}.</p>` : ''}
+<p>These titles have no pack yet, so their quizzes are on the web page itself, free, with the key: one quiz per ${QUIZ.some((t) => !t.play) ? 'chapter, stave, part or act (three chapters for <i>Pride and Prejudice</i>)' : 'act'}, each a one-word reading checkpoint and three to five multiple-choice questions. ${quizLinks()}.</p>` : ''}
 </section>
 
 <section id="pack">
@@ -478,6 +486,9 @@ function quizCard(t, c, q, n) {
 for (const t of QUIZ) {
   const d = t.data;
   const unit = quizUnit(t);
+  const span = quizSpan(d);
+  const each = span.grouped ? `each on ${NUMW[span.common]} ${unit}s${span.uniform ? '' : ` (${NUMW[span.last]} in the last)`}` : `one per ${unit}`;
+  const sumWords = d.qa.summary_words ? `about ${d.qa.summary_words} words ${/^[aeiou]/.test(unit) ? 'an' : 'a'} ${unit}` : (t.play ? 'about 350 words an act' : unit === 'part' ? 'about 450 words a part' : 'about 150 to 200 words a chapter');
   const words = d.checks.reduce((a, c) => a + c.words, 0);
   const nq = d.checks.reduce((a, c) => a + c.questions.length, 0);
   const per = [...new Set(d.checks.map((c) => c.questions.length))].sort().join(' or ');
@@ -486,14 +497,14 @@ for (const t of QUIZ) {
   pages.push({
     path: `quizzes/${t.slug}/`,
     lastmod: d.updated,
-    title: `${t.short} ${unit} quizzes with answers: free, ${d.checks.length} ${unit}s, key with text evidence`,
-    description: `Free ${t.title} quizzes, one per ${unit}: a one-word reading checkpoint and ${per} multiple-choice questions each, answer key with the line of the text, and ${d.passages.length} key passages.`,
+    title: `${t.short} ${unit} quizzes with answers: free, ${span.grouped ? `${d.checks.length} quizzes for ${span.n} ${unit}s` : `${d.checks.length} ${unit}s`}, key with text evidence`,
+    description: `Free ${t.title} quizzes, ${each}: a one-word reading checkpoint and ${per} multiple-choice questions each, answer key with the line of the text, and ${d.passages.length} key passages.`,
     crumbs: [[`${t.short} quizzes`]],
     ld: [{ '@type': 'Quiz', name: `${t.title} ${unit} quizzes`, url: abs(`quizzes/${t.slug}/`), author: AUTHOR, publisher: { '@id': ORG['@id'] }, datePublished: d.updated, dateModified: d.updated,
       isAccessibleForFree: true, inLanguage: 'en-US', educationalLevel: 'Grades 9-12', learningResourceType: 'Quiz', about: { '@type': 'Book', name: t.title, author: { '@type': 'Person', name: t.author } } }],
     body: `<p class="eyebrow">${esc(t.author)} · free quizzes with answer key</p>
 <h1><i>${esc(t.title)}</i>: ${unit} quizzes with answers</h1>
-<p class="lead">${d.checks.length} quizzes, one per ${unit}, ${nq + d.checks.length} questions in all, on the Project Gutenberg text (${num(words)} words). Each quiz opens with a reading checkpoint answered with one word of the text, then ${per} multiple-choice questions. The key under each question gives the answer and the line that proves it.</p>
+<p class="lead">${d.checks.length} quizzes, ${each}, ${nq + d.checks.length} questions in all, on the Project Gutenberg text (${num(words)} words). Each quiz opens with a reading checkpoint answered with one word of the text, then ${per} multiple-choice questions. The key under each question gives the answer and the line that proves it.</p>
 <p class="small">Written by Octave, READ FRANCE's AI assistant, from Project Gutenberg eBook #${t.gutenberg}; published ${esc(longDate(d.updated))}. Every quotation was checked word for word against the text by a script; no teacher has reviewed this page yet. Corrections: <a href="mailto:${CONTACT}">${CONTACT}</a>. ${WHO}.</p>
 ${d.about.map((p) => `<p>${itl(p)}</p>`).join('\n')}
 
@@ -518,7 +529,7 @@ ${c.questions.map((q, i) => quizCard(t, c, q, i + 1)).join('\n')}
 ${d.passages.map((p) => `<figure class="passage"><blockquote>${verse(p.quote)}</blockquote><figcaption><b>${esc(p.ref)}</b> · ${esc(p.speaker)}</figcaption><p>${esc(p.note)}</p></figure>`).join('\n')}
 
 <h2>How these questions were tested</h2>
-<p>Each question was put to a separate AI reader that had not seen the text and held only a study-guide summary of the ${unit} (${t.play ? 'about 350 words an act' : unit === 'part' ? 'about 450 words a part' : 'about 150 to 200 words a chapter'}), longer than the overviews above. A question that reader could answer was rewritten. Final count for <i>${esc(t.title)}</i>: ${d.qa.pass} of ${d.qa.items} questions passed. The gate comes from READ FRANCE's reading engine, which also checked that every quoted line is in the ${unit} it is credited to.</p>
+<p>Each question was put to a separate AI reader that had not seen the text and held only a study-guide summary of the ${span.grouped ? `${unit}s it covers` : unit} (${sumWords}), longer than the overviews above. A question that reader could answer was rewritten. Final count for <i>${esc(t.title)}</i>: ${d.qa.pass} of ${d.qa.items} questions passed. The gate comes from READ FRANCE's reading engine, which also checked that every quoted line is in the ${unit} it is credited to.</p>
 ${lists.length ? `<p><i>${esc(t.title)}</i> is printed in ${lists.length} of the ${AP.lists.length} AP Literature question-3 lists the College Board published for 2023 to 2026: ${lists.map((l) => `<a href="${l.url}" rel="noopener">${apName(l)}</a> (${esc(l.topic)})`).join('; ')}. <a href="${u('ap-literature/')}">Our count of the lists</a>.</p>` : ''}
 
 <section class="buy-box">

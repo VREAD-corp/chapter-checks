@@ -1,5 +1,5 @@
 {
- "_doc": "Question 3 (prose fiction / literary argument) title lists printed in the AP English Literature and Composition free-response PDFs, 2023 to 2026, as listed on https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions. Each PDF was downloaded and its question-3 list read by READ FRANCE on 2026-10-17 (pdftotext); `titles` = which Chapter Checks titles are printed in that list, `count` = number of works in the list. Topic: our paraphrase of the prompt. 2026: one set published at the date checked. The 4 free quiz titles (jekyll-hyde, heart-of-darkness, othello, importance-of-being-earnest) were searched in the same 7 PDFs on 2026-10-21 (pdftotext): Strange Case of Dr. Jekyll and Mr. Hyde is in 2023 set 1, The Importance of Being Earnest in 2025 set 1, the other two in none.",
+ "_doc": "Question 3 (prose fiction / literary argument) title lists printed in the AP English Literature and Composition free-response PDFs, 2023 to 2026, as listed on https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions. Each PDF was downloaded and its question-3 list read by READ FRANCE on 2026-10-17 (pdftotext); `titles` = which Chapter Checks titles are printed in that list, `count` = number of works in the list. Topic: our paraphrase of the prompt. 2026: one set published at the date checked. The 4 free quiz titles (jekyll-hyde, heart-of-darkness, othello, importance-of-being-earnest) were searched in the same 7 PDFs on 2026-10-21 (pdftotext): Strange Case of Dr. Jekyll and Mr. Hyde is in 2023 set 1, The Importance of Being Earnest in 2025 set 1, the other two in none. The 5 free quiz titles added on 2026-10-24 were searched in the same 7 PDFs that day (pdftotext): Pride and Prejudice is in 2023 set 2 and 2025 set 2, The Tempest in 2024 set 2, The Picture of Dorian Gray in 2025 set 2, Romeo and Juliet in 2026; A Christmas Carol is in none.",
  "checked": "2026-10-17",
  "page": "https://apcentral.collegeboard.org/courses/ap-english-literature-and-composition/exam/past-exam-questions",
  "lists": [
@@ -27,6 +27,7 @@
    "titles": [
     "frankenstein-1831",
     "jane-eyre",
+    "pride-and-prejudice",
     "scarlet-letter",
     "the-awakening",
     "wuthering-heights"
@@ -57,6 +58,7 @@
     "jane-eyre",
     "macbeth",
     "scarlet-letter",
+    "tempest",
     "the-awakening",
     "wuthering-heights"
    ]
@@ -84,10 +86,12 @@
    "topic": "a character who holds a secret",
    "count": 37,
    "titles": [
+    "dorian-gray",
     "frankenstein-1831",
     "great-gatsby",
     "jane-eyre",
     "macbeth",
+    "pride-and-prejudice",
     "scarlet-letter",
     "the-awakening"
    ]
@@ -101,6 +105,7 @@
    "count": 43,
    "titles": [
     "frankenstein-1831",
+    "romeo-and-juliet",
     "the-awakening"
    ]
   }

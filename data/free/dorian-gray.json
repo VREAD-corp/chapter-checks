@@ -1,0 +1,1353 @@
+{
+ "slug": "dorian-gray",
+ "updated": "2026-10-24",
+ "about": [
+  "Oscar Wilde (died 1900) first published The Picture of Dorian Gray in the July 1890 issue of Lippincott's Monthly Magazine, in thirteen chapters. Ward, Lock and Company brought out the revised book in April 1891, expanded to twenty chapters and opened by the Preface, which had first appeared in The Fortnightly Review. Our text is Project Gutenberg eBook #174, the 1891 version: 78,928 words, a Preface of 383 words and twenty chapters. Chapter 11 is the longest at 7,352 words. Chapter 17 is the shortest at 1,796, and Chapters 12 and 13, the night of Basil's visit, come to 5,263 between them.",
+  "Students lose the thread in Chapter 11. It covers years in a single sweep with almost no dialogue, through long catalogues of perfumes, instruments, jewels and vestments, and many readers stall in it. Chapter 12 then opens on the eve of Dorian's thirty-eighth birthday, so a student who skims Chapter 11 should at least register how much time has gone by. Each check below has a one-word checkpoint and three multiple-choice questions on details from inside the chapter. They show whether a student read it; they do not measure what a student makes of Wilde's ideas about art and conscience. The text describes the theater manager in Chapters 4 and 7 in antisemitic terms. Our quotes avoid those lines, but decide before class how you will handle them when students read aloud."
+ ],
+ "checks": [
+  {
+   "id": "ch-01",
+   "label": "Preface and Chapter 1",
+   "units": [
+    "preface",
+    "ch-01"
+   ],
+   "overview": "Wilde's Preface sets out short claims about art, artists and critics. In Chapter 1, Lord Henry Wotton lounges in Basil Hallward's studio, admires a full-length portrait of a young man, and presses Basil to say why he will not exhibit it. Basil tells how he met the sitter, Dorian Gray, and asks Harry not to influence him.",
+   "checkpoint": {
+    "question": "Lord Henry says Lady Brandon tried to found a salon and only succeeded in opening what?",
+    "answer": "restaurant",
+    "evidence": "My dear fellow, she tried to found a salon, and only succeeded in opening a restaurant."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "The Preface names one art as the type of all the arts from the point of view of form. Which?",
+     "quote": null,
+     "options": [
+      "The art of the actor",
+      "The art of the sculptor",
+      "The art of the musician",
+      "The art of the poet"
+     ],
+     "answer": "C",
+     "why": "Form is matched with the musician. The actor's craft comes in the next sentence, as the type from the point of view of feeling.",
+     "evidence": [
+      "From the point of view of form, the type of all the arts is the art of the musician.",
+      "From the point of view of feeling, the actor’s craft is the type."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Basil admits that Dorian is sometimes thoughtless with him. He feels he has given away his whole soul to someone who treats it as what?",
+     "quote": null,
+     "options": [
+      "A letter to read once and throw away",
+      "A flower to put in his coat",
+      "A coin to spend on a passing whim",
+      "A song to hum and then forget"
+     ],
+     "answer": "B",
+     "why": "Basil says Dorian treats his soul like a flower for his coat, then rephrases it twice: a bit of decoration, an ornament for a summer's day.",
+     "evidence": [
+      "Then I feel, Harry, that I have given away my whole soul to some one who treats it as if it were a flower to put in his coat, a bit of decoration to charm his vanity, an ornament for a summer’s day."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Basil says that when he likes people immensely he never tells their names, because secrecy is the one thing that can make modern life marvellous. Which other habit of his comes from the same taste?",
+     "quote": null,
+     "options": [
+      "He never signs the pictures he cares for most",
+      "He burns his friends' letters once he has read them",
+      "He never lets a sitter see an unfinished canvas",
+      "He never tells his people where he is going when he leaves town"
+     ],
+     "answer": "D",
+     "why": "Right after the remark about names, Basil says he never tells his people where he is going when he leaves town, or he would lose all his pleasure. Both habits hide ordinary things to make them romantic.",
+     "evidence": [
+      "When I leave town now I never tell my people where I am going. If I did, I would lose all my pleasure."
+     ]
+    }
+   ],
+   "words": 5304
+  },
+  {
+   "id": "ch-02",
+   "label": "Chapter 2",
+   "units": [
+    "ch-02"
+   ],
+   "overview": "Lord Henry meets Dorian in the studio and talks to him about influence, youth and beauty while Basil paints, first indoors and then in the garden. When the portrait is finished, Dorian's response to it alarms Basil, and the three quarrel over the canvas before Lord Henry carries Dorian off to the theater.",
+   "checkpoint": {
+    "question": "At tea in the studio, what kind of fluted urn hisses on the tray?",
+    "answer": "Georgian",
+    "evidence": "There was a rattle of cups and saucers and the hissing of a fluted Georgian urn."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Before Dorian begs him to stay, Lord Henry says he must go. Where has he promised to meet a man?",
+     "quote": null,
+     "options": [
+      "At the Orleans",
+      "At White's",
+      "At the Bristol",
+      "At the Albany"
+     ],
+     "answer": "A",
+     "why": "He says he has promised to meet a man at the Orleans, and Basil laughs that there will be no difficulty about that. White's comes later, as the club where Harry was to dine that evening.",
+     "evidence": [
+      "I have promised to meet a man at the Orleans."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Dorian says he is in Lady Agatha's black books. Why?",
+     "quote": null,
+     "options": [
+      "He laughed at her playing at a charity concert",
+      "He forgot a promise to play duets at a Whitechapel club",
+      "He never sent the money he pledged to her mission",
+      "He missed her dinner party to sit for Basil"
+     ],
+     "answer": "B",
+     "why": "He had promised to go with her to a club in Whitechapel the Tuesday before and play duets, and forgot. Lord Henry jokes that the audience probably thought it was a duet anyway.",
+     "evidence": [
+      "I promised to go to a club in Whitechapel with her last Tuesday, and I really forgot all about it."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "In the garden, Dorian drops his lilac and watches a bee crawl over it with “that strange interest in trivial things.” According to the narrator, when do we develop that interest?",
+     "quote": "that strange interest in trivial things",
+     "options": [
+      "When we are too tired to listen any longer",
+      "When we wish to seem indifferent to praise",
+      "When the summer heat makes thinking hard",
+      "When things of high import make us afraid"
+     ],
+     "answer": "D",
+     "why": "The narrator says we turn to trivial things when matters of high import frighten us or a new emotion has no words yet. Lord Henry's speech on youth has just shaken Dorian, so the bee is a way of not facing it.",
+     "evidence": [
+      "He watched it with that strange interest in trivial things that we try to develop when things of high import make us afraid,"
+     ]
+    }
+   ],
+   "words": 5603
+  },
+  {
+   "id": "ch-03",
+   "label": "Chapter 3",
+   "units": [
+    "ch-03"
+   ],
+   "overview": "Lord Henry calls on his uncle, Lord Fermor, at the Albany to find out about Dorian's parents, and hears the story of Margaret Devereux and her marriage. He then goes to lunch at Aunt Agatha's, where his talk about America, the East End and the praise of folly holds the table while Dorian watches him.",
+   "checkpoint": {
+    "question": "At lunch, the duchess asks what American dry-goods are. Lord Henry answers: American what?",
+    "answer": "novels",
+    "evidence": "“American novels,” answered Lord Henry, helping himself to some quail."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Lord Fermor remembers a visit Lord Kelso made to Madrid. What did the Queen use to ask him about?",
+     "quote": null,
+     "options": [
+      "The English noble always quarreling with cabmen over fares",
+      "The English noble who fell asleep during a court ball",
+      "The English noble who lost his horses at cards",
+      "The English noble who would not bow to the Queen"
+     ],
+     "answer": "A",
+     "why": "Fermor calls Kelso a mean dog and gives the proof: the Queen asked him about the noble who argued with cabmen about their fares, and Fermor did not dare show his face at Court for a month.",
+     "evidence": [
+      "The Queen used to ask me about the English noble who was always quarrelling with the cabmen about their fares."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Lord Fermor pays some attention to his collieries in the Midlands. How does he excuse himself for this taint of industry?",
+     "quote": null,
+     "options": [
+      "Coal pays for his chambers and his club",
+      "Coal keeps his relations from asking for money",
+      "Coal lets a gentleman afford to burn wood",
+      "Coal gives him a reason to vote with the Tories"
+     ],
+     "answer": "C",
+     "why": "His excuse is that the one advantage of owning coal is being able to afford the decency of a wood fire on his own hearth. The narrator presents it as the logic of a man devoted to doing nothing.",
+     "evidence": [
+      "excusing himself for this taint of industry on the ground that the one advantage of having coal was that it enabled a gentleman to afford the decency of burning wood on his own hearth."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "After the duel at Spa was hushed up, Lord Fermor says, “Kelso ate his chop alone at the club for some time afterwards.” What does this detail suggest?",
+     "quote": "Kelso ate his chop alone at the club for some time afterwards",
+     "options": [
+      "Kelso was too mean to buy dinner for his friends",
+      "Kelso grieved too much for his son-in-law to want company",
+      "Kelso was hiding from the Belgian he had hired",
+      "The other members shunned Kelso once the story spread"
+     ],
+     "answer": "D",
+     "why": "The thing was hushed up officially, but the story got about that Kelso had paid a Belgian to provoke the duel. Eating alone at his club is how London punished him; Fermor tells it as part of the ugly story, not as grief.",
+     "evidence": [
+      "They said Kelso got some rascally adventurer, some Belgian brute, to insult his son-in-law in public—paid him, sir, to do it, paid him—and that the fellow spitted his man as if he had been a pigeon.",
+      "The thing was hushed up, but, egad, Kelso ate his chop alone at the club for some time afterwards."
+     ]
+    }
+   ],
+   "words": 4422
+  },
+  {
+   "id": "ch-04",
+   "label": "Chapter 4",
+   "units": [
+    "ch-04"
+   ],
+   "overview": "A month later, Dorian waits for Lord Henry in his Mayfair library and meets Lady Henry instead. When Harry arrives, Dorian confesses that he is in love with an actress he found in a shabby little theater, and describes her roles and the manager who runs the place. Alone afterwards, Lord Henry thinks of Dorian as an experiment.",
+   "checkpoint": {
+    "question": "Lady Henry says her husband has seventeen of them. From what does she already know Dorian quite well?",
+    "answer": "photographs",
+    "evidence": "I know you quite well by your photographs."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Why does Lady Henry say she likes Wagner's music better than anybody's?",
+     "quote": null,
+     "options": [
+      "It is so loud one can talk without being overheard",
+      "It is so long nobody notices when she slips out",
+      "It makes her feel young and romantic again",
+      "Its singers are all foreigners, which she adores"
+     ],
+     "answer": "A",
+     "why": "She likes Wagner because it is loud enough to cover conversation, which she calls a great advantage. Dorian disagrees: he never talks during good music.",
+     "evidence": [
+      "It is so loud that one can talk the whole time without other people hearing what one says."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "The manager of the little theater was proud of his five bankruptcies. What did he say they were due to?",
+     "quote": null,
+     "options": [
+      "The dramatic critics, who were all to be bought",
+      "His weakness for champagne and good cigars",
+      "Shakespeare, whom he insisted on calling “The Bard”",
+      "The cost of the flaring gas-jets out front"
+     ],
+     "answer": "C",
+     "why": "Dorian reports that the manager blamed his five bankruptcies on “The Bard” and thought it a distinction. Lord Henry agrees that being ruined by poetry is an honor.",
+     "evidence": [
+      "He told me once, with an air of pride, that his five bankruptcies were entirely due to ‘The Bard,’ as he insisted on calling him."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "After the first night, the manager offered to take Dorian backstage. Dorian told him that Juliet had been dead for hundreds of years and lay in a marble tomb in Verona. What was Dorian doing?",
+     "quote": null,
+     "options": [
+      "Correcting an error on the theater's playbill",
+      "Refusing, angrily, to be introduced to the actress",
+      "Showing off his Shakespeare to impress the critics",
+      "Asking for a better box for the next night"
+     ],
+     "answer": "B",
+     "why": "He was furious at the offer and answered as if the girl were Juliet herself, so meeting her was out of the question. He only went behind the scenes on the third night.",
+     "evidence": [
+      "offered to take me behind the scenes and introduce me to her.",
+      "I was furious with him, and told him that Juliet had been dead for hundreds of years and that her body was lying in a marble tomb in Verona."
+     ]
+    }
+   ],
+   "words": 5558
+  },
+  {
+   "id": "ch-05",
+   "label": "Chapter 5",
+   "units": [
+    "ch-05"
+   ],
+   "overview": "In the Vanes' lodgings on the Euston Road, Sibyl tells her mother she loves Prince Charming, a man whose real name she does not know. Her brother James, about to sail for Australia, takes her for a walk in the park and warns her against the gentleman. Before he leaves, he puts a question to his mother.",
+   "checkpoint": {
+    "question": "Sibyl teases Jim about his friend Tom Hardy, who gave him a hideous what?",
+    "answer": "pipe",
+    "evidence": "to Tom Hardy, who gave you that hideous pipe, or Ned Langton, who makes fun of you for smoking it."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Where do Sibyl and Jim catch the omnibus that takes them home from the park?",
+     "quote": null,
+     "options": [
+      "At the Marble Arch",
+      "At the Achilles Statue",
+      "At Hyde Park Corner",
+      "At Euston station"
+     ],
+     "answer": "A",
+     "why": "They hail an omnibus at the Marble Arch, which leaves them near their home in the Euston Road. The Achilles Statue is where Sibyl turned round to scold Jim a little earlier.",
+     "evidence": [
+      "At the Marble Arch they hailed an omnibus, which left them close to their shabby home in the Euston Road."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Sibyl plans her brother's future in Australia as they walk. Where is he to leave the ship?",
+     "quote": null,
+     "options": [
+      "Sydney",
+      "Adelaide",
+      "Melbourne",
+      "Brisbane"
+     ],
+     "answer": "C",
+     "why": "In her daydream he leaves the vessel at Melbourne, says goodbye to the captain and goes straight to the gold-fields, before she changes her mind and makes him a sheep-farmer.",
+     "evidence": [
+      "He was to leave the vessel at Melbourne, bid a polite good-bye to the captain, and go off at once to the gold-fields."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Jim finally asks his mother whether she was married to his father. The narrator says her moment of reckoning reminded her of something. What?",
+     "quote": null,
+     "options": [
+      "A melodrama she once starred in",
+      "A bad rehearsal",
+      "A scolding from her own mother",
+      "The last act of a tragedy"
+     ],
+     "answer": "B",
+     "why": "Mrs. Vane judges the scene as an actress would: it was not led up to, it was crude, like a bad rehearsal. Her sigh is one of relief, and she is almost disappointed.",
+     "evidence": [
+      "She heaved a deep sigh. It was a sigh of relief.",
+      "The situation had not been gradually led up to. It was crude. It reminded her of a bad rehearsal."
+     ]
+    }
+   ],
+   "words": 4378
+  },
+  {
+   "id": "ch-06",
+   "label": "Chapter 6",
+   "units": [
+    "ch-06"
+   ],
+   "overview": "At the Bristol, Lord Henry tells Basil that Dorian is engaged to an actress. Dorian arrives late and describes the night before, when Sibyl played Rosalind, and the three argue over dinner about pleasure, goodness and marriage. Then they set off to see her act, and Basil feels he has lost something.",
+   "checkpoint": {
+    "question": "Dorian says Sibyl, as Rosalind, had the delicate grace of what kind of figurine that Basil keeps in his studio?",
+    "answer": "Tanagra",
+    "evidence": "She had all the delicate grace of that Tanagra figurine that you have in your studio, Basil."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Before going to the theater the night before, where did Dorian have dinner?",
+     "quote": null,
+     "options": [
+      "At the Bristol, in a private room",
+      "At his club in Pall Mall",
+      "At Lord Henry's house in Curzon Street",
+      "At a little Italian restaurant in Rupert Street"
+     ],
+     "answer": "D",
+     "why": "Dorian says he dined at the little Italian restaurant in Rupert Street that Lord Henry had shown him, then went down to the theater at eight.",
+     "evidence": [
+      "After I left you yesterday evening, Harry, I dressed, had some dinner at that little Italian restaurant in Rupert Street you introduced me to, and went down at eight o’clock to the theatre."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "At the end of dinner, where does Dorian take a light for his cigarette?",
+     "quote": null,
+     "options": [
+      "From a candle on the round table",
+      "From a match out of Lord Henry's case",
+      "From a fire-breathing silver dragon",
+      "From a gas-jet beside the door"
+     ],
+     "answer": "C",
+     "why": "The waiter has set a fire-breathing silver dragon on the table, and Dorian lights up from it while telling Harry he talks nonsense.",
+     "evidence": [
+      "“What nonsense you talk, Harry!” cried the lad, taking a light from a fire-breathing silver dragon that the waiter had placed on the table."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Dorian says he made no formal proposal: he told Sibyl he loved her and she said she was not worthy to be his wife. What does Lord Henry imply in reply?",
+     "quote": null,
+     "options": [
+      "That Sibyl, not Dorian, was the one who raised marriage",
+      "That Sibyl has in fact turned Dorian down",
+      "That Dorian is far too young to think of a wife",
+      "That Sibyl was only acting a part from a play"
+     ],
+     "answer": "A",
+     "why": "Lord Henry calls women wonderfully practical: men forget to mention marriage and women always remind them. Her “not worthy to be your wife” is, in his reading, the first mention of the word.",
+     "evidence": [
+      "“Women are wonderfully practical,” murmured Lord Henry, “much more practical than we are. In situations of that kind we often forget to say anything about marriage, and they always remind us.”"
+     ]
+    }
+   ],
+   "words": 2821
+  },
+  {
+   "id": "ch-07",
+   "label": "Chapter 7",
+   "units": [
+    "ch-07"
+   ],
+   "overview": "Dorian takes Lord Henry and Basil to the crowded theater to see Sibyl play Juliet, and the performance goes badly. Afterwards he goes backstage, where Sibyl explains what has changed for her, and he answers her. He walks the streets until dawn, and back home he notices something in the portrait.",
+   "checkpoint": {
+    "question": "Met at the door by the manager, Dorian feels as if he had come to look for Miranda and had been met by whom?",
+    "answer": "Caliban",
+    "evidence": "He felt as if he had come to look for Miranda and had been met by Caliban."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "At what point in the play do Lord Henry and Basil leave the theater?",
+     "quote": null,
+     "options": [
+      "As soon as the first act is over",
+      "Just before the balcony scene begins",
+      "Only when the final curtain falls",
+      "After the second act, amid a storm of hisses"
+     ],
+     "answer": "D",
+     "why": "The two friends wait for the balcony scene of the second act, the true test of a Juliet. When the act ends in hisses, Lord Henry puts on his coat, and he and Basil leave Dorian to watch the rest alone.",
+     "evidence": [
+      "When the second act was over, there came a storm of hisses, and Lord Henry got up from his chair and put on his coat."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "At Covent Garden at dawn, what does a white-smocked carter give Dorian?",
+     "quote": null,
+     "options": [
+      "Some cherries, and he will not take money",
+      "A bunch of lilies from his cart",
+      "A cup of coffee from the piazza",
+      "A ride home on his empty wagon"
+     ],
+     "answer": "A",
+     "why": "The carter offers him cherries and refuses payment. The narrator says they were picked at midnight and the coldness of the moon had entered into them.",
+     "evidence": [
+      "A white-smocked carter offered him some cherries.",
+      "He thanked him, wondered why he refused to accept any money for them, and began to eat them listlessly."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Dorian first tries to dismiss the change in the portrait as an illusion. What image does the narrator use for what may have fallen on his brain?",
+     "quote": null,
+     "options": [
+      "A shadow cast by the Venetian lantern",
+      "That tiny scarlet speck that makes men mad",
+      "A fever caught in the slums at night",
+      "The smoke of the theater still in his eyes"
+     ],
+     "answer": "B",
+     "why": "He tells himself the night left phantoms behind and that the tiny scarlet speck that makes men mad had fallen on his brain. The next sentences undo the excuse: the picture is still watching him.",
+     "evidence": [
+      "Suddenly there had fallen upon his brain that tiny scarlet speck that makes men mad. The picture had not changed. It was folly to think so."
+     ]
+    }
+   ],
+   "words": 4421
+  },
+  {
+   "id": "ch-08",
+   "label": "Chapter 8",
+   "units": [
+    "ch-08"
+   ],
+   "overview": "Dorian wakes after noon, looks behind the screen at the portrait, and writes a long letter to Sibyl. Lord Henry arrives with news from the morning papers and talks Dorian into a new way of seeing it. Alone again, Dorian studies the picture and makes his choice before joining Harry at the opera.",
+   "checkpoint": {
+    "question": "The screen Dorian has drawn in front of the portrait is an old one, made of gilt Spanish what?",
+    "answer": "leather",
+    "evidence": "The screen was an old one, of gilt Spanish leather, stamped and wrought with a rather florid Louis-Quatorze pattern."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Among Dorian's morning letters is a heavy bill he has not dared send on to his guardians. What is it for?",
+     "quote": null,
+     "options": [
+      "A box at the opera for the whole season",
+      "A gold-topped bottle of rare perfume",
+      "A set of Renaissance tapestries",
+      "A chased silver Louis-Quinze toilet-set"
+     ],
+     "answer": "D",
+     "why": "The bill is for a silver Louis-Quinze toilet-set. His guardians are old-fashioned people who do not see that unnecessary things are now our only necessities.",
+     "evidence": [
+      "There was a rather heavy bill for a chased silver Louis-Quinze toilet-set that he had not yet had the courage to send on to his guardians,"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Lord Henry tells Dorian about a romance of his own that would not die. What did he wear all through one season, as artistic mourning for it?",
+     "quote": null,
+     "options": [
+      "Violets",
+      "Black gloves",
+      "White roses",
+      "A mourning ring"
+     ],
+     "answer": "A",
+     "why": "He wore nothing but violets for a season. The romance died in the end, killed, he thinks, by the lady's offer to sacrifice the whole world for him.",
+     "evidence": [
+      "I once wore nothing but violets all through one season, as a form of artistic mourning for a romance that would not die."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "After Lord Henry's speech about consolations, Dorian sighs, “I must sow poppies in my garden.” What is he wishing for?",
+     "quote": "I must sow poppies in my garden",
+     "options": [
+      "A way to mourn Sibyl in public",
+      "Flowers to lay on Sibyl's grave",
+      "Forgetfulness of what has happened",
+      "Bright colors to cheer a dark house"
+     ],
+     "answer": "C",
+     "why": "Poppies give opium and sleep, so they stand for oblivion. Lord Henry answers that there is no need, since life has always poppies in her hands: we forget anyway.",
+     "evidence": [
+      "“I must sow poppies in my garden,” sighed Dorian.",
+      "“There is no necessity,” rejoined his companion. “Life has always poppies in her hands."
+     ]
+    }
+   ],
+   "words": 5285
+  },
+  {
+   "id": "ch-09",
+   "label": "Chapter 9",
+   "units": [
+    "ch-09"
+   ],
+   "overview": "Basil calls the next morning, having read about Sibyl's death, and is shocked to hear that Dorian spent the evening at the opera. He asks to see the portrait and mentions plans for it. Frightened, Dorian gets Basil to explain at last why he once refused to show it, and after Basil leaves, Dorian decides the picture must be hidden.",
+   "checkpoint": {
+    "question": "When Basil arrives, Dorian is sipping pale-yellow wine from a gold-beaded bubble of what kind of glass?",
+    "answer": "Venetian",
+    "evidence": "sipping some pale-yellow wine from a delicate, gold-beaded bubble of Venetian glass"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Dorian recalls a young man Basil told him about, who said yellow satin could console one for all the miseries of life. Where were they when Basil told him?",
+     "quote": null,
+     "options": [
+      "At Oxford, in Basil's old rooms",
+      "At Selby Royal, in the picture-gallery",
+      "At Henley, during the regatta",
+      "Down at Marlow together"
+     ],
+     "answer": "D",
+     "why": "Dorian places the story “when we were down at Marlow together.” He says he is not like that young man, though he loves beautiful things one can touch.",
+     "evidence": [
+      "Well, I am not like that young man you told me of when we were down at Marlow together, the young man who used to say that yellow satin could console one for all the miseries of life."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Basil blames Dorian's servant for hiding the picture behind a screen. What reason does Dorian give for doing it himself?",
+     "quote": null,
+     "options": [
+      "The light was too strong on the portrait",
+      "The varnish had begun to crack in the heat",
+      "Lord Henry could not bear to look at it",
+      "The room was being repainted that week"
+     ],
+     "answer": "A",
+     "why": "Dorian says the servant only arranges his flowers and that he moved the screen himself because the light was too strong. Basil answers that it is an admirable place for the picture.",
+     "evidence": [
+      "No; I did it myself. The light was too strong on the portrait."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Dorian reminds Basil of a story Harry told about a philanthropist who spent twenty years getting an unjust law altered. Why does Dorian bring it up?",
+     "quote": null,
+     "options": [
+      "To say Basil should give his energy to causes, not friends",
+      "To suggest the law should look into Sibyl's death",
+      "To mock Basil, who came to console and is upset to find him consoled",
+      "To warn Basil that twenty years of painting may be wasted"
+     ],
+     "answer": "C",
+     "why": "The philanthropist was crushed with disappointment once his grievance was gone. Dorian compares him to Basil, who came to console and is furious to find nothing to console.",
+     "evidence": [
+      "You come down here to console me. That is charming of you. You find me consoled, and you are furious. How like a sympathetic person!",
+      "Finally he succeeded, and nothing could exceed his disappointment."
+     ]
+    }
+   ],
+   "words": 3891
+  },
+  {
+   "id": "ch-10",
+   "label": "Chapter 10",
+   "units": [
+    "ch-10"
+   ],
+   "overview": "Dorian asks his housekeeper for the key to his old schoolroom at the top of the house and sends for the frame-maker's men to carry the portrait up there, covered. Back in the library he finds the evening paper and a yellow-bound book sent round by Lord Henry, and the book holds him until he is late for dinner.",
+   "checkpoint": {
+    "question": "Mr. Hubbard has picked up an old Florentine frame at a sale. He says it is admirably suited for what kind of subject?",
+    "answer": "religious",
+    "evidence": "Admirably suited for a religious subject, Mr. Gray."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Lord Henry's note lies on a little table that was a present from Lady Radley, his guardian's wife. Where had she spent the winter before?",
+     "quote": null,
+     "options": [
+      "Algiers",
+      "Cairo",
+      "Nice",
+      "Madeira"
+     ],
+     "answer": "B",
+     "why": "The narrator calls Lady Radley a pretty professional invalid who had spent the preceding winter in Cairo. The table is of dark perfumed wood crusted with nacre.",
+     "evidence": [
+      "a present from Lady Radley, his guardian’s wife, a pretty professional invalid, who had spent the preceding winter in Cairo,"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "According to the paragraph marked in red pencil, where was the inquest on Sibyl Vane held?",
+     "quote": null,
+     "options": [
+      "At the Royal Theatre, Holborn",
+      "At a police court near the Euston Road",
+      "At the Bell Tavern, Hoxton Road",
+      "At the coroner's office in Covent Garden"
+     ],
+     "answer": "C",
+     "why": "The St. James's Gazette reports an inquest at the Bell Tavern, Hoxton Road, before the district coroner. The Royal Theatre, Holborn, is only where Sibyl had been engaged.",
+     "evidence": [
+      "An inquest was held this morning at the Bell Tavern, Hoxton Road, by Mr. Danby, the District Coroner, on the body of Sibyl Vane, a young actress recently engaged at the Royal Theatre, Holborn."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Back in the library, Dorian is sure Victor has already missed the picture. What makes him so sure?",
+     "quote": null,
+     "options": [
+      "The screen was not put back, and the bare wall shows",
+      "Victor met the frame-maker's men on the stairs",
+      "Victor asked him outright where it had gone",
+      "The tea was laid in a different room that day"
+     ],
+     "answer": "A",
+     "why": "Nobody set the screen back, so a blank space is visible on the wall where the picture hung. Dorian only wonders whether Victor met the men in the hall.",
+     "evidence": [
+      "The screen had not been set back, and a blank space was visible on the wall."
+     ]
+    }
+   ],
+   "words": 3225
+  },
+  {
+   "id": "ch-11",
+   "label": "Chapter 11",
+   "units": [
+    "ch-11"
+   ],
+   "overview": "Over many years, Dorian lives under the influence of the yellow book. The chapter moves through his studies of Catholic ritual, perfumes, music, jewels, embroideries and vestments, the rumors that gather around him in London society, and the family portraits in the gallery of his country house.",
+   "checkpoint": {
+    "question": "From which city does Dorian procure three emeralds of extraordinary size and richness of color?",
+    "answer": "Amsterdam",
+    "evidence": "He procured from Amsterdam three emeralds of extraordinary size and richness of colour,"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "In one way Dorian is luckier than the novel's hero, the young Parisian. Which?",
+     "quote": null,
+     "options": [
+      "He never runs through his fortune as the hero does",
+      "He never has the hero's dread of mirrors and still water",
+      "He is never shunned by his own family as the hero is",
+      "He never falls ill in the way the hero does at the end"
+     ],
+     "answer": "B",
+     "why": "The hero lost his beauty early and came to dread mirrors, polished metal and still water. Dorian never had cause to, and reads that part of the book with an almost cruel joy.",
+     "evidence": [
+      "He never knew—never, indeed, had any cause to know—that somewhat grotesque dread of mirrors, and polished metal surfaces, and still water which came upon the young Parisian so early in his life,"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "In his study of perfumes, Dorian wonders what each scent does to the mind. Which one does he connect with waking the memory of dead romances?",
+     "quote": null,
+     "options": [
+      "Frankincense",
+      "Ambergris",
+      "Musk",
+      "Violets"
+     ],
+     "answer": "D",
+     "why": "In the list, frankincense makes one mystical, ambergris stirs the passions, musk troubles the brain, and violets wake the memory of dead romances.",
+     "evidence": [
+      "wondering what there was in frankincense that made one mystical, and in ambergris that stirred one’s passions, and in violets that woke the memory of dead romances, and in musk that troubled the brain,"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "After a few years, Dorian gives up the villa at Trouville and the little house at Algiers that he shared with Lord Henry. Why?",
+     "quote": null,
+     "options": [
+      "Rumors about him had made him unwelcome abroad",
+      "Lord Henry would no longer travel with him",
+      "He could not bear to be far from the locked picture",
+      "He needed the money for his collections"
+     ],
+     "answer": "C",
+     "why": "He hated being separated from the picture and feared that someone would get into the room while he was away, bars or no bars. The same fear sends him rushing back to town from his house in Nottinghamshire.",
+     "evidence": [
+      "He hated to be separated from the picture that was such a part of his life, and was also afraid that during his absence some one might gain access to the room, in spite of the elaborate bars that he had caused to be placed upon the door."
+     ]
+    }
+   ],
+   "words": 7352
+  },
+  {
+   "id": "ch-12",
+   "label": "Chapter 12",
+   "units": [
+    "ch-12"
+   ],
+   "overview": "On a foggy November night, Dorian meets Basil in the street on his way to the Paris train and lets him into the house. Basil repeats what is being said about Dorian in London and names friends whose lives have gone wrong. Dorian answers with contempt, then offers to show him something upstairs.",
+   "checkpoint": {
+    "question": "Dorian teases Basil about how a fashionable painter travels: with an ulster and what kind of bag?",
+    "answer": "Gladstone",
+    "evidence": "A Gladstone bag and an ulster!"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Basil asks what has become of Dorian's French servant. What does Dorian say?",
+     "quote": null,
+     "options": [
+      "He was sent away for prying into locked rooms",
+      "He went into service with Lord Henry instead",
+      "He married Lady Radley's maid and set her up in Paris",
+      "He went home to France to run a café"
+     ],
+     "answer": "C",
+     "why": "Dorian believes the Frenchman married Lady Radley's maid and established her in Paris as an English dressmaker. He adds that he never liked the man but had nothing to complain of.",
+     "evidence": [
+      "I believe he married Lady Radley’s maid, and has established her in Paris as an English dressmaker."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Basil met Lord Staveley at dinner and Dorian's name came up. In connection with what?",
+     "quote": null,
+     "options": [
+      "A club election he was nearly blackballed in",
+      "The miniatures he lent to the exhibition at the Dudley",
+      "A yacht he had hired for the season",
+      "A dinner he gave for the Duke of Perth"
+     ],
+     "answer": "B",
+     "why": "The miniatures Dorian lent to the Dudley started the conversation. Staveley then said Dorian might have artistic tastes but was a man no pure-minded girl should know.",
+     "evidence": [
+      "Your name happened to come up in conversation, in connection with the miniatures you have lent to the exhibition at the Dudley."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Basil says he waited in the library from nine, then took pity on Dorian's tired servant and told him to go to bed as he let him out. What does this mean for the rest of the night?",
+     "quote": null,
+     "options": [
+      "The servant believes Basil has left the house",
+      "The servant is waiting up for Dorian in the hall",
+      "The servant saw Basil meet Dorian in the street",
+      "The servant has gone out to find Basil a cab"
+     ],
+     "answer": "A",
+     "why": "The servant let Basil out and went to bed, so as far as the household knows Basil left for his train. That is what Francis repeats in Chapter 13.",
+     "evidence": [
+      "Finally I took pity on your tired servant and told him to go to bed, as he let me out."
+     ]
+    }
+   ],
+   "words": 2762
+  },
+  {
+   "id": "ch-13",
+   "label": "Chapter 13",
+   "units": [
+    "ch-13"
+   ],
+   "overview": "Dorian leads Basil to the locked room at the top of the house and tears the curtain from the portrait. Basil looks for an explanation and begs Dorian to pray with him. What follows is quick, and Dorian spends the rest of the night covering his tracks before he looks up a name and an address.",
+   "checkpoint": {
+    "question": "The lamp Dorian carries upstairs, and goes back for afterwards, is of what workmanship?",
+    "answer": "Moorish",
+    "evidence": "It was a rather curious one of Moorish workmanship, made of dull silver inlaid with arabesques of burnished steel, and studded with coarse turquoises."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Told of Dorian's wish, Basil insists the change is impossible. What does he blame?",
+     "quote": null,
+     "options": [
+      "Lord Henry, who must have tampered with the canvas",
+      "Candle smoke that darkened the old varnish",
+      "Damp, mildew, and some mineral poison in his paints",
+      "Dorian, who must have painted over the face"
+     ],
+     "answer": "C",
+     "why": "Basil says the room is damp, mildew has got into the canvas, and his paints had some mineral poison in them. He insists the thing is impossible, though he recognizes his own brushwork and frame.",
+     "evidence": [
+      "The room is damp. Mildew has got into the canvas. The paints I used had some wretched mineral poison in them."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Why was there a knife lying on the painted chest in the room?",
+     "quote": null,
+     "options": [
+      "It was Basil's old palette-knife from the studio",
+      "Dorian had brought it up days before to cut some cord",
+      "Dorian kept it in the chest with his boyhood things",
+      "Dorian had carried it up hidden under the lamp"
+     ],
+     "answer": "B",
+     "why": "He had brought it up some days earlier to cut a piece of cord and forgotten to take it away, so nothing was planned before he saw it glimmer.",
+     "evidence": [
+      "It was a knife that he had brought up, some days before, to cut a piece of cord, and had forgotten to take away with him."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "In his fur coat, Dorian stops in the hall before slipping out of his own front door. Why does he wait?",
+     "quote": null,
+     "options": [
+      "He hears the policeman on his rounds outside",
+      "He is listening for Francis on the back stairs",
+      "He is deciding whether to burn the coat first",
+      "He is searching his pockets for the latch-key"
+     ],
+     "answer": "A",
+     "why": "He hears the slow tread of the policeman and sees the flash of his bull's-eye lantern in the window, so he holds his breath until it passes before drawing back the latch.",
+     "evidence": [
+      "There he paused, hearing the slow heavy tread of the policeman on the pavement outside and seeing the flash of the bull’s-eye reflected in the window. He waited and held his breath."
+     ]
+    }
+   ],
+   "words": 2501
+  },
+  {
+   "id": "ch-14",
+   "label": "Chapter 14",
+   "units": [
+    "ch-14"
+   ],
+   "overview": "The next morning Dorian writes to Alan Campbell, a chemist who was once his close friend, and passes the anxious wait with a book of French poems. Campbell arrives cold and refuses to help until Dorian writes something on a slip of paper. Campbell then spends the afternoon at work in the locked room.",
+   "checkpoint": {
+    "question": "Campbell keeps his hands in the pockets of what kind of coat?",
+    "answer": "Astrakhan",
+    "evidence": "He kept his hands in the pockets of his Astrakhan coat, and seemed not to have noticed the gesture with which he had been greeted."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "In the book Dorian reads while he waits, Gautier compares a statue in the porphyry-room of the Louvre to what?",
+     "quote": null,
+     "options": [
+      "A sonnet carved in stone",
+      "A violin left unplayed",
+      "A distant organ note",
+      "A contralto voice"
+     ],
+     "answer": "D",
+     "why": "Dorian broods over the verses on the statue Gautier compares to a contralto voice, the “monstre charmant” of the Louvre, before the book falls from his hand.",
+     "evidence": [
+      "he began to brood over those verses which, drawing music from kiss-stained marble, tell of that curious statue that Gautier compares to a contralto voice,"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Where did Dorian and Alan Campbell first meet?",
+     "quote": null,
+     "options": [
+      "In the laboratory at Cambridge",
+      "At Lady Berkshire's, the night Rubinstein played",
+      "At the opera, in Lord Henry's box",
+      "At a shooting party at Selby Royal"
+     ],
+     "answer": "B",
+     "why": "Music brought them together: they met at Lady Berkshire's on the night Rubinstein played and were then always seen together at the opera, for eighteen months.",
+     "evidence": [
+      "They had met at Lady Berkshire’s the night that Rubinstein played there,"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Campbell tells him, “You are mad, Dorian.” Dorian answers, “Ah! I was waiting for you to call me Dorian.” Why does this please him?",
+     "quote": "Ah! I was waiting for you to call me Dorian.",
+     "options": [
+      "Campbell has slipped from the cold “Gray” into their old familiarity",
+      "Campbell has said aloud a name the servants must not hear",
+      "Campbell has shown he knows who the dead man is",
+      "Campbell has finally agreed to do the work upstairs"
+     ],
+     "answer": "A",
+     "why": "Campbell arrived calling him “Gray” and saying he had meant never to enter the house again. His use of the first name, in anger, shows the old intimacy is not quite dead, and Dorian seizes on it.",
+     "evidence": [
+      "“I had intended never to enter your house again, Gray.",
+      "“Ah! I was waiting for you to call me Dorian.”"
+     ]
+    }
+   ],
+   "words": 4530
+  },
+  {
+   "id": "ch-15",
+   "label": "Chapter 15",
+   "units": [
+    "ch-15"
+   ],
+   "overview": "That evening Dorian dines at Lady Narborough's among guests he finds tedious, while Lord Henry keeps the table laughing. Afterwards Harry asks where Dorian went the night before, and Dorian leaves early. At home he burns what has to be burned, opens a cabinet, and at midnight goes out again in plain clothes.",
+   "checkpoint": {
+    "question": "Lady Narborough promises to go through what book that night to list the eligible young ladies for Dorian?",
+    "answer": "Debrett",
+    "evidence": "I shall go through Debrett carefully to-night and draw out a list of all the eligible young ladies."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Lady Narborough stays with her married daughter every summer. Where does she come from when she does?",
+     "quote": null,
+     "options": [
+      "Baden",
+      "Spa",
+      "Marienbad",
+      "Homburg"
+     ],
+     "answer": "D",
+     "why": "She visits them every summer after she comes from Homburg, and complains that there has not been a scandal in their neighborhood since the time of Queen Elizabeth.",
+     "evidence": [
+      "Of course I go and stay with them every summer after I come from Homburg,"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Lady Narborough scolds Dorian for leaving plate after plate untouched. She calls it “an insult to poor Adolphe.” Who is Adolphe?",
+     "quote": null,
+     "options": [
+      "Her late husband the ambassador",
+      "Her cook, who made the menu for Dorian",
+      "Her butler, who keeps filling his glass",
+      "Her son-in-law, Mr. Chapman"
+     ],
+     "answer": "B",
+     "why": "Adolphe is the one who “invented the menu specially” for Dorian, so he must be her cook. Her husband was Narborough, the butler is unnamed, and her son-in-law is Mr. Chapman.",
+     "evidence": [
+      "Lady Narborough kept scolding him for what she called “an insult to poor Adolphe, who invented the menu specially for you,”"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Lady Narborough was an excellent wife to one of our most tedious ambassadors. How did she bury him?",
+     "quote": null,
+     "options": [
+      "In the family vault at Narborough",
+      "In a churchyard near her daughter's home",
+      "Beside his father in Westminster Abbey",
+      "In a marble mausoleum she designed herself"
+     ],
+     "answer": "D",
+     "why": "The narrator says she buried her husband properly in a marble mausoleum of her own design, married off her daughters to rich elderly men, and then gave herself to French fiction, French cookery and French esprit.",
+     "evidence": [
+      "having buried her husband properly in a marble mausoleum, which she had herself designed,"
+     ]
+    }
+   ],
+   "words": 3137
+  },
+  {
+   "id": "ch-16",
+   "label": "Chapter 16",
+   "units": [
+    "ch-16"
+   ],
+   "overview": "Dorian's cab takes him east through the rain toward the river and an opium den near the docks, where he meets someone he knows and decides to move on. On the way to a second den, a man seizes him in an archway with a revolver. Dorian talks his way free, but a woman from the bar has more to say.",
+   "checkpoint": {
+    "question": "On the drive east, the moon hangs low in the sky like a yellow what?",
+    "answer": "skull",
+    "evidence": "The moon hung low in the sky like a yellow skull."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "In the first den, two women are mocking an old man who is brushing his coat sleeves. What does one of them say he thinks?",
+     "quote": null,
+     "options": [
+      "That the police are coming for him",
+      "That his coat has caught fire",
+      "That someone has stolen his purse",
+      "That he has red ants on him"
+     ],
+     "answer": "D",
+     "why": "One of the women laughs that he thinks he has red ants on him, and the old man whimpers in terror. It is one of the details that make the den real and squalid.",
+     "evidence": [
+      "“He thinks he’s got red ants on him,” laughed one of them, as Dorian passed by."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Dorian thought Adrian Singleton had left England. What does Adrian tell him about the bill?",
+     "quote": null,
+     "options": [
+      "He paid it himself with money from his father",
+      "Darlington has taken him to court over it",
+      "His brother paid it, and Darlington will do nothing",
+      "Dorian's own lawyer settled it for him"
+     ],
+     "answer": "C",
+     "why": "Adrian says Darlington will not act because his brother paid the bill at last, and that none of the chaps will speak to him now. Basil had raised Adrian's case in Chapter 12.",
+     "evidence": [
+      "Darlington is not going to do anything. My brother paid the bill at last."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Dorian tells Adrian he is going on to the other place. He adds, “I am sick of women who love one. Women who hate one are much more interesting.” Whom does he mean?",
+     "quote": null,
+     "options": [
+      "The woman at the bar who later takes his money",
+      "The “mad-cat” Adrian says will be at the den on the wharf",
+      "Sibyl Vane, whom he still blames for that night",
+      "The duchess, who is waiting for him at Selby"
+     ],
+     "answer": "B",
+     "why": "Adrian has just warned him that “that mad-cat” is sure to be at the place on the wharf, since this den will not have her now. Dorian's line answers that warning; he wants to go there anyway, and adds that the stuff is better.",
+     "evidence": [
+      "“That mad-cat is sure to be there. They won’t have her in this place now.”",
+      "Dorian shrugged his shoulders. “I am sick of women who love one. Women who hate one are much more interesting. Besides, the stuff is better.”"
+     ]
+    }
+   ],
+   "words": 3107
+  },
+  {
+   "id": "ch-17",
+   "label": "Chapter 17",
+   "units": [
+    "ch-17"
+   ],
+   "overview": "A week later Dorian is entertaining a house party at Selby Royal. Over tea in the conservatory, Lord Henry and his cousin Gladys, the Duchess of Monmouth, trade quick epigrams about names, England, love and women while Dorian goes off to fetch her orchids. Something he sees at the far end ends the conversation.",
+   "checkpoint": {
+    "question": "Lord Henry's gardener told him his spotted orchid was a fine specimen of what, a name Harry finds dreadful?",
+    "answer": "Robinsoniana",
+    "evidence": "He told me it was a fine specimen of Robinsoniana, or something dreadful of that kind."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "At tea, Lady Narborough pretends to listen to the Duke of Monmouth. What is he describing?",
+     "quote": null,
+     "options": [
+      "The last Brazilian beetle he added to his collection",
+      "A run with the hounds the season before",
+      "His latest speech in the House of Lords",
+      "The orchid house he means to build"
+     ],
+     "answer": "A",
+     "why": "The duke is describing the newest Brazilian beetle in his collection. It fits the duchess's joke that Monmouth married her as the best specimen he could find of a modern butterfly.",
+     "evidence": [
+      "On a peach-coloured divan sat Lady Narborough, pretending to listen to the duke’s description of the last Brazilian beetle that he had added to his collection."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Dorian tells the duchess she should give her maid notice. Why does she say she dares not?",
+     "quote": null,
+     "options": [
+      "The maid knows too many of her secrets",
+      "The maid was hired by the duke himself",
+      "The maid invents hats for her out of nothing",
+      "The maid can dress her in ten minutes"
+     ],
+     "answer": "C",
+     "why": "The maid makes her hats, including the one she wore at Lady Hilstone's garden-party, out of nothing. Lord Henry adds that good reputations are made the same way.",
+     "evidence": [
+      "“I daren’t, Mr. Gray. Why, she invents hats for me."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Lord Henry tells Gladys that a burnt child loves the fire. She says, “I am not even singed. My wings are untouched.” He answers, “You use them for everything, except” what?",
+     "quote": null,
+     "options": [
+      "Show",
+      "Flight",
+      "Fanning",
+      "Shelter"
+     ],
+     "answer": "B",
+     "why": "“You use them for everything, except flight.” The wings she boasts of are the means of escape she will not use: she is flirting with Dorian, not getting away from him.",
+     "evidence": [
+      "“I am not even singed. My wings are untouched.”",
+      "“You use them for everything, except flight.”"
+     ]
+    }
+   ],
+   "words": 1796
+  },
+  {
+   "id": "ch-18",
+   "label": "Chapter 18",
+   "units": [
+    "ch-18"
+   ],
+   "overview": "Dorian stays in his room for a day in terror, then joins the shooting party in the park on the third morning. A shot fired into a thicket of alders kills a man, and Dorian takes it as an omen and resolves to leave Selby that night. Before he goes, the head-keeper comes to him about the dead man.",
+   "checkpoint": {
+    "question": "Dorian thinks of sending a wire to whom to have the yacht got ready?",
+    "answer": "Harvey",
+    "evidence": "I think I shall send a wire to Harvey to have the yacht got ready."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "In the stable at the Home Farm, how is the dead man dressed?",
+     "quote": null,
+     "options": [
+      "In a coarse shirt and blue trousers",
+      "In a pea-jacket and a sailor's cap",
+      "In a beater's smock and gaiters",
+      "In a grey ulster buttoned up"
+     ],
+     "answer": "A",
+     "why": "He lies on a heap of sacking in a coarse shirt and blue trousers, with a spotted handkerchief over his face and a candle in a bottle beside him.",
+     "evidence": [
+      "On a heap of sacking in the far corner was lying the dead body of a man dressed in a coarse shirt and a pair of blue trousers."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "When the duchess comes out to meet them after the shooting, Dorian says she looks like which goddess in a tailor-made gown?",
+     "quote": null,
+     "options": [
+      "Juno",
+      "Artemis",
+      "Minerva",
+      "Venus"
+     ],
+     "answer": "B",
+     "why": "Dorian greets her as “looking like Artemis in a tailor-made gown,” the huntress goddess, fitting for a shooting day.",
+     "evidence": [
+      "Ah! here is the duchess, looking like Artemis in a tailor-made gown."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "On the terrace, the duchess sighs, “I am tired of strawberry leaves.” Lord Henry answers, “They become you,” and she says, “Only in public.” What are the strawberry leaves?",
+     "quote": null,
+     "options": [
+      "The flowers in her garden at home",
+      "Her husband's money",
+      "Her many flirtations",
+      "Her rank as a duchess"
+     ],
+     "answer": "D",
+     "why": "Strawberry leaves decorate a duke's coronet. Lord Henry says disillusion “came to you crowned,” and she will not part with “a petal”: she means her title and the marriage that brought it.",
+     "evidence": [
+      "“It came to you crowned.”",
+      "“I am tired of strawberry leaves.”"
+     ]
+    }
+   ],
+   "words": 3325
+  },
+  {
+   "id": "ch-19",
+   "label": "Chapter 19",
+   "units": [
+    "ch-19"
+   ],
+   "overview": "Back in London, Dorian tells Lord Henry over dinner that he has begun to be good, and describes what he did in the country. Harry passes on the talk of the town, including the six weeks of gossip about Basil's disappearance, and the two discuss murder, the old portrait and the soul while Dorian plays Chopin.",
+   "checkpoint": {
+    "question": "Lord Henry asks why anyone would murder Basil, who was very popular and always wore what make of watch?",
+    "answer": "Waterbury",
+    "evidence": "Basil was very popular, and always wore a Waterbury watch."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Lord Henry wants to take Dorian to White's. Who is waiting there to meet him?",
+     "quote": null,
+     "options": [
+      "Young Lord Poole, who has copied his neckties",
+      "Lord Grotrian, back from Monte Carlo",
+      "Geoffrey Clouston, still upset about the beater",
+      "Lord Kent's son, just back from abroad"
+     ],
+     "answer": "A",
+     "why": "Young Lord Poole, Bournemouth's eldest son, has already copied Dorian's neckties and begged to be introduced. When Harry adds that the boy reminds him of Dorian, Dorian says he hopes not.",
+     "evidence": [
+      "There is some one at White’s who wants immensely to know you—young Lord Poole, Bournemouth’s eldest son. He has already copied your neckties,"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "While talking about Basil, Lord Henry strolls over to stroke a bird. What is it?",
+     "quote": null,
+     "options": [
+      "A white cockatoo on a brass ring",
+      "A green macaw in a gilt cage",
+      "A grey Java parrot with pink crest and tail",
+      "A canary in the window"
+     ],
+     "answer": "C",
+     "why": "It is a large, grey-plumaged Java parrot with a pink crest and tail, balancing on a bamboo perch, which sways when he touches it.",
+     "evidence": [
+      "Lord Henry strolled across the room and began to stroke the head of a curious Java parrot, a large, grey-plumaged bird with pink crest and tail, that was balancing itself upon a bamboo perch."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "As Dorian plays, Lord Henry says, “It seems to me that you are the young Apollo and that I am” whom, listening to you?",
+     "quote": null,
+     "options": [
+      "Midas",
+      "Orpheus",
+      "Pan",
+      "Marsyas"
+     ],
+     "answer": "D",
+     "why": "He casts himself as Marsyas, the satyr who challenged Apollo at music and lost, and he goes on at once to speak of sorrows of his own and the tragedy of old age.",
+     "evidence": [
+      "It seems to me that you are the young Apollo and that I am Marsyas listening to you."
+     ]
+    }
+   ],
+   "words": 3586
+  },
+  {
+   "id": "ch-20",
+   "label": "Chapter 20",
+   "units": [
+    "ch-20"
+   ],
+   "overview": "Dorian walks home on a warm night and thinks over what Lord Henry has said, the village girl he spared and the deaths behind him. He takes the lamp up to the locked room to see whether the portrait has changed, and decides what to do about it. His servants are left to break in.",
+   "checkpoint": {
+    "question": "Dorian remembers Hetty's laugh as just like what bird singing?",
+    "answer": "thrush",
+    "evidence": "What a laugh she had!—just like a thrush singing."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "As he walks home, Dorian remembers how pretty Hetty looked. In what?",
+     "quote": null,
+     "options": [
+      "Muslin gowns and a straw bonnet",
+      "A blue print frock and an apron",
+      "A shawl and a cap of lace",
+      "Cotton dresses and large hats"
+     ],
+     "answer": "D",
+     "why": "He thinks of her in her cotton dresses and her large hats, and of her laugh like a thrush singing.",
+     "evidence": [
+      "And how pretty she had been in her cotton dresses and her large hats!"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Holding Lord Henry's mirror, Dorian recalls a mad letter that ended, “The world is changed because you are made of ivory and gold.” What did it say the curves of his lips do?",
+     "quote": "The world is changed because you are made of ivory and gold.",
+     "options": [
+      "Outshine the sun",
+      "Silence the world",
+      "Rewrite history",
+      "Command the stars"
+     ],
+     "answer": "C",
+     "why": "The letter's last words are “The curves of your lips rewrite history.” Dorian repeats them to himself, then loathes his beauty and grinds the mirror under his heel.",
+     "evidence": [
+      "“The world is changed because you are made of ivory and gold. The curves of your lips rewrite history.”"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Two gentlemen in the square hear the cry, fetch a policeman, and sneer when he tells them whose house it is. Who is one of them?",
+     "quote": null,
+     "options": [
+      "Lord Kent",
+      "Sir Henry Ashton's uncle",
+      "The Duke of Berwick",
+      "Lord Staveley"
+     ],
+     "answer": "B",
+     "why": "The narrator names one of them as Sir Henry Ashton's uncle. In Chapter 12, Basil had named Ashton as a friend of Dorian's who had to leave England with a tarnished name.",
+     "evidence": [
+      "One of them was Sir Henry Ashton’s uncle."
+     ]
+    }
+   ],
+   "words": 1924
+  }
+ ],
+ "passages": [
+  {
+   "unit": "preface",
+   "ref": "The Preface",
+   "speaker": "Wilde, in his own voice",
+   "quote": "There is no such thing as a moral or an immoral book. Books are well written, or badly written. That is all.",
+   "note": "Wilde added the Preface for the 1891 book. Ask students to test it against Chapter 19, where Dorian says Lord Henry poisoned him with a book and Harry replies that art has no influence upon action."
+  },
+  {
+   "unit": "ch-02",
+   "ref": "Chapter 2",
+   "speaker": "Dorian, before the finished portrait",
+   "quote": "If it were I who was to be always young, and the picture that was to grow old! For that—for that—I would give everything! Yes, there is nothing in the whole world I would not give! I would give my soul for that!",
+   "note": "The wish the plot depends on, spoken soon after Lord Henry's speech on youth. Nothing in the scene shows it being granted; Dorian only remembers these words in Chapter 7, when he sees the cruel mouth on the canvas."
+  },
+  {
+   "unit": "ch-07",
+   "ref": "Chapter 7",
+   "speaker": "Sibyl to Dorian, in the greenroom",
+   "quote": "I knew nothing but shadows, and I thought them real. You came—oh, my beautiful love!—and you freed my soul from prison. You taught me what reality really is.",
+   "note": "Sibyl explains her bad Juliet as a step from art into life, the reverse of the path Dorian is taking. He answers that without her art she is nothing. Students can set her speech beside Lord Henry's remark at dinner in Chapter 6 that acting is so much more real than life."
+  },
+  {
+   "unit": "ch-11",
+   "ref": "Chapter 11",
+   "speaker": "Narrator",
+   "quote": "The Renaissance knew of strange manners of poisoning—poisoning by a helmet and a lighted torch, by an embroidered glove and a jewelled fan, by a gilded pomander and by an amber chain. Dorian Gray had been poisoned by a book.",
+   "note": "The last lines of the long catalogue chapter. The narrator blames the yellow book, and Dorian repeats the charge to Lord Henry in Chapter 19. Ask whether the book corrupts him or only gives him words for what Lord Henry started in the garden."
+  },
+  {
+   "unit": "ch-13",
+   "ref": "Chapter 13",
+   "speaker": "Basil to Dorian, in the locked room",
+   "quote": "The prayer of your pride has been answered. The prayer of your repentance will be answered also. I worshipped you too much. I am punished for it. You worshipped yourself too much. We are both punished.",
+   "note": "Basil reads the portrait as a moral lesson and offers a way back through prayer. Dorian answers that it is too late, and the next thing he feels is hatred for Basil, as if the picture had whispered it to him."
+  },
+  {
+   "unit": "ch-20",
+   "ref": "Chapter 20",
+   "speaker": "Narrator, Dorian's thoughts",
+   "quote": "Through vanity he had spared her. In hypocrisy he had worn the mask of goodness. For curiosity’s sake he had tried the denial of self. He recognized that now.",
+   "note": "Dorian hoped his one good deed, sparing Hetty, would show on the canvas, and finds only a look of cunning and the wrinkle of the hypocrite. This verdict is the reason he takes up the knife a few lines later."
+  }
+ ],
+ "qa": {
+  "items": 80,
+  "pass": 80,
+  "leak": 0,
+  "failing": 0,
+  "summary_words": 250
+ }
+}

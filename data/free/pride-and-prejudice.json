@@ -1,0 +1,1402 @@
+{
+ "slug": "pride-and-prejudice",
+ "updated": "2026-10-24",
+ "about": [
+  "Pride and Prejudice first appeared on 28 January 1813, in three volumes printed for T. Egerton of the Military Library, Whitehall. Jane Austen died in 1817, and the text is in the public domain. In the 1813 edition the chapter numbers start again in each volume; in the continuous numbering used here, Volume I is Chapters 1 to 23, Volume II is Chapters 24 to 42, and Volume III is Chapters 43 to 61, so a student whose edition says Volume II, Chapter 1 is in our Chapter 24. Our copy is Project Gutenberg eBook #1342, the 1894 George Allen edition with Hugh Thomson's illustrations; we leave out George Saintsbury's preface. The 61 chapters come to 122,402 words. Chapter 18, the Netherfield ball, is the longest at 5,194 words, followed by Chapter 43, the visit to Pemberley, at 4,848. Chapter 12 is the shortest, at 677.",
+  "Where students lose the thread: names and letters. At Longbourn and Netherfield \"Miss Bennet\" means Jane, the eldest, but in Kent, with Jane away, Elizabeth is Miss Bennet to Lady Catherine and even to the narrator; Kitty is also Catherine, Elizabeth answers to Lizzy and Eliza, and Charlotte Lucas is Mrs. Collins after her wedding in Chapter 26. Much of the plot arrives in letters that look backward. Darcy's letter in Chapter 35 covers years of his history with Wickham, and Mrs. Gardiner's letter in Chapter 52 tells what Darcy had been doing in London since Chapter 46, while the family thought Mr. Gardiner was doing it. Each check below covers three chapters (four in the last) with a one-word checkpoint and three multiple-choice questions on details from inside those chapters. They show whether a student read closely. They do not measure an essay-level reading of the novel's irony."
+ ],
+ "checks": [
+  {
+   "id": "ch-01-03",
+   "label": "Chapters 1–3",
+   "units": [
+    "ch-01",
+    "ch-02",
+    "ch-03"
+   ],
+   "overview": "Netherfield Park has been let to a rich young man, Mr. Bingley, and Mrs. Bennet wants her husband to call on him at once. At the Meryton assembly Bingley dances with Jane, while his friend Mr. Darcy refuses to be introduced to anyone and slights Elizabeth where she can hear him.",
+   "checkpoint": {
+    "question": "Mrs. Bennet lists Bingley's partners at the assembly until her husband cuts her off. Which dance is she naming when he stops her?",
+    "answer": "Boulanger",
+    "evidence": "and the two sixth with Lizzy, and the Boulanger"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "According to Mrs. Long's report, how did the new tenant first come down to see Netherfield?",
+     "quote": null,
+     "options": [
+      "On horseback, with a single groom",
+      "In a chaise and four, on a Monday",
+      "By the London coach, unannounced",
+      "In Sir William's carriage, as his guest"
+     ],
+     "answer": "B",
+     "why": "Mrs. Bennet passes on Mrs. Long's news: he came down on Monday in a chaise and four, liked the place, and agreed with Mr. Morris at once.",
+     "evidence": [
+      "that he came down on Monday in a chaise and four to see the place, and was so much delighted with it that he agreed with Mr. Morris immediately;"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Before the assembly a report says Bingley will bring twelve ladies and seven gentlemen from London, and \"the girls grieved over such a number of ladies.\" Why would the number grieve them?",
+     "quote": null,
+     "options": [
+      "The assembly-room could not hold such a crowd",
+      "Their mother could not dine so large a party",
+      "They had no new gowns to match London fashions",
+      "So many ladies would be rivals for the gentlemen"
+     ],
+     "answer": "D",
+     "why": "Twelve fashionable ladies from London would compete with them for partners and for Bingley's notice. So they are comforted the day before the ball to hear he has brought only six, and five arrive in all.",
+     "evidence": [
+      "a report soon followed that Mr. Bingley was to bring twelve ladies and seven gentlemen with him to the assembly. The girls grieved over such a number of ladies; but were comforted the day before the ball by hearing that, instead of twelve, he had brought only six with him from London,"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Mrs. Bennet and her daughters try to get a description of Bingley out of Mr. Bennet: \"They attacked him in various ways, with barefaced questions, ingenious suppositions, and distant surmises; but he eluded the skill of them all\" What does the narrator's language make of their questioning?",
+     "quote": "They attacked him in various ways, with barefaced questions, ingenious suppositions, and distant surmises; but he eluded the skill of them all",
+     "options": [
+      "A siege that he slips out of",
+      "A trial at which he refuses to testify",
+      "A lesson he is too slow to follow",
+      "A dance in which he will not stand up"
+     ],
+     "answer": "A",
+     "why": "\"Attacked him in various ways\" and \"eluded the skill of them all\" describe an assault from several sides that he escapes. Beaten, the ladies have to fall back on Lady Lucas's second-hand report.",
+     "evidence": [
+      "They attacked him in various ways, with barefaced questions, ingenious suppositions, and distant surmises; but he eluded the skill of them all; and they were at last obliged to accept the second-hand intelligence of their neighbour, Lady Lucas."
+     ]
+    }
+   ],
+   "words": 3421
+  },
+  {
+   "id": "ch-04-06",
+   "label": "Chapters 4–6",
+   "units": [
+    "ch-04",
+    "ch-05",
+    "ch-06"
+   ],
+   "overview": "Jane and Elizabeth talk over the ball, and the narrator sketches the Bingley sisters and the friendship between Bingley and Darcy. The Lucases call at Longbourn to discuss Darcy's pride. At Lucas Lodge, Charlotte and Elizabeth disagree about how much a woman should show, and Darcy begins to notice Elizabeth.",
+   "checkpoint": {
+    "question": "Elizabeth says four evenings have taught Jane and Bingley only that they both like Vingt-un better than which card game?",
+    "answer": "Commerce",
+    "evidence": "these four evenings have enabled them to ascertain that they both like Vingt-un better than Commerce"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "At Lucas Lodge, Sir William tells Darcy that he once thought of settling in town. Why did he not?",
+     "quote": null,
+     "options": [
+      "He could not afford a house in a good street",
+      "His daughters preferred the Meryton balls",
+      "He feared the London air might not agree with Lady Lucas",
+      "Lady Lucas would not leave her neighbours"
+     ],
+     "answer": "C",
+     "why": "He says he is fond of superior society, \"but I did not feel quite certain that the air of London would agree with Lady Lucas.\" He pauses for an answer, and Darcy gives none.",
+     "evidence": [
+      "I had once some thoughts of fixing in town myself, for I am fond of superior society; but I did not feel quite certain that the air of London would agree with Lady Lucas."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Of Sir William Lucas's knighthood, the narrator says: \"The distinction had, perhaps, been felt too strongly.\" What does the rest of the paragraph show this means?",
+     "quote": "The distinction had, perhaps, been felt too strongly.",
+     "options": [
+      "He gave up trade and town to dwell on his own importance",
+      "He grew harsh and proud toward his old customers",
+      "He spent his fortune trying to live like a lord",
+      "He quarreled with neighbors who ignored his title"
+     ],
+     "answer": "A",
+     "why": "The honor gave him a disgust for his business and his market town, and he moved to Lucas Lodge to think with pleasure of his own importance. The narrator adds that it did not make him supercilious, which rules out the harsher readings.",
+     "evidence": [
+      "It had given him a disgust to his business and to his residence in a small market town;",
+      "where he could think with pleasure of his own importance, and, unshackled by business, occupy himself solely in being civil to all the world."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "At Sir William's party, why does Elizabeth turn to Darcy and ask whether she expressed herself \"uncommonly well\" when teasing Colonel Forster?",
+     "quote": null,
+     "options": [
+      "She wants him to support her plea for a ball",
+      "Sir William has asked her to draw him out",
+      "She hopes to make Miss Bingley jealous of her",
+      "Charlotte has dared her to mention his listening"
+     ],
+     "answer": "D",
+     "why": "Elizabeth has told Charlotte that Darcy keeps listening to her conversation and that she will let him know she sees it. Charlotte defies her to say so, and the dare is what provokes her.",
+     "evidence": [
+      "But if he does it any more, I shall certainly let him know that I see what he is about.",
+      "Miss Lucas defied her friend to mention such a subject to him, which immediately provoking Elizabeth to do it, she turned to him and said"
+     ]
+    }
+   ],
+   "words": 4401
+  },
+  {
+   "id": "ch-07-09",
+   "label": "Chapters 7–9",
+   "units": [
+    "ch-07",
+    "ch-08",
+    "ch-09"
+   ],
+   "overview": "The Bennets' fortune and the entail are explained, and a militia regiment arrives in Meryton. Jane rides to Netherfield in the rain, falls ill and has to stay. Elizabeth walks there to nurse her and spends her evenings with the Netherfield party, until Mrs. Bennet visits with Kitty and Lydia.",
+   "checkpoint": {
+    "question": "At Netherfield, Mrs. Bennet praises Bingley's \"sweet room\" and its charming prospect over what kind of walk?",
+    "answer": "gravel",
+    "evidence": "You have a sweet room here, Mr. Bingley, and a charming prospect over that gravel walk."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "On the walk to Meryton with Elizabeth, why is Lydia eager to make haste?",
+     "quote": null,
+     "options": [
+      "To reach the milliner's before it closes",
+      "To hear her aunt's news of an officers' ball",
+      "To meet Mr. Denny on his return from town",
+      "To see Captain Carter before he goes to London"
+     ],
+     "answer": "D",
+     "why": "Earlier that chapter Lydia hoped to see Captain Carter, \"as he was going the next morning to London.\" On the walk she says that if they hurry they may see him \"before he goes.\"",
+     "evidence": [
+      "her hope of seeing him in the course of the day, as he was going the next morning to London.",
+      "“If we make haste,” said Lydia, as they walked along, “perhaps we may see something of Captain Carter, before he goes.”"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "When Elizabeth answers Bingley about intricate characters, Mrs. Bennet cries out to her: \"remember where you are, and do not run on in the wild manner that you are suffered to do at home.\" What does \"suffered\" mean here?",
+     "quote": "remember where you are, and do not run on in the wild manner that you are suffered to do at home.",
+     "options": [
+      "Punished",
+      "Allowed",
+      "Taught",
+      "Hurt"
+     ],
+     "answer": "B",
+     "why": "To be suffered to do something is to be allowed to do it. Mrs. Bennet admits, in front of the Netherfield party, that Elizabeth's lively talk goes unchecked at Longbourn.",
+     "evidence": [
+      "Lizzy,” cried her mother, “remember where you are, and do not run on in the wild manner that you are suffered to do at home."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "At Netherfield, Mrs. Bennet guesses that Charlotte went home because \"she was wanted about the mince-pies.\" What is she hinting to Bingley?",
+     "quote": null,
+     "options": [
+      "Charlotte is a better cook than any Bennet girl",
+      "The Lucases keep too many servants for their income",
+      "The Lucas girls must do work that her servants do",
+      "Charlotte left early to avoid meeting Darcy"
+     ],
+     "answer": "C",
+     "why": "She follows the guess at once with a boast: she keeps servants who do their own work, and her daughters are brought up differently. The mince-pies are a dig at the Lucases' household.",
+     "evidence": [
+      "I fancy she was wanted about the mince-pies. For my part, Mr. Bingley, I always keep servants that can do their own work; my daughters are brought up differently."
+     ]
+    }
+   ],
+   "words": 5678
+  },
+  {
+   "id": "ch-10-12",
+   "label": "Chapters 10–12",
+   "units": [
+    "ch-10",
+    "ch-11",
+    "ch-12"
+   ],
+   "overview": "With Jane slowly recovering, Elizabeth spends her evenings in the Netherfield drawing-room, watching Miss Bingley court Darcy and arguing with Darcy about friendship, pride and character. Darcy realizes he is in some danger of admiring her. The sisters ask to go home, and Darcy takes care to show no sign of admiration before they leave.",
+   "checkpoint": {
+    "question": "Miss Bingley suggests hanging the Philipses' portraits at Pemberley next to Darcy's great-uncle, who was a what?",
+    "answer": "judge",
+    "evidence": "Put them next to your great-uncle the judge."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "After tea at Netherfield, with cards refused, how is Mrs. Hurst mainly occupied?",
+     "quote": null,
+     "options": [
+      "Playing with her bracelets and rings",
+      "Reading the second volume of a novel",
+      "Netting a purse beside the fire",
+      "Writing letters to friends in town"
+     ],
+     "answer": "A",
+     "why": "Mr. Hurst goes to sleep on a sofa, Darcy and Miss Bingley take up books, and Mrs. Hurst is \"principally occupied in playing with her bracelets and rings,\" joining in her brother's talk with Jane now and then.",
+     "evidence": [
+      "and Mrs. Hurst, principally occupied in playing with her bracelets and rings, joined now and then in her brother’s conversation with Miss Bennet."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Bingley jokes about why he defers to his friend: \"I declare I do not know a more awful object than Darcy on particular occasions, and in particular places; at his own house especially\" What does \"awful\" mean here?",
+     "quote": "I declare I do not know a more awful object than Darcy on particular occasions, and in particular places; at his own house especially",
+     "options": [
+      "Very badly behaved",
+      "Sad and lonely to look at",
+      "Inspiring awe or dread",
+      "Ugly and ill-dressed"
+     ],
+     "answer": "C",
+     "why": "Bingley says he would not pay Darcy half so much deference if he were not \"such a great tall fellow.\" \"Awful\" keeps its older sense: a figure who inspires awe. Darcy smiles, but Elizabeth thinks him rather offended.",
+     "evidence": [
+      "I assure you that if Darcy were not such a great tall fellow, in comparison with myself, I should not pay him half so much deference.",
+      "I declare I do not know a more awful object than Darcy on particular occasions, and in particular places; at his own house especially, and of a Sunday evening, when he has nothing to do."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Bingley jokes that Darcy is a great tall fellow and an awful object on a Sunday evening. Why does Elizabeth check her laugh?",
+     "quote": null,
+     "options": [
+      "Miss Bingley is frowning at her across the room",
+      "She can see that Darcy is rather offended",
+      "She thinks the joke unkind to Bingley himself",
+      "She fears waking Jane, who is asleep upstairs"
+     ],
+     "answer": "B",
+     "why": "Darcy smiles, but Elizabeth thinks she can perceive that he is rather offended, \"and therefore checked her laugh.\" Miss Bingley, meanwhile, scolds her brother for talking nonsense.",
+     "evidence": [
+      "Mr. Darcy smiled; but Elizabeth thought she could perceive that he was rather offended, and therefore checked her laugh."
+     ]
+    }
+   ],
+   "words": 4507
+  },
+  {
+   "id": "ch-13-15",
+   "label": "Chapters 13–15",
+   "units": [
+    "ch-13",
+    "ch-14",
+    "ch-15"
+   ],
+   "overview": "Mr. Bennet announces a visitor: his cousin Mr. Collins, the clergyman who will inherit Longbourn, whose letter offers an olive branch. Collins praises his patroness, Lady Catherine de Bourgh, and plans to choose a wife among his cousins. In Meryton the girls meet a new officer, Mr. Wickham, and see a strange meeting between him and Darcy.",
+   "checkpoint": {
+    "question": "Thinking the stranger must be Bingley, Mrs. Bennet laments that there is not a bit of what to be got today?",
+    "answer": "fish",
+    "evidence": "there is not a bit of fish to be got to-day."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Lydia interrupts Fordyce's Sermons with news that her uncle Philips talks of turning away his servant Richard. Who, she says, will hire him?",
+     "quote": null,
+     "options": [
+      "Mr. Bingley",
+      "Colonel Forster",
+      "Sir William Lucas",
+      "Mrs. Long"
+     ],
+     "answer": "B",
+     "why": "Lydia reports that if her uncle turns Richard away, Colonel Forster will hire him; her aunt told her so on Saturday.",
+     "evidence": [
+      "my uncle Philips talks of turning away Richard? and if he does, Colonel Forster will hire him. My aunt told me so herself on Saturday."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Mr. Bennet invites Mr. Collins to join the walk to Meryton, to get him out of the library, and the narrator adds: \"Mr. Collins, being in fact much better fitted for a walker than a reader, was extremely well pleased to close his large book, and go.\" What does the remark suggest about Collins in the library?",
+     "quote": "Mr. Collins, being in fact much better fitted for a walker than a reader, was extremely well pleased to close his large book, and go.",
+     "options": [
+      "He found Mr. Bennet's books too worldly",
+      "He had already finished the folio",
+      "He meant to borrow the book for Hunsford",
+      "His reading there was only a pretense"
+     ],
+     "answer": "D",
+     "why": "He had been \"nominally engaged with one of the largest folios\" while really talking to Mr. Bennet about his house and garden. A man better fitted for walking than reading shuts the book gladly.",
+     "evidence": [
+      "there he would continue, nominally engaged with one of the largest folios in the collection, but really talking to Mr. Bennet, with little cessation, of his house and garden at Hunsford.",
+      "Mr. Collins, being in fact much better fitted for a walker than a reader, was extremely well pleased to close his large book, and go."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Mrs. Philips says she would have known nothing of her nieces' return from Netherfield but for Mr. Jones's shopboy. Why had she not heard of it sooner?",
+     "quote": null,
+     "options": [
+      "Their own carriage had not gone to fetch them",
+      "Her husband had kept the news from her",
+      "Lydia had promised to keep it secret",
+      "The sisters had come home after dark"
+     ],
+     "answer": "A",
+     "why": "Nobody saw the Longbourn carriage go out for them, so the news did not reach Meryton that way. She learned it only when the shopboy said no more draughts were to be sent to Netherfield.",
+     "evidence": [
+      "which, as their own carriage had not fetched them, she should have known nothing about, if she had not happened to see Mr. Jones’s shopboy in the street, who had told her that they were not to send any more draughts to Netherfield, because the Miss Bennets were come away,"
+     ]
+    }
+   ],
+   "words": 4516
+  },
+  {
+   "id": "ch-16-18",
+   "label": "Chapters 16–18",
+   "units": [
+    "ch-16",
+    "ch-17",
+    "ch-18"
+   ],
+   "overview": "At Mrs. Philips's card party Wickham tells Elizabeth that Darcy denied him a living left to him by Darcy's father. Elizabeth repeats his story to Jane. At the Netherfield ball Wickham is absent, Elizabeth dances with Collins and then with Darcy, and her family exposes itself in front of the Netherfield party.",
+   "checkpoint": {
+    "question": "At Mrs. Philips's party, Mr. Collins is kept abundantly supplied with coffee and what?",
+    "answer": "muffin",
+    "evidence": "most abundantly supplied with coffee and muffin."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Mr. Collins loses every point at whist. What does he tell Mrs. Philips when she is concerned?",
+     "quote": null,
+     "options": [
+      "A clergyman should never play for money at all",
+      "He will win it all back at the next card party",
+      "Thanks to Lady Catherine, five shillings is no object to him",
+      "He lost only because Lydia talked so loudly"
+     ],
+     "answer": "C",
+     "why": "He assures her the money is a trifle: he is not in circumstances to make five shillings any object, and Lady Catherine has removed him far beyond regarding little matters. The name catches Wickham's attention.",
+     "evidence": [
+      "happily I am not in such circumstances as to make five shillings any object.",
+      "but, thanks to Lady Catherine de Bourgh, I am removed far beyond the necessity of regarding little matters."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "At Mrs. Philips's party, \"Mr. Wickham was the happy man towards whom almost every female eye was turned, and Elizabeth was the happy woman by whom he finally seated himself\" What does \"happy\" mean in this sentence?",
+     "quote": "Mr. Wickham was the happy man towards whom almost every female eye was turned, and Elizabeth was the happy woman by whom he finally seated himself",
+     "options": [
+      "Lucky, the one fortune favored",
+      "Cheerful in mood that evening",
+      "Content with her place in life",
+      "Relieved after a long wait"
+     ],
+     "answer": "A",
+     "why": "\"Happy\" here means fortunate. Wickham is the man every woman watches, and Elizabeth is the woman he chooses to sit by; the sentence says nothing of their moods.",
+     "evidence": [
+      "Mr. Wickham was the happy man towards whom almost every female eye was turned, and Elizabeth was the happy woman by whom he finally seated himself;"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Miss Bingley warns Elizabeth against George Wickham. Elizabeth answers: \"His guilt and his descent appear, by your account, to be the same\". What is her point?",
+     "quote": "His guilt and his descent appear, by your account, to be the same",
+     "options": [
+      "Wickham's whole family were as dishonest as he is",
+      "Darcy has told Miss Bingley the whole history",
+      "Wickham hid from her that his father was a steward",
+      "Miss Bingley has charged him only with being a steward's son"
+     ],
+     "answer": "D",
+     "why": "Miss Bingley admits she does not know the particulars. Elizabeth says the only charge she has heard is that he is the son of Mr. Darcy's steward, and Wickham told her that himself.",
+     "evidence": [
+      "for I have heard you accuse him of nothing worse than of being the son of Mr. Darcy’s steward, and of that, I can assure you, he informed me himself."
+     ]
+    }
+   ],
+   "words": 9855
+  },
+  {
+   "id": "ch-19-21",
+   "label": "Chapters 19–21",
+   "units": [
+    "ch-19",
+    "ch-20",
+    "ch-21"
+   ],
+   "overview": "Mr. Collins proposes to Elizabeth and will not believe her refusal. Mrs. Bennet appeals to her husband, who sides with Elizabeth, and Collins withdraws. Wickham explains his absence from the ball, and a letter from Caroline Bingley tells Jane that the whole Netherfield party has left for London.",
+   "checkpoint": {
+    "question": "Collins says Lady Catherine advised him to marry between pools at quadrille, while Mrs. Jenkinson was arranging Miss De Bourgh's what?",
+    "answer": "footstool",
+    "evidence": "between our pools at quadrille, while Mrs. Jenkinson was arranging Miss De Bourgh’s footstool"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Where has Mrs. Bennet been while Mr. Collins makes his proposal?",
+     "quote": null,
+     "options": [
+      "Upstairs in her dressing-room with Kitty",
+      "In the library, at her husband's side",
+      "At the window of the breakfast-room",
+      "Dawdling in the vestibule, watching for the end"
+     ],
+     "answer": "D",
+     "why": "She \"dawdled about in the vestibule to watch for the end of the conference,\" and goes in to congratulate him the moment Elizabeth passes her on the way to the stairs.",
+     "evidence": [
+      "for Mrs. Bennet, having dawdled about in the vestibule to watch for the end of the conference, no sooner saw Elizabeth open the door and with quick step pass her towards the staircase,"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Early in his proposal, Mr. Collins says: \"But before I am run away with by my feelings on this subject, perhaps it will be advisable for me to state my reasons for marrying\" Elizabeth is then so near laughing that she cannot stop him. What sets her off?",
+     "quote": "But before I am run away with by my feelings on this subject, perhaps it will be advisable for me to state my reasons for marrying",
+     "options": [
+      "His claim that her modesty adds to her perfections",
+      "The idea of so solemn a man being carried away by feeling",
+      "His plan to state his reasons in order",
+      "His promise never to reproach her poverty"
+     ],
+     "answer": "B",
+     "why": "The narrator names it: the idea of Mr. Collins, \"with all his solemn composure,\" being run away with by his feelings. The phrase promises passion just as he settles down to list his reasons.",
+     "evidence": [
+      "The idea of Mr. Collins, with all his solemn composure, being run away with by his feelings, made Elizabeth so near laughing that she could not use the short pause he allowed in any attempt to stop him farther,"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Elizabeth argues that Miss Bingley must see her brother's love for Jane, and adds: \"Could she have seen half as much love in Mr. Darcy for herself, she would have ordered her wedding clothes.\" What is her point?",
+     "quote": "Could she have seen half as much love in Mr. Darcy for herself, she would have ordered her wedding clothes.",
+     "options": [
+      "Miss Bingley is already planning to marry Mr. Darcy",
+      "Miss Bingley envies the gown Jane wore at the ball",
+      "Miss Bingley would take far less as proof of love for herself",
+      "Darcy has shown Miss Bingley more love than she admits"
+     ],
+     "answer": "C",
+     "why": "Elizabeth says no one who has seen Bingley with Jane can doubt his affection, and Miss Bingley is no simpleton. Half that much love from Darcy would be enough for her to start buying wedding clothes, so she cannot honestly believe her brother indifferent.",
+     "evidence": [
+      "No one who has ever seen you together can doubt his affection; Miss Bingley, I am sure, cannot: she is not such a simpleton.",
+      "Could she have seen half as much love in Mr. Darcy for herself, she would have ordered her wedding clothes."
+     ]
+    }
+   ],
+   "words": 5579
+  },
+  {
+   "id": "ch-22-24",
+   "label": "Chapters 22–24",
+   "units": [
+    "ch-22",
+    "ch-23",
+    "ch-24"
+   ],
+   "overview": "Charlotte Lucas listens patiently to Mr. Collins, and within a day he has proposed to her and been accepted. Elizabeth can hardly hide her shock, and Mrs. Bennet takes the news badly. Bingley does not come back, a second letter from Caroline ends Jane's hopes, and the sisters argue about Charlotte's choice and Bingley's conduct.",
+   "checkpoint": {
+    "question": "On what day of the week does Mr. Collins's promised letter of thanks arrive at Longbourn?",
+    "answer": "Tuesday",
+    "evidence": "The promised letter of thanks from Mr. Collins arrived on Tuesday, addressed to their father"
+   },
+   "questions": [
+    {
+     "skill": "close",
+     "stem": "Bound to secrecy until Charlotte has told Elizabeth herself, Mr. Collins comes back to Longbourn for dinner. \"he was at the same time exercising great self-denial, for he was longing to publish his prosperous love.\" What does \"publish\" mean here?",
+     "quote": "he was at the same time exercising great self-denial, for he was longing to publish his prosperous love.",
+     "options": [
+      "Announce it to everyone",
+      "Write verses about it",
+      "Put a notice in the papers",
+      "Preach a sermon on it"
+     ],
+     "answer": "A",
+     "why": "He has promised to drop no hint, and the family's direct questions take ingenuity to evade. To \"publish\" here is to make known, which is exactly what he longs to do and must not.",
+     "evidence": [
+      "A promise of secrecy was of course very dutifully given, but it could not be kept without difficulty;",
+      "he was at the same time exercising great self-denial, for he was longing to publish his prosperous love."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "How do Charlotte's younger sisters take the news of her engagement?",
+     "quote": null,
+     "options": [
+      "They envy her the house at Hunsford",
+      "They fear losing their only chaperon",
+      "They hope to come out a year or two sooner",
+      "They are sorry to lose her company"
+     ],
+     "answer": "C",
+     "why": "The whole Lucas family is overjoyed. The younger girls hope to come out \"a year or two sooner than they might otherwise have done,\" and the boys stop fearing that Charlotte will die an old maid.",
+     "evidence": [
+      "The younger girls formed hopes of coming out a year or two sooner than they might otherwise have done;"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Elizabeth tells Jane she has \"met with two instances lately\" of how little the appearance of merit or sense can be trusted. She names Charlotte's marriage. Who is the other instance?",
+     "quote": null,
+     "options": [
+      "Mr. Wickham",
+      "Mr. Bingley",
+      "Mr. Darcy",
+      "Mr. Collins"
+     ],
+     "answer": "B",
+     "why": "Jane understands at once and begs Elizabeth not to think \"that person\" to blame, then defends a lively young man's conduct. Elizabeth goes on to charge Bingley with want of resolution.",
+     "evidence": [
+      "I have met with two instances lately: one I will not mention, the other is Charlotte’s marriage.",
+      "I cannot misunderstand you, but I entreat you, dear Lizzy, not to pain me by thinking that person to blame, and saying your opinion of him is sunk."
+     ]
+    }
+   ],
+   "words": 5308
+  },
+  {
+   "id": "ch-25-27",
+   "label": "Chapters 25–27",
+   "units": [
+    "ch-25",
+    "ch-26",
+    "ch-27"
+   ],
+   "overview": "The Gardiners come to Longbourn for Christmas. Mrs. Gardiner takes Jane back to London and warns Elizabeth against encouraging Wickham, who has no fortune. Charlotte marries and leaves for Kent, Jane learns how Caroline Bingley really regards her, and Wickham turns to Miss King. In March Elizabeth sets out for Hunsford by way of London.",
+   "checkpoint": {
+    "question": "Mrs. Bennet tells Mrs. Gardiner she is very glad to hear what her sister-in-law says about the new fashion in long what?",
+    "answer": "sleeves",
+    "evidence": "However, your coming just at this time is the greatest of comforts, and I am very glad to hear what you tell us of long sleeves."
+   },
+   "questions": [
+    {
+     "skill": "close",
+     "stem": "The narrator introduces Mrs. Bennet's brother: \"The Netherfield ladies would have had difficulty in believing that a man who lived by trade, and within view of his own warehouses, could have been so well-bred and agreeable.\" What does \"within view of his own warehouses\" stress?",
+     "quote": "The Netherfield ladies would have had difficulty in believing that a man who lived by trade, and within view of his own warehouses, could have been so well-bred and agreeable.",
+     "options": [
+      "That he owns more property than the Bingleys",
+      "That he lives right beside the place where he trades",
+      "That he is a clerk who minds other men's goods",
+      "That his house looks out over the river"
+     ],
+     "answer": "B",
+     "why": "He does not only live by trade; he lives where he can see his business. That is exactly what the Netherfield ladies would despise, and the narrator sets it against his good breeding.",
+     "evidence": [
+      "The Netherfield ladies would have had difficulty in believing that a man who lived by trade, and within view of his own warehouses, could have been so well-bred and agreeable."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Jane has been a week in town without seeing or hearing from Caroline Bingley. How does she first account for it?",
+     "quote": null,
+     "options": [
+      "Caroline must be away on a visit to Pemberley",
+      "Caroline must be busy nursing Mrs. Hurst",
+      "Her aunt's servant must have the wrong address",
+      "Her last letter from Longbourn must have been lost"
+     ],
+     "answer": "D",
+     "why": "Jane supposes that her last letter from Longbourn was lost by some accident. When she calls, Caroline reproaches her for giving no notice of her coming, and Jane takes that as proof.",
+     "evidence": [
+      "She accounted for it, however, by supposing that her last letter to her friend from Longbourn had by some accident been lost.",
+      "I was right, therefore; my last letter had never reached her."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Writing to her aunt about Wickham and Miss King, Elizabeth says Kitty and Lydia are \"not yet open to the mortifying conviction\" of something. What have they not yet learned?",
+     "quote": null,
+     "options": [
+      "That handsome young men, too, must marry for money",
+      "That handsome men are less faithful than plain ones",
+      "That officers cannot marry without their colonel's leave",
+      "That Miss King's fortune is smaller than people say"
+     ],
+     "answer": "A",
+     "why": "The conviction is that \"handsome young men must have something to live on as well as the plain.\" Kitty and Lydia still think a handsome officer is above such motives, so they take his defection to heart.",
+     "evidence": [
+      "They are young in the ways of the world, and not yet open to the mortifying conviction that handsome young men must have something to live on as well as the plain."
+     ]
+    }
+   ],
+   "words": 5135
+  },
+  {
+   "id": "ch-28-30",
+   "label": "Chapters 28–30",
+   "units": [
+    "ch-28",
+    "ch-29",
+    "ch-30"
+   ],
+   "overview": "Elizabeth arrives at Hunsford with Sir William and Maria Lucas and sees Charlotte settled in her new home. The whole party dines at Rosings, where Lady Catherine questions Elizabeth closely about her family and education. At Easter, Darcy and his cousin Colonel Fitzwilliam arrive at Rosings and call at the Parsonage.",
+   "checkpoint": {
+    "question": "Approaching Hunsford, the travelers know they have arrived by the green pales and a hedge of what?",
+    "answer": "laurel",
+    "evidence": "the green pales and the laurel hedge, everything declared they were arriving."
+   },
+   "questions": [
+    {
+     "skill": "close",
+     "stem": "Elizabeth soon perceives that \"though this great lady was not in the commission of the peace for the county, she was a most active magistrate in her own parish\" What does it mean that she was not \"in the commission of the peace\"?",
+     "quote": "though this great lady was not in the commission of the peace for the county, she was a most active magistrate in her own parish",
+     "options": [
+      "She took no part in settling quarrels",
+      "She was on bad terms with the county families",
+      "She held no official post as a magistrate",
+      "She had never been presented at court"
+     ],
+     "answer": "C",
+     "why": "To be in the commission of the peace was to be an appointed justice. Lady Catherine held no such office, yet acted as a magistrate anyway, settling the cottagers' differences and silencing their complaints.",
+     "evidence": [
+      "Elizabeth soon perceived, that though this great lady was not in the commission of the peace for the county, she was a most active magistrate in her own parish, the minutest concerns of which were carried to her by Mr. Collins;"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "In the drawing-room at Rosings, Lady Catherine tells Mrs. Collins that Lady Metcalfe called the day before to thank her. For whom?",
+     "quote": null,
+     "options": [
+      "Miss Pope, a governess she recommended",
+      "Mrs. Jenkinson, who lives at Rosings",
+      "Miss Webb, who plays so well",
+      "Mr. Collins, for a sermon he preached"
+     ],
+     "answer": "A",
+     "why": "Lady Catherine is boasting of the families she has supplied with governesses. Lady Metcalfe called to thank her because \"She finds Miss Pope a treasure.\"",
+     "evidence": [
+      "It is wonderful how many families I have been the means of supplying in that way.",
+      "Mrs. Collins, did I tell you of Lady Metcalfe’s calling yesterday to thank me? She finds Miss Pope a treasure."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "At first Elizabeth cannot understand why the Collinses give so many hours to Rosings. What explains it to her?",
+     "quote": null,
+     "options": [
+      "Charlotte enjoys Miss de Bourgh's company",
+      "Lady Catherine pays for their dinners",
+      "Mr. Collins hopes to borrow books there",
+      "Lady Catherine may have other family livings to give"
+     ],
+     "answer": "D",
+     "why": "She could not understand \"the sacrifice of so many hours\" until she remembered that there might be other family livings to be disposed of. Staying in favor keeps Mr. Collins in line for more.",
+     "evidence": [
+      "and till Elizabeth recollected that there might be other family livings to be disposed of, she could not understand the sacrifice of so many hours."
+     ]
+    }
+   ],
+   "words": 5116
+  },
+  {
+   "id": "ch-31-33",
+   "label": "Chapters 31–33",
+   "units": [
+    "ch-31",
+    "ch-32",
+    "ch-33"
+   ],
+   "overview": "At Rosings Colonel Fitzwilliam talks easily with Elizabeth while Darcy watches her at the pianoforte. Darcy starts calling at the Parsonage and meeting her on her walks in the park. Colonel Fitzwilliam then tells her that Darcy recently saved a friend from an imprudent marriage, and Elizabeth works out whom he means.",
+   "checkpoint": {
+    "question": "With field sports over, the gentlemen at Rosings have indoors only Lady Catherine, books, and what kind of table?",
+    "answer": "billiard",
+    "evidence": "Within doors there was Lady Catherine, books, and a billiard table"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Elizabeth is alone, writing to Jane, when the door-bell rings. Since she has heard no carriage, whom does she think it likely to be?",
+     "quote": null,
+     "options": [
+      "Colonel Fitzwilliam",
+      "Mr. Collins, back early",
+      "Miss de Bourgh, in her phaeton",
+      "Lady Catherine"
+     ],
+     "answer": "D",
+     "why": "She thinks it \"not unlikely to be Lady Catherine\" and starts putting away her half-finished letter to escape impertinent questions. It is Mr. Darcy, alone.",
+     "evidence": [
+      "As she had heard no carriage, she thought it not unlikely to be Lady Catherine; and under that apprehension was putting away her half-finished letter, that she might escape all impertinent questions,"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Charlotte cannot tell what to make of Darcy's silent visits. Why does Colonel Fitzwilliam's \"occasionally laughing at his stupidity\" matter to her?",
+     "quote": null,
+     "options": [
+      "It shows the cousins have quarreled over Elizabeth",
+      "It shows Darcy is usually different, so something has changed",
+      "It shows Fitzwilliam finds Darcy dull company",
+      "It shows Darcy is unwell and out of spirits"
+     ],
+     "answer": "B",
+     "why": "Her own knowledge could not tell her whether Darcy was always this silent; his cousin's laughing \"proved that he was generally different.\" So she looks for a cause, and hopes it is love for Eliza.",
+     "evidence": [
+      "Colonel Fitzwilliam’s occasionally laughing at his stupidity proved that he was generally different, which her own knowledge of him could not have told her;"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Elizabeth keeps meeting Darcy in her favorite walk in the park, though she has told him it is her favorite haunt. \"It seemed like wilful ill-nature, or a voluntary penance\" Why \"penance\"?",
+     "quote": "It seemed like wilful ill-nature, or a voluntary penance",
+     "options": [
+      "She thinks he walks to atone for parting Jane and Bingley",
+      "She thinks Lady Catherine sends him out for exercise",
+      "She supposes her company must be a trial to him",
+      "She knows he dislikes walking in the park"
+     ],
+     "answer": "C",
+     "why": "Believing he dislikes her, she reads his turning back to walk with her as a punishment he lays on himself. Ill-nature would be spoiling her walk on purpose; penance would be suffering her company.",
+     "evidence": [
+      "She felt all the perverseness of the mischance that should bring him where no one else was brought;",
+      "for on these occasions it was not merely a few formal inquiries and an awkward pause and then away, but he actually thought it necessary to turn back and walk with her."
+     ]
+    }
+   ],
+   "words": 4923
+  },
+  {
+   "id": "ch-34-36",
+   "label": "Chapters 34–36",
+   "units": [
+    "ch-34",
+    "ch-35",
+    "ch-36"
+   ],
+   "overview": "Darcy proposes to Elizabeth, dwelling on her inferior connections, and she refuses him, charging him with parting Jane and Bingley and with ruining Wickham. The next morning he gives her a long letter answering both charges. Elizabeth reads it over and over and begins to see her own prejudice.",
+   "checkpoint": {
+    "question": "As Elizabeth answers his proposal, Darcy is leaning against what, with his eyes fixed on her face?",
+    "answer": "mantel-piece",
+    "evidence": "Mr. Darcy, who was leaning against the mantel-piece with his eyes fixed on her face"
+   },
+   "questions": [
+    {
+     "skill": "close",
+     "stem": "Trying to recall some real good in Wickham, Elizabeth can remember \"no more substantial good than the general approbation of the neighbourhood, and the regard which his social powers had gained him in the mess.\" What is \"the mess\"?",
+     "quote": "the general approbation of the neighbourhood, and the regard which his social powers had gained him in the mess.",
+     "options": [
+      "The officers' company at their common table",
+      "The tangle of his debts in Meryton",
+      "A gaming club he used in London",
+      "The Philipses' card-parties"
+     ],
+     "answer": "A",
+     "why": "\"The mess\" is the regiment's officers eating together. His only credit is that the neighborhood approved of him and his fellow officers liked his company, which is charm, not character.",
+     "evidence": [
+      "but she could remember no more substantial good than the general approbation of the neighbourhood, and the regard which his social powers had gained him in the mess."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Why, according to Darcy's letter, could Wickham's own father not have given him a gentleman's education?",
+     "quote": null,
+     "options": [
+      "He had lost his savings on a bad lease",
+      "He died while Wickham was still at school",
+      "He was always poor through his wife's extravagance",
+      "He had quarreled with old Mr. Darcy"
+     ],
+     "answer": "C",
+     "why": "Darcy writes that his father paid for Wickham at school and at Cambridge, which mattered because Wickham's father was \"always poor from the extravagance of his wife.\"",
+     "evidence": [
+      "My father supported him at school, and afterwards at Cambridge; most important assistance, as his own father, always poor from the extravagance of his wife, would have been unable to give him a gentleman’s education."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Elizabeth almost decides to ask Colonel Fitzwilliam whether the letter is true. What finally stops her?",
+     "quote": null,
+     "options": [
+      "Colonel Fitzwilliam had already left for London",
+      "Darcy would not have named him unless sure he would agree",
+      "Charlotte warned her it would look improper",
+      "She feared he would tell Darcy she doubted him"
+     ],
+     "answer": "B",
+     "why": "The awkwardness of asking holds her back first. Then she is convinced that Darcy \"would never have hazarded such a proposal\" without being sure his cousin would bear him out.",
+     "evidence": [
+      "At one time she had almost resolved on applying to him, but the idea was checked by the awkwardness of the application, and at length wholly banished by the conviction that Mr. Darcy would never have hazarded such a proposal, if he had not been well assured of his cousin’s corroboration."
+     ]
+    }
+   ],
+   "words": 7117
+  },
+  {
+   "id": "ch-37-39",
+   "label": "Chapters 37–39",
+   "units": [
+    "ch-37",
+    "ch-38",
+    "ch-39"
+   ],
+   "overview": "Darcy and Colonel Fitzwilliam leave Rosings, and Lady Catherine presses Elizabeth to stay longer. Elizabeth studies Darcy's letter and thinks over her family's faults. She leaves Hunsford, collects Jane in London, and meets Kitty and Lydia at an inn, where Lydia has news of Wickham and of the regiment's move to Brighton.",
+   "checkpoint": {
+    "question": "Lady Catherine tells Elizabeth and Maria where they must change horses on the road to London. Where?",
+    "answer": "Bromley",
+    "evidence": "Where shall you change horses? Oh, Bromley, of course."
+   },
+   "questions": [
+    {
+     "skill": "inference",
+     "stem": "Lady Catherine boasts that when Georgiana went to Ramsgate last summer, she made a point of her having two men-servants go with her. Why does this boast land oddly for Elizabeth?",
+     "quote": null,
+     "options": [
+      "Georgiana actually traveled to Ramsgate alone",
+      "Ramsgate is where Wickham nearly eloped with Georgiana",
+      "Mr. Collins had found the servants himself",
+      "Georgiana has never left Pemberley at all"
+     ],
+     "answer": "B",
+     "why": "Darcy's letter in Chapter 35 told Elizabeth that Wickham followed Georgiana to Ramsgate and talked her into agreeing to an elopement. For all Lady Catherine's care about servants, the danger came from elsewhere, and she knows nothing of it.",
+     "evidence": [
+      "When my niece Georgiana went to Ramsgate last summer, I made a point of her having two men-servants go with her."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "On the drive home Lydia tells of a dance at Colonel Forster's. Mrs. Forster asked the two Harringtons, but one was ill. Which one came by herself?",
+     "quote": null,
+     "options": [
+      "Harriet",
+      "Maria",
+      "Sally",
+      "Pen"
+     ],
+     "answer": "D",
+     "why": "Lydia says Mrs. Forster asked the two Harringtons, \"but Harriet was ill, and so Pen was forced to come by herself.\" Then they dressed up Chamberlayne in woman's clothes.",
+     "evidence": [
+      "she asked the two Harringtons to come: but Harriet was ill, and so Pen was forced to come by herself;"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "When Lydia hopes the whole family will go to Brighton, Elizabeth thinks: \"Brighton and a whole campful of soldiers, to us, who have been overset already by one poor regiment of militia, and the monthly balls of Meryton!\" What does \"overset\" mean here?",
+     "quote": "Brighton and a whole campful of soldiers, to us, who have been overset already by one poor regiment of militia, and the monthly balls of Meryton!",
+     "options": [
+      "Thrown into disorder",
+      "Outnumbered",
+      "Bored to death",
+      "Made to look poor"
+     ],
+     "answer": "A",
+     "why": "To overset is to upset or overturn. One militia regiment and Meryton's monthly balls have already thrown the family into disorder; a camp at Brighton would \"completely do for us at once.\"",
+     "evidence": [
+      "that would be a delightful scheme, indeed, and completely do for us at once.",
+      "Brighton and a whole campful of soldiers, to us, who have been overset already by one poor regiment of militia, and the monthly balls of Meryton!"
+     ]
+    }
+   ],
+   "words": 4074
+  },
+  {
+   "id": "ch-40-42",
+   "label": "Chapters 40–42",
+   "units": [
+    "ch-40",
+    "ch-41",
+    "ch-42"
+   ],
+   "overview": "Elizabeth tells Jane part of what Darcy wrote, and the sisters decide not to expose Wickham. The regiment leaves Meryton, and Lydia goes to Brighton as Mrs. Forster's guest, though Elizabeth warns her father against it. The Gardiners' northern tour is cut short, and Elizabeth agrees to see Pemberley once she hears the family is away.",
+   "checkpoint": {
+    "question": "Elizabeth tells Jane that if she laments over Darcy much longer, Elizabeth's heart will be as light as what?",
+    "answer": "feather",
+    "evidence": "Your profusion makes me saving; and if you lament over him much longer, my heart will be as light as a feather."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Mrs. Bennet asks Elizabeth what sort of table the Collinses keep. What does she suppose about Charlotte?",
+     "quote": null,
+     "options": [
+      "She keeps a better table than Lady Lucas ever did",
+      "She lets Lady Catherine order all her dinners",
+      "If half as sharp as her mother, she is saving enough",
+      "She spends too much trying to please Rosings"
+     ],
+     "answer": "C",
+     "why": "Mrs. Bennet calls Charlotte \"an excellent manager\" and adds a dig at Lady Lucas: if Charlotte is half as sharp as her mother, she is saving enough.",
+     "evidence": [
+      "Charlotte is an excellent manager, I dare say. If she is half as sharp as her mother, she is saving enough."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Wickham suggests that Darcy's better manners in Kent come from his wish to forward the match with Miss de Bourgh. Why can Elizabeth not repress a smile?",
+     "quote": null,
+     "options": [
+      "She knows Darcy has proposed to her instead",
+      "She knows Miss de Bourgh is engaged elsewhere",
+      "She thinks no one could be afraid of Lady Catherine",
+      "She has seen Darcy laugh at his aunt's advice"
+     ],
+     "answer": "A",
+     "why": "Wickham is certain the match is something Darcy \"has very much at heart.\" Elizabeth knows Darcy proposed to her at Hunsford, so the claim only shows how little Wickham knows, and she answers with a slight bow of the head.",
+     "evidence": [
+      "a good deal is to be imputed to his wish of forwarding the match with Miss de Bourgh, which I am certain he has very much at heart.",
+      "Elizabeth could not repress a smile at this, but she answered only by a slight inclination of the head."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Some weeks after Lydia leaves for Brighton, the narrator reports: \"Mrs. Bennet was restored to her usual querulous serenity\" What does \"querulous serenity\" describe?",
+     "quote": "Mrs. Bennet was restored to her usual querulous serenity",
+     "options": [
+      "A rare peace after years of complaint",
+      "A calm she puts on while secretly grieving",
+      "A sulky silence that lasts all summer",
+      "Her normal, settled state of steady complaint"
+     ],
+     "answer": "D",
+     "why": "\"Restored\" and \"usual\" make this her ordinary condition: calm by her standards, which still means complaining. The two words pull against each other on purpose.",
+     "evidence": [
+      "After the first fortnight or three weeks of her absence, health, good-humour, and cheerfulness began to reappear at Longbourn.",
+      "Mrs. Bennet was restored to her usual querulous serenity;"
+     ]
+    }
+   ],
+   "words": 5816
+  },
+  {
+   "id": "ch-43-45",
+   "label": "Chapters 43–45",
+   "units": [
+    "ch-43",
+    "ch-44",
+    "ch-45"
+   ],
+   "overview": "At Pemberley the housekeeper shows the visitors round and praises her master warmly. Darcy arrives a day early, is civil to the Gardiners and asks to introduce his sister to Elizabeth. Georgiana and Bingley call at the inn in Lambton, and the next day Elizabeth and Mrs. Gardiner visit Pemberley, where Miss Bingley tries to embarrass her.",
+   "checkpoint": {
+    "question": "At Pemberley servants bring cold meat, cake and fruit. Besides grapes and peaches, which fruit is piled in pyramids?",
+    "answer": "nectarines",
+    "evidence": "and the beautiful pyramids of grapes, nectarines, and peaches, soon collected them round the table."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Elizabeth knows nothing of painting. When paintings were shown in the rooms below at Pemberley, what had she gladly turned to instead?",
+     "quote": null,
+     "options": [
+      "A plan of the gardens and the park",
+      "A portrait of the late Mrs. Darcy",
+      "The new instrument bought for Miss Darcy",
+      "Some drawings of Miss Darcy's, in crayons"
+     ],
+     "answer": "D",
+     "why": "From the paintings visible below she had willingly turned to some drawings of Miss Darcy's, in crayons, \"whose subjects were usually more interesting, and also more intelligible.\"",
+     "evidence": [
+      "In the former were many good paintings: but Elizabeth knew nothing of the art; and from such as had been already visible below, she had willingly turned to look at some drawings of Miss Darcy’s, in crayons, whose subjects were usually more interesting, and also more intelligible."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When Miss Darcy invites them to dine at Pemberley, Elizabeth turns her head away. How does Mrs. Gardiner read this?",
+     "quote": null,
+     "options": [
+      "As dislike, so she declines for all of them",
+      "As passing embarrassment, so she accepts for her",
+      "As a wish to consult Mr. Gardiner first",
+      "As tiredness after the morning's walk"
+     ],
+     "answer": "B",
+     "why": "Mrs. Gardiner presumes that \"this studied avoidance\" means a momentary embarrassment, not dislike, and with her husband willing she engages for Elizabeth's attendance on the day after next.",
+     "evidence": [
+      "Presuming, however, that this studied avoidance spoke rather a momentary embarrassment than any dislike of the proposal, and seeing in her husband, who was fond of society, a perfect willingness to accept it, she ventured to engage for her attendance,"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "In the saloon at Pemberley an awkward pause is first broken by \"Mrs. Annesley, a genteel, agreeable-looking woman, whose endeavour to introduce some kind of discourse proved her to be more truly well-bred than either of the others\". Who are \"either of the others\"?",
+     "quote": "Mrs. Annesley, a genteel, agreeable-looking woman, whose endeavour to introduce some kind of discourse proved her to be more truly well-bred than either of the others",
+     "options": [
+      "Elizabeth and Mrs. Gardiner",
+      "Miss Darcy and Mrs. Gardiner",
+      "Mrs. Hurst and Miss Bingley",
+      "Miss Darcy and Miss Bingley"
+     ],
+     "answer": "C",
+     "why": "The sentence before says Mrs. Hurst and Miss Bingley noticed the visitors \"only by a courtesy\" and let the silence fall. Mrs. Annesley's effort to start a conversation shows her better bred than those two.",
+     "evidence": [
+      "By Mrs. Hurst and Miss Bingley they were noticed only by a courtesy; and on their being seated, a pause, awkward as such pauses must always be, succeeded for a few moments.",
+      "It was first broken by Mrs. Annesley, a genteel, agreeable-looking woman, whose endeavour to introduce some kind of discourse proved her to be more truly well-bred than either of the others;"
+     ]
+    }
+   ],
+   "words": 8933
+  },
+  {
+   "id": "ch-46-48",
+   "label": "Chapters 46–48",
+   "units": [
+    "ch-46",
+    "ch-47",
+    "ch-48"
+   ],
+   "overview": "Two letters from Jane tell Elizabeth that Lydia has run off with Wickham and that they may not have gone to Scotland to marry. Elizabeth tells Darcy and leaves Derbyshire at once with the Gardiners. At Longbourn the family waits for news while the men search in London, and Mr. Bennet at last comes home without his daughter.",
+   "checkpoint": {
+    "question": "Coming on into Hertfordshire, Colonel Forster renewed his inquiries at the turnpikes and at the inns in Barnet and which other town?",
+    "answer": "Hatfield",
+    "evidence": "at the inns in Barnet and Hatfield, but without any success"
+   },
+   "questions": [
+    {
+     "skill": "close",
+     "stem": "After Darcy leaves the inn, the narrator comments: \"If gratitude and esteem are good foundations of affection, Elizabeth’s change of sentiment will be neither improbable nor faulty.\" The narrator then says Elizabeth \"had given somewhat of a trial\" to the other kind of attachment. What is that other kind?",
+     "quote": "If gratitude and esteem are good foundations of affection, Elizabeth’s change of sentiment will be neither improbable nor faulty.",
+     "options": [
+      "Love at first sight, as in her liking for Wickham",
+      "Marriage for money, as in Charlotte's choice",
+      "Love through letters, as with Darcy's letter",
+      "Love on a parent's advice, as her mother urged"
+     ],
+     "answer": "A",
+     "why": "The narrator sets love from gratitude and esteem against love that arises \"on a first interview\" before two words are exchanged, and says Elizabeth tried the second with Wickham, which may excuse her now trying the first.",
+     "evidence": [
+      "in comparison of what is so often described as arising on a first interview with its object, and even before two words have been exchanged,",
+      "nothing can be said in her defence, except that she had given somewhat of a trial to the latter method, in her partiality for Wickham,"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Mrs. Bennet wants Lydia to give no directions about her wedding clothes until they meet. Why?",
+     "quote": null,
+     "options": [
+      "Lydia has no money of her own to spend",
+      "Lydia's taste in colors is too loud",
+      "Lydia does not know which are the best warehouses",
+      "Lydia must be married before she shops"
+     ],
+     "answer": "C",
+     "why": "Between her list of tremblings and spasms, she asks her brother to tell Lydia not to give any directions about her clothes till she has seen her, \"for she does not know which are the best warehouses.\"",
+     "evidence": [
+      "And tell my dear Lydia not to give any directions about her clothes till she has seen me, for she does not know which are the best warehouses."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Mr. Collins's letter of condolence says he reflects \"with augmented satisfaction\" \"on a certain event of last November; for had it been otherwise, I must have been involved in all your sorrow and disgrace.\" What is that event?",
+     "quote": "on a certain event of last November; for had it been otherwise, I must have been involved in all your sorrow and disgrace.",
+     "options": [
+      "Bingley's leaving Netherfield for London",
+      "Elizabeth's refusal of his offer of marriage",
+      "Lady Catherine's approval of his marriage",
+      "Wickham's joining the militia at Meryton"
+     ],
+     "answer": "B",
+     "why": "Collins proposed to Elizabeth in November. Had she accepted, he would now be Lydia's brother-in-law and part of the family's disgrace, so he is glad she refused him.",
+     "evidence": [
+      "And this consideration leads me, moreover, to reflect, with augmented satisfaction, on a certain event of last November; for had it been otherwise, I must have been involved in all your sorrow and disgrace."
+     ]
+    }
+   ],
+   "words": 9383
+  },
+  {
+   "id": "ch-49-51",
+   "label": "Chapters 49–51",
+   "units": [
+    "ch-49",
+    "ch-50",
+    "ch-51"
+   ],
+   "overview": "An express from Mr. Gardiner says the couple have been found and will marry on modest terms, and Mr. Bennet suspects that his brother-in-law has paid a great deal to bring it about. Mrs. Bennet is overjoyed. After the wedding Lydia and Wickham visit Longbourn, and Lydia lets slip something she had promised to keep secret.",
+   "checkpoint": {
+    "question": "Mrs. Bennet tells Mrs. Hill that all the servants shall have a bowl of what to make merry at Lydia's wedding?",
+    "answer": "punch",
+    "evidence": "Miss Lydia is going to be married; and you shall all have a bowl of punch to make merry at her wedding."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Mr. Gardiner's letter asks for full powers to act in Mr. Bennet's name. To whom will he then give directions for preparing the settlement?",
+     "quote": null,
+     "options": [
+      "Mr. Philips",
+      "Haggerston",
+      "Mr. Stone",
+      "Colonel Forster"
+     ],
+     "answer": "B",
+     "why": "He writes that, once given full powers, he will \"immediately give directions to Haggerston for preparing a proper settlement.\" Mr. Stone is the man who calls him away on business on the wedding morning, in Lydia's story.",
+     "evidence": [
+      "If, as I conclude will be the case, you send me full powers to act in your name throughout the whole of this business, I will immediately give directions to Haggerston for preparing a proper settlement."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Lydia and Wickham stay ten days, and Mrs. Bennet fills them with parties: \"These parties were acceptable to all; to avoid a family circle was even more desirable to such as did think than such as did not.\" Who are the people who \"did think\"?",
+     "quote": "These parties were acceptable to all; to avoid a family circle was even more desirable to such as did think than such as did not.",
+     "options": [
+      "Those who think parties a waste of time, like Mary",
+      "Those who planned the parties, like Mrs. Bennet",
+      "Those who were owed money by Wickham",
+      "Those who felt the shame of the visit, like Jane and Elizabeth"
+     ],
+     "answer": "D",
+     "why": "Mrs. Bennet is the only one who regrets the short stay. For family members who think about what has happened, a crowd is a relief from sitting at home with the couple, so parties suit them even better than they suit the thoughtless.",
+     "evidence": [
+      "No one but Mrs. Bennet regretted that their stay would be so short; and she made the most of the time by visiting about with her daughter, and having very frequent parties at home.",
+      "These parties were acceptable to all; to avoid a family circle was even more desirable to such as did think than such as did not."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Mr. Gardiner writes that it is an advantage to have Wickham's new regiment quartered far off, in the north. Why does he think so?",
+     "quote": null,
+     "options": [
+      "Among strangers they will each have a character to preserve",
+      "Living is far cheaper there than in the south",
+      "Lydia will be far from Mrs. Forster's influence",
+      "It keeps Wickham away from Darcy's estate"
+     ],
+     "answer": "A",
+     "why": "He hopes that \"among different people, where they may each have a character to preserve, they will both be more prudent.\" Far from Meryton and Brighton, nobody will know how the marriage began.",
+     "evidence": [
+      "It is an advantage to have it so far from this part of the kingdom. He promises fairly; and I hope among different people, where they may each have a character to preserve, they will both be more prudent."
+     ]
+    }
+   ],
+   "words": 6558
+  },
+  {
+   "id": "ch-52-54",
+   "label": "Chapters 52–54",
+   "units": [
+    "ch-52",
+    "ch-53",
+    "ch-54"
+   ],
+   "overview": "Mrs. Gardiner's long letter answers Elizabeth's question about Darcy's presence at Lydia's wedding. Elizabeth meets Wickham on a walk and quietly lets him know what she has heard. Bingley returns to Netherfield and calls at Longbourn with Darcy, and at a dinner party his interest in Jane revives.",
+   "checkpoint": {
+    "question": "On the walk, Wickham names the village whose living, he says, he ought to have had. What is it?",
+    "answer": "Kympton",
+    "evidence": "Did you go by the village of Kympton?"
+   },
+   "questions": [
+    {
+     "skill": "close",
+     "stem": "Near the end of her letter Mrs. Gardiner writes of Darcy: \"I thought him very sly; he hardly ever mentioned your name. But slyness seems the fashion.\" Whose slyness is she also teasing?",
+     "quote": "I thought him very sly; he hardly ever mentioned your name. But slyness seems the fashion.",
+     "options": [
+      "Wickham's, who hid where he and Lydia lodged",
+      "Lydia's, who kept the elopement from her family",
+      "Elizabeth's, who has told her aunt nothing of her feelings",
+      "Mr. Gardiner's, who let others think he paid"
+     ],
+     "answer": "C",
+     "why": "Her letter opens surprised that Elizabeth needs to ask at all, since she had taken her niece to be a party concerned. \"Slyness seems the fashion\" turns that back on Elizabeth, who has kept Darcy to herself.",
+     "evidence": [
+      "I must confess myself surprised by your application; I did not expect it from you.",
+      "I thought him very sly; he hardly ever mentioned your name. But slyness seems the fashion."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Mrs. Philips has the news of Bingley's return from the Netherfield housekeeper, met on her way to the butcher's. What else did the housekeeper tell her?",
+     "quote": null,
+     "options": [
+      "She had three couple of ducks just fit to be killed",
+      "She had orders to air all the best bedrooms",
+      "A haunch of venison was coming from Pemberley",
+      "A new cook was being sent down from town"
+     ],
+     "answer": "A",
+     "why": "Mrs. Nichols was going to order in some meat for Wednesday, \"and she has got three couple of ducks just fit to be killed.\"",
+     "evidence": [
+      "She was going to the butcher’s, she told me, on purpose to order in some meat on Wednesday, and she has got three couple of ducks just fit to be killed."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "At the Longbourn dinner Bingley takes his old place by Jane. Then Elizabeth sees him look toward Darcy \"with an expression of half-laughing alarm.\" What does that look suggest to her?",
+     "quote": null,
+     "options": [
+      "He is afraid Jane will refuse to sit by him",
+      "He thinks Darcy is about to laugh at Mrs. Bennet",
+      "He wants Darcy to rescue him from Mrs. Bennet",
+      "He is not yet sure that Darcy approves"
+     ],
+     "answer": "D",
+     "why": "Darcy bears the seating \"with noble indifference,\" and Elizabeth would have thought Bingley had his sanction to be happy, except for that glance. A man who already had his friend's approval would not look to him in alarm.",
+     "evidence": [
+      "and she would have imagined that Bingley had received his sanction to be happy, had she not seen his eyes likewise turned towards Mr. Darcy, with an expression of half-laughing alarm."
+     ]
+    }
+   ],
+   "words": 7592
+  },
+  {
+   "id": "ch-55-57",
+   "label": "Chapters 55–57",
+   "units": [
+    "ch-55",
+    "ch-56",
+    "ch-57"
+   ],
+   "overview": "Bingley calls again and again, Mrs. Bennet maneuvers to leave him alone with Jane, and he proposes. Soon afterwards Lady Catherine arrives unannounced and walks Elizabeth into the copse to demand a promise about Darcy, which Elizabeth refuses. The next morning Mr. Bennet reads Elizabeth a letter from Mr. Collins and finds it very funny.",
+   "checkpoint": {
+    "question": "Mrs. Bennet calls a maid to help Jane on with her gown. What is the maid's name?",
+    "answer": "Sarah",
+    "evidence": "Here, Sarah, come to Miss Bennet this moment, and help her on with her gown."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Once Jane is engaged, her younger sisters begin asking her for favors. What does Mary petition for?",
+     "quote": null,
+     "options": [
+      "A few balls at Netherfield every winter",
+      "A new pianoforte for the drawing-room",
+      "A season in town with Jane and Bingley",
+      "The use of the library at Netherfield"
+     ],
+     "answer": "D",
+     "why": "Mary asks for the use of the Netherfield library; it is Kitty who begs for a few balls there every winter.",
+     "evidence": [
+      "Mary petitioned for the use of the library at Netherfield; and Kitty begged very hard for a few balls there every winter."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Lady Catherine says: \"Miss Bennet, there seemed to be a prettyish kind of a little wilderness on one side of your lawn. I should be glad to take a turn in it\" Mrs. Bennet then tells Elizabeth to show her the different walks and the hermitage. What is the \"wilderness\"?",
+     "quote": "Miss Bennet, there seemed to be a prettyish kind of a little wilderness on one side of your lawn. I should be glad to take a turn in it",
+     "options": [
+      "A patch of waste ground left untended",
+      "A planted grove laid out with walks",
+      "The open common beyond the paddock",
+      "The kitchen garden behind the house"
+     ],
+     "answer": "B",
+     "why": "It has walks and a hermitage, and they reach it by the gravel walk that leads to the copse. It is a planted, ornamental part of the grounds, not wild land.",
+     "evidence": [
+      "Go, my dear,” cried her mother, “and show her Ladyship about the different walks. I think she will be pleased with the hermitage.",
+      "They proceeded in silence along the gravel walk that led to the copse;"
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Mr. Bennet says the rest of Mr. Collins's letter is about Charlotte's situation and \"his expectation of a young olive-branch.\" What is Collins expecting?",
+     "quote": null,
+     "options": [
+      "A reconciliation with Mr. Bennet at last",
+      "Another living from Lady Catherine",
+      "A child, since Charlotte is expecting one",
+      "A visit from Lady Catherine's nephew"
+     ],
+     "answer": "C",
+     "why": "\"His dear Charlotte's situation\" and a \"young\" olive-branch point to a baby. In his first letter Collins offered Mr. Bennet an olive branch of peace, which makes the reconciliation reading tempting but wrong.",
+     "evidence": [
+      "The rest of his letter is only about his dear Charlotte’s situation, and his expectation of a young olive-branch."
+     ]
+    }
+   ],
+   "words": 6734
+  },
+  {
+   "id": "ch-58-61",
+   "label": "Chapters 58–61",
+   "units": [
+    "ch-58",
+    "ch-59",
+    "ch-60",
+    "ch-61"
+   ],
+   "overview": "Walking out with Elizabeth, Darcy learns that her feelings have changed, and they become engaged. Jane and Mr. Bennet both need convincing, and Mrs. Bennet is struck silent before she is delighted. Letters carry the news to the Gardiners, Lady Catherine and Mr. Collins, and the last chapter tells what becomes of each sister and of the people around them.",
+   "checkpoint": {
+    "question": "At Lucas Lodge, Sir William compliments Darcy on carrying away the brightest what of the country?",
+    "answer": "jewel",
+    "evidence": "when he complimented him on carrying away the brightest jewel of the country"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Darcy says that at Pemberley he first meant only to show that he did not resent the past. When, he believes, did other wishes begin?",
+     "quote": null,
+     "options": [
+      "About half an hour after he had seen her",
+      "On the evening she dined at Pemberley",
+      "When she called on Georgiana the next day",
+      "When she told him of Lydia's flight"
+     ],
+     "answer": "A",
+     "why": "He says he cannot tell exactly how soon other wishes came in, \"but I believe in about half an hour after I had seen you.\"",
+     "evidence": [
+      "How soon any other wishes introduced themselves, I can hardly tell, but I believe in about half an hour after I had seen you."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Mr. Bennet's reply to Mr. Collins ends: \"Console Lady Catherine as well as you can. But, if I were you, I would stand by the nephew. He has more to give.\" What is he mocking?",
+     "quote": "Console Lady Catherine as well as you can. But, if I were you, I would stand by the nephew. He has more to give.",
+     "options": [
+      "Darcy's pride in his rank and fortune",
+      "Collins's fear that the entail may be broken",
+      "Collins's habit of flattering whoever can reward him",
+      "Charlotte's wish to stay on at Lucas Lodge"
+     ],
+     "answer": "C",
+     "why": "\"He has more to give\" treats Collins's loyalty as something for sale to the richer patron. It answers Collins's last letter, which warned against the match on Lady Catherine's behalf.",
+     "evidence": [
+      "But, if I were you, I would stand by the nephew. He has more to give."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Mary is the only daughter left at home. Why does her father suspect she does not mind?",
+     "quote": null,
+     "options": [
+      "She can now have the library to herself",
+      "She is no longer compared with her prettier sisters",
+      "She has at last escaped her mother's nerves",
+      "She hopes Mr. Collins will notice her now"
+     ],
+     "answer": "B",
+     "why": "She has to go out more with her mother, who cannot sit alone, but \"as she was no longer mortified by comparisons between her sisters' beauty and her own,\" Mr. Bennet suspects she accepts the change without much reluctance.",
+     "evidence": [
+      "as she was no longer mortified by comparisons between her sisters’ beauty and her own, it was suspected by her father that she submitted to the change without much reluctance."
+     ]
+    }
+   ],
+   "words": 7756
+  }
+ ],
+ "passages": [
+  {
+   "unit": "ch-01",
+   "ref": "Chapter 1",
+   "speaker": "Narrator",
+   "quote": "It is a truth universally acknowledged, that a single man in possession of a good fortune must be in want of a wife.",
+   "note": "The sentence states one thing and means its reverse: the next paragraph shows it is the neighbors who want the single man, as property for their daughters. Have students rewrite it as Mrs. Bennet would say it, then as Charlotte Lucas would."
+  },
+  {
+   "unit": "ch-03",
+   "ref": "Chapter 3",
+   "speaker": "Darcy to Bingley, overheard by Elizabeth",
+   "quote": "She is tolerable: but not handsome enough to tempt me; and I am in no humour at present to give consequence to young ladies who are slighted by other men.",
+   "note": "Darcy's first words about Elizabeth, said where she can hear them. Notice that his excuse is about rank and appearances (\"give consequence\"), not about her face. Charlotte throws the word \"tolerable\" back at Elizabeth in Chapter 5, and the slight stays with her far longer than she admits."
+  },
+  {
+   "unit": "ch-22",
+   "ref": "Chapter 22",
+   "speaker": "Charlotte Lucas to Elizabeth",
+   "quote": "I am not romantic, you know. I never was. I ask only a comfortable home; and, considering Mr. Collins’s character, connections, and situation in life, I am convinced that my chance of happiness with him is as fair as most people can boast on entering the marriage state.",
+   "note": "Charlotte defends her engagement in the terms she used in Chapter 6, where she called happiness in marriage \"entirely a matter of chance.\" Set the speech beside the narrator's account earlier in the chapter, which calls marriage \"the only honourable provision for well-educated young women of small fortune,\" before students decide whether Elizabeth's judgment of her is fair."
+  },
+  {
+   "unit": "ch-34",
+   "ref": "Chapter 34",
+   "speaker": "Darcy to Elizabeth",
+   "quote": "In vain have I struggled. It will not do. My feelings will not be repressed. You must allow me to tell you how ardently I admire and love you.",
+   "note": "The opening of the first proposal. Ask students to list what Darcy has to struggle against, using the paragraph that follows; the struggle itself is what offends Elizabeth. Compare Chapter 58, where Darcy asks again in a few plain sentences and Elizabeth's answer is reported in indirect speech."
+  },
+  {
+   "unit": "ch-36",
+   "ref": "Chapter 36",
+   "speaker": "Elizabeth, alone",
+   "quote": "Pleased with the preference of one, and offended by the neglect of the other, on the very beginning of our acquaintance, I have courted prepossession and ignorance, and driven reason away where either were concerned. Till this moment, I never knew myself.",
+   "note": "Elizabeth's judgment on herself after the second reading of Darcy's letter. She names vanity, not love, as her folly: Wickham flattered her, Darcy slighted her, and she judged both men on that basis. A useful passage for the title, since the pride and the prejudice here are both hers."
+  },
+  {
+   "unit": "ch-56",
+   "ref": "Chapter 56",
+   "speaker": "Elizabeth to Lady Catherine",
+   "quote": "In marrying your nephew, I should not consider myself as quitting that sphere. He is a gentleman; I am a gentleman’s daughter; so far we are equal.",
+   "note": "Lady Catherine has told her not to quit the sphere she was brought up in. Elizabeth answers in terms of rank, not feeling, and Lady Catherine's reply goes straight to her mother, uncles and aunts. Ask what \"so far\" concedes."
+  }
+ ],
+ "qa": {
+  "items": 80,
+  "pass": 80,
+  "leak": 0,
+  "failing": 0,
+  "summary_words": 200
+ }
+}

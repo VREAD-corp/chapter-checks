@@ -1,0 +1,551 @@
+{
+ "slug": "christmas-carol",
+ "updated": "2026-10-24",
+ "about": [
+  "A Christmas Carol was published in London by Chapman & Hall on 19 December 1843, with illustrations by John Leech; Dickens signed the short preface “December, 1843.” He died in 1870, and the text is in the public domain. Our copy is Project Gutenberg eBook #46, 28,435 words in five staves, the word Dickens uses for his chapters. Stave 3, the night with the Ghost of Christmas Present, is the longest at 8,207 words. Stave 5 is the shortest at 2,298, less than half the length of any other stave.",
+  "Where students lose the thread: Marley says the Spirits will come on three nights, the first “to-morrow, when the bell tolls One,” yet Scrooge wakes in Stave 5 to find it is Christmas Day and “The Spirits have done it all in one night.” Stave 2 gives no dates, so the scenes from his past are easy to put in the wrong order; the last one, where Belle's husband says Scrooge's partner “lies upon the point of death,” falls seven years before the story opens. In Stave 3 the Spirit throws Scrooge's own words from Stave 1 back at him, and students who skimmed the first stave miss the echo. Each check below has a one-word checkpoint and five multiple-choice questions on details from inside the stave. They show whether a student read it; they do not measure the analysis an exam essay asks for."
+ ],
+ "checks": [
+  {
+   "id": "stave-1",
+   "label": "Stave 1: Marley's Ghost",
+   "units": [
+    "stave-1"
+   ],
+   "overview": "On Christmas Eve Scrooge turns away his nephew's dinner invitation and two gentlemen collecting for the poor, then grudgingly gives his clerk the next day off. At home he sees Marley's face in his door knocker. Marley's Ghost arrives in chains, tells Scrooge he still has a chance of escaping the same fate, and announces three Spirits.",
+   "checkpoint": {
+    "question": "The face Scrooge sees in the knocker is not in shadow like the rest of the yard. It has a dismal light about it, like a bad what in a dark cellar?",
+    "answer": "lobster",
+    "evidence": "It was not in impenetrable shadow as the other objects in the yard were, but had a dismal light about it, like a bad lobster in a dark cellar."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "The clerk in the Tank applauds the nephew's speech without meaning to. What does he do as soon as he sees his mistake?",
+     "quote": null,
+     "options": [
+      "He hides his hands inside his white comforter",
+      "He pokes the fire and puts out its last spark",
+      "He bends over his letters and copies faster",
+      "He begs Scrooge's pardon and wishes him joy"
+     ],
+     "answer": "B",
+     "why": "Sensing the impropriety, he pokes the fire and puts out “the last frail spark for ever.” Scrooge threatens his job anyway.",
+     "evidence": [
+      "The clerk in the Tank involuntarily applauded.",
+      "Becoming immediately sensible of the impropriety, he poked the fire, and extinguished the last frail spark for ever."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Scrooge's nephew invites him to dine the next day. Scrooge “said that he would see him in that extremity first,” and the narrator adds that he “went the whole length of the expression.” What did Scrooge actually say?",
+     "quote": null,
+     "options": [
+      "That he would see him married a second time first",
+      "That he would see him in the workhouse first",
+      "That he would see him bankrupt and in prison first",
+      "That he would see him in hell before he came"
+     ],
+     "answer": "D",
+     "why": "The narrator will not print the oath, but the common expression is “I'll see you in hell first,” and “that extremity” is the place it names. Going “the whole length” means Scrooge said the full curse, not a softened form.",
+     "evidence": [
+      "Scrooge said that he would see him--yes, indeed he did. He went the whole length of the expression, and said that he would see him in that extremity first."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "On his knees before the Ghost, Scrooge ponders what it has told him. What does he habitually do whenever he becomes thoughtful?",
+     "quote": null,
+     "options": [
+      "Puts his hands in his breeches pockets",
+      "Rubs his pointed chin between his fingers",
+      "Takes off his nightcap and turns it round",
+      "Walks the room with his hands behind him"
+     ],
+     "answer": "A",
+     "why": "The narrator calls it a habit: he puts his hands in his breeches pockets, and does so now without lifting his eyes or getting off his knees.",
+     "evidence": [
+      "It was a habit with Scrooge, whenever he became thoughtful, to put his hands in his breeches pockets."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "To turn the Ghost's stony gaze away from himself, Scrooge asks whether it can see a small object he has. What is it?",
+     "quote": null,
+     "options": [
+      "The key to his double-locked door",
+      "The spoon from his basin of gruel",
+      "A toothpick he is holding up",
+      "A shilling from his breeches pocket"
+     ],
+     "answer": "C",
+     "why": "Scrooge asks, “You see this toothpick?” and says that if he swallowed it he would be haunted by goblins of his own making. He is still trying to talk his fear down.",
+     "evidence": [
+      "said Scrooge, returning quickly to the charge, for the reason just assigned; and wishing, though it were only for a second, to divert the vision's stony gaze from himself."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "After describing Scrooge's old fireplace, the narrator writes that “that face of Marley, seven years dead, came like the ancient Prophet's rod, and swallowed up the whole.” What is “the whole” that the face swallows up?",
+     "quote": "that face of Marley, seven years dead, came like the ancient Prophet's rod, and swallowed up the whole.",
+     "options": [
+      "The hundreds of Bible figures on the Dutch tiles",
+      "The small fire and the handful of fuel in the grate",
+      "The shadows of the furniture in the lumber-room",
+      "The newspapers he read at the tavern that evening"
+     ],
+     "answer": "A",
+     "why": "The fireplace is paved with Dutch tiles showing scenes from the Scriptures, “hundreds of figures to attract his thoughts,” and Marley's face crowds out every one of them.",
+     "evidence": [
+      "There were Cains and Abels, Pharaoh's daughters; Queens of Sheba, Angelic messengers descending through the air on clouds like feather-beds, Abrahams, Belshazzars, Apostles putting off to sea in butter-boats, hundreds of figures to attract his thoughts;"
+     ]
+    }
+   ],
+   "words": 6418
+  },
+  {
+   "id": "stave-2",
+   "label": "Stave 2: The First of the Three Spirits",
+   "units": [
+    "stave-2"
+   ],
+   "overview": "Scrooge wakes in the dark, waits for one o'clock and meets the Ghost of Christmas Past, a figure both childlike and old. It takes him back to his boarding school, his sister Fan, old Fezziwig's Christmas Eve ball and the young woman who releases him from their engagement. A last scene shows her years later as a wife and mother, and Scrooge, unable to bear it, presses the Spirit's cap down over its light.",
+   "checkpoint": {
+    "question": "The church bell strikes twelve, though Scrooge went to bed after two. What does he suppose must have got into the works of the clock?",
+    "answer": "icicle",
+    "evidence": "An icicle must have got into the works."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "When the bell strikes twelve, Scrooge fears night has taken over the world. He is relieved to find it has not. Without days to count by, what would have become “a mere United States' security”?",
+     "quote": null,
+     "options": [
+      "The rent he is owed for the rooms let as offices",
+      "The deeds and ledgers locked in Marley's cash-boxes",
+      "A bill payable to him “three days after sight”",
+      "The clerk's wages owed to him for the coming week"
+     ],
+     "answer": "C",
+     "why": "A bill of exchange payable “three days after sight” is worth nothing if there are no days, so Scrooge's first worry about endless night is money.",
+     "evidence": [
+      "This was a great relief, because \"three days after sight of this First of Exchange pay to Mr. Ebenezer Scrooge or his order,\" and so forth, would have become a mere United States' security if there were no days to count by."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "When the Fezziwigs' ball breaks up at eleven, the two apprentices are left to their beds. Where are those beds?",
+     "quote": null,
+     "options": [
+      "In the loft above the warehouse",
+      "Under a counter in the back-shop",
+      "On benches beside the warehouse fire",
+      "In an attic room at Fezziwig's house"
+     ],
+     "answer": "B",
+     "why": "After the Fezziwigs shake every guest's hand, the lads go to beds that are under a counter in the back-shop.",
+     "evidence": [
+      "When the clock struck eleven, this domestic ball broke up.",
+      "and the lads were left to their beds; which were under a counter in the back-shop."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When Fan comes to fetch her brother, the schoolmaster sends a servant to offer a glass of “something” to the postboy. Why does the postboy say he had rather not?",
+     "quote": null,
+     "options": [
+      "He has to drive the children home through snow",
+      "He never takes a drink from a stranger's house",
+      "He thinks the schoolmaster is mocking him",
+      "He has tasted what that house serves before"
+     ],
+     "answer": "D",
+     "why": "He thanks the gentleman but would rather not if it is “the same tap as he had tasted before.” Like the “curiously light wine” given to the children, the school's hospitality is thin.",
+     "evidence": [
+      "sending out a meagre servant to offer a glass of \"something\" to the postboy, who answered that he thanked the gentleman, but if it was the same tap as he had tasted before, he had rather not."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "At the ball the narrator writes: “A positive light appeared to issue from Fezziwig's calves. They shone in every part of the dance like moons.” What does the description convey?",
+     "quote": "A positive light appeared to issue from Fezziwig's calves. They shone in every part of the dance like moons.",
+     "options": [
+      "How brilliantly and tirelessly the old man dances",
+      "That the warehouse lamps have been trimmed too bright",
+      "That the dancers can barely see in the dim room",
+      "How pale and thin the old man's legs have become"
+     ],
+     "answer": "A",
+     "why": "The comic image is of legs so lively they seem to give off light. The next lines say no one could predict what they would do next, and Fezziwig “cut” so neatly that he seemed to wink with his legs.",
+     "evidence": [
+      "You couldn't have predicted, at any given time, what would have become of them next.",
+      "Fezziwig \"cut\"--cut so deftly, that he appeared to wink with his legs, and came upon his feet again without a stagger."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "In Belle's crowded parlor, after the father comes home with the Christmas toys, there is a sudden false alarm. What is it?",
+     "quote": null,
+     "options": [
+      "The porter seems to have lost one of the parcels",
+      "A child seems to have fallen down the stairs",
+      "The father seems to have forgotten the presents",
+      "The baby seems to have swallowed a toy turkey"
+     ],
+     "answer": "D",
+     "why": "The baby was caught putting a doll's frying-pan in his mouth and was suspected of swallowing a toy turkey glued on a wooden platter. It proved a false alarm.",
+     "evidence": [
+      "The terrible announcement that the baby had been taken in the act of putting a doll's frying-pan into his mouth, and was more than suspected of having swallowed a fictitious turkey, glued on a wooden platter!",
+      "The immense relief of finding this a false alarm!"
+     ]
+    }
+   ],
+   "words": 6157
+  },
+  {
+   "id": "stave-3",
+   "label": "Stave 3: The Second of the Three Spirits",
+   "units": [
+    "stave-3"
+   ],
+   "overview": "The Ghost of Christmas Present, a giant seated on a heap of Christmas food, takes Scrooge through London on Christmas morning and then to Bob Cratchit's house for the family's dinner. They travel on to a miners' hut, a lighthouse and a ship before joining the party at Fred's house. Near the end of its life the Spirit shows Scrooge two children hidden in its robe.",
+   "checkpoint": {
+    "question": "After dinner Bob serves the hot mixture from the jug in the family display of glass: two tumblers, and a custard-cup without a what?",
+    "answer": "handle",
+    "evidence": "Two tumblers, and a custard-cup without a handle."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Once the pudding has come in and been praised, what does Mrs. Cratchit confess she had had her doubts about?",
+     "quote": null,
+     "options": [
+      "Whether the copper would get hot enough",
+      "Whether the goose would go round them all",
+      "Whether Martha would be home in time",
+      "The quantity of flour she had put in"
+     ],
+     "answer": "D",
+     "why": "With the weight off her mind, she admits she had doubted the quantity of flour. Nobody says it is a small pudding for a large family.",
+     "evidence": [
+      "Mrs. Cratchit said that now the weight was off her mind, she would confess she had had her doubts about the quantity of flour."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Martha tells the family that she saw a countess and a lord some days before. What does she say about the lord?",
+     "quote": null,
+     "options": [
+      "He was much about as tall as Peter",
+      "He wore a shirt collar just like Peter's",
+      "He ordered a bonnet from her mistress",
+      "He tipped her a shilling for Christmas"
+     ],
+     "answer": "A",
+     "why": "She says the lord “was much about as tall as Peter,” and Peter pulls up his collars so high that his head disappears.",
+     "evidence": [
+      "Also how she had seen a countess and a lord some days before, and how the lord \"was much about as tall as Peter;\" at which Peter pulled up his collars so high that you couldn't have seen his head if you had been there."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Scrooge asks the Spirit, “You seek to close these places on the Seventh Day?” What is he objecting to?",
+     "quote": null,
+     "options": [
+      "Laws that stop the poor buying meat on credit",
+      "Shopkeepers who charge more for food at Christmas",
+      "Closing the bakers' shops on the one day the poor dine",
+      "Churches that turn the poor away from the service"
+     ],
+     "answer": "C",
+     "why": "The poor carry their dinners to the bakers' shops to be cooked. Scrooge says that closing these places on Sundays would take away their means of dining, and the Spirit answers that such deeds, done in its name, belong to those who do them.",
+     "evidence": [
+      "You would deprive them of their means of dining every seventh day, often the only day on which they can be said to dine at all,",
+      "You seek to close these places on the Seventh Day?"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "When the Christmas pudding is taken out of the copper there is “A smell like a washing-day!” What gives off that smell?",
+     "quote": "A smell like a washing-day!",
+     "options": [
+      "The copper Mrs. Cratchit uses for laundry",
+      "The cloth the pudding was boiled in",
+      "The steam off Bob's damp comforter",
+      "The laundress's house next door"
+     ],
+     "answer": "B",
+     "why": "The narrator explains each smell in turn: the washing-day smell is the cloth, and the pudding itself smells like an eating-house and a pastrycook's with a laundress's next door. The laundress is part of a comparison, not a neighbor.",
+     "evidence": [
+      "A smell like a washing-day! That was the cloth."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "In the game of Yes and No at Fred's, the plump sister guesses “Uncle Scro-o-o-o-oge!” Some players then object to one of Fred's answers. Which one, and why?",
+     "quote": null,
+     "options": [
+      "He said the animal was savage, which was unkind",
+      "He said it lived in London, which gave it away",
+      "He said it was not a bear, which misled them",
+      "He said it could talk, which no animal can do"
+     ],
+     "answer": "C",
+     "why": "They object that the reply to “Is it a bear?” should have been “Yes,” since a “No” was enough to turn their thoughts away from Mr. Scrooge. The joke is at Scrooge's expense, and he has just been playing along unheard.",
+     "evidence": [
+      "Admiration was the universal sentiment, though some objected that the reply to \"Is it a bear?\" ought to have been \"Yes;\" inasmuch as an answer in the negative was sufficient to have diverted their thoughts from Mr. Scrooge, supposing they had ever had any tendency that way."
+     ]
+    }
+   ],
+   "words": 8207
+  },
+  {
+   "id": "stave-4",
+   "label": "Stave 4: The Last of the Spirits",
+   "units": [
+    "stave-4"
+   ],
+   "overview": "The silent Ghost of Christmas Yet To Come shows Scrooge businessmen talking about a death, a shop where a dead man's belongings are sold, and a young couple who are relieved by the same news. At the Cratchits' house the family sits very quiet, waiting for Bob. In a churchyard Scrooge reads the name on a neglected grave and begs the Spirit to tell him his life can still change.",
+   "checkpoint": {
+    "question": "The fat man at the Exchange says he is the most disinterested of the group, for he never wears black gloves and never eats what?",
+    "answer": "lunch",
+    "evidence": "\"Well, I am the most disinterested among you, after all,\" said the first speaker, \"for I never wear black gloves, and I never eat lunch."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Two wealthy businessmen meet in the street. One says, “Old Scratch has got his own at last, hey?” What do they talk about before they part?",
+     "quote": null,
+     "options": [
+      "The cold, and whether one of them skates",
+      "Who will take over the dead man's firm",
+      "Whether to go together to the funeral",
+      "A debt the dead man has left unpaid"
+     ],
+     "answer": "A",
+     "why": "After one line about the death they turn to the weather and skating, and say good morning. Their whole conversation runs to six short speeches.",
+     "evidence": [
+      "\"So I am told,\" returned the second. \"Cold, isn't it?\"",
+      "\"Seasonable for Christmas time. You're not a skater, I suppose?\""
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "In the back parlor of his shop, how does old Joe keep track of what he will pay for each person's goods?",
+     "quote": null,
+     "options": [
+      "He writes the sums in a greasy pocket-book",
+      "He weighs each item on his rusty scales",
+      "He chalks the sums on the wall and adds them up",
+      "He counts the coins out onto the stool at once"
+     ],
+     "answer": "C",
+     "why": "Joe chalks a price for each item on the wall and totals it, and Mrs. Dilber's account is “stated on the wall in the same manner.” The money comes out of a flannel bag only at the end.",
+     "evidence": [
+      "They were severally examined and appraised by old Joe, who chalked the sums he was disposed to give for each, upon the wall, and added them up into a total when he found there was nothing more to come."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Behind his screen of rags, old Joe rakes the fire together and trims his smoky lamp. What does he trim the lamp with?",
+     "quote": null,
+     "options": [
+      "An old pair of shears from the heap",
+      "The stem of his pipe",
+      "A rusty nail from the floor",
+      "The end of an old stair-rod"
+     ],
+     "answer": "B",
+     "why": "He rakes the fire with an old stair-rod and trims the lamp with the stem of his pipe, which he then puts back in his mouth.",
+     "evidence": [
+      "The old man raked the fire together with an old stair-rod, and having trimmed his smoky lamp (for it was night), with the stem of his pipe, put it in his mouth again."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Caroline's husband had taken what a half-drunken woman told him for “a mere excuse to avoid me.” He now says it was true. What had she told him?",
+     "quote": null,
+     "options": [
+      "That the creditor had gone away for Christmas",
+      "That the debt had already been sold to another",
+      "That the creditor would see no one on business",
+      "That the creditor was too ill to see anyone"
+     ],
+     "answer": "D",
+     "why": "He had gone to ask for a week's delay and never got to see the man. He now knows the man was dying at the time, so the woman's account of his illness was the truth and no excuse.",
+     "evidence": [
+      "What the half-drunken woman whom I told you of last night, said to me, when I tried to see him and obtain a week's delay; and what I thought was a mere excuse to avoid me; turns out to have been quite true.",
+      "He was not only very ill, but dying, then."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "At the Cratchits' house, the mother lays her sewing on the table and says, “The colour hurts my eyes.” The narrator answers, “The colour? Ah, poor Tiny Tim!” What does that reply suggest about the work?",
+     "quote": "The colour hurts my eyes",
+     "options": [
+      "It is bright Christmas work, too cheerful for the house",
+      "It is mourning work, sewn because Tim has died",
+      "It is a coat Tim will need when he is well again",
+      "It is paid work from the milliner's that Martha brought"
+     ],
+     "answer": "B",
+     "why": "The narrator ties the word “colour” straight to Tim. Bob later says the work will be done long before Sunday, and he has been that day to a green place he promised Tim he would walk to on a Sunday.",
+     "evidence": [
+      "The colour? Ah, poor Tiny Tim!",
+      "They would be done long before Sunday, he said."
+     ]
+    }
+   ],
+   "words": 5355
+  },
+  {
+   "id": "stave-5",
+   "label": "Stave 5: The End of It",
+   "units": [
+    "stave-5"
+   ],
+   "overview": "Scrooge wakes in his own bed on Christmas morning, sends a boy to buy the prize turkey for the Cratchits, and makes a large pledge to one of the gentlemen he refused the day before. He goes to dinner at Fred's house. The next morning he waits for Bob at the office, and the narrator describes the man Scrooge becomes.",
+   "checkpoint": {
+    "question": "Scrooge's hand shakes so much that shaving is hard. If he had cut the end of his nose off, what would he have put over it and been quite satisfied?",
+    "answer": "sticking-plaister",
+    "evidence": "But if he had cut the end of his nose off, he would have put a piece of sticking-plaister over it, and been quite satisfied."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Scrooge plans to send the Turkey to Bob Cratchit's without Bob knowing who sent it. Whose jokes does he say never matched this one?",
+     "quote": null,
+     "options": [
+      "Old Fezziwig's",
+      "Dick Wilkins's",
+      "Joe Miller's",
+      "Jack Robinson's"
+     ],
+     "answer": "C",
+     "why": "Whispering and rubbing his hands, Scrooge says Bob “sha'n't know who sends it” and that “Joe Miller never made such a joke as sending it to Bob's will be!”",
+     "evidence": [
+      "\"He sha'n't know who sends it. It's twice the size of Tiny Tim. Joe Miller never made such a joke as sending it to Bob's will be!\""
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Of the prize Turkey the narrator says: “He would have snapped 'em short off in a minute, like sticks of sealing-wax.” What would have snapped?",
+     "quote": "He would have snapped 'em short off in a minute, like sticks of sealing-wax.",
+     "options": [
+      "The poulterer's man's arms under the load",
+      "The springs of the cab that carries it",
+      "The hooks it hung from in the shop window",
+      "The bird's own legs, had it stood on them"
+     ],
+     "answer": "D",
+     "why": "The sentence before says “He never could have stood upon his legs, that bird.” The “'em” are its legs, which would have broken under its weight like sealing-wax.",
+     "evidence": [
+      "He never could have stood upon his legs, that bird."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "When Scrooge puts his face round the dining-room door at Fred's, what are Fred and his wife doing?",
+     "quote": null,
+     "options": [
+      "Looking over the table laid for dinner",
+      "Playing at forfeits with their friends",
+      "Sitting by the fire listening to Topper",
+      "Reading a letter together by the window"
+     ],
+     "answer": "A",
+     "why": "They are looking at the table, spread out in great array; the narrator says young housekeepers are always nervous about such things.",
+     "evidence": [
+      "They were looking at the table (which was spread out in great array); for these young housekeepers are always nervous on such points, and like to see that everything is right."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Scrooge tells the boy in the street to go and buy the big prize Turkey. The boy exclaims, “Walk-ER!” What does he mean?",
+     "quote": null,
+     "options": [
+      "He wants to be paid before he goes anywhere",
+      "He thinks the old gentleman is joking with him",
+      "He tells Scrooge to walk there and buy it himself",
+      "He is calling a friend to come along with him"
+     ],
+     "answer": "B",
+     "why": "“Walk-ER!” is street slang for disbelief, and Scrooge's reply shows how he took it: “No, no,” he says, “I am in earnest.”",
+     "evidence": [
+      "\"Walk-ER!\" exclaimed the boy.",
+      "\"No, no,\" said Scrooge, \"I am in earnest. Go and buy it, and tell 'em to bring it here, that I may give them the direction where to take it."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Scrooge said often afterwards that certain sounds that morning were the blithest he had ever heard. Which sounds?",
+     "quote": null,
+     "options": [
+      "Three or four strangers wishing him good morning",
+      "The church bells ringing out the lustiest peals",
+      "The boy below the window crying Christmas Day",
+      "The poulterer's man knocking with the Turkey"
+     ],
+     "answer": "A",
+     "why": "Out in his best clothes, he looks so pleasant that three or four good-humored fellows say “Good morning, sir! A merry Christmas to you!” Those greetings were the blithest sounds of all.",
+     "evidence": [
+      "He looked so irresistibly pleasant, in a word, that three or four good-humoured fellows said, \"Good morning, sir! A merry Christmas to you!\"",
+      "And Scrooge said often afterwards, that of all the blithe sounds he had ever heard, those were the blithest in his ears."
+     ]
+    }
+   ],
+   "words": 2298
+  }
+ ],
+ "passages": [
+  {
+   "unit": "stave-1",
+   "ref": "Stave 1",
+   "speaker": "Narrator",
+   "quote": "Hard and sharp as flint, from which no steel had ever struck out generous fire; secret, and self-contained, and solitary as an oyster.",
+   "note": "The opening portrait of Scrooge leans on cold and hard things: flint, frost, ice in the office in the dog-days. Ask students to track that cold through the stave, then compare the morning Scrooge sees from his window in Stave 5, still cold but “piping for the blood to dance to.”"
+  },
+  {
+   "unit": "stave-1",
+   "ref": "Stave 1",
+   "speaker": "Marley's Ghost to Scrooge",
+   "quote": "Mankind was my business. The common welfare was my business; charity, mercy, forbearance, and benevolence, were, all, my business.",
+   "note": "Scrooge has just praised Marley as “a good man of business,” and the Ghost takes the word back from him. Set it beside Scrooge's reply to the gentlemen earlier in the stave, “It's not my business.”"
+  },
+  {
+   "unit": "stave-2",
+   "ref": "Stave 2",
+   "speaker": "Belle (named later in the stave) to the young Scrooge",
+   "quote": "Another idol has displaced me; and if it can cheer and comfort you in time to come, as I would have tried to do, I have no just cause to grieve.",
+   "note": "She is wearing a mourning-dress, and she speaks gently. The idol, she tells him a line later, is “A golden one.” Scrooge begs to be shown no more, and after one more shadow he wrestles with the Spirit."
+  },
+  {
+   "unit": "stave-3",
+   "ref": "Stave 3",
+   "speaker": "The Ghost of Christmas Present",
+   "quote": "This boy is Ignorance. This girl is Want. Beware them both, and all of their degree, but most of all beware this boy, for on his brow I see that written which is Doom, unless the writing be erased.",
+   "note": "The two children come from under the Spirit's robe at a quarter to midnight, just before it vanishes. Students should notice which of the two the Spirit fears most, and that it then answers Scrooge with his own words from Stave 1: “Are there no prisons?”"
+  },
+  {
+   "unit": "stave-4",
+   "ref": "Stave 4",
+   "speaker": "Scrooge to the Ghost of Christmas Yet To Come",
+   "quote": "But if the courses be departed from, the ends will change. Say it is thus with what you show me!",
+   "note": "Scrooge asks, at the grave, whether these are shadows of what Will be or only of what May be. The Spirit never answers in words; the hand trembles a few lines later. Ask students what in Stave 5 settles the question."
+  },
+  {
+   "unit": "stave-5",
+   "ref": "Stave 5",
+   "speaker": "Narrator",
+   "quote": "He became as good a friend, as good a master, and as good a man, as the good old city knew, or any other good old city, town, or borough, in the good old world.",
+   "note": "The closing paragraphs sum up years in a few lines, and “good” comes back six times in this one sentence. The same paragraph tells us that Tiny Tim “did NOT die” and that some people laughed at the change in Scrooge."
+  }
+ ],
+ "qa": {
+  "items": 30,
+  "pass": 30,
+  "leak": 0,
+  "failing": 0,
+  "summary_words": 500
+ }
+}

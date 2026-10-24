@@ -635,6 +635,66 @@
    "units": "3 acts",
    "pd_strict": true,
    "play": true
+  },
+  {
+   "slug": "christmas-carol",
+   "title": "A Christmas Carol",
+   "short": "A Christmas Carol",
+   "author": "Charles Dickens",
+   "author_died": 1870,
+   "first_published": "1843",
+   "gutenberg": 46,
+   "units": "5 staves",
+   "pd_strict": true,
+   "play": false
+  },
+  {
+   "slug": "romeo-and-juliet",
+   "title": "Romeo and Juliet",
+   "short": "Romeo and Juliet",
+   "author": "William Shakespeare",
+   "author_died": 1616,
+   "first_published": "1597 (first Quarto); 1623 (First Folio)",
+   "gutenberg": 1513,
+   "units": "5 acts",
+   "pd_strict": true,
+   "play": true
+  },
+  {
+   "slug": "tempest",
+   "title": "The Tempest",
+   "short": "The Tempest",
+   "author": "William Shakespeare",
+   "author_died": 1616,
+   "first_published": "1623 (First Folio)",
+   "gutenberg": 1540,
+   "units": "5 acts",
+   "pd_strict": true,
+   "play": true
+  },
+  {
+   "slug": "dorian-gray",
+   "title": "The Picture of Dorian Gray",
+   "short": "Dorian Gray",
+   "author": "Oscar Wilde",
+   "author_died": 1900,
+   "first_published": "1890 (Lippincott's Monthly Magazine); 1891 (book, 20 chapters)",
+   "gutenberg": 174,
+   "units": "Preface + 20 chapters",
+   "pd_strict": true,
+   "play": false
+  },
+  {
+   "slug": "pride-and-prejudice",
+   "title": "Pride and Prejudice",
+   "short": "Pride and Prejudice",
+   "author": "Jane Austen",
+   "author_died": 1817,
+   "first_published": "1813",
+   "gutenberg": 1342,
+   "units": "61 chapters",
+   "pd_strict": true,
+   "play": false
   }
  ]
 }

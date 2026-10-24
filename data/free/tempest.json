@@ -1,0 +1,470 @@
+{
+ "slug": "tempest",
+ "updated": "2026-10-24",
+ "about": [
+  "The Tempest was first printed in the First Folio of 1623, seven years after Shakespeare died, where it is the first play in the volume. The earliest performance on record was given by the King's Men before James I at Whitehall on 1 November 1611. Our text is Project Gutenberg eBook #1540: 17,354 words in five acts, against 27,714 for Othello. Act 1 is the longest (4,875 words), and nearly all of it is Scene 2, in which Prospero tells Miranda how they came to the island. Act 4 is the shortest (2,207 words), a single scene built around the masque.",
+  "Where students lose the thread: after the wreck the castaways are split up, and the play cuts between the King's party, Ferdinand alone, and Stephano and Trinculo with Caliban. Two murder plots run side by side, Antonio and Sebastian's against Alonso in Act 2 and Caliban's against Prospero in Acts 3 and 4, and students tend to merge them. Alonso hears Prospero's name from Ariel in Act 3 but does not see him alive until Act 5. Each act below has a one-word checkpoint and four multiple-choice questions on details from inside the act; the Epilogue is covered with Act 5. They show whether a student read the act closely. They do not measure interpretation."
+ ],
+ "checks": [
+  {
+   "id": "act-1",
+   "label": "Act 1",
+   "units": [
+    "act-1"
+   ],
+   "overview": "A ship carrying the King of Naples and his court splits in a storm. On the island, Prospero tells his daughter Miranda how his brother took his dukedom and set them adrift twelve years ago. His spirit Ariel reports on the wreck and asks to be freed, Caliban curses his master, and Ferdinand, the King's son, follows Ariel's music and meets Miranda.",
+   "checkpoint": {
+    "question": "Caliban answers from inside his rock that there is wood enough. What animal does Prospero call him when he is slow to come out?",
+    "answer": "tortoise",
+    "evidence": "Come, thou tortoise! when?"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Telling Miranda how they were put to sea, Prospero describes the boat that Antonio's men prepared for them. What detail does he give about it?",
+     "quote": null,
+     "options": [
+      "Its planks had been bored through so that it would sink by dawn",
+      "It had no rigging, sail or mast, and even the rats had left it",
+      "It was a fishing boat stripped of its oars and its rudder",
+      "It was towed behind a warship and cut loose far out at sea"
+     ],
+     "answer": "B",
+     "why": "Prospero calls it a \"rotten carcass of a butt\" with no rigging, tackle, sail or mast, so unfit for the sea that the rats had quit it by instinct.",
+     "evidence": [
+      "A rotten carcass of a butt, not rigg’d, Nor tackle, sail, nor mast; the very rats Instinctively have quit it."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Prospero tells Miranda that on the voyage she smiled \"When I have deck’d the sea with drops full salt, Under my burden groan’d.\" What are the \"drops full salt\"?",
+     "quote": "When I have deck’d the sea with drops full salt, Under my burden groan’d:",
+     "options": [
+      "Spray thrown over the boat by the waves",
+      "Miranda's tears, since she cried as they were taken away",
+      "Rain from the storm that drove them ashore",
+      "Prospero's own tears falling into the sea"
+     ],
+     "answer": "D",
+     "why": "\"I have deck’d\" makes Prospero the one who scattered the salt drops: he wept into the sea and groaned under his burden while the infant Miranda smiled. Her smile, he says, gave him the courage to bear what followed.",
+     "evidence": [
+      "Thou didst smile, Infused with a fortitude from heaven, When I have deck’d the sea with drops full salt, Under my burden groan’d:"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Ariel reports that he left Ferdinand sighing \"In an odd angle of the isle, and sitting, His arms in this sad knot.\" What is \"this sad knot\"?",
+     "quote": "In an odd angle of the isle, and sitting, His arms in this sad knot.",
+     "options": [
+      "Ferdinand's arms folded in grief, as Ariel shows with his own",
+      "A rope Ariel tied around Ferdinand to keep him in one place",
+      "Seaweed from the wreck tangled around Ferdinand's arms",
+      "The knotted sash that marks Ferdinand as the King's son"
+     ],
+     "answer": "A",
+     "why": "Ariel is describing a pose, not a rope: \"this\" points to a gesture he makes as he speaks, arms crossed on the chest, the usual sign of a melancholy man. It fits the prince he left \"cooling of the air with sighs.\"",
+     "evidence": [
+      "Whom I left cooling of the air with sighs In an odd angle of the isle, and sitting, His arms in this sad knot."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Ariel says the time is \"Past the mid season.\" Prospero answers: \"At least two glasses. The time ’twixt six and now Must by us both be spent most preciously.\" What does the exchange tell you?",
+     "quote": "At least two glasses. The time ’twixt six and now Must by us both be spent most preciously.",
+     "options": [
+      "It is near midnight, and the work must be finished before dawn",
+      "It is early morning, and Prospero has two days of tasks left",
+      "It is about two in the afternoon, and the work must end by six",
+      "It is exactly noon, and Ariel has two hours left before he is freed"
+     ],
+     "answer": "C",
+     "why": "The \"mid season\" is noon, and a glass is an hourglass, so at least two glasses past noon makes it about two o'clock. Prospero means to finish everything between now and six.",
+     "evidence": [
+      "Past the mid season.",
+      "At least two glasses. The time ’twixt six and now Must by us both be spent most preciously."
+     ]
+    }
+   ],
+   "words": 4875
+  },
+  {
+   "id": "act-2",
+   "label": "Act 2",
+   "units": [
+    "act-2"
+   ],
+   "overview": "Elsewhere on the island, Gonzalo tries to cheer Alonso, who believes Ferdinand drowned, while Antonio and Sebastian mock him. When Ariel's music puts the others to sleep, Antonio persuades Sebastian to kill his brother the King, and Ariel wakes Gonzalo in time. Caliban, carrying wood, meets the jester Trinculo and the drunken butler Stephano and swears to serve Stephano.",
+   "checkpoint": {
+    "question": "Stephano says he made his bottle with his own hands after he was cast ashore. What did he make it from?",
+    "answer": "bark",
+    "evidence": "which I made of the bark of a tree with mine own hands, since I was cast ashore."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Antonio and Sebastian bet on whether Gonzalo or Adrian will be the first to \"crow\". What is the stake, and how does the bet come out?",
+     "quote": null,
+     "options": [
+      "A ducat, and Sebastian wins because Gonzalo speaks first",
+      "A cup of wine, and Antonio wins because Gonzalo speaks first",
+      "A laugh, and Antonio wins because Adrian speaks first",
+      "A ring, and Sebastian wins because Adrian speaks first"
+     ],
+     "answer": "C",
+     "why": "Sebastian backs \"the old cock\" (Gonzalo) and Antonio \"the cockerel\" (Adrian), and the wager is \"A laughter.\" Adrian speaks first, Antonio laughs, and Sebastian tells him he has been paid.",
+     "evidence": [
+      "A laughter.",
+      "So. You’re paid."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "When Adrian objects that widow Dido was of Carthage, not of Tunis, what does Gonzalo answer?",
+     "quote": null,
+     "options": [
+      "That this Tunis was once Carthage",
+      "That Dido fled from Tunis to Carthage",
+      "That Carthage is a short sail from Tunis",
+      "That he meant Claribel, not Dido"
+     ],
+     "answer": "A",
+     "why": "Gonzalo insists that \"This Tunis, sir, was Carthage.\" Antonio and Sebastian mock him for raising a whole city, walls and houses, with one word.",
+     "evidence": [
+      "This Tunis, sir, was Carthage.",
+      "His word is more than the miraculous harp."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "As Gonzalo gets ready to speak again, Sebastian says: \"Look, he’s winding up the watch of his wit; by and by it will strike.\" What is Gonzalo compared to?",
+     "quote": "Look, he’s winding up the watch of his wit; by and by it will strike.",
+     "options": [
+      "A sentry keeping watch who will soon strike a blow",
+      "A sailor coiling a rope before he casts it out",
+      "A fisherman reeling in his line before a fish strikes",
+      "A clock being wound up that will soon chime"
+     ],
+     "answer": "D",
+     "why": "The \"watch\" is a timepiece that strikes the hour. Gonzalo is winding up his wit to talk again, and when he begins \"Sir,—\" Sebastian counts the first stroke: \"One: tell.\"",
+     "evidence": [
+      "Look, he’s winding up the watch of his wit; by and by it will strike.",
+      "One: tell."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "Blaming Alonso for marrying Claribel to the King of Tunis, Sebastian says that \"the fair soul herself Weigh’d between loathness and obedience at Which end o’ th’ beam should bow.\" What does this tell you about Claribel?",
+     "quote": "the fair soul herself Weigh’d between loathness and obedience at Which end o’ th’ beam should bow.",
+     "options": [
+      "She begged to marry the King of Tunis against her father's wish",
+      "She did not want the match and obeyed her father only after a struggle",
+      "She chose the King of Tunis freely once the lords stopped objecting",
+      "She agreed at once, glad to leave the court of Naples behind"
+     ],
+     "answer": "B",
+     "why": "The \"beam\" is the bar of a pair of scales. Claribel's unwillingness (\"loathness\") sat in one pan and her duty to her father in the other, so she married against her own wish, and the lords had knelt to Alonso to stop it.",
+     "evidence": [
+      "You were kneel’d to, and importun’d otherwise By all of us; and the fair soul herself Weigh’d between loathness and obedience at Which end o’ th’ beam should bow."
+     ]
+    }
+   ],
+   "words": 4215
+  },
+  {
+   "id": "act-3",
+   "label": "Act 3",
+   "units": [
+    "act-3"
+   ],
+   "overview": "Ferdinand carries logs for Prospero, and Miranda, who does not know her father is watching, offers to help; the two promise to marry. Caliban urges Stephano to kill Prospero, while the invisible Ariel stirs up trouble among the drunkards. Then Ariel, as a Harpy, snatches a banquet from Alonso's party and accuses Alonso, Antonio and Sebastian of their crime against Prospero.",
+   "checkpoint": {
+    "question": "Trinculo says that only a few people live on the isle, and three of them are himself, Stephano and Caliban. How many does he say there are in all?",
+    "answer": "five",
+    "evidence": "They say there’s but five upon this isle; we are three of them; if th’ other two be brained like us, the state totters."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Urging Ferdinand to rest from carrying logs, how long does Miranda say her father will be busy?",
+     "quote": null,
+     "options": [
+      "For three hours, since he is hard at study",
+      "Until supper, since he is walking on the shore",
+      "For half an hour, since he has gone to sleep",
+      "Until sunset, since he is busy with his spirits"
+     ],
+     "answer": "A",
+     "why": "Miranda tells Ferdinand that her father is at his study and \"safe for these three hours.\" She does not know that Prospero has come in behind her and is watching them.",
+     "evidence": [
+      "Is hard at study; pray, now, rest yourself: He’s safe for these three hours."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Drinking with Caliban and Trinculo, Stephano boasts that the sea cannot drown him. How far does he claim he swam before he reached the shore?",
+     "quote": null,
+     "options": [
+      "Ten leagues, with Trinculo on his back",
+      "Twenty miles, holding his bottle above the waves",
+      "Five-and-thirty leagues, off and on",
+      "A hundred furlongs, against the tide"
+     ],
+     "answer": "C",
+     "why": "Stephano swears \"by this light\" that he swam five-and-thirty leagues, off and on, which is a drunkard's boast. In Act 2 he said he came ashore on a butt of sack the sailors had heaved overboard.",
+     "evidence": [
+      "I swam, ere I could recover the shore, five-and-thirty leagues, off and on, by this light."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "After the strange Shapes bring in the banquet, Sebastian says: \"Now I will believe That there are unicorns; that in Arabia There is one tree, the phoenix’ throne.\" What is he saying?",
+     "quote": "Now I will believe That there are unicorns; that in Arabia There is one tree, the phoenix’ throne",
+     "options": [
+      "He has always trusted travellers' wonders and feels proved right",
+      "After this sight he will believe any marvel, however unlikely",
+      "He thinks the Shapes have brought the food from Arabia",
+      "He suspects the banquet is a trick to poison the King"
+     ],
+     "answer": "B",
+     "why": "Sebastian has sneered at everything on the island so far. Unicorns and the single phoenix were stock travellers' tales, and this \"living drollery\" (a puppet show come to life) makes him ready to believe them all; Antonio agrees that travellers never lied.",
+     "evidence": [
+      "A living drollery.",
+      "travellers ne’er did lie, Though fools at home condemn them."
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "After the Harpy vanishes, Alonso says that \"the thunder, That deep and dreadful organ-pipe, pronounc’d The name of Prosper: it did bass my trespass.\" What does \"it did bass my trespass\" mean?",
+     "quote": "the thunder, That deep and dreadful organ-pipe, pronounc’d The name of Prosper: it did bass my trespass.",
+     "options": [
+      "It drowned out his prayer for pardon with its noise",
+      "It sang a funeral song for Ferdinand in a low voice",
+      "It named Antonio, not Alonso, as the real offender",
+      "It sounded out his sin in a deep note, like an organ"
+     ],
+     "answer": "D",
+     "why": "Alonso hears the winds sing and the thunder, \"That deep and dreadful organ-pipe,\" speak Prospero's name. To \"bass\" is to sound the low part in music, so the thunder sang out his own crime against Prospero in its deepest voice.",
+     "evidence": [
+      "Methought the billows spoke, and told me of it; The winds did sing it to me; and the thunder, That deep and dreadful organ-pipe, pronounc’d The name of Prosper: it did bass my trespass."
+     ]
+    }
+   ],
+   "words": 3133
+  },
+  {
+   "id": "act-4",
+   "label": "Act 4",
+   "units": [
+    "act-4"
+   ],
+   "overview": "Prospero gives Miranda to Ferdinand with a warning to wait for the wedding, then has his spirits perform a masque of Iris, Ceres and Juno to bless the couple. He breaks it off when he remembers Caliban's plot. Ariel hangs out a display of fine clothes, Stephano and Trinculo stop to take them, and spirits in the shape of hounds chase the three away.",
+   "checkpoint": {
+    "question": "Prospero and Ariel set spirit hounds on the three thieves and call the dogs by name. Which name does Ariel shout twice?",
+    "answer": "Silver",
+    "evidence": "Silver! there it goes, Silver!"
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "While Stephano and Trinculo grab at the clothes on the line, Caliban warns that if they waste time they will all be turned into something. Into what?",
+     "quote": null,
+     "options": [
+      "Toads, beetles and bats from his mother's charms",
+      "Hedgehogs and adders that hiss at every step",
+      "Fish and moon-calves to be shown for money",
+      "Barnacles, or apes with foreheads villainous low"
+     ],
+     "answer": "D",
+     "why": "Caliban refuses to touch the \"trash\" and fears they will \"all be turn’d to barnacles, or to apes With foreheads villainous low.\" Earlier he warned that Prospero would fill their skins with pinches if he woke.",
+     "evidence": [
+      "We shall lose our time, And all be turn’d to barnacles, or to apes With foreheads villainous low."
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "Near the end of the masque, Iris calls the reapers in from the furrow to dance with the nymphs. What does she tell them to put on?",
+     "quote": null,
+     "options": [
+      "Garlands of wheat and poppies",
+      "Their rye-straw hats",
+      "Crowns of sedge from the brooks",
+      "Their best holiday shoes"
+     ],
+     "answer": "B",
+     "why": "Iris tells the \"sun-burn’d sicklemen\" to make holiday and put on their rye-straw hats. The sedge crowns belong to the nymphs, the Naiads of the brooks, whom she summoned just before.",
+     "evidence": [
+      "Make holiday: your rye-straw hats put on,",
+      "With your sedg’d crowns and ever-harmless looks,"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Calling for the masque to begin, Prospero says: \"Now come, my Ariel! bring a corollary, Rather than want a spirit: appear, and pertly.\" What does \"bring a corollary\" mean here?",
+     "quote": "Now come, my Ariel! bring a corollary, Rather than want a spirit: appear, and pertly.",
+     "options": [
+      "Bring the music that goes with the masque",
+      "Bring a written order of the show for the lovers",
+      "Bring one spirit too many rather than one too few",
+      "Bring the gift Prospero promised the young couple"
+     ],
+     "answer": "C",
+     "why": "A corollary is a surplus, one more than is needed. Prospero tells Ariel to bring an extra spirit \"Rather than want a spirit\", that is, rather than be one short for the show, and to appear quickly (\"pertly\").",
+     "evidence": [
+      "Now come, my Ariel! bring a corollary, Rather than want a spirit: appear, and pertly."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "After the masque, Ariel tells Prospero: \"When I presented Ceres, I thought to have told thee of it; but I fear’d Lest I might anger thee.\" What does this show?",
+     "quote": "When I presented Ceres, I thought to have told thee of it; but I fear’d Lest I might anger thee.",
+     "options": [
+      "Ariel played Ceres in the masque and knew of the plot but kept quiet",
+      "Ariel wrote the masque himself and feared Prospero would dislike it",
+      "Ariel forgot his lines as Ceres and is afraid of being punished",
+      "Ariel brought Ceres to the island without asking Prospero first"
+     ],
+     "answer": "A",
+     "why": "To \"present\" here most likely means to act a part, so Ariel played Ceres. The \"it\" is Caliban's plot, which Prospero has just remembered: Ariel knew of it during the masque but did not dare interrupt his master.",
+     "evidence": [
+      "When I presented Ceres, I thought to have told thee of it; but I fear’d Lest I might anger thee.",
+      "We must prepare to meet with Caliban."
+     ]
+    }
+   ],
+   "words": 2207
+  },
+  {
+   "id": "act-5",
+   "label": "Act 5",
+   "units": [
+    "act-5"
+   ],
+   "overview": "Moved by Ariel's report on the prisoners, Prospero chooses mercy over revenge and gives up his magic. He reveals himself to Alonso, forgives his brother, and shows Alonso that Ferdinand is alive. The ship and its crew turn out to be safe, Caliban and his companions are sent off, and in the Epilogue Prospero asks the audience to set him free.",
+   "checkpoint": {
+    "question": "To appear as he once was in Milan, Prospero sends Ariel to his cell for two things. One is his hat. What is the other?",
+    "answer": "rapier",
+    "evidence": "Fetch me the hat and rapier in my cell."
+   },
+   "questions": [
+    {
+     "skill": "recall",
+     "stem": "Ariel describes the King's party held prisoner in the grove. To what does he compare Gonzalo's tears?",
+     "quote": null,
+     "options": [
+      "Rain running off the sails of a wrecked ship",
+      "Winter's drops falling from eaves of reeds",
+      "Dew shaken from the trees of the grove",
+      "Sea water dripping from a fisherman's net"
+     ],
+     "answer": "B",
+     "why": "Ariel says Gonzalo's tears run down his beard like winter's drops from eaves of reeds, and that if Prospero saw them his feelings would grow tender. Prospero's choice of virtue over vengeance follows from this report.",
+     "evidence": [
+      "His tears run down his beard, like winter’s drops From eaves of reeds; your charm so strongly works ’em,"
+     ]
+    },
+    {
+     "skill": "recall",
+     "stem": "The Boatswain tells how he and the mariners were woken under the hatches. What woke them?",
+     "quote": null,
+     "options": [
+      "Roaring, shrieking, howling and the jingling of chains",
+      "A voice calling the Boatswain's name from the deck",
+      "Sea water rising in the hold around their feet",
+      "Sweet music played on a tabor and a pipe"
+     ],
+     "answer": "A",
+     "why": "The Boatswain says they were woken by strange noises of roaring, shrieking, howling and jingling chains. Then they found the ship in full trim and the master capering to see her.",
+     "evidence": [
+      "Of roaring, shrieking, howling, jingling chains, And mo diversity of sounds, all horrible, We were awak’d;"
+     ]
+    },
+    {
+     "skill": "close",
+     "stem": "Discovered at chess, Miranda says Ferdinand is playing her false, then adds: \"Yes, for a score of kingdoms you should wrangle, And I would call it fair play.\" What does she mean?",
+     "quote": "Yes, for a score of kingdoms you should wrangle, And I would call it fair play.",
+     "options": [
+      "She will marry him only once he has won twenty kingdoms",
+      "She accuses him of playing to win her father's dukedom",
+      "She thinks kings always cheat and wants no part of it",
+      "With kingdoms at stake, she would forgive his cheating"
+     ],
+     "answer": "D",
+     "why": "Ferdinand swears he would not cheat her \"for the world\". Miranda teases him: for twenty kingdoms he might well contend unfairly, and she would still call it fair play because she loves him.",
+     "evidence": [
+      "Yes, for a score of kingdoms you should wrangle, And I would call it fair play.",
+      "No, my dearest love, I would not for the world."
+     ]
+    },
+    {
+     "skill": "inference",
+     "stem": "When the Boatswain is brought in, Gonzalo greets him: \"Now, blasphemy, That swear’st grace o’erboard, not an oath on shore? Hast thou no mouth by land?\" What is he teasing him about?",
+     "quote": "Now, blasphemy, That swear’st grace o’erboard, not an oath on shore? Hast thou no mouth by land?",
+     "options": [
+      "He refused to pray with the King when the ship split",
+      "He lost his voice shouting orders through the storm",
+      "He cursed freely at sea but is struck dumb on shore",
+      "He lied that the ship was lost so he could leave it"
+     ],
+     "answer": "C",
+     "why": "In the storm the Boatswain ordered the lords to their cabins, and Sebastian called him a blasphemous dog. Gonzalo, who then said the man would hang rather than drown, now mocks him for having sworn at sea and having nothing to say on land.",
+     "evidence": [
+      "I prophesied, if a gallows were on land, This fellow could not drown.",
+      "Now, blasphemy, That swear’st grace o’erboard, not an oath on shore? Hast thou no mouth by land?"
+     ]
+    }
+   ],
+   "words": 2924
+  }
+ ],
+ "passages": [
+  {
+   "unit": "act-1",
+   "ref": "Act 1, Scene 2",
+   "speaker": "Caliban to Prospero",
+   "quote": "You taught me language, and my profit on ’t / Is, I know how to curse. The red plague rid you, / For learning me your language!",
+   "note": "Caliban's answer to Prospero's claim that he taught him to speak. Read it with Caliban's earlier speech about the island being his by his mother Sycorax, and ask students who has the better case in this exchange."
+  },
+  {
+   "unit": "act-2",
+   "ref": "Act 2, Scene 1",
+   "speaker": "Antonio to Sebastian",
+   "quote": "to perform an act / Whereof what’s past is prologue, what to come / In yours and my discharge.",
+   "note": "Antonio is persuading Sebastian to kill the sleeping Alonso. The theatre words matter: the shipwreck is only the prologue, and the two of them are to act the play. Compare how Antonio once took Milan from his own brother."
+  },
+  {
+   "unit": "act-3",
+   "ref": "Act 3, Scene 2",
+   "speaker": "Caliban to Stephano and Trinculo",
+   "quote": "Be not afeard. The isle is full of noises, / Sounds, and sweet airs, that give delight, and hurt not.",
+   "note": "Spoken in the middle of a murder plot, when Ariel's invisible music frightens the two drunkards. Caliban, who has spent most of the play cursing, gives some of the play's finest verse here; ask students why Shakespeare puts it in his mouth."
+  },
+  {
+   "unit": "act-4",
+   "ref": "Act 4, Scene 1",
+   "speaker": "Prospero to Ferdinand",
+   "quote": "We are such stuff / As dreams are made on, and our little life / Is rounded with a sleep.",
+   "note": "Prospero has just stopped the masque because he remembered Caliban's plot, and Miranda has never seen him so angry. The speech starts as comfort for Ferdinand and ends with Prospero admitting his \"old brain is troubled.\" Note \"on\", not \"of\"."
+  },
+  {
+   "unit": "act-5",
+   "ref": "Act 5, Scene 1",
+   "speaker": "Prospero to Ariel",
+   "quote": "the rarer action is / In virtue than in vengeance: they being penitent, / The sole drift of my purpose doth extend / Not a frown further.",
+   "note": "Prospero's turn from revenge comes after Ariel says that his own feelings would grow tender, were he human. Students can test the condition \"they being penitent\" against what Antonio actually says for the rest of the scene."
+  },
+  {
+   "unit": "act-5",
+   "ref": "Act 5, Scene 1",
+   "speaker": "Miranda, seeing the King's party",
+   "quote": "O, wonder! / How many goodly creatures are there here! / How beauteous mankind is! O brave new world / That has such people in ’t!",
+   "note": "Miranda sees the lords for the first time, Antonio and Sebastian among them. Prospero's dry reply, \"’Tis new to thee,\" is half a line long; read the two together."
+  }
+ ],
+ "qa": {
+  "items": 25,
+  "pass": 25,
+  "leak": 0,
+  "failing": 0,
+  "summary_words": 400
+ }
+}
