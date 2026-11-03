@@ -19,6 +19,9 @@ products `cc-*`, venture `v4-64`).
 - Pooled test `rd-hero` (POOLED-READING-01, from 2026-10-19, home only, per tab): `b` shows the top of page 1 of the free
   Macbeth student PDF (`src/assets/img/macbeth-act1-excerpt.webp`) in place of the HTML question card; `?hero=b` forces it.
   Goal `sample` (`src/assets/goals.js`): a click on any link to the free pack or its files.
+- Screen-time box (2026-11-03): one line at the end of every `/study/` and `/quizzes/` page, after the buy box, towards
+  the hub calculator `https://outils.vread.fr/en/screen-time-to-books/?utm_source=chapter-checks&utm_medium=bloc`; the click
+  is a mesure.js `cta_click`.
 - `/quote/`: printable quote built in the browser (`src/assets/quote.js`), with a mailto to octave@vread.fr; no backend,
   nothing sent. Payment stays card-only; purchase orders on net-30, checks and transfers are not accepted.
 

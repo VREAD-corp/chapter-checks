@@ -70,6 +70,8 @@ ul.pack li { margin: .35em 0; }
 
 .vread { margin: 2.5rem 0; background: var(--paper-2); border-left: 4px solid var(--red); padding: 14px 18px; border-radius: 4px; }
 .vread p { margin: 0; }
+.screen-books { margin: 1.5rem 0; background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; font-size: .95rem; max-width: 40rem; }
+.screen-books p { margin: 0; }
 .faq details { border-bottom: 1px solid var(--line); padding: 10px 0; }
 .faq summary { cursor: pointer; font-weight: 600; min-height: 44px; display: flex; align-items: center; }
 .downloads { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 1rem 0; }

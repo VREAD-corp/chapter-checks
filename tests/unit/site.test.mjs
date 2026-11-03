@@ -240,3 +240,15 @@ test('free quiz titles (2026-10-21): one page each, a checkpoint and MC question
   }
   assert.ok(!files.some((f) => f.includes('/sample/') && quizzes.some((t) => f.includes(t.slug))), 'no files for free quiz titles');
 });
+
+test('screen-time box (2026-11-03): once on every study and quiz page, after the buy box, tagged and counted as cta_click', () => {
+  const pagesWithBox = Object.keys(html).filter((p) => /^\/(study|quizzes)\/[^/]+\/index\.html$/.test(p));
+  assert.ok(pagesWithBox.length >= 17, `${pagesWithBox.length} pages`);
+  for (const p of pagesWithBox) {
+    const h = html[p];
+    assert.equal((h.match(/class="screen-books"/g) || []).length, 1, p);
+    assert.ok(h.indexOf('class="screen-books"') > h.indexOf('class="buy-box"'), p);
+    assert.ok(h.includes('href="https://outils.vread.fr/en/screen-time-to-books/?utm_source=chapter-checks&amp;utm_medium=bloc" data-mesure="cta_click"'), p);
+  }
+  for (const p of Object.keys(html).filter((p) => !/^\/(study|quizzes)\//.test(p))) assert.ok(!html[p].includes('screen-books'), p);
+});

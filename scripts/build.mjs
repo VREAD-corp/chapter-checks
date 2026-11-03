@@ -397,6 +397,12 @@ ${titleTable}
 <p>Checks test the reading, chapter by chapter. They are not essay prompts and do not reuse any College Board material.</p>`,
 });
 
+// 2026-11-03 (attention plan): a small box at the end of each study and quiz page, after the main content, towards the
+// hub's screen-time calculator in English. utm_source=chapter-checks&utm_medium=bloc tags the arrival; the click is a
+// mesure.js cta_click (the event for links to the other READ FRANCE tools).
+const SCREEN_URL = 'https://outils.vread.fr/en/screen-time-to-books/?utm_source=chapter-checks&amp;utm_medium=bloc';
+const SCREEN_BOX = `<aside class="screen-books" aria-label="Screen time and reading"><p>Students struggling to finish a book? <a href="${SCREEN_URL}" data-mesure="cta_click">Show them what their screen time adds up to in books</a>. The free calculator runs in the browser, with no account.</p></aside>`;
+
 // Study pages (reading guides for teachers) -------------------------------------------------------------------
 const itl = (s) => esc(s).replace(/_([^_]+)_/g, '<i>$1</i>');
 const verse = (q) => itl(q).split(' / ').join('<br>');
@@ -465,6 +471,7 @@ ${ap}
 <p>${st.checks.length} checks, ${t.questions} questions, a one-word reading checkpoint per check, an answer key with the line of the text behind each answer, a 2-1-0 rubric for the written answers, and Canvas QTI, CSV and Google Forms files.${t.free ? ' No e-mail asked.' : ' Card payment in US dollars, files by e-mail within minutes, refund within 14 days.'}</p>
 ${cta}
 </section>
+${SCREEN_BOX}
 
 <h2>Other reading guides</h2>
 <ul class="related">${related.map((x) => `<li><a href="${u(`study/${x.slug}/`)}"><i>${esc(x.title)}</i></a>, ${esc(x.author)}</li>`).join('')}</ul>
@@ -537,6 +544,7 @@ ${lists.length ? `<p><i>${esc(t.title)}</i> is printed in ${lists.length} of the
 <p>These quizzes live on this page only: no PDF, no Canvas or Google Forms file. The ${TITLES.length} Chapter Checks titles come as a printable student PDF, an answer key and a 2-1-0 rubric, with Canvas QTI, CSV and Google Forms files. The whole <i>Macbeth</i> pack is free, without an e-mail address.</p>
 <p><a class="btn" href="${u('free-sample/')}" data-mesure="sample_click">Download the free Macbeth pack</a></p>
 </section>
+${SCREEN_BOX}
 
 <h2>Other free quizzes</h2>
 <ul class="related">${others.map((x) => `<li><a href="${u(`quizzes/${x.slug}/`)}"><i>${esc(x.title)}</i> ${quizUnit(x)} quizzes</a>, ${esc(x.author)}</li>`).join('')}</ul>
