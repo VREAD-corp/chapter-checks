@@ -60,7 +60,7 @@ test('tracking: mesure.js v:2 knows the site, cro.js is configured for chapter-c
     assert.match(h, /mesure\.js" defer/, p);
     const ext = [...h.matchAll(/<script[^>]+src="(https?:[^"]+)"/g)].map((m) => m[1]);
     assert.deepEqual(ext, [], `${p}: no third-party script tag`);
-    if (p === '/order/index.html') assert.match(h, /og-checkout\.js\?v=1\.4\.0/);
+    if (p === '/order/index.html') assert.match(h, /og-checkout\.js\?v=1\.5\.0/);
     else assert.doesNotMatch(h, /og-checkout/, p);
   }
 });

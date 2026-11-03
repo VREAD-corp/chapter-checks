@@ -15,7 +15,7 @@ const CAT = JSON.parse(readFileSync(join(ROOT, 'data/catalog.json'), 'utf8'));
 const CONTACT = 'octave@vread.fr';
 const TRACK_API = 'https://script.google.com/macros/s/AKfycbzD1IRL8QALluKGZxgGiORFP6-DkC_qFJYR9aOxZiimxa06nbCqpzUI-9iLblp6V2VY/exec';
 const VENTURE = 'v4-64';
-const OG_VERSION = '1.4.0';
+const OG_VERSION = '1.5.0';
 const TERMS_VERSION = 'terms-2026-10-14';
 const UPDATED = 'October 14, 2026';
 

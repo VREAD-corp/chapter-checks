@@ -11,6 +11,8 @@
  * and the G- receipt. After a 3-D Secure redirect the same page finishes the order from the URL parameters.
  * Card only by default; `paymentMethodConfiguration: 'pmc_…'` is the hook for UPI / Pix once enabled.
  * Country allowlist (1.4.0): `countries: ['US']`, or the product's `countries` from the catalog, limits the country list.
+ * Tests (1.5.0): a test utm tag (e2e-…, smoke, selftest, test-…) counts like ?octave_notrack=1, and createIntent
+ * carries `test` (notrack | webdriver) so the backend marks the PaymentIntent and leaves it out of the funnel.
  * Stripe.js is loaded from https://js.stripe.com/v3/ (never self-hosted). No cookie; the only storage is the
  * octave_notrack test flag (localStorage), written only when the page URL carries ?octave_notrack=.
  * A/B (pages running Octave's cro.js, window.octaveCro): the payment start is recorded as goal 'checkout', and the
@@ -118,14 +120,17 @@
   }
 
   var BOT_UA = /bot\b|crawl|spider|slurp|headless|lighthouse|pagespeed|inspectiontool|googleother|mediapartners|bingpreview|phantom|puppeteer|playwright|selenium/i;
+  // Test campaign tags (utm_source=e2e-desktop-…, smoke, selftest, test-…): our runs, same rule as the backend (Track.js).
+  var TEST_TAG = /(^|[^a-z0-9])(e2e|selftest|smoke|octave-?test|qa-?test)([^a-z0-9]|$)|^test([^a-z0-9]|$)/i;
 
-  /** Why this hit is not a visit ('' if it is): our own tests (?octave_notrack=1, remembered in this browser; =0
-   *  clears it), automated browsers, crawlers. Same rules as veille-ao-afrique's mesure.js. The user agent is only
-   *  read here, never sent. */
+  /** Why this hit is not a visit ('' if it is): our own tests (?octave_notrack=1 or a test utm tag, remembered in
+   *  this browser; octave_notrack=0 clears it), automated browsers, crawlers. Same rules as veille-ao-afrique's
+   *  mesure.js. The user agent is only read here, never sent. */
   function exclusion(q) {
     var n = global.navigator || {}, x = '', s;
-    try { s = global.localStorage; if (q.has('octave_notrack')) { if (q.get('octave_notrack') === '1') s.setItem('octave_notrack', '1'); else s.removeItem('octave_notrack'); } x = s.getItem('octave_notrack') === '1' ? 'notrack' : ''; } catch (e) { /* storage blocked */ }
-    if (!x && q.get('octave_notrack') === '1') x = 'notrack';
+    var tagged = q.get('octave_notrack') !== '0' && ['utm_source', 'utm_medium', 'utm_campaign'].some(function (k) { return TEST_TAG.test(q.get(k) || ''); });
+    try { s = global.localStorage; if (q.has('octave_notrack') || tagged) { if (q.get('octave_notrack') === '1' || tagged) s.setItem('octave_notrack', '1'); else s.removeItem('octave_notrack'); } x = s.getItem('octave_notrack') === '1' ? 'notrack' : ''; } catch (e) { /* storage blocked */ }
+    if (!x && (q.get('octave_notrack') === '1' || tagged)) x = 'notrack';
     if (!x && n.webdriver) x = 'webdriver';
     if (!x && BOT_UA.test(n.userAgent || '')) x = 'bot';
     return x;
@@ -370,6 +375,10 @@
       };
       if (pmOpts.configuration) body.paymentMethodConfiguration = pmOpts.configuration;
       if (o.smokeToken) body.smokeToken = o.smokeToken;
+      // Our tests (octave_notrack, automated browser): the backend marks the PaymentIntent metadata.test and keeps it
+      // out of the funnel and `paid` counters (1.5.0). Never a reason to refuse a sale.
+      var tx = exclusion(new URLSearchParams(global.location.search));
+      if (tx === 'notrack' || tx === 'webdriver') body.test = tx;
       var xp = o.track === false ? '' : xpOf();
       if (xp) body.xp = xp;
       var key = JSON.stringify(body);
@@ -423,6 +432,6 @@
     },
     /** Internal (unit tests): cancelIntent(endpoint, { pi, clientSecret }, lang) with one retry. */
     _cancelIntent: cancelIntent,
-    version: '1.4.0',
+    version: '1.5.0',
   };
 })(window);

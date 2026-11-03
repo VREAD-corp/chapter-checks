@@ -14,7 +14,7 @@ products `cc-*`, venture `v4-64`).
   key passages, 3 pack questions). `data/ap-q3.json`: the 7 AP Literature question-3 lists 2023-2026 read from the College
   Board PDFs on 2026-10-17; the home, `/ap-literature/` and the study pages take their AP counts from it.
 - `src/vendor/mesure.js` and `cro.js`: byte-identical copies of `octave-checkout/gas/web/` (aggregate, cookieless
-  counting; site `chapter-checks`). `src/vendor/og-checkout.js`: `octave-global-checkout/dist/` (module 1.4.0).
+  counting; site `chapter-checks`). `src/vendor/og-checkout.js`: `octave-global-checkout/dist/` (module 1.5.0).
 - A/B test `cc-prix` (title pack $5 `p5` / $7 `p7`, per tab) in `src/assets/xp.js`; `?prix=p7` forces a variant.
 - Pooled test `rd-hero` (POOLED-READING-01, from 2026-10-19, home only, per tab): `b` shows the top of page 1 of the free
   Macbeth student PDF (`src/assets/img/macbeth-act1-excerpt.webp`) in place of the HTML question card; `?hero=b` forces it.
